@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "state_file": "northCarolina",
+  "state_code": "NC",
+  "metadata": {
+    "snapshot_date": "2026-09-22",
+    "title": "Groupicorn North Carolina IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. September 22, 2026 parallel regional research expanded North Carolina from the legacy Charlotte/Triangle pair to six explicit catchments: Charlotte/Piedmont, Research Triangle, Piedmont Triad, Western NC, Coastal NC, and Fayetteville/Sandhills. Official provider pages and state facility records support the current source candidates; logos and exact-site program evidence remain required for shortlist publication.",
+    "branding_note": "logo_url points to a tracked PNG asset. Existing asset provenance and license clearance require separate review where source URLs are not yet recorded.",
+    "geocoding_note": "Street addresses and ZIP codes are stored where sourced; coordinates are intentionally null pending an audited geocoding pass.",
+    "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use."
+  },
+  "areas": [
+    {
+      "area_id": "nc_triangle",
+      "state_code": "NC",
+      "region": "Research Triangle",
+      "name": "Research Triangle",
+      "example_cities": [
+        "Durham",
+        "Raleigh",
+        "Chapel Hill"
+      ],
+      "neighbor_area_ids": [
+        "nc_charlotte",
+        "nc_triad",
+        "nc_coastal",
+        "nc_fayetteville"
+      ],
+      "definition": "Editorial Research Triangle catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Ten local source locations were researched; four distinct provider groups currently prepare for display, with additional logo- and evidence-pending candidates retained in source.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "nc_charlotte",
+      "state_code": "NC",
+      "region": "Charlotte / Piedmont",
+      "name": "Charlotte / Piedmont",
+      "example_cities": [
+        "Charlotte",
+        "Gastonia",
+        "Concord"
+      ],
+      "neighbor_area_ids": [
+        "nc_triangle",
+        "nc_triad",
+        "nc_western",
+        "nc_fayetteville"
+      ],
+      "definition": "Editorial Charlotte / Piedmont catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Nine local source locations were researched; eight distinct provider groups currently prepare for display, with one conflicting-address candidate retained for verification.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "nc_triad",
+      "state_code": "NC",
+      "region": "Piedmont Triad",
+      "name": "Piedmont Triad",
+      "example_cities": [
+        "Greensboro",
+        "Winston-Salem",
+        "High Point"
+      ],
+      "neighbor_area_ids": [
+        "nc_triangle",
+        "nc_charlotte",
+        "nc_western"
+      ],
+      "definition": "Editorial Piedmont Triad catchment covering Greensboro, Winston-Salem, High Point, and nearby communities; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "US-52, I-40, and I-85 Piedmont corridor",
+      "scope_note": "Six local source locations from Greensboro, Winston-Salem, and High Point currently prepare for display; additional local leads remain to be verified.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "nc_western",
+      "state_code": "NC",
+      "region": "Western North Carolina",
+      "name": "Western North Carolina",
+      "example_cities": [
+        "Asheville",
+        "Hendersonville",
+        "Boone"
+      ],
+      "neighbor_area_ids": [
+        "nc_triad",
+        "nc_charlotte"
+      ],
+      "definition": "Editorial western North Carolina catchment centered on Asheville and regional hubs; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "I-40, I-26, and US-74 western corridors",
+      "scope_note": "Six local source locations from Asheville, Hendersonville, and Boone currently prepare for display; additional western leads remain to be verified.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "nc_coastal",
+      "state_code": "NC",
+      "region": "Eastern North Carolina",
+      "name": "Coastal North Carolina",
+      "example_cities": [
+        "Wilmington",
+        "Jacksonville",
+        "New Bern"
+      ],
+      "neighbor_area_ids": [
+        "nc_triangle",
+        "nc_fayetteville"
+      ],
+      "definition": "Editorial coastal and southeastern North Carolina catchment centered on Wilmington and nearby regional hubs; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "US-17 and eastern coastal corridor",
+      "scope_note": "Five local source locations from Wilmington, Jacksonville, and New Bern were researched; four distinct provider groups currently prepare for display and CarolinaEast remains logo-pending.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "nc_fayetteville",
+      "state_code": "NC",
+      "region": "Sandhills",
+      "name": "Fayetteville / Sandhills",
+      "example_cities": [
+        "Fayetteville",
+        "Lumberton",
+        "Southern Pines"
+      ],
+      "neighbor_area_ids": [
+        "nc_triangle",
+        "nc_charlotte",
+        "nc_coastal"
+      ],
+      "definition": "Editorial Fayetteville and Sandhills catchment for regional-hub discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "I-95 and US-401 Sandhills corridor",
+      "scope_note": "Five local source locations from Fayetteville, Raeford, and Lumberton currently prepare for display; additional Sandhills leads remain to be verified.",
+      "target_provider_count": 9
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "nc_triangle",
+      "location_id": "",
+      "name": "Cooperriis",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "nc_triangle",
+      "location_id": "",
+      "name": "Three Oaks Behavioral Health And Wellness",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "nc_triangle",
+      "location_id": "",
+      "name": "Unc Health",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "nc_triangle",
+      "location_id": "",
+      "name": "Wakemed",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "nc_triangle",
+      "location_id": "",
+      "name": "North Carolina statewide discovery stack",
+      "priority": "high",
+      "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-21"
+    }
+  ]
+}
