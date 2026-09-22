@@ -2,11 +2,13 @@
 
 ## Scope
 
-This repository contains Groupicorn's canonical state-directory JSON and local PNG logo assets. Keep changes repository-native and data-focused.
+This repository contains Groupicorn's canonical state-directory JSON and local PNG logo assets. Those files are published under `https://romeo.groupicorn.com/data/` and consumed there by web and iOS. Keep changes repository-native and data-focused; clients must not require a checkout of this repository at build or deploy time.
 
 - Normal directory work may modify only `programs/<state>.json` and required files under `images/<lowercase-state-code>/`.
 - Do not add React screens, Swift cases, routes, sitemap entries, generated app files, dependencies, or lockfile changes here.
 - `featuredPrograms.json` is a separate curated homepage snapshot. Leave it unchanged unless the request explicitly includes homepage curation.
+- Preserve the published URL contract: `programs/<state-file>.json`, `images/<lowercase-state-code>/<png-file>`, and (when homepage curation is enabled) `featuredPrograms.json`.
+- Prefer relative bucket-native logo paths such as `images/ak/ak-alaska-behavioral-health.png` in `logo_url`. Treat external favicon URLs as legacy fallback/provenance, not the canonical asset.
 - Do not commit or push unless explicitly requested.
 
 ## Before editing
@@ -28,15 +30,15 @@ For research updates, use current public sources. Treat earlier assistant output
 
 ## Generic consumers
 
-Adding a state must require zero web or iOS source-code edits. The generic consumers enumerate the JSON files and derive their state index and pages automatically. If a consumer requires a new hardcoded state case, route, screen, or sitemap entry, report that as a compatibility defect instead of adding a data-side workaround.
+The published data is designed for generic consumers: a new state should be discoverable from the published program set without a new screen or hardcoded data case. Until the bucket exposes a machine-readable manifest, clients may keep a small routing index for known state slugs; do not duplicate the state records or PNGs into client repositories. If a consumer requires a new hardcoded route or screen, report that as a compatibility defect instead of adding a data-side workaround.
 
 Cities and neighborhoods added to a state JSON appear as area filters within the state page. They do not create city-specific web routes unless the application contract is intentionally changed elsewhere.
 
-When sibling repositories are available, check that:
+When web and iOS are available, check that:
 
-1. The web build discovers the new JSON in its generated directory index and state output.
-2. The web resolves all referenced local logo paths and applies the prepared shortlist semantics.
-3. iOS resource links resolve `programs/` JSON and `program-images/` PNG assets.
+1. The published URL for the new JSON returns valid JSON with CORS `GET`/`HEAD`.
+2. The web resolves the published JSON and PNG URLs and applies the prepared shortlist semantics.
+3. iOS resolves the same `programs/` JSON and `images/` PNG URLs.
 4. iOS consumes `shortlists`/`area_matches`; filtering only by `primary_area_id` is not sufficient because it drops declared neighboring candidates.
 
 ## Validation and handoff

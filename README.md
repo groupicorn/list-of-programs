@@ -1,6 +1,6 @@
 # Groupicorn program directory data
 
-This repository is the source of truth for Groupicorn's state-level IOP/PHP directory data and local provider-logo assets. The web and iOS applications discover state JSON files and images from here; a new state should not require application source-code changes.
+This repository is the source of truth for Groupicorn's state-level IOP/PHP directory data and local provider-logo assets. The files are published to the public data bucket at `https://romeo.groupicorn.com/data/`; web and iOS clients read the published URLs directly instead of linking, copying, or bundling this repository at build time.
 
 ## Repository layout
 
@@ -9,6 +9,16 @@ programs/<state>.json          State directory data
 images/<state-code>/*.png      Local provider-logo assets
 featuredPrograms.json          Separate curated homepage snapshot
 ```
+
+The published layout mirrors the repository layout:
+
+```text
+https://romeo.groupicorn.com/data/programs/<state-file>.json
+https://romeo.groupicorn.com/data/images/<lowercase-state-code>/<png-file>
+https://romeo.groupicorn.com/data/featuredPrograms.json
+```
+
+The state JSON files are the required runtime data. `featuredPrograms.json` is required by the current Groupicorn web homepage's curated-logo section; publish it whenever that section is in use. The bucket must allow CORS `GET` and `HEAD` from each Groupicorn client origin, return JSON with `Content-Type: application/json`, and return PNGs with `Content-Type: image/png`. Keep stable filenames and URLs when refreshing data so clients and caches do not break.
 
 Each state directory keeps its geography and prepared results in one JSON file. The established top-level collections are:
 
@@ -29,22 +39,14 @@ Areas are editorial travel/search buckets, not claims about municipal boundaries
 2. Preserve stable provider, location, and area IDs and unrelated records.
 3. Verify the same provider, treatment site, care level, population, and current operating evidence before publishing a location.
 4. Put geography in the state's `areas` collection. Use the actual treatment address for `primary_area_id`; use `area_matches` and `shortlists` for declared neighboring coverage.
-5. Add genuine official PNG logos under the correct lowercase state-code directory. A published `logo_url` must resolve to the exact local file, including case; do not rely on a remote URL or guessed filename.
+5. Add genuine official PNG logos under the correct lowercase state-code directory. For bucket-native clients, prefer a JSON `logo_url` such as `images/ak/ak-alaska-behavioral-health.png`; clients resolve that path relative to the data root. A published path must resolve to the exact PNG, including case. Do not rely on a guessed filename or an external favicon proxy as the canonical logo source.
 6. Recalculate shortlist references, ordering, counts, and coverage statuses, then validate the JSON and changed assets.
 
 Prefer metadata titles in the form `Groupicorn <State> IOP/PHP research directory`. Existing files may use older titles or represent incomplete research; do not rewrite unrelated records merely to normalize them.
 
 ## Consumer integration
 
-The generic consumers are expected to enumerate `programs/*.json` and derive their state index, state pages, filters, and metadata from those files. Cities and areas are filters within a state page; they do not automatically become city-specific routes or SEO pages.
-
-When the sibling repositories are present, their resource links should resolve to this repository:
-
-```text
-web/public/assets/iop_php_logos -> ../../../list-of-programs/images
-ios_app/Groupicorn/Resources/programs -> ../../../list-of-programs/programs
-ios_app/Groupicorn/Resources/program-images -> ../../../list-of-programs/images
-```
+The generic consumers are expected to enumerate `programs/*.json` in the source/publishing workflow and consume the matching public bucket URL at runtime. They derive state pages, filters, and metadata from those files. Cities and areas are filters within a state page; they do not automatically become city-specific routes or SEO pages.
 
 Web and iOS must present the same prepared area results. Prefer consuming `shortlists` directly. If a client derives results from `area_matches`, it must preserve local-first ordering, neighbor labels, provider-group deduplication, stable `display_order`, and the nine-entry limit. A client that only filters `locations` by `primary_area_id` is incompatible with the directory semantics and should be fixed or reported; the data should not be weakened to hide the mismatch.
 
@@ -57,6 +59,6 @@ jq empty programs/*.json
 git diff --check
 ```
 
-Also verify that every changed `logo_url` resolves to a real PNG in `images/`, every referenced provider/location/area ID exists, every location has the correct two-letter `state_code`, and every shortlist contains no duplicate provider group and no more than nine entries. When web and iOS are available, build/check them and confirm the new state appears in the generated web directory index and that both resource trees resolve the JSON and PNG links.
+Also verify that every changed `logo_url` resolves to a real PNG in `images/`, every referenced provider/location/area ID exists, every location has the correct two-letter `state_code`, and every shortlist contains no duplicate provider group and no more than nine entries. After publishing, verify representative `GET` and `HEAD` requests against the matching `https://romeo.groupicorn.com/data/...` URLs. When web and iOS are available, build/check them and confirm the new state appears in each client's directory index and that both clients resolve the JSON and PNG URLs without sibling-repository links.
 
 Research records are public-facing data. Keep claims sourced and scoped, preserve uncertainty, do not store sensitive patient information, and do not present the directory as clinical advice or a promise of admission.
