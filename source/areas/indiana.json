@@ -6,7 +6,7 @@
     "snapshot_date": "2026-09-22",
     "title": "Groupicorn Indiana IOP/PHP research directory",
     "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
-    "methodology": "Physical-address-first. September 22, 2026 completed an Indianapolis second discovery pass: nine distinct provider groups are publication-ready with exact-site IOP/PHP evidence and local PNG assets, and Spark Recovery is additionally verified but logo-pending. Caring Associates is also verified but logo-pending because current official branding is unavailable and older public records conflict on the suite address. Indiana now includes a practical geography skeleton for Fort Wayne, Indianapolis, Northwest Indiana, South Bend/Mishawaka, Lafayette/West Lafayette, Bloomington, Evansville, Terre Haute, Muncie, and Clarksville/Southern Indiana; the new areas are intentionally unpopulated research catchments rather than claims of no local programs.",
+    "methodology": "Physical-address-first. September 22, 2026 completed an Indianapolis second discovery pass: nine distinct provider groups are publication-ready with exact-site IOP/PHP evidence and local PNG assets, and Spark Recovery is additionally verified but logo-pending. Caring Associates is also verified but logo-pending because current official branding is unavailable and older public records conflict on the suite address. Indiana now includes a practical geography skeleton for Fort Wayne, Indianapolis, Northwest Indiana, South Bend/Mishawaka, Lafayette/West Lafayette, Bloomington, Evansville, Terre Haute, Muncie, and Clarksville/Southern Indiana; first-pass provider research has now published three groups each in Northwest Indiana and South Bend/Mishawaka, while the remaining areas are intentionally unpopulated research catchments rather than claims of no local programs.",
     "branding_note": "logo_url points to a tracked PNG asset. Existing asset provenance and license clearance require separate review where source URLs are not yet recorded.",
     "geocoding_note": "Street addresses and ZIP codes are stored where sourced; coordinates are intentionally null pending an audited geocoding pass.",
     "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use."
@@ -56,7 +56,7 @@
       "definition": "Editorial Northwest Indiana catchment spanning the Lake Michigan and U.S. 30 corridors; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
       "adjacency_basis": "No one-hop shortlist neighbor is declared until local provider research establishes a practical catchment relationship.",
-      "scope_note": "Geography skeleton added September 22, 2026; provider discovery has not yet been completed.",
+      "scope_note": "First local discovery pass completed September 22, 2026; four distinct groups are publication-ready and additional Gary, Valparaiso, and Porter County leads remain in the queue.",
       "target_provider_count": 9
     },
     {
@@ -69,7 +69,7 @@
       "definition": "Editorial South Bend / Mishawaka catchment for the St. Joseph and Elkhart county corridor; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
       "adjacency_basis": "No one-hop shortlist neighbor is declared until local provider research establishes a practical catchment relationship.",
-      "scope_note": "Geography skeleton added September 22, 2026; provider discovery has not yet been completed.",
+      "scope_note": "First local discovery pass completed September 22, 2026; three distinct groups are publication-ready and additional South Bend, Mishawaka, and Elkhart-corridor leads remain in the queue.",
       "target_provider_count": 9
     },
     {
@@ -290,6 +290,26 @@
       "priority": "medium",
       "task": "Yelp was blocked by robots.txt, so no Yelp claims were used. Psychology Today leads included Evolve Indy, Avenues Recovery, Indy Teen Treatment Center, Hendricks Behavioral Hospital, Caring Associates, Firefly Children and Family Alliance, Indianapolis Comprehensive Treatment Center, Thrive Mental Health, Care to Change, and Resource Treatment Center: Avenues, Evolve Indy, Hendricks, and ITTC were verified and published; Caring Associates remains verified/logo-pending; Firefly and Care to Change showed general counseling rather than verified IOP/PHP; Indianapolis CTC is opioid MAT rather than strict IOP/PHP; Thrive was virtual-only; Resource Treatment Center described referrals rather than a current local IOP/PHP. Reddit surfaced IU Health, Community, and St. Vincent leads; IU Health is now published and Community is already represented. SAMHSA/Indiana public-directory searches produced address and level-of-care leads used only for corroboration.",
       "source_url": "https://www.psychologytoday.com/us/treatment-rehab/in/indianapolis?category=intensive-outpatient-program",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_disposition",
+      "area_id": "in_northwest_indiana",
+      "location_id": "",
+      "name": "Northwest Indiana first-pass discovery",
+      "priority": "medium",
+      "task": "Normal web and Indiana DMHA searches surfaced Brightside Rehab (Valparaiso), Spero Health Gary, Care Counseling Services (Valparaiso), Parkdale Center (Chesterton), Porter-Starke Services, Brighter Day Community Health Services, Community Change Center Recovery Connection, AD Rehab (Merrillville), and a Northwest Health Porter intensive-outpatient project. Brightside, Spero, Care Counseling, and Parkdale were verified against current provider pages and published; AD Rehab has strong current PHP/IOP/address evidence but remains queued for a clean official logo asset, while Porter-Starke and the other leads remain queued until an exact current IOP/PHP page and treatment address are confirmed. Yelp was blocked/no reliable program evidence was used; Reddit searches produced no verifiable exact-site program evidence; Psychology Today, SAMHSA/state directories, and health-system pages were used only as discovery or corroboration, not as standalone proof.",
+      "source_url": "https://secure.in.gov/fssa/dmha/quality-assurance-quality-improvement/mental-health-and-addiction-providers/",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_disposition",
+      "area_id": "in_south_bend_mishawaka",
+      "location_id": "",
+      "name": "South Bend / Mishawaka first-pass discovery",
+      "priority": "medium",
+      "task": "Normal web, Indiana DMHA, Joint Commission, and provider-site searches surfaced Indiana Center for Recovery in Mishawaka, Oaklawn South Bend outpatient, Cardinal Recovery/Zinnia South Bend, Medical Behavioral Hospital Mishawaka, Dockside Services, Catholic Charities, and additional Oaklawn locations. Indiana Center for Recovery, Oaklawn, and Cardinal were verified against exact-site or accreditation records and published; Medical Behavioral Hospital, Dockside, and Catholic Charities remain queued pending stronger current exact-site IOP/PHP evidence. Yelp was blocked/no reliable program evidence was used; Reddit searches produced no verifiable exact-site program evidence; Psychology Today, SAMHSA/state directories, and health-system pages were used as discovery or corroboration only.",
+      "source_url": "https://www.in.gov/health/reports/QAMIS/hosdir/city_mishawaka.htm",
       "date": "2026-09-22"
     }
   ]
