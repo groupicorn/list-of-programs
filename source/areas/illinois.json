@@ -1,0 +1,362 @@
+{
+  "schema_version": 1,
+  "state_file": "illinois",
+  "state_code": "IL",
+  "metadata": {
+    "snapshot_date": "2026-09-22",
+    "title": "Groupicorn Illinois IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. Chicagoland is subdivided into central, north, west, south, and DeKalb/Sycamore catchments; major downstate hubs remain explicit research areas. Shortlists use distinct provider groups and preserve local/neighbor labels. September 22, 2026 parallel research added verified provider groups and exact IOP/PHP sites across Chicagoland, Northern Illinois, Central Illinois, Western Illinois, and Southern Illinois; this is not a statewide re-verification.",
+    "branding_note": "logo_url points to a locally stored PNG acquired from an official provider-controlled source. License clearance is not implied.",
+    "geocoding_note": "Street addresses and ZIP codes are stored; coordinates are intentionally null pending an audited geocoding pass.",
+    "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use."
+  },
+  "areas": [
+    {
+      "area_id": "il_chicago_central",
+      "state_code": "IL",
+      "region": "Chicagoland",
+      "name": "Chicago Central",
+      "example_cities": [
+        "Chicago",
+        "Oak Park",
+        "Cicero"
+      ],
+      "neighbor_area_ids": [
+        "il_chicago_north",
+        "il_chicago_west",
+        "il_chicago_south"
+      ],
+      "target_provider_count": 9,
+      "definition": "Chicago city core and near-west neighborhoods where transit and density create a distinct treatment market.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "CTA/Metra-accessible central city and near-suburb connections",
+      "scope_note": "Six distinct provider groups are locally verified; central-city options are not clinically ranked."
+    },
+    {
+      "area_id": "il_chicago_north",
+      "state_code": "IL",
+      "region": "Chicagoland",
+      "name": "Chicago North / North Shore",
+      "example_cities": [
+        "Northbrook",
+        "Grayslake",
+        "Arlington Heights",
+        "Waukegan"
+      ],
+      "neighbor_area_ids": [
+        "il_chicago_central",
+        "il_dekalb_sycamore",
+        "il_chicago_west"
+      ],
+      "target_provider_count": 9,
+      "definition": "North Shore, northwest suburbs, and Lake County catchment.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "I-94 / US-41 / Lake County corridor",
+      "scope_note": "Includes youth-specific Josselyn IOP and adult-focused providers; branches are deduplicated by operator."
+    },
+    {
+      "area_id": "il_chicago_west",
+      "state_code": "IL",
+      "region": "Chicagoland",
+      "name": "Chicago West / DuPage",
+      "example_cities": [
+        "Westmont",
+        "Naperville",
+        "Winfield",
+        "Oak Brook"
+      ],
+      "neighbor_area_ids": [
+        "il_chicago_central",
+        "il_chicago_north",
+        "il_chicago_south"
+      ],
+      "target_provider_count": 9,
+      "definition": "Western suburbs and DuPage corridor, separated from downtown by distance and commuting patterns.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "I-88 / I-290 / DuPage corridor",
+      "scope_note": "Compass, SunCloud, Northwestern, and Endeavor/Linden Oaks provide verified local structured-care candidates."
+    },
+    {
+      "area_id": "il_chicago_south",
+      "state_code": "IL",
+      "region": "Chicagoland",
+      "name": "Chicago South / Southwest",
+      "example_cities": [
+        "Orland Park",
+        "Tinley Park",
+        "Harvey",
+        "Calumet City"
+      ],
+      "neighbor_area_ids": [
+        "il_chicago_central",
+        "il_chicago_west"
+      ],
+      "target_provider_count": 9,
+      "definition": "South and southwest suburban catchment including Orland Park and south Cook County.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "I-55 / I-57 / I-80 southern-suburb corridor",
+      "scope_note": "Northwestern Orland Park is the strongest verified local PHP/IOP candidate in this pass."
+    },
+    {
+      "area_id": "il_dekalb_sycamore",
+      "state_code": "IL",
+      "region": "Northern Illinois",
+      "name": "DeKalb / Sycamore",
+      "example_cities": [
+        "DeKalb",
+        "Sycamore",
+        "Genoa"
+      ],
+      "neighbor_area_ids": [
+        "il_chicago_north",
+        "il_rockford"
+      ],
+      "target_provider_count": 9,
+      "definition": "Standalone university and regional-hub catchment west of the Chicago metro.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "I-88 / Route 23 corridor",
+      "scope_note": "Northwestern Sycamore provides a verified local PHP/IOP option; additional independent groups remain to be researched."
+    },
+    {
+      "area_id": "il_rockford",
+      "state_code": "IL",
+      "region": "Northern Illinois",
+      "name": "Rockford",
+      "example_cities": [
+        "Rockford",
+        "Loves Park",
+        "Belvidere"
+      ],
+      "neighbor_area_ids": [
+        "il_dekalb_sycamore",
+        "il_chicago_north"
+      ],
+      "target_provider_count": 9,
+      "definition": "Rockford regional hub and Winnebago County catchment.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "I-90 / US-20 corridor",
+      "scope_note": "Rosecrance now provides a verified local provider group with IOP sites in Rockford and nearby Belvidere; additional independent groups remain to be researched."
+    },
+    {
+      "area_id": "il_peoria",
+      "state_code": "IL",
+      "region": "Central Illinois",
+      "name": "Peoria",
+      "example_cities": [
+        "Peoria",
+        "East Peoria",
+        "Pekin"
+      ],
+      "neighbor_area_ids": [
+        "il_springfield",
+        "il_quad_cities",
+        "il_bloomington_normal"
+      ],
+      "target_provider_count": 9,
+      "definition": "Peoria regional hub and Illinois River valley catchment.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "I-74 / Illinois River corridor",
+      "scope_note": "OSF Saint Francis provides a verified local PHP site; additional independent and health-system groups remain to be researched."
+    },
+    {
+      "area_id": "il_champaign_urbana",
+      "state_code": "IL",
+      "region": "East Central Illinois",
+      "name": "Champaign-Urbana",
+      "example_cities": [
+        "Champaign",
+        "Urbana",
+        "Savoy"
+      ],
+      "neighbor_area_ids": [
+        "il_springfield",
+        "il_peoria",
+        "il_bloomington_normal"
+      ],
+      "target_provider_count": 9,
+      "definition": "University-centered Champaign-Urbana regional catchment.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "I-57 / US-150 corridor",
+      "scope_note": "Carle Addiction Recovery and Rosecrance provide verified local IOP groups; additional health-system and independent programs remain queued for research."
+    },
+    {
+      "area_id": "il_springfield",
+      "state_code": "IL",
+      "region": "Central Illinois",
+      "name": "Springfield",
+      "example_cities": [
+        "Springfield",
+        "Chatham",
+        "Jacksonville"
+      ],
+      "neighbor_area_ids": [
+        "il_peoria",
+        "il_champaign_urbana",
+        "il_metro_east"
+      ],
+      "target_provider_count": 9,
+      "definition": "State-capital regional hub and Sangamon County catchment.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "I-55 / I-72 corridor",
+      "scope_note": "Memorial Health provides a verified local adult PHP site; additional independent and health-system groups remain to be researched."
+    },
+    {
+      "area_id": "il_metro_east",
+      "state_code": "IL",
+      "region": "Southern Illinois",
+      "name": "Metro East / St. Louis Illinois",
+      "example_cities": [
+        "Belleville",
+        "East St. Louis",
+        "Collinsville",
+        "Fairview Heights"
+      ],
+      "neighbor_area_ids": [
+        "il_springfield",
+        "il_southern_illinois"
+      ],
+      "target_provider_count": 9,
+      "definition": "Illinois side of the St. Louis metro and southwestern Illinois corridor.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "I-64 / I-55 / Mississippi River corridor",
+      "scope_note": "Centerstone and Chestnut provide verified Illinois-side IOP sites; Missouri locations remain excluded from this state file."
+    },
+    {
+      "area_id": "il_quad_cities",
+      "state_code": "IL",
+      "region": "Western Illinois",
+      "name": "Quad Cities / Rock Island-Moline",
+      "example_cities": [
+        "Rock Island",
+        "Moline",
+        "East Moline",
+        "Galesburg"
+      ],
+      "neighbor_area_ids": [
+        "il_peoria",
+        "il_southern_illinois"
+      ],
+      "target_provider_count": 9,
+      "definition": "Mississippi River Quad Cities catchment on the Illinois side.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "I-74 / Mississippi River corridor",
+      "scope_note": "Rosecrance provides a verified local Moline IOP site; additional Quad Cities groups remain to be researched."
+    },
+    {
+      "area_id": "il_southern_illinois",
+      "state_code": "IL",
+      "region": "Southern Illinois",
+      "name": "Carbondale / Marion / Southern Illinois",
+      "example_cities": [
+        "Carbondale",
+        "Marion",
+        "Mount Vernon",
+        "Cape Girardeau area"
+      ],
+      "neighbor_area_ids": [
+        "il_metro_east",
+        "il_quad_cities"
+      ],
+      "target_provider_count": 9,
+      "definition": "Southern Illinois regional-hub catchment centered on Carbondale and Marion.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "I-57 / US-13 corridor",
+      "scope_note": "Centerstone provides a verified local Carbondale IOP site; additional Southern Illinois groups remain to be researched."
+    },
+    {
+      "area_id": "il_bloomington_normal",
+      "state_code": "IL",
+      "region": "Central Illinois",
+      "name": "Bloomington-Normal",
+      "example_cities": [
+        "Bloomington",
+        "Normal",
+        "McLean"
+      ],
+      "neighbor_area_ids": [
+        "il_peoria",
+        "il_champaign_urbana"
+      ],
+      "definition": "Editorial Bloomington-Normal catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "I-55 / US-51 central Illinois corridor",
+      "scope_note": "Carle BroMenn and Chestnut provide verified local IOP/PHP groups; additional local programs remain to be researched.",
+      "target_provider_count": 9
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "find_provider",
+      "area_id": "il_rockford",
+      "location_id": "",
+      "name": "Rockford",
+      "priority": "high",
+      "task": "Expand beyond the verified Rosecrance Rockford/Belvidere IOP sites with additional independent and hospital behavioral-health programs.",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/837/559624"
+    },
+    {
+      "queue_type": "find_provider",
+      "area_id": "il_peoria",
+      "location_id": "",
+      "name": "Peoria",
+      "priority": "high",
+      "task": "Expand beyond the verified OSF Saint Francis PHP site with additional local IOP/PHP programs; older state directories are discovery evidence only.",
+      "source_url": "https://dph.illinois.gov/content/dam/soi/en/web/idph/files/publications/owh-opioid-use-treatment-resource-manual-053118.pdf"
+    },
+    {
+      "queue_type": "find_provider",
+      "area_id": "il_champaign_urbana",
+      "location_id": "",
+      "name": "Champaign-Urbana",
+      "priority": "high",
+      "task": "Expand beyond the verified Carle and Rosecrance IOP sites with OSF, Pavilion, and independent behavioral-health programs; current official pages are required.",
+      "source_url": "https://idph.illinois.gov/IDPHPrograms/v_HealthRegions/Show-V-HealthRegions-Public.aspx"
+    },
+    {
+      "queue_type": "find_provider",
+      "area_id": "il_springfield",
+      "location_id": "",
+      "name": "Springfield",
+      "priority": "high",
+      "task": "Expand beyond the verified Memorial Health adult PHP site with additional local IOP/PHP programs and exact physical addresses.",
+      "source_url": "https://idph.illinois.gov/IDPHPrograms/v_HealthRegions/Show-V-HealthRegions-Public.aspx"
+    },
+    {
+      "queue_type": "find_provider",
+      "area_id": "il_metro_east",
+      "location_id": "",
+      "name": "Metro East / St. Louis Illinois",
+      "priority": "high",
+      "task": "Expand beyond the verified Centerstone and Chestnut Illinois-side IOP sites with additional hospital and independent programs; keep Missouri locations out of this state file.",
+      "source_url": "https://idoc.illinois.gov/content/dam/soi/en/web/idoc/communityresources/documents/12-brown-calhoun-greene-jersey-macoupin-pike-and-scott.pdf"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "il_chicago_north",
+      "location_id": "",
+      "name": "Kenneth Young Center",
+      "priority": "medium",
+      "task": "Existing local PNG is available, but current official evidence for a qualifying IOP/PHP at a physical Illinois location was not found; verify before adding.",
+      "source_url": "https://www.kennethyoung.org/"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "il_chicago_north",
+      "location_id": "suncloud-health-northbrook",
+      "name": "SunCloud Health Northbrook",
+      "priority": "medium",
+      "task": "Confirm adult and adolescent PHP/IOP are currently delivered at the Northbrook outpatient address rather than another affiliated site.",
+      "source_url": "https://suncloudhealth.com/"
+    },
+    {
+      "queue_type": "geocode",
+      "area_id": "",
+      "location_id": "",
+      "name": "All Illinois locations",
+      "priority": "low",
+      "task": "Run an audited geocoding pass and record coordinates plus coordinate sources.",
+      "source_url": ""
+    }
+  ]
+}
