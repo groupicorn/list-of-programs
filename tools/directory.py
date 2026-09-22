@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import copy
 import json
+import re
 import subprocess
 import sys
 from collections import defaultdict
@@ -67,6 +68,9 @@ EXCLUDED_STATUSES = {
     "verification_pending",
     "program_pending",
 }
+DEFAULT_MINIMUM_LOCAL = 3
+DEFAULT_TARGET_TOTAL = 9
+GOOD_LOCAL_THRESHOLD = 5
 
 
 def read_json(path: Path) -> Any:
@@ -565,54 +569,282 @@ def area_count(area: dict[str, Any]) -> int:
     return int(area.get("shortlisted_count", 0))
 
 
+def state_display_name(stem: str) -> str:
+    """Turn the repository's camel-case state file name into a readable label."""
+
+    return re.sub(r"(?<!^)([A-Z])", r" \1", stem).replace("_", " ").title()
+
+
+def coverage_override_items(manifest: dict[str, Any]) -> list[dict[str, Any]]:
+    """Read the current override key while accepting the original queue name."""
+
+    overrides = manifest.get("overrides")
+    if overrides is None:
+        overrides = manifest.get("metros", [])
+    if not isinstance(overrides, list):
+        raise SystemExit("source/coverage.json overrides must be a list")
+    return overrides
+
+
+def area_coverage_counts(data: dict[str, Any], area: dict[str, Any]) -> tuple[int, int]:
+    """Return publishable local and total shortlist counts for one generated area."""
+
+    area_id = area.get("area_id")
+    rows = [row for row in data.get("shortlists", []) if row.get("area_id") == area_id]
+    local = area.get("in_area_shortlisted_count")
+    total = area.get("shortlisted_count")
+    if local is None:
+        local = sum(1 for row in rows if row.get("match_type") == "local")
+    if total is None:
+        total = len(rows)
+    return int(local), int(total)
+
+
 def coverage() -> int:
     manifest_path = SOURCE_DIR / "coverage.json"
-    manifest = read_json(manifest_path) if manifest_path.exists() else {"metros": []}
+    manifest = read_json(manifest_path) if manifest_path.exists() else {"overrides": []}
     states: dict[str, dict[str, Any]] = {}
     for path in sorted(PROGRAMS_DIR.glob("*.json")):
         data = read_json(path)
         states[path.stem] = data
     rows = coverage_rows(manifest, states)
-    for row in rows:
-        label = f"P{row['pass_priority']}" if row["needs_work"] else "OK"
-        print(f"{label:<3} {row['display_name']:<24} {row['state_file']:<16} {row['status']}")
-    print(f"\nCoverage manifest: {len(rows)} priority metro(s); source/coverage.json is the editable geography queue.")
+    for stem in sorted({row["state_file"] for row in rows}, key=str.casefold):
+        print(state_display_name(stem).upper())
+        for row in [item for item in rows if item["state_file"] == stem]:
+            priority = f" P{row['pass_priority']}" if row["pass_priority"] else ""
+            print(
+                f"{row['status']:<10} {row['display_name']:<38} "
+                f"{row['local_count']} local / {row['total_count']} total{priority}"
+            )
+        print()
+    needs_work = sum(row["needs_work"] for row in rows)
+    print(
+        f"Coverage: {len(states)} generated state(s), {len(rows)} area(s); "
+        f"{needs_work} below the local launch floor. "
+        "source/coverage.json supplies overrides only."
+    )
     return 0
 
 
 def coverage_rows(
     manifest: dict[str, Any], states: dict[str, dict[str, Any]]
 ) -> list[dict[str, Any]]:
-    """Return the coverage queue using each item's launch threshold and priority."""
+    """Return every generated area with local-first coverage metrics.
+
+    The manifest is deliberately an override layer. Geography comes from the
+    generated state files, so a new area is visible here without first being
+    added to source/coverage.json.
+    """
 
     rows: list[dict[str, Any]] = []
-    for item in manifest.get("metros", []):
-        stem = item["state_file"]
-        area_id = item["area_id"]
-        data = states.get(stem)
-        area = next((candidate for candidate in data.get("areas", []) if candidate.get("area_id") == area_id), None) if data else None
-        count = area_count(area) if area else 0
-        minimum = int(item.get("minimum", item.get("target", 9)))
-        pass_priority = int(item.get("pass_priority", 0))
-        needs_work = area is None or count < minimum
+    overrides = {
+        (item.get("state_file"), item.get("area_id")): item
+        for item in coverage_override_items(manifest)
+        if item.get("state_file") and item.get("area_id")
+    }
+    seen: set[tuple[str, str]] = set()
+    for stem in sorted(states, key=str.casefold):
+        data = states[stem]
+        for area in data.get("areas", []):
+            area_id = area.get("area_id")
+            key = (stem, area_id)
+            item = overrides.get(key, {})
+            seen.add(key)
+            local_count, total_count = area_coverage_counts(data, area)
+            minimum_local = int(item.get("minimum_local", item.get("minimum", DEFAULT_MINIMUM_LOCAL)))
+            target_total = int(
+                item.get(
+                    "target_total",
+                    item.get("target", area.get("target_provider_count", DEFAULT_TARGET_TOTAL)),
+                )
+            )
+            pass_priority = int(item.get("pass_priority", 0))
+            needs_work = local_count < minimum_local
+            status = (
+                "GOOD" if local_count >= max(minimum_local, GOOD_LOCAL_THRESHOLD)
+                else "LAUNCH" if not needs_work
+                else "NEEDS_WORK"
+            )
+            rows.append({
+                "area_id": area_id,
+                "display_name": item.get("display_name", area.get("name", area_id)),
+                "state_file": stem,
+                "local_count": local_count,
+                "total_count": total_count,
+                "minimum_local": minimum_local,
+                "target_total": target_total,
+                "pass_priority": pass_priority,
+                "needs_work": needs_work,
+                "status": status,
+                "total_status": "EXCELLENT" if total_count >= target_total else "PARTIAL",
+                # Backward-compatible aliases for scripts that consumed the old queue shape.
+                "count": total_count,
+                "minimum": minimum_local,
+            })
+
+    # Keep stale overrides visible as missing geography instead of silently
+    # dropping a deliberate queue entry.
+    for key, item in overrides.items():
+        if key in seen:
+            continue
+        stem, area_id = key
+        minimum_local = int(item.get("minimum_local", item.get("minimum", DEFAULT_MINIMUM_LOCAL)))
         rows.append({
             "area_id": area_id,
             "display_name": item.get("display_name", area_id),
             "state_file": stem,
-            "count": count,
-            "minimum": minimum,
-            "pass_priority": pass_priority,
-            "needs_work": needs_work,
-            "status": "missing geography" if area is None else f"{count}/{minimum}",
+            "local_count": 0,
+            "total_count": 0,
+            "minimum_local": minimum_local,
+            "target_total": int(item.get("target_total", item.get("target", DEFAULT_TARGET_TOTAL))),
+            "pass_priority": int(item.get("pass_priority", 0)),
+            "needs_work": True,
+            "status": "MISSING_AREA",
+            "total_status": "PARTIAL",
+            "count": 0,
+            "minimum": minimum_local,
         })
     rows.sort(key=lambda row: (
-        not row["needs_work"],
+        row["state_file"].casefold(),
+        row["needs_work"] is False,
         row["pass_priority"],
         row["display_name"].casefold(),
-        row["state_file"],
         row["area_id"],
     ))
     return rows
+
+
+def explanation_reasons(location: dict[str, Any]) -> list[str]:
+    """Explain every publication gate that prevents a location from publishing."""
+
+    reasons: list[str] = []
+    status_values = {
+        str(location.get("publication_status", "")).lower(),
+        str(location.get("research_status", "")).lower(),
+        str(location.get("verification_status", "")).lower(),
+        str(location.get("status", "")).lower(),
+    }
+    excluded = sorted(status for status in status_values.intersection(EXCLUDED_STATUSES) if status)
+    if excluded:
+        reasons.append(f"excluded status: {', '.join(excluded)}")
+
+    program_status = str(location.get("program_site_verification_status", "")).lower()
+    verification_status = str(location.get("verification_status", "")).lower()
+    if program_status or verification_status:
+        statuses = [status for status in (program_status, verification_status) if status]
+        if not any(status in READY_PROGRAM_STATUSES for status in statuses):
+            reasons.append(f"program evidence pending: {', '.join(statuses)}")
+    elif location.get("publication_ready") is not True and not (
+        location.get("program_source_url") and location.get("address_source_url")
+    ):
+        reasons.append("missing program or address evidence")
+
+    if location.get("publication_ready") is False:
+        reasons.append("publication_ready=false")
+
+    logo_url = str(location.get("logo_url", ""))
+    if not logo_url or not png_is_valid(ROOT / logo_url):
+        reasons.append("missing or invalid local PNG")
+    return reasons
+
+
+def explain_state(stem: str, area_query: str | None = None) -> int:
+    """Print publication decisions for canonical source locations."""
+
+    data = build_state(stem) if source_area_path(stem).exists() else read_json(state_path(stem))
+    areas = data.get("areas", [])
+    selected_by_location: dict[str, list[str]] = defaultdict(list)
+    selected_rows_by_area: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for row in data.get("shortlists", []):
+        selected_by_location[row.get("location_id")].append(row.get("area_name", row.get("area_id", "")))
+        selected_rows_by_area[row.get("area_id")].append(row)
+
+    selected_areas = areas
+    if area_query:
+        query = area_query.casefold()
+        selected_areas = [
+            area for area in areas
+            if str(area.get("area_id", "")).casefold() == query
+            or str(area.get("name", "")).casefold() == query
+            or query in str(area.get("name", "")).casefold()
+        ]
+        if not selected_areas:
+            raise SystemExit(f"Unknown area for {stem}: {area_query}")
+
+    locations_by_area: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for location in data.get("locations", []):
+        locations_by_area[location.get("primary_area_id")].append(location)
+
+    print(state_display_name(stem).upper())
+    print(f"{len(data.get('locations', []))} source locations considered statewide")
+    print()
+    reason_counts: defaultdict[str, int] = defaultdict(int)
+    published_count = 0
+    not_published_count = 0
+    for area in selected_areas:
+        area_id = area.get("area_id")
+        local_count, total_count = area_coverage_counts(data, area)
+        print(area.get("name", area_id))
+        print(f"  {local_count} local / {total_count} total prepared")
+        locations = sorted(
+            locations_by_area.get(area_id, []),
+            key=lambda location: (
+                str(location.get("provider_name", "")).casefold(),
+                str(location.get("location_name", "")).casefold(),
+                str(location.get("location_id", "")),
+            ),
+        )
+        if not locations:
+            print("  No source locations recorded.")
+        for location in locations:
+            location_id = location.get("location_id")
+            provider = location.get("provider_name", location.get("provider_id", "<unknown provider>"))
+            location_name = location.get("location_name", "")
+            suffix = f" — {location_name}" if location_name and location_name != provider else ""
+            published_in = selected_by_location.get(location_id, [])
+            if published_in:
+                published_count += 1
+                where = f" ({'; '.join(published_in)})" if len(published_in) > 1 else ""
+                print(f"  {provider}{suffix}\n    PUBLISHED{where}")
+                continue
+            not_published_count += 1
+            reasons = explanation_reasons(location)
+            if not reasons:
+                selected_rows = selected_rows_by_area.get(area_id, [])
+                group = location.get("provider_dedupe_group_id", location.get("provider_id"))
+                duplicate = next(
+                    (row for row in selected_rows if row.get("dedupe_group_id") == group),
+                    None,
+                )
+                if duplicate:
+                    reasons = [
+                        "provider-group deduplicated: "
+                        f"represented by {duplicate.get('provider_name', duplicate.get('location_id'))}"
+                    ]
+                elif len(selected_rows) >= int(area.get("target_provider_count", DEFAULT_TARGET_TOTAL)):
+                    reasons = [
+                        "shortlist capacity: "
+                        f"area already has {len(selected_rows)} selected locations"
+                    ]
+                else:
+                    reasons = ["eligible but not selected: compiler selection review needed"]
+            for reason in reasons:
+                reason_counts[reason.split(":", 1)[0]] += 1
+            print(f"  {provider}{suffix}")
+            print("    NOT PUBLISHED")
+            print(f"    reason: {'; '.join(reasons)}")
+            print(f"    location: {location.get('street_address', '')}, {location.get('city', '')}")
+        print()
+
+    print(
+        f"Summary: {published_count} published location(s), "
+        f"{not_published_count} not published location(s)."
+    )
+    if reason_counts:
+        print("Reasons:")
+        for reason, count in sorted(reason_counts.items()):
+            print(f"  {reason}: {count}")
+    return 0
 
 
 def shortlist_signature(row: dict[str, Any]) -> tuple[Any, ...]:
@@ -733,7 +965,10 @@ def main(argv: list[str] | None = None) -> None:
     validate_parser.add_argument("state", nargs="?")
     compare_parser = subparsers.add_parser("compare", help="Compare generated output with the checked-in state JSON")
     compare_parser.add_argument("state")
-    subparsers.add_parser("coverage", help="Print the committed priority metro coverage queue")
+    explain_parser = subparsers.add_parser("explain", help="Explain why source locations are or are not published")
+    explain_parser.add_argument("state")
+    explain_parser.add_argument("area", nargs="?", help="Optional area ID or name filter")
+    subparsers.add_parser("coverage", help="Print coverage for every generated area")
     subparsers.add_parser("research-queue", help="Alias for coverage")
     args = parser.parse_args(argv)
     if args.command == "seed":
@@ -749,6 +984,8 @@ def main(argv: list[str] | None = None) -> None:
         raise SystemExit(validate(args.state))
     elif args.command == "compare":
         raise SystemExit(1 if compare_state(state_stem(args.state)) else 0)
+    elif args.command == "explain":
+        raise SystemExit(explain_state(state_stem(args.state), args.area))
     else:
         raise SystemExit(coverage())
 

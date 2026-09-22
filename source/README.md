@@ -32,10 +32,18 @@ entry caps, counts, gaps, and coverage status.
 
 ```sh
 ./directory seed indiana       # one-time migration of an existing state
+./directory compare indiana    # must report Unexpected changes: 0 before research edits
 ./directory build indiana      # source -> programs/indiana.json
 ./directory validate indiana
 ./directory coverage
+./directory explain texas el-paso
 ```
+
+`coverage` enumerates every area in every generated state. The optional
+`source/coverage.json` file contains only priority and threshold overrides;
+unlisted areas use a local launch floor of three and a total prepared-choice
+target of nine. Use `explain` to see why a source location is not publishable,
+including pending program evidence, exclusion statuses, and missing local PNGs.
 
 Commit source JSON, required PNGs, and the regenerated `programs/<state>.json`
 together. CI should run `./directory build` and fail when the generated diff is

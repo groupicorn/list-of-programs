@@ -8,7 +8,7 @@ This repository is the source of truth for Groupicorn's state-level IOP/PHP rese
 source/areas/<state>.json       Canonical editorial geography and metadata
 source/providers/<state-code>/*.json
                                 Canonical provider/location research fragments
-source/coverage.json            Canonical priority metro skeleton and queue
+source/coverage.json            Optional local-coverage threshold overrides
 images/<state-code>/*.png       Canonical local provider-logo assets
 programs/<state>.json           Generated, checked-in runtime data
 tools/directory.py              Python compiler, validator, and coverage CLI
@@ -40,6 +40,7 @@ The source/generated boundary is strict:
 ./directory build indiana
 ./directory validate indiana
 ./directory coverage
+./directory explain texas el-paso
 ```
 
 Edit `source/` and `images/`, then regenerate `programs/`. Never hand-edit a
@@ -70,6 +71,30 @@ JSON file. The established top-level collections are:
 Areas are editorial travel/search buckets, not claims about municipal boundaries, driving time, eligibility, availability, or clinical quality. Local matches come before explicitly declared neighbors. Provider branches are deduplicated with `provider_dedupe_group_id`; the directory is not a ranking.
 
 `featuredPrograms.json` is a separate homepage display list migrated from older web data. The canonical research directories live under `programs/`. Do not update the featured snapshot as part of an ordinary state-directory change unless the task explicitly includes homepage curation.
+
+## Migration gate
+
+For a completely unmigrated legacy state, prove the source round-trip before
+research workers change geography or provider records:
+
+```sh
+./directory seed STATE
+./directory compare STATE
+```
+
+The compare report must end with `Unexpected changes: 0`. After that gate,
+research workers may edit disjoint provider fragments and the integrating agent
+may intentionally update areas or generated output.
+
+`./directory coverage` enumerates every area in every generated state. It uses
+`minimum_local` (default `3`) as the launch floor and reports local prepared
+groups separately from total prepared choices (default target `9`). Entries in
+`source/coverage.json` are overrides for priority or thresholds, not the
+national area list.
+
+`./directory explain STATE [AREA]` reports each canonical source location's
+publication decision and the gates that prevented publication, including
+program evidence, exclusion status, and missing or invalid local PNG assets.
 
 ## Adding or updating a state
 

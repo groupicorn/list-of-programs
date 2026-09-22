@@ -7,7 +7,14 @@
     "branding_note": "logo_url points to a tracked PNG asset. Existing asset provenance and license clearance require separate review where source URLs are not yet recorded.",
     "geocoding_note": "Street addresses and ZIP codes are stored where sourced; coordinates are intentionally null pending an audited geocoding pass.",
     "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use.",
-    "generation_note": "Generated from source/areas and source/providers by tools/directory.py; edit canonical source files rather than this artifact."
+    "generation_note": "Generated from source/areas and source/providers by tools/directory.py; edit canonical source files rather than this artifact.",
+    "counts": {
+      "providers": 21,
+      "locations": 20,
+      "areas": 10,
+      "area_matches": 17,
+      "shortlists": 17
+    }
   },
   "providers": [
     {

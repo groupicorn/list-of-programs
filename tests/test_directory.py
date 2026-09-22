@@ -247,18 +247,52 @@ class DirectoryCompilerTests(DirectoryFixtureTestCase):
         self.assertEqual(first, second)
 
     def test_coverage_uses_minimum(self):
-        manifest = {"metros": [{
+        manifest = {"overrides": [{
             "state_file": "indiana",
             "area_id": "in_indianapolis",
-            "minimum": 3,
+            "minimum_local": 3,
             "pass_priority": 0,
         }]}
-        states = {"indiana": {"areas": [{"area_id": "in_indianapolis", "shortlisted_count": 3}]}}
+        states = {"indiana": {"areas": [{
+            "area_id": "in_indianapolis",
+            "in_area_shortlisted_count": 3,
+            "shortlisted_count": 3,
+        }]}}
 
         row = directory.coverage_rows(manifest, states)[0]
 
-        self.assertEqual("3/3", row["status"])
+        self.assertEqual("LAUNCH", row["status"])
+        self.assertEqual(3, row["local_count"])
+        self.assertEqual(3, row["total_count"])
         self.assertFalse(row["needs_work"])
+
+    def test_coverage_enumerates_areas_not_in_overrides(self):
+        manifest = {"overrides": [{
+            "state_file": "indiana",
+            "area_id": "in_a",
+            "minimum_local": 5,
+        }]}
+        states = {"indiana": {"areas": [
+            {"area_id": "in_a", "name": "Area A", "in_area_shortlisted_count": 5, "shortlisted_count": 5},
+            {"area_id": "in_b", "name": "Area B", "in_area_shortlisted_count": 1, "shortlisted_count": 9},
+        ]}}
+
+        rows = directory.coverage_rows(manifest, states)
+
+        by_id = {row["area_id"]: row for row in rows}
+        self.assertEqual({"in_a", "in_b"}, set(by_id))
+        self.assertEqual("GOOD", by_id["in_a"]["status"])
+        self.assertEqual("NEEDS_WORK", by_id["in_b"]["status"])
+        self.assertEqual(9, by_id["in_b"]["total_count"])
+
+    def test_explanation_reports_program_and_logo_gates(self):
+        reasons = directory.explanation_reasons({
+            "program_site_verification_status": "needs_provider_web_confirmation",
+            "logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=https://example.com/",
+        })
+
+        self.assertIn("program evidence pending: needs_provider_web_confirmation", reasons)
+        self.assertIn("missing or invalid local PNG", reasons)
 
     def test_coverage_uses_pass_priority(self):
         manifest = {"metros": [
