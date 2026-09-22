@@ -1,0 +1,290 @@
+{
+  "schema_version": 1,
+  "state_file": "missouri",
+  "state_code": "MO",
+  "metadata": {
+    "snapshot_date": "2026-09-22",
+    "title": "Groupicorn Missouri IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. September 22, 2026 parallel research expanded Missouri across St. Louis, Kansas City, Springfield, Columbia, Joplin, and southeast Missouri; records remain research data and are not a statewide re-verification.",
+    "branding_note": "logo_url points to a tracked PNG asset. Existing asset provenance and license clearance require separate review where source URLs are not yet recorded.",
+    "geocoding_note": "Street addresses and ZIP codes are stored where sourced; coordinates are intentionally null pending an audited geocoding pass.",
+    "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use."
+  },
+  "areas": [
+    {
+      "area_id": "mo_st_louis",
+      "state_code": "MO",
+      "region": "Eastern Missouri",
+      "name": "St. Louis / Eastern Missouri",
+      "example_cities": [
+        "St. Louis",
+        "Clayton",
+        "Chesterfield"
+      ],
+      "neighbor_area_ids": [
+        "mo_columbia",
+        "mo_southeast_missouri"
+      ],
+      "definition": "Editorial St. Louis / Eastern Missouri catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "St. Louis metro and eastern Missouri catchment; local providers are listed before explicit regional neighbors.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "mo_kansas_city",
+      "state_code": "MO",
+      "region": "Western Missouri",
+      "name": "Kansas City / Western Missouri",
+      "example_cities": [
+        "Kansas City",
+        "Independence",
+        "Lee's Summit"
+      ],
+      "neighbor_area_ids": [
+        "mo_springfield",
+        "mo_columbia"
+      ],
+      "definition": "Editorial Kansas City / Western Missouri catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Kansas City metro and western Missouri catchment; local providers are listed before explicit regional neighbors.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "mo_springfield",
+      "state_code": "MO",
+      "region": "Southwest Missouri",
+      "name": "Springfield / Southwest Missouri",
+      "example_cities": [
+        "Springfield",
+        "Branson",
+        "Bolivar"
+      ],
+      "neighbor_area_ids": [
+        "mo_kansas_city",
+        "mo_columbia",
+        "mo_joplin"
+      ],
+      "definition": "Editorial Springfield and southwest Missouri catchment for directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Southwest Missouri regional service relationships and major road corridors",
+      "scope_note": "Initial pass covers youth and adult behavioral-health providers with exact Springfield sites.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "mo_columbia",
+      "state_code": "MO",
+      "region": "Central Missouri",
+      "name": "Columbia / Central Missouri",
+      "example_cities": [
+        "Columbia",
+        "Jefferson City",
+        "Moberly"
+      ],
+      "neighbor_area_ids": [
+        "mo_st_louis",
+        "mo_kansas_city",
+        "mo_springfield",
+        "mo_southeast_missouri"
+      ],
+      "definition": "Editorial Columbia and central Missouri catchment for directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Central Missouri hub and explicit neighboring catchments",
+      "scope_note": "Initial pass includes a women-and-children substance-use IOP site; broader Columbia behavioral-health discovery remains queued.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "mo_joplin",
+      "state_code": "MO",
+      "region": "Southwest Missouri",
+      "name": "Joplin / Four States",
+      "example_cities": [
+        "Joplin",
+        "Carthage",
+        "Neosho"
+      ],
+      "neighbor_area_ids": [
+        "mo_springfield"
+      ],
+      "definition": "Editorial Joplin and southwest Missouri regional-hub catchment for directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Four-state regional hub relationship",
+      "scope_note": "Area skeleton added for a separate Joplin/Four States research pass; local provider verification is still queued.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "mo_southeast_missouri",
+      "state_code": "MO",
+      "region": "Southeast Missouri",
+      "name": "Southeast Missouri / Cape Girardeau",
+      "example_cities": [
+        "Cape Girardeau",
+        "Sikeston",
+        "Poplar Bluff"
+      ],
+      "neighbor_area_ids": [
+        "mo_st_louis",
+        "mo_columbia"
+      ],
+      "definition": "Editorial southeast Missouri catchment centered on Cape Girardeau and regional hubs; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Southeast Missouri regional service relationships",
+      "scope_note": "Area skeleton added for a separate southeast Missouri research pass; exact IOP/PHP sites remain queued.",
+      "target_provider_count": 9
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "mo_st_louis",
+      "location_id": "",
+      "name": "Burrell Behavioral Health",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "mo_st_louis",
+      "location_id": "",
+      "name": "Compass Health Network",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "mo_st_louis",
+      "location_id": "",
+      "name": "Coxhealth",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "mo_st_louis",
+      "location_id": "",
+      "name": "Ozark Center",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "mo_st_louis",
+      "location_id": "",
+      "name": "Rediscover",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "mo_st_louis",
+      "location_id": "",
+      "name": "Sana Lake Recovery",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "mo_st_louis",
+      "location_id": "",
+      "name": "Southeast Missouri Behavioral Health",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "mo_st_louis",
+      "location_id": "",
+      "name": "Missouri statewide discovery stack",
+      "priority": "high",
+      "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_logo",
+      "area_id": "mo_st_louis",
+      "location_id": "mccallum-place-webster-groves",
+      "name": "McCallum Place",
+      "priority": "high",
+      "task": "Acquire and validate an official local PNG from the provider-controlled site or asset URL; do not publish until the logo path resolves.",
+      "source_url": "https://www.mccallumplace.com/",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "verify_logo",
+      "area_id": "mo_springfield",
+      "location_id": "lakeland-behavioral-health-system-springfield",
+      "name": "Lakeland Behavioral Health System",
+      "priority": "high",
+      "task": "Acquire and validate an official local PNG from the provider-controlled site or asset URL; the exact adolescent IOP site is otherwise verified.",
+      "source_url": "https://www.lakelandbehavioralhealth.com/",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "mo_springfield",
+      "location_id": "",
+      "name": "Springfield / Southwest Missouri next pass",
+      "priority": "high",
+      "task": "Check CoxHealth, Jordan Valley Community Health Center, Perimeter Behavioral Hospital of Springfield, and local SUD providers for exact IOP/PHP sites, then add official local logos where confirmed.",
+      "source_url": "https://dmh.mo.gov/sites/dmh/files/media/pdf/2026/01/directory-alphabetical-listing-division-behavioral-health-certified-programs.pdf",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "mo_kansas_city",
+      "location_id": "",
+      "name": "Kansas City / Western Missouri next pass",
+      "priority": "high",
+      "task": "Check KVC Kansas City, Saint Luke’s and Center for Behavioral Medicine, Northland PHP/IOP services, and Liberty/Independence providers for exact Missouri treatment sites.",
+      "source_url": "https://www.hcamidwest.com/locations/research-psychiatric-center/specialties/mental-health-and-wellness/adult-mental-health-and-wellness",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "mo_columbia",
+      "location_id": "",
+      "name": "Columbia / Central Missouri next pass",
+      "priority": "high",
+      "task": "Check MU Health Care psychiatry, CenterPointe Hospital of Columbia, Phoenix Programs, Burrell structured care, and Jefferson City providers for exact IOP/PHP evidence.",
+      "source_url": "https://dmh.mo.gov/sites/dmh/files/media/pdf/2026/01/directory-alphabetical-listing-division-behavioral-health-certified-programs.pdf",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "mo_joplin",
+      "location_id": "",
+      "name": "Joplin / Four States next pass",
+      "priority": "high",
+      "task": "Verify Ozark Center, Freeman Health, Mercy Hospital Joplin, and local substance-use providers for current physical IOP/PHP sites and official logos.",
+      "source_url": "https://dmh.mo.gov/dev-disabilities/regional-offices/springfield",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "mo_southeast_missouri",
+      "location_id": "",
+      "name": "Southeast Missouri / Cape Girardeau next pass",
+      "priority": "high",
+      "task": "Verify Community Counseling Center, Southeast Missouri Behavioral Health, Bootheel providers, Cape Girardeau hospitals, and Poplar Bluff/Sikeston regional hubs for current IOP/PHP sites.",
+      "source_url": "https://dmh.mo.gov/contacts",
+      "date": "2026-09-22"
+    }
+  ]
+}

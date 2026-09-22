@@ -1,0 +1,16 @@
+{
+  "provider_id": "coxhealth",
+  "provider_name": "Coxhealth",
+  "provider_website_url": "",
+  "reference_url": "",
+  "operator_scope": "unknown",
+  "known_parent_name": "",
+  "ownership_verified": "unverified",
+  "dedupe_group_id": "coxhealth",
+  "dedupe_group_reason": "Pending identity and ownership verification; do not merge without evidence.",
+  "logo_url": "images/mo/mo-coxhealth.png",
+  "logo_source_url": "",
+  "logo_downloaded": true,
+  "logo_license_reviewed": false,
+  "locations": []
+}
