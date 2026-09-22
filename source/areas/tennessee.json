@@ -1,0 +1,295 @@
+{
+  "schema_version": 1,
+  "state_file": "tennessee",
+  "state_code": "TN",
+  "metadata": {
+    "snapshot_date": "2026-09-22",
+    "title": "Groupicorn Tennessee IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. Tennessee is represented by regional editorial catchments and sourced physical-site records; remaining leads stay in the verification queue until exact-site evidence is checked.",
+    "branding_note": "logo_url points to a tracked PNG asset. Existing asset provenance and license clearance require separate review where source URLs are not yet recorded.",
+    "geocoding_note": "Street addresses and ZIP codes are stored where sourced; coordinates are intentionally null pending an audited geocoding pass.",
+    "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use."
+  },
+  "areas": [
+    {
+      "area_id": "tn_nashville",
+      "state_code": "TN",
+      "region": "Middle Tennessee",
+      "name": "Nashville / Middle Tennessee",
+      "example_cities": [
+        "Nashville",
+        "Franklin",
+        "Murfreesboro"
+      ],
+      "neighbor_area_ids": [
+        "tn_memphis",
+        "tn_knoxville",
+        "tn_chattanooga"
+      ],
+      "definition": "Editorial Nashville / Middle Tennessee catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "One sourced anchor is published; additional providers remain in the verification queue.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "tn_memphis",
+      "state_code": "TN",
+      "region": "West Tennessee",
+      "name": "Memphis / West Tennessee",
+      "example_cities": [
+        "Memphis",
+        "Germantown",
+        "Collierville"
+      ],
+      "neighbor_area_ids": [
+        "tn_nashville"
+      ],
+      "definition": "Editorial Memphis / West Tennessee catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Secondary catchment retained for explicit neighboring discovery.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "tn_knoxville",
+      "state_code": "TN",
+      "region": "East Tennessee",
+      "name": "Knoxville / East Tennessee",
+      "example_cities": [
+        "Knoxville",
+        "Oak Ridge",
+        "Maryville"
+      ],
+      "neighbor_area_ids": [
+        "tn_chattanooga",
+        "tn_nashville"
+      ],
+      "target_provider_count": 9,
+      "definition": "Editorial Knoxville / East Tennessee catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Newly added area with sourced launch coverage; additional providers remain in the verification queue."
+    },
+    {
+      "area_id": "tn_chattanooga",
+      "state_code": "TN",
+      "region": "East Tennessee",
+      "name": "Chattanooga / Southeast Tennessee",
+      "example_cities": [
+        "Chattanooga",
+        "Cleveland",
+        "East Ridge"
+      ],
+      "neighbor_area_ids": [
+        "tn_knoxville",
+        "tn_nashville"
+      ],
+      "target_provider_count": 9,
+      "definition": "Editorial Chattanooga / Southeast Tennessee catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Newly added area with sourced launch coverage; additional providers remain in the verification queue."
+    },
+    {
+      "area_id": "tn_clarksville",
+      "state_code": "TN",
+      "region": "Northwest Middle Tennessee",
+      "name": "Clarksville / Northwest Middle Tennessee",
+      "example_cities": [
+        "Clarksville",
+        "Sango",
+        "Fort Campbell"
+      ],
+      "neighbor_area_ids": [
+        "tn_nashville"
+      ],
+      "target_provider_count": 9,
+      "definition": "Editorial Clarksville / Northwest Middle Tennessee catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Geography skeleton added for a major regional hub; provider discovery is pending."
+    },
+    {
+      "area_id": "tn_tri_cities",
+      "state_code": "TN",
+      "region": "Northeast Tennessee",
+      "name": "Tri-Cities / Northeast Tennessee",
+      "example_cities": [
+        "Johnson City",
+        "Kingsport",
+        "Bristol"
+      ],
+      "neighbor_area_ids": [
+        "tn_knoxville"
+      ],
+      "target_provider_count": 9,
+      "definition": "Editorial Tri-Cities / Northeast Tennessee catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Geography skeleton added for a major regional hub; provider discovery is pending."
+    },
+    {
+      "area_id": "tn_jackson",
+      "state_code": "TN",
+      "region": "West Tennessee",
+      "name": "Jackson / West Tennessee",
+      "example_cities": [
+        "Jackson",
+        "Humboldt",
+        "Milan"
+      ],
+      "neighbor_area_ids": [
+        "tn_memphis"
+      ],
+      "target_provider_count": 9,
+      "definition": "Editorial Jackson / West Tennessee catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Geography skeleton added for a regional hub; provider discovery is pending."
+    },
+    {
+      "area_id": "tn_cookeville",
+      "state_code": "TN",
+      "region": "Upper Cumberland",
+      "name": "Cookeville / Upper Cumberland",
+      "example_cities": [
+        "Cookeville",
+        "Crossville",
+        "Sparta"
+      ],
+      "neighbor_area_ids": [
+        "tn_nashville",
+        "tn_knoxville"
+      ],
+      "target_provider_count": 9,
+      "definition": "Editorial Cookeville / Upper Cumberland catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Geography skeleton added for a regional hub; provider discovery is pending."
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "tn_nashville",
+      "location_id": "",
+      "name": "Cumberland Heights",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "tn_nashville",
+      "location_id": "",
+      "name": "Focus Treatment Centers",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "tn_nashville",
+      "location_id": "",
+      "name": "Freeman Recovery Center",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "tn_nashville",
+      "location_id": "",
+      "name": "Mcnabb Center",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "tn_nashville",
+      "location_id": "",
+      "name": "Mending Hearts",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "tn_nashville",
+      "location_id": "",
+      "name": "Renaissance Recovery Center",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "tn_nashville",
+      "location_id": "",
+      "name": "Ridgeview Behavioral Health Services",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "tn_nashville",
+      "location_id": "",
+      "name": "Tennessee statewide discovery stack",
+      "priority": "high",
+      "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "tn_clarksville",
+      "location_id": "",
+      "name": "Clarksville / Northwest Middle Tennessee discovery",
+      "priority": "high",
+      "task": "Research official provider pages plus local Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and health-system/county sources for physical IOP/PHP sites; record exact address, care-level evidence, and logo provenance.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "tn_tri_cities",
+      "location_id": "",
+      "name": "Tri-Cities / Northeast Tennessee discovery",
+      "priority": "high",
+      "task": "Research official provider pages plus local Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and health-system/county sources for physical IOP/PHP sites; record exact address, care-level evidence, and logo provenance.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "tn_jackson",
+      "location_id": "",
+      "name": "Jackson / West Tennessee discovery",
+      "priority": "high",
+      "task": "Research official provider pages plus local Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and health-system/county sources for physical IOP/PHP sites; record exact address, care-level evidence, and logo provenance.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "tn_cookeville",
+      "location_id": "",
+      "name": "Cookeville / Upper Cumberland discovery",
+      "priority": "high",
+      "task": "Research official provider pages plus local Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and health-system/county sources for physical IOP/PHP sites; record exact address, care-level evidence, and logo provenance.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-22"
+    }
+  ]
+}
