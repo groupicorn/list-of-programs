@@ -19,6 +19,21 @@ Git remains the database. There is no shared SQL service to clone or keep in
 sync. A provider researcher can add one fragment without touching another
 researcher's fragment; the compiler merges them into the generated state file.
 
+## National quality goal
+
+The goal is to bring every state to the breadth and usefulness of the current
+California directory. California is the repository's benchmark for geographic
+coverage, provider diversity, exact physical locations, evidence-backed care
+levels, and durable local logo assets—not a reason to copy its records or
+inflate counts.
+
+The target is a genuinely researched state, not merely one metro with nine
+cards. Each state should have a practical geography skeleton, coverage across
+major metros and regional hubs, multiple distinct provider groups per area,
+and a wider verified source set when the market supports it. The current nine
+entry limit is a prepared per-area display contract; it is not a cap on
+research, canonical provider records, locations, or future consumer views.
+
 The source/generated boundary is strict:
 
 ```sh
@@ -50,7 +65,7 @@ JSON file. The established top-level collections are:
 - `locations` — exact treatment locations and evidence.
 - `areas` — editorial search catchments and explicit neighbors.
 - `area_matches` — candidate matches for each area.
-- `shortlists` — prepared display results, normally up to nine distinct provider groups per area.
+- `shortlists` — prepared display results, normally up to nine distinct provider groups per area. Additional researched providers should remain in canonical source even when they are not selected for the current display shortlist.
 
 Areas are editorial travel/search buckets, not claims about municipal boundaries, driving time, eligibility, availability, or clinical quality. Local matches come before explicitly declared neighbors. Provider branches are deduplicated with `provider_dedupe_group_id`; the directory is not a ranking.
 
