@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import copy
 import json
+import subprocess
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -56,7 +57,15 @@ READY_PROGRAM_STATUSES = {
     "verified_exact_site",
     "exact_site_verified",
 }
-EXCLUDED_STATUSES = {"closed", "excluded", "rejected", "virtual_only"}
+EXCLUDED_STATUSES = {
+    "closed",
+    "excluded",
+    "rejected",
+    "virtual_only",
+    "pending",
+    "verification_pending",
+    "program_pending",
+}
 
 
 def read_json(path: Path) -> Any:
@@ -109,6 +118,7 @@ def active_location(location: dict[str, Any]) -> bool:
         str(location.get("publication_status", "")).lower(),
         str(location.get("research_status", "")).lower(),
         str(location.get("verification_status", "")).lower(),
+        str(location.get("status", "")).lower(),
     }
     return not status_values.intersection(EXCLUDED_STATUSES)
 
@@ -119,13 +129,15 @@ def publication_ready(location: dict[str, Any]) -> bool:
     logo_url = str(location.get("logo_url", ""))
     if not logo_url or not png_is_valid(ROOT / logo_url):
         return False
-    explicit = location.get("publication_ready")
-    if explicit is not None:
-        return bool(explicit)
     program_status = str(location.get("program_site_verification_status", "")).lower()
     verification_status = str(location.get("verification_status", "")).lower()
     if program_status or verification_status:
-        return program_status in READY_PROGRAM_STATUSES or verification_status in READY_PROGRAM_STATUSES
+        ready = program_status in READY_PROGRAM_STATUSES or verification_status in READY_PROGRAM_STATUSES
+        explicit = location.get("publication_ready")
+        return ready and (explicit is None or bool(explicit))
+    explicit = location.get("publication_ready")
+    if explicit is not None:
+        return bool(explicit)
     return bool(location.get("program_source_url") and location.get("address_source_url"))
 
 
@@ -258,7 +270,14 @@ def build_state(stem: str) -> dict[str, Any]:
         raise SystemExit(f"Duplicate provider_id in source/providers/{state_code.lower()}")
     locations_by_area: dict[str, list[dict[str, Any]]] = defaultdict(list)
     locations_by_provider: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    location_ids: set[str] = set()
     for location in locations:
+        location_id = location.get("location_id")
+        if not location_id:
+            raise SystemExit("Location source lacks location_id")
+        if location_id in location_ids:
+            raise SystemExit(f"Duplicate location_id in source/providers/{state_code.lower()}: {location_id}")
+        location_ids.add(location_id)
         location.setdefault("state_code", state_code)
         if location.get("state_code", "").upper() != state_code:
             raise SystemExit(f"Location {location.get('location_id')} has the wrong state_code")
@@ -528,29 +547,144 @@ def area_count(area: dict[str, Any]) -> int:
 def coverage() -> int:
     manifest_path = SOURCE_DIR / "coverage.json"
     manifest = read_json(manifest_path) if manifest_path.exists() else {"metros": []}
-    found: set[tuple[str, str]] = set()
     states: dict[str, dict[str, Any]] = {}
     for path in sorted(PROGRAMS_DIR.glob("*.json")):
         data = read_json(path)
         states[path.stem] = data
-        found.update((path.stem, area.get("area_id")) for area in data.get("areas", []))
-    rows: list[tuple[int, str, str, int, str]] = []
+    rows = coverage_rows(manifest, states)
+    for row in rows:
+        label = f"P{row['pass_priority']}" if row["needs_work"] else "OK"
+        print(f"{label:<3} {row['display_name']:<24} {row['state_file']:<16} {row['status']}")
+    print(f"\nCoverage manifest: {len(rows)} priority metro(s); source/coverage.json is the editable geography queue.")
+    return 0
+
+
+def coverage_rows(
+    manifest: dict[str, Any], states: dict[str, dict[str, Any]]
+) -> list[dict[str, Any]]:
+    """Return the coverage queue using each item's launch threshold and priority."""
+
+    rows: list[dict[str, Any]] = []
     for item in manifest.get("metros", []):
         stem = item["state_file"]
         area_id = item["area_id"]
         data = states.get(stem)
         area = next((candidate for candidate in data.get("areas", []) if candidate.get("area_id") == area_id), None) if data else None
         count = area_count(area) if area else 0
-        target = int(item.get("target", 9))
-        priority = 0 if area is None or count == 0 else 1 if count < 3 else 2 if count < 5 else 3 if count < target else 4
-        status = "missing geography" if area is None else f"{count}/{target}"
-        rows.append((priority, item.get("display_name", area_id), stem, count, status))
-    rows.sort(key=lambda row: (row[0], row[1].casefold()))
-    for priority, name, stem, count, status in rows:
-        label = f"P{priority}" if priority < 4 else "OK"
-        print(f"{label:<3} {name:<24} {stem:<16} {status}")
-    print(f"\nCoverage manifest: {len(rows)} priority metro(s); source/coverage.json is the editable geography queue.")
-    return 0
+        minimum = int(item.get("minimum", item.get("target", 9)))
+        pass_priority = int(item.get("pass_priority", 0))
+        needs_work = area is None or count < minimum
+        rows.append({
+            "area_id": area_id,
+            "display_name": item.get("display_name", area_id),
+            "state_file": stem,
+            "count": count,
+            "minimum": minimum,
+            "pass_priority": pass_priority,
+            "needs_work": needs_work,
+            "status": "missing geography" if area is None else f"{count}/{minimum}",
+        })
+    rows.sort(key=lambda row: (
+        not row["needs_work"],
+        row["pass_priority"],
+        row["display_name"].casefold(),
+        row["state_file"],
+        row["area_id"],
+    ))
+    return rows
+
+
+def shortlist_signature(row: dict[str, Any]) -> tuple[Any, ...]:
+    """Fields that affect the prepared user-facing shortlist."""
+
+    return (
+        row.get("location_id"),
+        row.get("provider_id"),
+        row.get("provider_name"),
+        row.get("location_name"),
+        row.get("match_type"),
+        row.get("actual_area_id"),
+        row.get("display_order"),
+    )
+
+
+def compare_shortlists(before: dict[str, Any], after: dict[str, Any]) -> int:
+    """Print a migration diff and return the number of unexpected changes."""
+
+    print("Providers:")
+    print(f"  before {len(before.get('providers', []))}")
+    print(f"  after  {len(after.get('providers', []))}")
+    print("\nLocations:")
+    print(f"  before {len(before.get('locations', []))}")
+    print(f"  after  {len(after.get('locations', []))}")
+    print("\nAreas:")
+    print(f"  before {len(before.get('areas', []))}")
+    print(f"  after  {len(after.get('areas', []))}")
+
+    before_areas = {area.get("area_id"): area for area in before.get("areas", [])}
+    after_areas = {area.get("area_id"): area for area in after.get("areas", [])}
+    before_rows: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    after_rows: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for row in before.get("shortlists", []):
+        before_rows[row.get("area_id")].append(row)
+    for row in after.get("shortlists", []):
+        after_rows[row.get("area_id")].append(row)
+
+    print("\nSHORTLIST CHANGES")
+    changed = 0
+    collection_counts = (
+        ("providers", before.get("providers", []), after.get("providers", [])),
+        ("locations", before.get("locations", []), after.get("locations", [])),
+        ("areas", before.get("areas", []), after.get("areas", [])),
+    )
+    for label, before_records, after_records in collection_counts:
+        if len(before_records) != len(after_records):
+            print(f"  {label} count changed: {len(before_records)} -> {len(after_records)}")
+            changed += 1
+    for area_id in sorted(set(before_areas) | set(after_areas)):
+        area = after_areas.get(area_id, before_areas.get(area_id, {}))
+        before_signature = [shortlist_signature(row) for row in before_rows.get(area_id, [])]
+        after_signature = [shortlist_signature(row) for row in after_rows.get(area_id, [])]
+        before_names = [row.get("provider_name") or row.get("location_id") for row in before_rows.get(area_id, [])]
+        after_names = [row.get("provider_name") or row.get("location_id") for row in after_rows.get(area_id, [])]
+        print(f"\n{area.get('name', area_id)}")
+        for name in before_names:
+            print(f"  - before: {name}")
+        for name in after_names:
+            print(f"  + after:  {name}")
+        if before_signature == after_signature:
+            print("  SAME")
+        else:
+            print("  CHANGED")
+            changed += 1
+    print(f"\nUnexpected changes: {changed}")
+    return changed
+
+
+def compare_state(stem: str) -> int:
+    current_path = state_path(stem)
+    before = checked_in_state(current_path)
+    after = build_state(stem)
+    return compare_shortlists(before, after)
+
+
+def checked_in_state(path: Path) -> dict[str, Any]:
+    """Read the committed artifact so compare still works after build overwrites it."""
+
+    try:
+        relative_path = path.relative_to(ROOT).as_posix()
+        result = subprocess.run(
+            ["git", "show", f"HEAD:{relative_path}"],
+            cwd=ROOT,
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+    except (OSError, ValueError):
+        result = None
+    if result is not None and result.returncode == 0:
+        return json.loads(result.stdout)
+    return read_json(path)
 
 
 def build_all() -> int:
@@ -576,6 +710,8 @@ def main(argv: list[str] | None = None) -> None:
     seed_parser.add_argument("--force", action="store_true")
     validate_parser = subparsers.add_parser("validate", help="Validate generated JSON and logo references")
     validate_parser.add_argument("state", nargs="?")
+    compare_parser = subparsers.add_parser("compare", help="Compare generated output with the checked-in state JSON")
+    compare_parser.add_argument("state")
     subparsers.add_parser("coverage", help="Print the committed priority metro coverage queue")
     subparsers.add_parser("research-queue", help="Alias for coverage")
     args = parser.parse_args(argv)
@@ -590,6 +726,8 @@ def main(argv: list[str] | None = None) -> None:
             raise SystemExit(1)
     elif args.command == "validate":
         raise SystemExit(validate(args.state))
+    elif args.command == "compare":
+        raise SystemExit(1 if compare_state(state_stem(args.state)) else 0)
     else:
         raise SystemExit(coverage())
 

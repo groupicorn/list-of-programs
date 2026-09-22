@@ -24,7 +24,7 @@ as a ready directory option.
 ## Area files
 
 `source/areas/<state-file>.json` contains the editorial geography, explicit
-one-hop neighbors, state metadata, and optional research queue. The compiler
+one-hop practical neighbors (not merely statewide or same-state adjacency), state metadata, and optional research queue. The compiler
 derives local/neighbor matches, provider-group deduplication, ordering, nine-
 entry caps, counts, gaps, and coverage status.
 

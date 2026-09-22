@@ -64,6 +64,7 @@ Areas are editorial travel/search buckets, not claims about municipal boundaries
 4. Put geography in `source/areas/<state-file>.json`. Use the actual treatment address for `primary_area_id`; the compiler generates `area_matches` and `shortlists` for declared neighboring coverage.
 5. Add genuine official PNG logos under the correct lowercase state-code directory. For bucket-native clients, prefer a JSON `logo_url` such as `images/ak/ak-alaska-behavioral-health.png`; clients resolve that path relative to the data root. A published path must resolve to the exact PNG, including case. Do not rely on a guessed filename or an external favicon proxy as the canonical logo source.
 6. Run `./directory build <state>` and `./directory validate <state>`; never hand-recalculate generated fields.
+7. Run `./directory compare <state>` before accepting a migration; it exits nonzero when provider, location, area, or prepared-shortlist output changes.
 
 Prefer metadata titles in the form `Groupicorn <State> IOP/PHP research directory`. Existing files may use older titles or represent incomplete research; do not rewrite unrelated records merely to normalize them.
 

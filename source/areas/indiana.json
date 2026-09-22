@@ -22,31 +22,27 @@
         "New Haven",
         "Huntington"
       ],
-      "neighbor_area_ids": [
-        "in_indianapolis"
-      ],
+      "neighbor_area_ids": [],
       "definition": "Editorial Fort Wayne / Northeast Indiana catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
-      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "adjacency_basis": "No practical one-hop neighbor shortlist is declared; exact travel claims are intentionally omitted.",
       "scope_note": "One sourced anchor is published; additional providers remain in the verification queue.",
       "target_provider_count": 9
     },
     {
       "area_id": "in_indianapolis",
       "state_code": "IN",
-      "region": "Northeast Indiana",
+      "region": "Central Indiana",
       "name": "Indianapolis Metro",
       "example_cities": [
         "Indianapolis",
         "Carmel",
         "Greenwood"
       ],
-      "neighbor_area_ids": [
-        "in_fort_wayne"
-      ],
+      "neighbor_area_ids": [],
       "definition": "Editorial Indianapolis Metro catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
-      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "adjacency_basis": "No practical one-hop neighbor shortlist is declared; exact travel claims are intentionally omitted.",
       "scope_note": "Secondary catchment retained for explicit neighboring discovery.",
       "target_provider_count": 9
     }
