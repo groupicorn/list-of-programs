@@ -202,6 +202,17 @@ def location_sort_key(location: dict[str, Any]) -> tuple[Any, ...]:
     )
 
 
+def neighbor_area_ids(area: dict[str, Any]) -> list[str]:
+    """Return neighbor IDs from either the current list or legacy pipe syntax."""
+
+    raw_neighbors = area.get("neighbor_area_ids", [])
+    if isinstance(raw_neighbors, str):
+        return [neighbor.strip() for neighbor in raw_neighbors.split("|") if neighbor.strip()]
+    if isinstance(raw_neighbors, list):
+        return [str(neighbor) for neighbor in raw_neighbors]
+    raise SystemExit(f"Area {area.get('area_id', '<missing>')} has invalid neighbor_area_ids")
+
+
 def candidate_for_area(
     area: dict[str, Any],
     locations_by_area: dict[str, list[dict[str, Any]]],
@@ -209,7 +220,7 @@ def candidate_for_area(
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     local = [location for location in locations_by_area.get(area["area_id"], []) if publication_ready(location)]
     neighbor: list[dict[str, Any]] = []
-    for neighbor_id in area.get("neighbor_area_ids", []):
+    for neighbor_id in neighbor_area_ids(area):
         if neighbor_id not in area_by_id:
             continue
         neighbor.extend(
@@ -292,7 +303,7 @@ def build_state(stem: str) -> dict[str, Any]:
         locations_by_area[location["primary_area_id"]].append(location)
         locations_by_provider[location["provider_id"]].append(location)
     for area in areas:
-        for neighbor_id in area.get("neighbor_area_ids", []):
+        for neighbor_id in neighbor_area_ids(area):
             if neighbor_id not in area_by_id:
                 raise SystemExit(f"Area {area['area_id']} references unknown neighbor {neighbor_id}")
             if neighbor_id == area["area_id"]:
@@ -476,7 +487,7 @@ def validate_state(path: Path) -> list[str]:
                 errors.append(f"{path}: invalid or missing provider logo {logo}")
     for area in areas:
         area_id = area.get("area_id", "<missing>")
-        neighbors = area.get("neighbor_area_ids", [])
+        neighbors = neighbor_area_ids(area)
         for neighbor in neighbors:
             if neighbor == area_id or neighbor not in area_by_id:
                 errors.append(f"{path}: invalid neighbor {neighbor!r} on {area_id}")
@@ -500,7 +511,7 @@ def validate_state(path: Path) -> list[str]:
             if collection_name == "shortlists" and orders != list(range(1, len(rows) + 1)):
                 errors.append(f"{path}: {collection_name} display_order is not contiguous in {area_id}")
             for row in rows:
-                if row.get("match_type") == "neighbor" and row.get("actual_area_id") not in area_by_id[area_id].get("neighbor_area_ids", []):
+                if row.get("match_type") == "neighbor" and row.get("actual_area_id") not in neighbor_area_ids(area_by_id[area_id]):
                     errors.append(f"{path}: neighbor row {row.get('location_id')} is not an explicit neighbor of {area_id}")
     return errors
 

@@ -120,6 +120,21 @@ class DirectoryCompilerTests(DirectoryFixtureTestCase):
         self.assertEqual(["local", "neighbor"], [row["location_id"] for row in rows])
         self.assertEqual(["local", "neighbor"], [row["match_type"] for row in rows])
 
+    def test_legacy_pipe_delimited_neighbors_are_supported(self):
+        result = self.build_fixture(
+            area_ids=("in_indianapolis", "in_fort_wayne"),
+            neighbors={"in_indianapolis": "in_fort_wayne"},
+            locations=({
+                "location_id": "neighbor",
+                "provider_id": "neighbor-provider",
+                "area_id": "in_fort_wayne",
+            },),
+        )
+
+        rows = [row for row in result["shortlists"] if row["area_id"] == "in_indianapolis"]
+        self.assertEqual(["neighbor"], [row["location_id"] for row in rows])
+        self.assertEqual("neighbor", rows[0]["match_type"])
+
     def test_same_provider_is_deduped(self):
         result = self.build_fixture(
             locations=(
