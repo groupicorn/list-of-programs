@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "state_file": "georgia",
+  "state_code": "GA",
+  "metadata": {
+    "snapshot_date": "2026-09-22",
+    "title": "Groupicorn Georgia IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. Local provider groups are considered before named neighboring catchments. Shortlists are editorial discovery candidates, not rankings. September 22, 2026 parallel regional pass added current official or accreditation-backed sites in Athens, Augusta, Columbus, Macon, and Savannah; Metro Atlanta and the remaining regional hubs were not statewide re-verified.",
+    "branding_note": "logo_url uses repository-provided provider brand assets where available. Brand assets are discovery references and have not been license-cleared for redistribution.",
+    "geocoding_note": "ZIP codes and street addresses are stored; coordinates intentionally left null in this pass. Geocode later with a chosen provider."
+  },
+  "areas": [
+    {
+      "area_id": "ga-atlanta-core",
+      "state_code": "GA",
+      "region": "Metro Atlanta",
+      "name": "Atlanta core / Midtown / Buckhead / Brookhaven",
+      "example_cities": "Atlanta | Midtown | Buckhead | Brookhaven | Sandy Springs",
+      "neighbor_area_ids": "ga-northwest-metro | ga-northeast-metro | ga-south-metro",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal or clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region.",
+      "geographic_rationale": "Atlanta is split from its north, northeast, and south suburban treatment markets because traffic and provider clustering make them practical separate catchments."
+    },
+    {
+      "area_id": "ga-northwest-metro",
+      "state_code": "GA",
+      "region": "Metro Atlanta",
+      "name": "Northwest Metro Atlanta",
+      "example_cities": "Marietta | Roswell | Kennesaw | Woodstock | Acworth",
+      "neighbor_area_ids": "ga-atlanta-core | ga-northeast-metro",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal or clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region.",
+      "geographic_rationale": "Cobb and north Fulton treatment locations form a distinct corridor west and north of the Atlanta core."
+    },
+    {
+      "area_id": "ga-northeast-metro",
+      "state_code": "GA",
+      "region": "Metro Atlanta",
+      "name": "Northeast Metro Atlanta",
+      "example_cities": "Norcross | Peachtree Corners | Duluth | Lawrenceville | Johns Creek",
+      "neighbor_area_ids": "ga-atlanta-core | ga-northwest-metro",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal or clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region.",
+      "geographic_rationale": "Gwinnett and northeast Fulton locations form a practical catchment separate from the northwest corridor."
+    },
+    {
+      "area_id": "ga-south-metro",
+      "state_code": "GA",
+      "region": "Metro Atlanta",
+      "name": "South Metro Atlanta",
+      "example_cities": "Jonesboro | College Park | East Point | Fayetteville | McDonough",
+      "neighbor_area_ids": "ga-atlanta-core",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal or clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region.",
+      "geographic_rationale": "South Metro is separated because Clayton, southern Fulton, and Fayette treatment access is not equivalent to north-metro access."
+    },
+    {
+      "area_id": "ga-savannah-coastal",
+      "state_code": "GA",
+      "region": "Coastal Georgia",
+      "name": "Savannah and Coastal Georgia",
+      "example_cities": "Savannah | Pooler | Garden City | Richmond Hill",
+      "neighbor_area_ids": "",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal or clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region.",
+      "geographic_rationale": "Savannah is an isolated coastal population center; the package keeps it separate rather than implying an Atlanta-area provider is local."
+    },
+    {
+      "area_id": "ga-athens",
+      "state_code": "GA",
+      "region": "Northeast Georgia",
+      "name": "Athens and Northeast Georgia",
+      "example_cities": "Athens | Watkinsville | Winder | Commerce",
+      "neighbor_area_ids": "ga-northeast-metro",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal or clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region.",
+      "geographic_rationale": "Athens is a standalone university and regional market. Serenity Grove provides one verified local group; additional local programs remain to be researched."
+    },
+    {
+      "area_id": "ga-augusta",
+      "state_code": "GA",
+      "region": "East Georgia",
+      "name": "Augusta and Central Savannah River Area",
+      "example_cities": "Augusta | Evans | Martinez | North Augusta",
+      "neighbor_area_ids": "",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal or clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region.",
+      "geographic_rationale": "Augusta is a standalone cross-border regional hub. Georgia Recovery Campus and Kindle provide current local evidence; this state-specific package does not silently add South Carolina providers."
+    },
+    {
+      "area_id": "ga-macon",
+      "state_code": "GA",
+      "region": "Central Georgia",
+      "name": "Macon and Middle Georgia",
+      "example_cities": "Macon | Warner Robins | Perry | Milledgeville",
+      "neighbor_area_ids": "ga-south-metro",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal or clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region.",
+      "geographic_rationale": "Macon serves a large central-Georgia region. Georgia Recovery Campus provides one current local group; additional Middle Georgia programs remain to be researched."
+    },
+    {
+      "area_id": "ga-columbus",
+      "state_code": "GA",
+      "region": "West Georgia",
+      "name": "Columbus and Southwest Georgia",
+      "example_cities": "Columbus | Phenix City | Fort Moore | LaGrange",
+      "neighbor_area_ids": "",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal or clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region.",
+      "geographic_rationale": "Columbus is a standalone west-Georgia hub. Georgia Recovery Campus provides one current local group; cross-border Alabama programs are outside this state-specific package."
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "find_provider",
+      "area_id": "ga-savannah-coastal",
+      "location_id": "",
+      "name": "Savannah and Coastal Georgia",
+      "priority": "high",
+      "task": "Recheck Memorial Health's Savannah behavioral-health IOP/PHP and search additional independent and hospital programs beyond Samba and Coastal Behavioral Health.",
+      "source_url": "https://memorialhealth.com/about/newsroom/memorial-health-launches-new-intensive-outpatient-behavioral-health-program"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ga-augusta",
+      "location_id": "",
+      "name": "Augusta and Central Savannah River Area",
+      "priority": "high",
+      "task": "Verify the current public-facing Augusta program page for Georgia Recovery Campus and expand with Lighthouse Care Center, Hope House, and other local providers where current physical-site IOP/PHP evidence is available.",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/698142/748909"
+    },
+    {
+      "queue_type": "find_provider",
+      "area_id": "ga-macon",
+      "location_id": "",
+      "name": "Macon and Middle Georgia",
+      "priority": "high",
+      "task": "Expand beyond Georgia Recovery Campus with current official IOP/PHP evidence for HealthQwest, hospital programs, and realistic Warner Robins or Milledgeville options.",
+      "source_url": "https://georgiarecoveryguide.com/macon/php-iop"
+    },
+    {
+      "queue_type": "find_provider",
+      "area_id": "ga-columbus",
+      "location_id": "",
+      "name": "Columbus and Southwest Georgia",
+      "priority": "high",
+      "task": "Recheck New Horizons Behavioral Health day-treatment and substance-use intensive outpatient services for a current qualifying physical site, then search additional Columbus programs.",
+      "source_url": "https://www.nhbh.org/"
+    },
+    {
+      "queue_type": "find_provider",
+      "area_id": "ga-athens",
+      "location_id": "",
+      "name": "Athens and Northeast Georgia",
+      "priority": "medium",
+      "task": "Expand beyond Serenity Grove with additional current adult, adolescent, and university-connected IOP/PHP programs in Athens and nearby regional hubs.",
+      "source_url": "https://www.serenitygrovementalhealth.com/programs/"
+    },
+    {
+      "queue_type": "geocode",
+      "area_id": "",
+      "location_id": "",
+      "name": "All Georgia locations",
+      "priority": "low",
+      "task": "Run an audited geocoding pass and record coordinates plus coordinate sources; this research pass intentionally leaves coordinates null.",
+      "source_url": ""
+    }
+  ]
+}
