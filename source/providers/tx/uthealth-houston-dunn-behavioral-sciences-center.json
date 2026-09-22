@@ -8,8 +8,9 @@
   "ownership_verified": false,
   "dedupe_group_id": "uthealth-houston-dunn-behavioral-sciences-center",
   "dedupe_group_reason": "Same named operator/brand; branches share one shortlist slot.",
-  "logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=https://www.uth.edu/",
-  "logo_downloaded": false,
+  "logo_url": "images/tx/tx-uthealth-houston.png",
+  "logo_downloaded": true,
+  "logo_source_url": "https://www.uth.edu/marketing-communications/brand-standards/visual-identity/logos",
   "logo_license_reviewed": false,
   "locations": [
     {
@@ -36,8 +37,9 @@
       "coordinate_source_url": "",
       "operator_scope": "government",
       "ownership_verified": false,
-      "logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=https://www.uth.edu/",
-      "logo_status": "favicon_proxy_available",
+      "logo_url": "images/tx/tx-uthealth-houston.png",
+      "logo_status": "official_local_png",
+      "logo_source_url": "https://www.uth.edu/marketing-communications/brand-standards/visual-identity/logos",
       "research_date": "2026-09-20",
       "program_source_kind": "provider_web_page",
       "provider_website_url": "https://www.uth.edu/",

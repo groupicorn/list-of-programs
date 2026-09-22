@@ -191,6 +191,15 @@ class DirectoryCompilerTests(DirectoryFixtureTestCase):
 
         self.assertEqual(["verified"], [row["location_id"] for row in result["shortlists"]])
 
+    def test_current_source_program_claim_is_published_with_local_logo(self):
+        result = self.build_fixture(locations=({
+            "location_id": "current-source",
+            "provider_id": "current-source-provider",
+            "program_status": "current_source_program_claim",
+        },))
+
+        self.assertEqual(["current-source"], [row["location_id"] for row in result["shortlists"]])
+
     def test_duplicate_location_id_fails(self):
         self.write_fixture(locations=(
             {"location_id": "duplicate", "provider_id": "first-provider"},

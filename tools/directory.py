@@ -53,6 +53,7 @@ STATE_CODES = {
 }
 READY_PROGRAM_STATUSES = {
     "program_claim_found",
+    "current_source_program_claim",
     "verified",
     "verified_exact_site",
     "exact_site_verified",
@@ -378,6 +379,13 @@ def build_state(stem: str) -> dict[str, Any]:
         "area_matches": matches,
         "shortlists": shortlists,
     }
+    metadata["counts"] = {
+        "providers": len(generated_providers),
+        "locations": len(locations),
+        "areas": len(generated_areas),
+        "area_matches": len(matches),
+        "shortlists": len(shortlists),
+    }
     if "research_queue" in area_source:
         output["research_queue"] = copy.deepcopy(area_source["research_queue"])
     return output
@@ -462,6 +470,8 @@ def validate_state(path: Path) -> list[str]:
     area_by_id = {item.get("area_id"): item for item in areas}
     provider_by_id = {item.get("provider_id"): item for item in providers}
     location_by_id = {item.get("location_id"): item for item in locations}
+    published_location_ids = {row.get("location_id") for row in data["shortlists"]}
+    published_provider_ids = {row.get("provider_id") for row in data["shortlists"]}
     for label, records, key in (("provider", providers, "provider_id"), ("location", locations, "location_id"), ("area", areas, "area_id")):
         ids = [record.get(key) for record in records]
         if None in ids or len(ids) != len(set(ids)):
@@ -475,13 +485,13 @@ def validate_state(path: Path) -> list[str]:
         if location.get("primary_area_id") not in area_by_id:
             errors.append(f"{path}: {location_id} references unknown area")
         logo = location.get("logo_url", "")
-        if logo:
+        if logo and location_id in published_location_ids:
             asset = ROOT / logo
             if not asset.is_file() or not png_is_valid(asset):
                 errors.append(f"{path}: invalid or missing location logo {logo}")
     for provider in providers:
         logo = provider.get("logo_url", "")
-        if logo:
+        if logo and provider.get("provider_id") in published_provider_ids:
             asset = ROOT / logo
             if not asset.is_file() or not png_is_valid(asset):
                 errors.append(f"{path}: invalid or missing provider logo {logo}")
