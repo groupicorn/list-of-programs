@@ -1,0 +1,400 @@
+{
+  "schema_version": 1,
+  "state_file": "michigan",
+  "state_code": "MI",
+  "metadata": {
+    "snapshot_date": "2026-09-22",
+    "title": "Groupicorn Michigan IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. Michigan is being expanded from an initial Detroit/Southeast Michigan and Grand Rapids/West Michigan pair into major metros and realistic regional hubs. This September 22, 2026 parallel regional discovery pass adds an editorial geography skeleton; it is not statewide re-verification. Exact-site program evidence and local assets remain required before shortlist inclusion.",
+    "branding_note": "logo_url points to a tracked PNG asset. Existing asset provenance and license clearance require separate review where source URLs are not yet recorded.",
+    "geocoding_note": "Street addresses and ZIP codes are stored where sourced; coordinates are intentionally null pending an audited geocoding pass.",
+    "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use."
+  },
+  "areas": [
+    {
+      "area_id": "mi_detroit",
+      "state_code": "MI",
+      "region": "Southeast Michigan",
+      "name": "Detroit / Southeast Michigan",
+      "example_cities": [
+        "Detroit",
+        "Dearborn",
+        "Royal Oak"
+      ],
+      "neighbor_area_ids": [
+        "mi_ann_arbor",
+        "mi_flint",
+        "mi_lansing"
+      ],
+      "definition": "Editorial Detroit / Southeast Michigan catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "I-94, US-23, and I-69 regional corridors; exact travel claims are intentionally omitted.",
+      "scope_note": "One sourced anchor is published; additional providers remain in the verification queue.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "mi_grand_rapids",
+      "state_code": "MI",
+      "region": "West Michigan",
+      "name": "Grand Rapids / West Michigan",
+      "example_cities": [
+        "Grand Rapids",
+        "Wyoming",
+        "Holland"
+      ],
+      "neighbor_area_ids": [
+        "mi_lansing",
+        "mi_kalamazoo",
+        "mi_muskegon",
+        "mi_traverse_city"
+      ],
+      "definition": "Editorial Grand Rapids / West Michigan catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "US-131, I-96, and lakeshore regional corridors; exact travel claims are intentionally omitted.",
+      "scope_note": "Secondary catchment retained for explicit neighboring discovery.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "mi_ann_arbor",
+      "state_code": "MI",
+      "region": "Southeast Michigan",
+      "name": "Ann Arbor",
+      "example_cities": [
+        "Ann Arbor",
+        "Ypsilanti",
+        "Saline",
+        "Chelsea"
+      ],
+      "neighbor_area_ids": [
+        "mi_detroit",
+        "mi_lansing",
+        "mi_kalamazoo"
+      ],
+      "definition": "Editorial Ann Arbor and Washtenaw County catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "I-94, US-23, and US-12 regional corridors; exact travel claims are intentionally omitted.",
+      "scope_note": "Geography skeleton added September 22, 2026; provider discovery has not yet been completed.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "mi_lansing",
+      "state_code": "MI",
+      "region": "Mid-Michigan",
+      "name": "Lansing / Mid-Michigan",
+      "example_cities": [
+        "Lansing",
+        "East Lansing",
+        "Okemos",
+        "Haslett"
+      ],
+      "neighbor_area_ids": [
+        "mi_detroit",
+        "mi_grand_rapids",
+        "mi_ann_arbor",
+        "mi_kalamazoo",
+        "mi_flint",
+        "mi_great_lakes_bay"
+      ],
+      "definition": "Editorial Lansing, East Lansing, and central Mid-Michigan catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "US-127, I-69, and I-96 central Michigan corridors; exact travel claims are intentionally omitted.",
+      "scope_note": "Geography skeleton added September 22, 2026; provider discovery has not yet been completed.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "mi_kalamazoo",
+      "state_code": "MI",
+      "region": "Southwest Michigan",
+      "name": "Kalamazoo / Southwest Michigan",
+      "example_cities": [
+        "Kalamazoo",
+        "Portage",
+        "Battle Creek",
+        "St. Joseph"
+      ],
+      "neighbor_area_ids": [
+        "mi_grand_rapids",
+        "mi_ann_arbor",
+        "mi_lansing"
+      ],
+      "definition": "Editorial Kalamazoo, Portage, and southwest Michigan catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "I-94, US-131, and southwest Michigan regional corridors; exact travel claims are intentionally omitted.",
+      "scope_note": "Geography skeleton added September 22, 2026; provider discovery has not yet been completed.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "mi_flint",
+      "state_code": "MI",
+      "region": "Mid-Michigan",
+      "name": "Flint / Mid-Michigan",
+      "example_cities": [
+        "Flint",
+        "Burton",
+        "Grand Blanc",
+        "Clio"
+      ],
+      "neighbor_area_ids": [
+        "mi_detroit",
+        "mi_lansing",
+        "mi_great_lakes_bay"
+      ],
+      "definition": "Editorial Flint and Genesee County catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "I-69, US-23, and US-10 east-central Michigan corridors; exact travel claims are intentionally omitted.",
+      "scope_note": "Geography skeleton added September 22, 2026; provider discovery has not yet been completed.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "mi_muskegon",
+      "state_code": "MI",
+      "region": "West Michigan",
+      "name": "Muskegon / West Michigan",
+      "example_cities": [
+        "Muskegon",
+        "Norton Shores",
+        "Grand Haven",
+        "Whitehall"
+      ],
+      "neighbor_area_ids": [
+        "mi_grand_rapids",
+        "mi_traverse_city"
+      ],
+      "definition": "Editorial Muskegon County and north lakeshore catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "US-31, I-96, and the west Michigan lakeshore corridor; exact travel claims are intentionally omitted.",
+      "scope_note": "Geography skeleton added September 22, 2026; provider discovery has not yet been completed.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "mi_great_lakes_bay",
+      "state_code": "MI",
+      "region": "Great Lakes Bay",
+      "name": "Saginaw–Bay City–Midland / Great Lakes Bay",
+      "example_cities": [
+        "Saginaw",
+        "Bay City",
+        "Midland",
+        "Mount Pleasant"
+      ],
+      "neighbor_area_ids": [
+        "mi_flint",
+        "mi_lansing",
+        "mi_traverse_city",
+        "mi_marquette"
+      ],
+      "definition": "Editorial Saginaw, Bay City, Midland, and adjacent Great Lakes Bay regional-hub catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "I-75, US-10, and US-127 Great Lakes Bay corridors; exact travel claims are intentionally omitted.",
+      "scope_note": "Geography skeleton added September 22, 2026; provider discovery has not yet been completed.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "mi_traverse_city",
+      "state_code": "MI",
+      "region": "Northern Michigan",
+      "name": "Traverse City / Northern Michigan",
+      "example_cities": [
+        "Traverse City",
+        "Petoskey",
+        "Cadillac",
+        "Gaylord"
+      ],
+      "neighbor_area_ids": [
+        "mi_grand_rapids",
+        "mi_muskegon",
+        "mi_great_lakes_bay",
+        "mi_marquette"
+      ],
+      "definition": "Editorial Traverse City and northern Lower Peninsula regional-hub catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "US-31, US-131, and northern Michigan regional corridors; exact travel claims are intentionally omitted.",
+      "scope_note": "Geography skeleton added September 22, 2026; provider discovery has not yet been completed.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "mi_marquette",
+      "state_code": "MI",
+      "region": "Upper Peninsula",
+      "name": "Marquette / Upper Peninsula",
+      "example_cities": [
+        "Marquette",
+        "Ishpeming",
+        "Negaunee",
+        "Escanaba"
+      ],
+      "neighbor_area_ids": [
+        "mi_great_lakes_bay",
+        "mi_traverse_city"
+      ],
+      "definition": "Editorial Marquette and Upper Peninsula regional-hub catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "US-41, M-28, and Upper Peninsula regional corridors; exact travel claims are intentionally omitted.",
+      "scope_note": "Geography skeleton added September 22, 2026; provider discovery has not yet been completed.",
+      "target_provider_count": 9
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "mi_detroit",
+      "location_id": "",
+      "name": "Henry Ford Health",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "mi_detroit",
+      "location_id": "",
+      "name": "Hope Network",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "mi_detroit",
+      "location_id": "",
+      "name": "Oakland Family Services",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "mi_detroit",
+      "location_id": "",
+      "name": "Personalized Nursing Light House",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "mi_detroit",
+      "location_id": "",
+      "name": "Pine Rest Christian Mental Health Services",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "mi_detroit",
+      "location_id": "",
+      "name": "Sacred Heart Rehabilitation Center",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "mi_detroit",
+      "location_id": "",
+      "name": "Sanford Behavioral Health",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "mi_detroit",
+      "location_id": "",
+      "name": "Michigan statewide discovery stack",
+      "priority": "high",
+      "task": "Run official provider, health-system, state/county, FindTreatment.gov, Maps/local-directory, and Reddit discovery routes across each new catchment; retain only exact-site IOP/PHP leads for verification.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "mi_ann_arbor",
+      "location_id": "",
+      "name": "Ann Arbor / Washtenaw County discovery",
+      "priority": "high",
+      "task": "Find and verify physical IOP/PHP sites across Ann Arbor, Ypsilanti, and the Washtenaw County catchment, including health-system and independent programs.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "mi_lansing",
+      "location_id": "",
+      "name": "Lansing / Mid-Michigan discovery",
+      "priority": "high",
+      "task": "Find and verify physical IOP/PHP sites across Lansing, East Lansing, and central Mid-Michigan, including hospital and independent programs.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "mi_kalamazoo",
+      "location_id": "",
+      "name": "Kalamazoo / Southwest Michigan discovery",
+      "priority": "high",
+      "task": "Find and verify physical IOP/PHP sites across Kalamazoo, Portage, Battle Creek, and the southwest Michigan corridor.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "mi_flint",
+      "location_id": "",
+      "name": "Flint / Mid-Michigan discovery",
+      "priority": "high",
+      "task": "Find and verify physical IOP/PHP sites across Flint, Burton, Grand Blanc, and Genesee County.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "mi_muskegon",
+      "location_id": "",
+      "name": "Muskegon / West Michigan discovery",
+      "priority": "medium",
+      "task": "Find and verify physical IOP/PHP sites across Muskegon, Norton Shores, Grand Haven, and the north lakeshore corridor.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "mi_great_lakes_bay",
+      "location_id": "",
+      "name": "Saginaw–Bay City–Midland discovery",
+      "priority": "high",
+      "task": "Find and verify physical IOP/PHP sites across Saginaw, Bay City, Midland, and the Great Lakes Bay regional hub.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "mi_traverse_city",
+      "location_id": "",
+      "name": "Traverse City / Northern Michigan discovery",
+      "priority": "medium",
+      "task": "Find and verify physical IOP/PHP sites in Traverse City and other realistic northern Lower Peninsula hubs, with exact locations and populations recorded.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "mi_marquette",
+      "location_id": "",
+      "name": "Marquette / Upper Peninsula discovery",
+      "priority": "high",
+      "task": "Find and verify physical IOP/PHP sites in Marquette and other realistic Upper Peninsula hubs; distinguish local programs from residential or virtual-only services.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-22"
+    }
+  ]
+}
