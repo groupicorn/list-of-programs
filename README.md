@@ -1,14 +1,36 @@
 # Groupicorn program directory data
 
-This repository is the source of truth for Groupicorn's state-level IOP/PHP directory data and local provider-logo assets. The files are published to the public data bucket at `https://romeo.groupicorn.com/data/`; web and iOS clients read the published URLs directly instead of linking, copying, or bundling this repository at build time.
+This repository is the source of truth for Groupicorn's state-level IOP/PHP research data and local provider-logo assets. Human-edited source JSON and PNGs are authoritative in Git. `programs/*.json` is a deterministic generated artifact, also checked into Git for immediate clone usability and publication to `https://romeo.groupicorn.com/data/`; web and iOS clients read the published URLs directly instead of linking, copying, or bundling this repository at build time.
 
 ## Repository layout
 
 ```text
-programs/<state>.json          State directory data
-images/<state-code>/*.png      Local provider-logo assets
-featuredPrograms.json          Separate curated homepage snapshot
+source/areas/<state>.json       Canonical editorial geography and metadata
+source/providers/<state-code>/*.json
+                                Canonical provider/location research fragments
+source/coverage.json            Canonical priority metro skeleton and queue
+images/<state-code>/*.png       Canonical local provider-logo assets
+programs/<state>.json           Generated, checked-in runtime data
+tools/directory.py              Python compiler, validator, and coverage CLI
+featuredPrograms.json           Separate curated homepage snapshot
 ```
+
+Git remains the database. There is no shared SQL service to clone or keep in
+sync. A provider researcher can add one fragment without touching another
+researcher's fragment; the compiler merges them into the generated state file.
+
+The source/generated boundary is strict:
+
+```sh
+./directory build indiana
+./directory validate indiana
+./directory coverage
+```
+
+Edit `source/` and `images/`, then regenerate `programs/`. Never hand-edit a
+generated state file. Commit the canonical source, required PNGs, and the
+regenerated artifact together. CI should run `./directory build` and fail if
+that command changes tracked generated output.
 
 The published layout mirrors the repository layout:
 
@@ -20,7 +42,8 @@ https://romeo.groupicorn.com/data/featuredPrograms.json
 
 The state JSON files are the required runtime data. `featuredPrograms.json` is required by the current Groupicorn web homepage's curated-logo section; publish it whenever that section is in use. The bucket must allow CORS `GET` and `HEAD` from each Groupicorn client origin, return JSON with `Content-Type: application/json`, and return PNGs with `Content-Type: image/png`. Keep stable filenames and URLs when refreshing data so clients and caches do not break.
 
-Each state directory keeps its geography and prepared results in one JSON file. The established top-level collections are:
+Each generated state directory keeps its geography and prepared results in one
+JSON file. The established top-level collections are:
 
 - `metadata` — research date, scope, policies, and summaries.
 - `providers` — provider identity and deduplication information.
@@ -35,12 +58,12 @@ Areas are editorial travel/search buckets, not claims about municipal boundaries
 
 ## Adding or updating a state
 
-1. Inspect the target JSON, a comparable state, current repository guidance, and the consuming web/iOS paths before editing.
+1. Inspect the target state's source fragments, generated JSON, a comparable state, current repository guidance, and the consuming web/iOS paths before editing.
 2. Preserve stable provider, location, and area IDs and unrelated records.
 3. Verify the same provider, treatment site, care level, population, and current operating evidence before publishing a location.
-4. Put geography in the state's `areas` collection. Use the actual treatment address for `primary_area_id`; use `area_matches` and `shortlists` for declared neighboring coverage.
+4. Put geography in `source/areas/<state-file>.json`. Use the actual treatment address for `primary_area_id`; the compiler generates `area_matches` and `shortlists` for declared neighboring coverage.
 5. Add genuine official PNG logos under the correct lowercase state-code directory. For bucket-native clients, prefer a JSON `logo_url` such as `images/ak/ak-alaska-behavioral-health.png`; clients resolve that path relative to the data root. A published path must resolve to the exact PNG, including case. Do not rely on a guessed filename or an external favicon proxy as the canonical logo source.
-6. Recalculate shortlist references, ordering, counts, and coverage statuses, then validate the JSON and changed assets.
+6. Run `./directory build <state>` and `./directory validate <state>`; never hand-recalculate generated fields.
 
 Prefer metadata titles in the form `Groupicorn <State> IOP/PHP research directory`. Existing files may use older titles or represent incomplete research; do not rewrite unrelated records merely to normalize them.
 

@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "state_file": "indiana",
+  "state_code": "IN",
+  "metadata": {
+    "snapshot_date": "2026-09-22",
+    "title": "Groupicorn Indiana IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. Indiana is represented by an initial regional catchment pair and a sourced anchor; remaining logo-backed leads stay in the verification queue until exact-site evidence is checked. September 22, 2026 added Community Health Network Lawrence Township and Shadeland exact-site PHP/IOP records from the official clinic directory; Fort Wayne records were not statewide-refreshed.",
+    "branding_note": "logo_url points to a tracked PNG asset. Existing asset provenance and license clearance require separate review where source URLs are not yet recorded.",
+    "geocoding_note": "Street addresses and ZIP codes are stored where sourced; coordinates are intentionally null pending an audited geocoding pass.",
+    "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use."
+  },
+  "areas": [
+    {
+      "area_id": "in_fort_wayne",
+      "state_code": "IN",
+      "region": "Northeast Indiana",
+      "name": "Fort Wayne / Northeast Indiana",
+      "example_cities": [
+        "Fort Wayne",
+        "New Haven",
+        "Huntington"
+      ],
+      "neighbor_area_ids": [
+        "in_indianapolis"
+      ],
+      "definition": "Editorial Fort Wayne / Northeast Indiana catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "One sourced anchor is published; additional providers remain in the verification queue.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "in_indianapolis",
+      "state_code": "IN",
+      "region": "Northeast Indiana",
+      "name": "Indianapolis Metro",
+      "example_cities": [
+        "Indianapolis",
+        "Carmel",
+        "Greenwood"
+      ],
+      "neighbor_area_ids": [
+        "in_fort_wayne"
+      ],
+      "definition": "Editorial Indianapolis Metro catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Secondary catchment retained for explicit neighboring discovery.",
+      "target_provider_count": 9
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "in_fort_wayne",
+      "location_id": "",
+      "name": "Bowen Health",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "in_fort_wayne",
+      "location_id": "",
+      "name": "Heartland Wellness Center",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "in_fort_wayne",
+      "location_id": "",
+      "name": "Red Ribbon Recovery Indiana",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "in_fort_wayne",
+      "location_id": "",
+      "name": "Indiana statewide discovery stack",
+      "priority": "high",
+      "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-21"
+    }
+  ]
+}
