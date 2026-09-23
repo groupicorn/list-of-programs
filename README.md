@@ -90,7 +90,10 @@ may intentionally update areas or generated output.
 `minimum_local` (default `3`) as the launch floor and reports local prepared
 groups separately from total prepared choices (default target `9`). Entries in
 `source/coverage.json` are overrides for priority or thresholds, not the
-national area list.
+national area list. Each unfinished row includes its calculated `NEED` deficit.
+Use `./directory next` to select the first unfinished area: explicit P1 areas
+come first by smallest deficit, followed by ordinary areas one provider short,
+zero-local strategic holes, and the remaining unfinished areas.
 
 `./directory explain STATE [AREA]` reports each canonical source location's
 publication decision and the gates that prevented publication, including

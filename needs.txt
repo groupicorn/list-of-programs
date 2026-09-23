@@ -1,275 +1,275 @@
-NEEDS_WORK Auburn / Opelika                       1 local / 4 total
-NEEDS_WORK Cullman / North-Central Alabama        1 local / 9 total
-NEEDS_WORK Dothan / Wiregrass                     1 local / 1 total
-NEEDS_WORK Gadsden / Anniston                     2 local / 9 total
-NEEDS_WORK Selma / Black Belt                     0 local / 3 total
-NEEDS_WORK Tuscaloosa / West Alabama              2 local / 9 total
-NEEDS_WORK Anchorage                              0 local / 0 total
-NEEDS_WORK Bristol Bay / Dillingham               1 local / 1 total
-NEEDS_WORK Fairbanks / Interior                   0 local / 0 total
-NEEDS_WORK Juneau                                 1 local / 1 total
-NEEDS_WORK Ketchikan / Southern Southeast         0 local / 0 total
-NEEDS_WORK Mat-Su Valley / Wasilla / Palmer       0 local / 0 total
-NEEDS_WORK Soldotna / Kenai / Homer               0 local / 0 total
-NEEDS_WORK Casa Grande / Pinal County             1 local / 9 total
-NEEDS_WORK Flagstaff / Northern Arizona           0 local / 7 total
-NEEDS_WORK Glendale / Peoria / West Valley        1 local / 2 total
-NEEDS_WORK Kingman / Lake Havasu City             0 local / 0 total
-NEEDS_WORK Phoenix / Central Valley               1 local / 9 total
-NEEDS_WORK Yuma / Southwest Arizona               2 local / 2 total
-NEEDS_WORK Conway / North Metro                   2 local / 7 total
-NEEDS_WORK Fort Smith / River Valley              1 local / 4 total
-NEEDS_WORK Hot Springs / Hot Springs Village      2 local / 8 total
-NEEDS_WORK Jonesboro / Northeast Arkansas         0 local / 0 total
-NEEDS_WORK Pine Bluff / Arkansas Delta            0 local / 6 total
-NEEDS_WORK Texarkana / Southwest Arkansas         1 local / 1 total
-NEEDS_WORK Antelope Valley / Lancaster / Palmdale 0 local / 0 total
-NEEDS_WORK Bakersfield / Kern Urban Area          0 local / 0 total
-NEEDS_WORK Central LA / Hollywood / West Hollywood 0 local / 0 total
-NEEDS_WORK Central Orange County / Orange / Santa Ana 0 local / 0 total
-NEEDS_WORK Chico / Oroville / Paradise            0 local / 0 total
-NEEDS_WORK Coachella Valley / Palm Springs / Palm Desert 0 local / 0 total
-NEEDS_WORK Coastal Orange County / Huntington / Newport 0 local / 0 total
-NEEDS_WORK Conejo Valley / Thousand Oaks / Simi Valley 0 local / 0 total
-NEEDS_WORK Davis / Woodland / West Sacramento     1 local / 1 total
-NEEDS_WORK East County / La Mesa / El Cajon       1 local / 2 total
-NEEDS_WORK East San Gabriel Valley / Pomona       0 local / 0 total
-NEEDS_WORK East Valley / Burbank / Glendale       0 local / 0 total
-NEEDS_WORK Fresno / Clovis / Madera               0 local / 0 total
-NEEDS_WORK Gateway Cities / Downey / Whittier     0 local / 0 total
-NEEDS_WORK Hemet / San Jacinto / Banning / Beaumont 1 local / 1 total
-NEEDS_WORK High Desert / Victorville / Hesperia   1 local / 1 total
-NEEDS_WORK Humboldt Bay / Eureka / Arcata         0 local / 0 total
-NEEDS_WORK Imperial Valley / El Centro / Calexico 0 local / 0 total
-NEEDS_WORK Irvine / Lake Forest                   0 local / 0 total
-NEEDS_WORK Lake Tahoe / Truckee                   0 local / 0 total
-NEEDS_WORK Long Beach / San Pedro / Lakewood      0 local / 0 total
-NEEDS_WORK Marin County / San Rafael / Novato     0 local / 0 total
-NEEDS_WORK Merced / Atwater / Los Banos           0 local / 0 total
-NEEDS_WORK Modesto / Turlock                      0 local / 0 total
-NEEDS_WORK Monterey / Salinas / Hollister         1 local / 1 total
-NEEDS_WORK Napa / Vallejo / Fairfield / Vacaville 0 local / 1 total
-NEEDS_WORK North County Coastal / Oceanside / Carlsbad 0 local / 0 total
-NEEDS_WORK North County Inland / Escondido / Poway 0 local / 0 total
-NEEDS_WORK North Orange County / Anaheim / Fullerton 0 local / 0 total
-NEEDS_WORK Oakland / Berkeley / Inner East Bay    0 local / 0 total
-NEEDS_WORK Pasadena / West San Gabriel Valley     0 local / 0 total
-NEEDS_WORK Peninsula / San Mateo / Redwood City / Palo Alto 0 local / 0 total
-NEEDS_WORK Redding / Anderson / Red Bluff         0 local / 0 total
-NEEDS_WORK Riverside / Corona / Moreno Valley     0 local / 0 total
-NEEDS_WORK Roseville / Folsom / Northeast Sacramento 0 local / 0 total
-NEEDS_WORK Sacramento / Elk Grove                 0 local / 1 total
-NEEDS_WORK San Bernardino / Redlands / Loma Linda 0 local / 1 total
-NEEDS_WORK San Diego / Central and Coastal        0 local / 2 total
-NEEDS_WORK San Francisco                          0 local / 0 total
-NEEDS_WORK San Jose / Silicon Valley              0 local / 0 total
-NEEDS_WORK San Luis Obispo / Five Cities / Paso Robles 0 local / 0 total
-NEEDS_WORK Santa Barbara / Goleta / Carpinteria   0 local / 0 total
-NEEDS_WORK Santa Clarita Valley                   0 local / 0 total
-NEEDS_WORK Santa Cruz / Watsonville               0 local / 0 total
-NEEDS_WORK Santa Maria / Lompoc                   0 local / 0 total
-NEEDS_WORK Sierra Foothills / Auburn / Placerville / Grass Valley 0 local / 0 total
-NEEDS_WORK Sonoma County / Santa Rosa / Petaluma  0 local / 0 total
-NEEDS_WORK South Bay / Beach Cities / Torrance    0 local / 0 total
-NEEDS_WORK South Bay San Diego / Chula Vista      1 local / 2 total
-NEEDS_WORK South LA / Inglewood / Hawthorne       0 local / 0 total
-NEEDS_WORK South Orange County / Mission Viejo / San Clemente 0 local / 0 total
-NEEDS_WORK Stockton / Lodi / Manteca / Tracy      0 local / 0 total
-NEEDS_WORK Temecula / Murrieta / Lake Elsinore    0 local / 1 total
-NEEDS_WORK Tri-Valley / Fremont / Union City      0 local / 0 total
-NEEDS_WORK Ukiah / Lakeport / Clearlake           0 local / 0 total
-NEEDS_WORK Ventura / Oxnard / Camarillo           0 local / 0 total
-NEEDS_WORK Visalia / Tulare / Hanford / Porterville 0 local / 0 total
-NEEDS_WORK Walnut Creek / Concord / Contra Costa  0 local / 0 total
-NEEDS_WORK West Inland Empire / Ontario / Rancho Cucamonga 0 local / 0 total
-NEEDS_WORK West Valley / Encino / Woodland Hills  0 local / 0 total
-NEEDS_WORK Westside / Santa Monica / Culver City  0 local / 0 total
-NEEDS_WORK Yuba City / Marysville                 1 local / 1 total
-NEEDS_WORK Glenwood Springs / Roaring Fork / I-70 West 1 local / 2 total
-NEEDS_WORK Grand Junction / Mesa County           1 local / 2 total
-NEEDS_WORK Pueblo / Southern Colorado             2 local / 5 total
-NEEDS_WORK Thornton / Westminster / North Metro   2 local / 9 total
-NEEDS_WORK Bridgeport / Fairfield / Stratford / Shelton 2 local / 7 total
-NEEDS_WORK Danbury / New Milford / Western CT     1 local / 4 total
-NEEDS_WORK New Haven / Milford / Shoreline        2 local / 9 total
-NEEDS_WORK New London / Norwich / Groton / Eastern CT 2 local / 9 total
-NEEDS_WORK Stamford / Greenwich / Norwalk         1 local / 4 total
-NEEDS_WORK Waterbury / Naugatuck Valley           2 local / 9 total
-NEEDS_WORK North Broward                          1 local / 9 total
-NEEDS_WORK South Broward                          2 local / 9 total
-NEEDS_WORK South Miami-Dade / Kendall / Homestead 2 local / 9 total
-NEEDS_WORK Volusia / Flagler                      2 local / 9 total
-NEEDS_WORK Athens and Northeast Georgia           1 local / 3 total
-NEEDS_WORK Augusta and Central Savannah River Area 2 local / 2 total
-NEEDS_WORK Columbus and Southwest Georgia         1 local / 1 total
-NEEDS_WORK Macon and Middle Georgia               2 local / 3 total
-NEEDS_WORK Northeast Metro Atlanta                2 local / 9 total
-NEEDS_WORK Savannah and Coastal Georgia           2 local / 2 total
-NEEDS_WORK South Metro Atlanta                    1 local / 5 total
-NEEDS_WORK East Hawai‘i / Hilo / Kea‘au           0 local / 0 total
-NEEDS_WORK Honolulu core / Kalihi / Hawai‘i Kai   0 local / 0 total
-NEEDS_WORK Kaua‘i / Līhu‘e                        0 local / 0 total
-NEEDS_WORK Leeward O‘ahu / Waipahu / Ewa / Wai‘anae 0 local / 0 total
-NEEDS_WORK Maui / Kahului / Wailuku / Upcountry   0 local / 0 total
-NEEDS_WORK Moloka‘i / Kaunakakai                  0 local / 0 total
-NEEDS_WORK West Hawai‘i / Kona / Kealakekua / Holualoa 0 local / 0 total
-NEEDS_WORK Windward O‘ahu / Kailua / Kaneohe / North Shore 0 local / 0 total
-NEEDS_WORK Coeur d'Alene / North Idaho            2 local / 2 total
-NEEDS_WORK Lewiston / North Central Idaho         0 local / 2 total
-NEEDS_WORK Pocatello / Southeast Idaho            2 local / 4 total
-NEEDS_WORK Twin Falls / Magic Valley              1 local / 6 total
-NEEDS_WORK Bloomington-Normal                     2 local / 4 total
-NEEDS_WORK Carbondale / Marion / Southern Illinois 1 local / 3 total
-NEEDS_WORK Champaign-Urbana                       2 local / 5 total
-NEEDS_WORK Chicago South / Southwest              2 local / 9 total
-NEEDS_WORK DeKalb / Sycamore                      1 local / 9 total
-NEEDS_WORK Metro East / St. Louis Illinois        2 local / 3 total
-NEEDS_WORK Peoria                                 1 local / 5 total
-NEEDS_WORK Quad Cities / Rock Island-Moline       1 local / 3 total
-NEEDS_WORK Rockford                               1 local / 9 total
-NEEDS_WORK Springfield                            1 local / 6 total
-NEEDS_WORK Evansville, IN                         2 local / 2 total P1
-NEEDS_WORK Cedar Rapids / Eastern Iowa            1 local / 2 total
-NEEDS_WORK Des Moines, IA                         1 local / 2 total
-NEEDS_WORK Iowa City / Johnson County             1 local / 2 total
-NEEDS_WORK Spencer / Northwest Iowa               1 local / 2 total
-NEEDS_WORK Lexington / Central Kentucky           2 local / 8 total
-NEEDS_WORK Baton Rouge / South Louisiana          1 local / 1 total
-NEEDS_WORK New Orleans / Southeast Louisiana      0 local / 1 total
-NEEDS_WORK Augusta / Central Maine                0 local / 4 total
-NEEDS_WORK Bangor / Northern Maine                1 local / 4 total
-NEEDS_WORK Biddeford-Saco / Southern Maine        1 local / 3 total
-NEEDS_WORK Lewiston-Auburn / Western Maine        0 local / 3 total
-NEEDS_WORK Annapolis / Anne Arundel               1 local / 7 total
-NEEDS_WORK DC Metro Maryland                      1 local / 6 total
-NEEDS_WORK Eastern Shore Maryland                 1 local / 6 total
-NEEDS_WORK Southern Maryland                      2 local / 4 total
-NEEDS_WORK Western Maryland                       0 local / 4 total
-NEEDS_WORK Worcester, MA                          4 local / 7 total P1
-NEEDS_WORK Ann Arbor                              2 local / 9 total
-NEEDS_WORK Flint / Mid-Michigan                   0 local / 8 total
-NEEDS_WORK Kalamazoo / Southwest Michigan         2 local / 7 total
-NEEDS_WORK Lansing / Mid-Michigan                 1 local / 9 total
-NEEDS_WORK Marquette / Upper Peninsula            2 local / 5 total
-NEEDS_WORK Muskegon / West Michigan               2 local / 8 total
-NEEDS_WORK Saginaw–Bay City–Midland / Great Lakes Bay 1 local / 6 total
-NEEDS_WORK Traverse City / Northern Michigan      2 local / 9 total
-NEEDS_WORK Minneapolis–Saint Paul, MN             2 local / 2 total
-NEEDS_WORK Rochester / Southeast Minnesota        0 local / 0 total
-NEEDS_WORK Gulf Coast Mississippi                 0 local / 1 total
-NEEDS_WORK Hattiesburg / Pine Belt                1 local / 2 total
-NEEDS_WORK Jackson / Central Mississippi          1 local / 1 total
-NEEDS_WORK Columbia / Central Missouri            1 local / 9 total
-NEEDS_WORK Joplin / Four States                   0 local / 2 total
-NEEDS_WORK Kansas City / Western Missouri         2 local / 5 total
-NEEDS_WORK Southeast Missouri / Cape Girardeau    0 local / 5 total
-NEEDS_WORK Springfield / Southwest Missouri       2 local / 5 total
-NEEDS_WORK Billings / South Central Montana       2 local / 3 total
-NEEDS_WORK Bozeman / Southwest Montana            1 local / 2 total
-NEEDS_WORK Great Falls / North Central Montana    2 local / 4 total
-NEEDS_WORK Helena / Southwest Montana             0 local / 4 total
-NEEDS_WORK Missoula / Western Montana             1 local / 3 total
-NEEDS_WORK Las Vegas, NV                          0 local / 1 total
-NEEDS_WORK Reno, NV                               1 local / 1 total
-NEEDS_WORK Lebanon / Upper Valley                 0 local / 3 total
-NEEDS_WORK Manchester / Merrimack Valley          1 local / 4 total
-NEEDS_WORK Burlington County                      2 local / 9 total
-NEEDS_WORK Cumberland County / Vineland / Bridgeton 2 local / 8 total
-NEEDS_WORK Gloucester / Salem Counties            2 local / 9 total
-NEEDS_WORK Passaic County                         2 local / 9 total
-NEEDS_WORK Binghamton / Southern Tier East        1 local / 8 total
-NEEDS_WORK Bronx                                  2 local / 6 total
-NEEDS_WORK Brooklyn — Central / South / Southeast 1 local / 8 total
-NEEDS_WORK Buffalo / Niagara / Western New York   2 local / 4 total
-NEEDS_WORK Dutchess / Putnam                      2 local / 9 total
-NEEDS_WORK Elmira / Corning / Southern Tier West  1 local / 4 total
-NEEDS_WORK Ithaca / Cortland / Finger Lakes South 0 local / 7 total
-NEEDS_WORK Manhattan — Upper West Side / Harlem / Uptown 1 local / 8 total
-NEEDS_WORK Nassau County — West / Central         2 local / 6 total
-NEEDS_WORK Orange County                          2 local / 7 total
-NEEDS_WORK Plattsburgh / Champlain Valley         2 local / 4 total
-NEEDS_WORK Queens — West / Central                0 local / 9 total
-NEEDS_WORK Rochester / Monroe County              2 local / 8 total
-NEEDS_WORK Rockland County                        2 local / 7 total
-NEEDS_WORK Saratoga / Glens Falls                 2 local / 7 total
-NEEDS_WORK Staten Island                          1 local / 2 total
-NEEDS_WORK Ulster / Sullivan                      2 local / 9 total
-NEEDS_WORK Utica / Rome / Mohawk Valley           2 local / 9 total
-NEEDS_WORK Watertown / North Country West         1 local / 7 total
-NEEDS_WORK Athens / Southeastern Ohio             0 local / 6 total
-NEEDS_WORK Cleveland East / Beachwood             1 local / 5 total
-NEEDS_WORK Cleveland Inner / West                 2 local / 5 total
-NEEDS_WORK Youngstown / Mahoning Valley           1 local / 4 total
-NEEDS_WORK Oklahoma City, OK                      0 local / 3 total
-NEEDS_WORK Eugene, OR                             3 local / 6 total P1
-NEEDS_WORK Portland, OR                           4 local / 6 total P1
-NEEDS_WORK Altoona / Central Pennsylvania         2 local / 9 total
-NEEDS_WORK Lehigh Valley / Allentown / Bethlehem  2 local / 9 total
-NEEDS_WORK Reading / Berks County                 2 local / 9 total
-NEEDS_WORK Columbia / Midlands                    0 local / 3 total
-NEEDS_WORK Clarksville / Northwest Middle Tennessee 0 local / 8 total
-NEEDS_WORK Cookeville / Upper Cumberland          0 local / 9 total
-NEEDS_WORK Abilene                                0 local / 0 total
-NEEDS_WORK Amarillo                               1 local / 1 total
-NEEDS_WORK Arlington / Irving / Mid-Cities        1 local / 3 total
-NEEDS_WORK Austin — Central / South               1 local / 3 total
-NEEDS_WORK Beaumont / Port Arthur / Orange        0 local / 1 total
-NEEDS_WORK Bryan / College Station                1 local / 1 total
-NEEDS_WORK Corpus Christi                         0 local / 0 total
-NEEDS_WORK Dallas — Central / North               2 local / 3 total
-NEEDS_WORK Dallas — South / DeSoto / Cedar Hill   0 local / 3 total
-NEEDS_WORK Denton / Lewisville / Flower Mound     0 local / 3 total
-NEEDS_WORK El Paso                                1 local / 1 total
-NEEDS_WORK Fort Worth                             2 local / 4 total
-NEEDS_WORK Frisco / McKinney                      2 local / 3 total
-NEEDS_WORK Georgetown / Killeen / Temple          0 local / 3 total
-NEEDS_WORK Harlingen / Brownsville                2 local / 6 total
-NEEDS_WORK Houston — Clear Lake / Southeast       1 local / 3 total
-NEEDS_WORK Houston — Fort Bend / Sugar Land       1 local / 3 total
-NEEDS_WORK Houston — North / Spring / Humble      2 local / 3 total
-NEEDS_WORK Houston — Northwest / Cypress          1 local / 3 total
-NEEDS_WORK Houston — South / Pearland             0 local / 3 total
-NEEDS_WORK Houston — West / Katy                  1 local / 3 total
-NEEDS_WORK Laredo                                 1 local / 1 total
-NEEDS_WORK Lubbock                                0 local / 1 total
-NEEDS_WORK Midland / Odessa                       0 local / 1 total
-NEEDS_WORK Northeast Tarrant                      2 local / 3 total
-NEEDS_WORK Plano / Allen                          2 local / 3 total
-NEEDS_WORK Richardson / Garland / Mesquite        0 local / 3 total
-NEEDS_WORK Rockwall / Forney / East DFW           1 local / 2 total
-NEEDS_WORK San Angelo                             0 local / 0 total
-NEEDS_WORK San Antonio — Central / Alamo Heights  1 local / 3 total
-NEEDS_WORK San Antonio — North / Northeast        0 local / 3 total
-NEEDS_WORK San Antonio — Northwest / Medical Center 2 local / 3 total
-NEEDS_WORK San Marcos / New Braunfels corridor    1 local / 1 total
-NEEDS_WORK Sherman / Denison                      0 local / 2 total
-NEEDS_WORK South Tarrant / Mansfield / Burleson   2 local / 3 total
-NEEDS_WORK Texarkana                              0 local / 1 total
-NEEDS_WORK Tyler / Longview                       1 local / 1 total
-NEEDS_WORK Waco                                   0 local / 1 total
-NEEDS_WORK Wichita Falls                          0 local / 0 total
-NEEDS_WORK Provo / Utah Valley                    1 local / 3 total
-NEEDS_WORK Salt Lake City / Wasatch Front         2 local / 3 total
-NEEDS_WORK Brattleboro / Southern Vermont         0 local / 2 total
-NEEDS_WORK Burlington / Northwestern Vermont      2 local / 2 total
-NEEDS_WORK Charlottesville / Central Piedmont     1 local / 9 total
-NEEDS_WORK Shenandoah Valley                      2 local / 9 total
-NEEDS_WORK Southwest Virginia                     2 local / 4 total
-NEEDS_WORK Tacoma, WA                             2 local / 5 total
-NEEDS_WORK Charleston / Kanawha Valley            0 local / 2 total
-NEEDS_WORK Huntington / Western West Virginia     1 local / 2 total
-NEEDS_WORK Morgantown / North Central West Virginia 1 local / 2 total
-NEEDS_WORK Appleton / Fox Valley                  1 local / 1 total
-NEEDS_WORK Green Bay / Northeast Wisconsin        1 local / 1 total
-NEEDS_WORK La Crosse / Western Wisconsin          1 local / 1 total
-NEEDS_WORK Madison / South Central Wisconsin      2 local / 2 total
-NEEDS_WORK Milwaukee, WI                          2 local / 2 total
-NEEDS_WORK Stevens Point / Central Wisconsin      1 local / 1 total
-NEEDS_WORK Wausau / North Central Wisconsin       2 local / 2 total
-NEEDS_WORK Wautoma / Central Wisconsin            1 local / 1 total
-NEEDS_WORK Casper / Central Wyoming               2 local / 6 total
-NEEDS_WORK Cheyenne / Southeastern Wyoming        1 local / 3 total
-NEEDS_WORK Gillette / Northeastern Wyoming        2 local / 4 total
-NEEDS_WORK Laramie / Albany County                0 local / 1 total
-NEEDS_WORK Rock Springs / Southwest Wyoming       2 local / 4 total
-NEEDS_WORK Worland / North Central Wyoming        1 local / 5 total
+NEEDS_WORK Auburn / Opelika                       1 local / 4 total NEED 2
+NEEDS_WORK Cullman / North-Central Alabama        1 local / 9 total NEED 2
+NEEDS_WORK Dothan / Wiregrass                     1 local / 1 total NEED 2
+NEEDS_WORK Gadsden / Anniston                     2 local / 9 total NEED 1
+NEEDS_WORK Selma / Black Belt                     0 local / 3 total NEED 3
+NEEDS_WORK Tuscaloosa / West Alabama              2 local / 9 total NEED 1
+NEEDS_WORK Anchorage                              0 local / 0 total NEED 3
+NEEDS_WORK Bristol Bay / Dillingham               1 local / 1 total NEED 2
+NEEDS_WORK Fairbanks / Interior                   0 local / 0 total NEED 3
+NEEDS_WORK Juneau                                 1 local / 1 total NEED 2
+NEEDS_WORK Ketchikan / Southern Southeast         0 local / 0 total NEED 3
+NEEDS_WORK Mat-Su Valley / Wasilla / Palmer       0 local / 0 total NEED 3
+NEEDS_WORK Soldotna / Kenai / Homer               0 local / 0 total NEED 3
+NEEDS_WORK Casa Grande / Pinal County             1 local / 9 total NEED 2
+NEEDS_WORK Flagstaff / Northern Arizona           0 local / 7 total NEED 3
+NEEDS_WORK Glendale / Peoria / West Valley        1 local / 2 total NEED 2
+NEEDS_WORK Kingman / Lake Havasu City             0 local / 0 total NEED 3
+NEEDS_WORK Phoenix / Central Valley               1 local / 9 total NEED 2
+NEEDS_WORK Yuma / Southwest Arizona               2 local / 2 total NEED 1
+NEEDS_WORK Conway / North Metro                   2 local / 7 total NEED 1
+NEEDS_WORK Fort Smith / River Valley              1 local / 4 total NEED 2
+NEEDS_WORK Hot Springs / Hot Springs Village      2 local / 8 total NEED 1
+NEEDS_WORK Jonesboro / Northeast Arkansas         0 local / 0 total NEED 3
+NEEDS_WORK Pine Bluff / Arkansas Delta            0 local / 6 total NEED 3
+NEEDS_WORK Texarkana / Southwest Arkansas         1 local / 1 total NEED 2
+NEEDS_WORK Antelope Valley / Lancaster / Palmdale 0 local / 0 total NEED 3
+NEEDS_WORK Bakersfield / Kern Urban Area          0 local / 0 total NEED 3
+NEEDS_WORK Central LA / Hollywood / West Hollywood 0 local / 0 total NEED 3
+NEEDS_WORK Central Orange County / Orange / Santa Ana 0 local / 0 total NEED 3
+NEEDS_WORK Chico / Oroville / Paradise            0 local / 0 total NEED 3
+NEEDS_WORK Coachella Valley / Palm Springs / Palm Desert 0 local / 0 total NEED 3
+NEEDS_WORK Coastal Orange County / Huntington / Newport 0 local / 0 total NEED 3
+NEEDS_WORK Conejo Valley / Thousand Oaks / Simi Valley 0 local / 0 total NEED 3
+NEEDS_WORK Davis / Woodland / West Sacramento     1 local / 1 total NEED 2
+NEEDS_WORK East County / La Mesa / El Cajon       1 local / 2 total NEED 2
+NEEDS_WORK East San Gabriel Valley / Pomona       0 local / 0 total NEED 3
+NEEDS_WORK East Valley / Burbank / Glendale       0 local / 0 total NEED 3
+NEEDS_WORK Fresno / Clovis / Madera               0 local / 0 total NEED 3
+NEEDS_WORK Gateway Cities / Downey / Whittier     0 local / 0 total NEED 3
+NEEDS_WORK Hemet / San Jacinto / Banning / Beaumont 1 local / 1 total NEED 2
+NEEDS_WORK High Desert / Victorville / Hesperia   1 local / 1 total NEED 2
+NEEDS_WORK Humboldt Bay / Eureka / Arcata         0 local / 0 total NEED 3
+NEEDS_WORK Imperial Valley / El Centro / Calexico 0 local / 0 total NEED 3
+NEEDS_WORK Irvine / Lake Forest                   0 local / 0 total NEED 3
+NEEDS_WORK Lake Tahoe / Truckee                   0 local / 0 total NEED 3
+NEEDS_WORK Long Beach / San Pedro / Lakewood      0 local / 0 total NEED 3
+NEEDS_WORK Marin County / San Rafael / Novato     0 local / 0 total NEED 3
+NEEDS_WORK Merced / Atwater / Los Banos           0 local / 0 total NEED 3
+NEEDS_WORK Modesto / Turlock                      0 local / 0 total NEED 3
+NEEDS_WORK Monterey / Salinas / Hollister         1 local / 1 total NEED 2
+NEEDS_WORK Napa / Vallejo / Fairfield / Vacaville 0 local / 1 total NEED 3
+NEEDS_WORK North County Coastal / Oceanside / Carlsbad 0 local / 0 total NEED 3
+NEEDS_WORK North County Inland / Escondido / Poway 0 local / 0 total NEED 3
+NEEDS_WORK North Orange County / Anaheim / Fullerton 0 local / 0 total NEED 3
+NEEDS_WORK Oakland / Berkeley / Inner East Bay    0 local / 0 total NEED 3
+NEEDS_WORK Pasadena / West San Gabriel Valley     0 local / 0 total NEED 3
+NEEDS_WORK Peninsula / San Mateo / Redwood City / Palo Alto 0 local / 0 total NEED 3
+NEEDS_WORK Redding / Anderson / Red Bluff         0 local / 0 total NEED 3
+NEEDS_WORK Riverside / Corona / Moreno Valley     0 local / 0 total NEED 3
+NEEDS_WORK Roseville / Folsom / Northeast Sacramento 0 local / 0 total NEED 3
+NEEDS_WORK Sacramento / Elk Grove                 0 local / 1 total NEED 3
+NEEDS_WORK San Bernardino / Redlands / Loma Linda 0 local / 1 total NEED 3
+NEEDS_WORK San Diego / Central and Coastal        0 local / 2 total NEED 3
+NEEDS_WORK San Francisco                          0 local / 0 total NEED 3
+NEEDS_WORK San Jose / Silicon Valley              0 local / 0 total NEED 3
+NEEDS_WORK San Luis Obispo / Five Cities / Paso Robles 0 local / 0 total NEED 3
+NEEDS_WORK Santa Barbara / Goleta / Carpinteria   0 local / 0 total NEED 3
+NEEDS_WORK Santa Clarita Valley                   0 local / 0 total NEED 3
+NEEDS_WORK Santa Cruz / Watsonville               0 local / 0 total NEED 3
+NEEDS_WORK Santa Maria / Lompoc                   0 local / 0 total NEED 3
+NEEDS_WORK Sierra Foothills / Auburn / Placerville / Grass Valley 0 local / 0 total NEED 3
+NEEDS_WORK Sonoma County / Santa Rosa / Petaluma  0 local / 0 total NEED 3
+NEEDS_WORK South Bay / Beach Cities / Torrance    0 local / 0 total NEED 3
+NEEDS_WORK South Bay San Diego / Chula Vista      1 local / 2 total NEED 2
+NEEDS_WORK South LA / Inglewood / Hawthorne       0 local / 0 total NEED 3
+NEEDS_WORK South Orange County / Mission Viejo / San Clemente 0 local / 0 total NEED 3
+NEEDS_WORK Stockton / Lodi / Manteca / Tracy      0 local / 0 total NEED 3
+NEEDS_WORK Temecula / Murrieta / Lake Elsinore    0 local / 1 total NEED 3
+NEEDS_WORK Tri-Valley / Fremont / Union City      0 local / 0 total NEED 3
+NEEDS_WORK Ukiah / Lakeport / Clearlake           0 local / 0 total NEED 3
+NEEDS_WORK Ventura / Oxnard / Camarillo           0 local / 0 total NEED 3
+NEEDS_WORK Visalia / Tulare / Hanford / Porterville 0 local / 0 total NEED 3
+NEEDS_WORK Walnut Creek / Concord / Contra Costa  0 local / 0 total NEED 3
+NEEDS_WORK West Inland Empire / Ontario / Rancho Cucamonga 0 local / 0 total NEED 3
+NEEDS_WORK West Valley / Encino / Woodland Hills  0 local / 0 total NEED 3
+NEEDS_WORK Westside / Santa Monica / Culver City  0 local / 0 total NEED 3
+NEEDS_WORK Yuba City / Marysville                 1 local / 1 total NEED 2
+NEEDS_WORK Glenwood Springs / Roaring Fork / I-70 West 1 local / 2 total NEED 2
+NEEDS_WORK Grand Junction / Mesa County           1 local / 2 total NEED 2
+NEEDS_WORK Pueblo / Southern Colorado             2 local / 5 total NEED 1
+NEEDS_WORK Thornton / Westminster / North Metro   2 local / 9 total NEED 1
+NEEDS_WORK Bridgeport / Fairfield / Stratford / Shelton 2 local / 7 total NEED 1
+NEEDS_WORK Danbury / New Milford / Western CT     1 local / 4 total NEED 2
+NEEDS_WORK New Haven / Milford / Shoreline        2 local / 9 total NEED 1
+NEEDS_WORK New London / Norwich / Groton / Eastern CT 2 local / 9 total NEED 1
+NEEDS_WORK Stamford / Greenwich / Norwalk         1 local / 4 total NEED 2
+NEEDS_WORK Waterbury / Naugatuck Valley           2 local / 9 total NEED 1
+NEEDS_WORK North Broward                          1 local / 9 total NEED 2
+NEEDS_WORK South Broward                          2 local / 9 total NEED 1
+NEEDS_WORK South Miami-Dade / Kendall / Homestead 2 local / 9 total NEED 1
+NEEDS_WORK Volusia / Flagler                      2 local / 9 total NEED 1
+NEEDS_WORK Athens and Northeast Georgia           1 local / 3 total NEED 2
+NEEDS_WORK Augusta and Central Savannah River Area 2 local / 2 total NEED 1
+NEEDS_WORK Columbus and Southwest Georgia         1 local / 1 total NEED 2
+NEEDS_WORK Macon and Middle Georgia               2 local / 3 total NEED 1
+NEEDS_WORK Northeast Metro Atlanta                2 local / 9 total NEED 1
+NEEDS_WORK Savannah and Coastal Georgia           2 local / 2 total NEED 1
+NEEDS_WORK South Metro Atlanta                    1 local / 5 total NEED 2
+NEEDS_WORK East Hawai‘i / Hilo / Kea‘au           0 local / 0 total NEED 3
+NEEDS_WORK Honolulu core / Kalihi / Hawai‘i Kai   0 local / 0 total NEED 3
+NEEDS_WORK Kaua‘i / Līhu‘e                        0 local / 0 total NEED 3
+NEEDS_WORK Leeward O‘ahu / Waipahu / Ewa / Wai‘anae 0 local / 0 total NEED 3
+NEEDS_WORK Maui / Kahului / Wailuku / Upcountry   0 local / 0 total NEED 3
+NEEDS_WORK Moloka‘i / Kaunakakai                  0 local / 0 total NEED 3
+NEEDS_WORK West Hawai‘i / Kona / Kealakekua / Holualoa 0 local / 0 total NEED 3
+NEEDS_WORK Windward O‘ahu / Kailua / Kaneohe / North Shore 0 local / 0 total NEED 3
+NEEDS_WORK Coeur d'Alene / North Idaho            2 local / 2 total NEED 1
+NEEDS_WORK Lewiston / North Central Idaho         0 local / 2 total NEED 3
+NEEDS_WORK Pocatello / Southeast Idaho            2 local / 4 total NEED 1
+NEEDS_WORK Twin Falls / Magic Valley              1 local / 6 total NEED 2
+NEEDS_WORK Bloomington-Normal                     2 local / 4 total NEED 1
+NEEDS_WORK Carbondale / Marion / Southern Illinois 1 local / 3 total NEED 2
+NEEDS_WORK Champaign-Urbana                       2 local / 5 total NEED 1
+NEEDS_WORK Chicago South / Southwest              2 local / 9 total NEED 1
+NEEDS_WORK DeKalb / Sycamore                      1 local / 9 total NEED 2
+NEEDS_WORK Metro East / St. Louis Illinois        2 local / 3 total NEED 1
+NEEDS_WORK Peoria                                 1 local / 5 total NEED 2
+NEEDS_WORK Quad Cities / Rock Island-Moline       1 local / 3 total NEED 2
+NEEDS_WORK Rockford                               1 local / 9 total NEED 2
+NEEDS_WORK Springfield                            1 local / 6 total NEED 2
+NEEDS_WORK Evansville, IN                         2 local / 2 total P1 NEED 1
+NEEDS_WORK Cedar Rapids / Eastern Iowa            1 local / 2 total NEED 2
+NEEDS_WORK Des Moines, IA                         1 local / 2 total NEED 2
+NEEDS_WORK Iowa City / Johnson County             1 local / 2 total NEED 2
+NEEDS_WORK Spencer / Northwest Iowa               1 local / 2 total NEED 2
+NEEDS_WORK Lexington / Central Kentucky           2 local / 8 total NEED 1
+NEEDS_WORK Baton Rouge / South Louisiana          1 local / 1 total NEED 2
+NEEDS_WORK New Orleans / Southeast Louisiana      0 local / 1 total NEED 3
+NEEDS_WORK Augusta / Central Maine                0 local / 4 total NEED 3
+NEEDS_WORK Bangor / Northern Maine                1 local / 4 total NEED 2
+NEEDS_WORK Biddeford-Saco / Southern Maine        1 local / 3 total NEED 2
+NEEDS_WORK Lewiston-Auburn / Western Maine        0 local / 3 total NEED 3
+NEEDS_WORK Annapolis / Anne Arundel               1 local / 7 total NEED 2
+NEEDS_WORK DC Metro Maryland                      1 local / 6 total NEED 2
+NEEDS_WORK Eastern Shore Maryland                 1 local / 6 total NEED 2
+NEEDS_WORK Southern Maryland                      2 local / 4 total NEED 1
+NEEDS_WORK Western Maryland                       0 local / 4 total NEED 3
+NEEDS_WORK Worcester, MA                          4 local / 7 total P1 NEED 1
+NEEDS_WORK Ann Arbor                              2 local / 9 total NEED 1
+NEEDS_WORK Flint / Mid-Michigan                   0 local / 8 total NEED 3
+NEEDS_WORK Kalamazoo / Southwest Michigan         2 local / 7 total NEED 1
+NEEDS_WORK Lansing / Mid-Michigan                 1 local / 9 total NEED 2
+NEEDS_WORK Marquette / Upper Peninsula            2 local / 5 total NEED 1
+NEEDS_WORK Muskegon / West Michigan               2 local / 8 total NEED 1
+NEEDS_WORK Saginaw–Bay City–Midland / Great Lakes Bay 1 local / 6 total NEED 2
+NEEDS_WORK Traverse City / Northern Michigan      2 local / 9 total NEED 1
+NEEDS_WORK Minneapolis–Saint Paul, MN             2 local / 2 total NEED 1
+NEEDS_WORK Rochester / Southeast Minnesota        0 local / 0 total NEED 3
+NEEDS_WORK Gulf Coast Mississippi                 0 local / 1 total NEED 3
+NEEDS_WORK Hattiesburg / Pine Belt                1 local / 2 total NEED 2
+NEEDS_WORK Jackson / Central Mississippi          1 local / 1 total NEED 2
+NEEDS_WORK Columbia / Central Missouri            1 local / 9 total NEED 2
+NEEDS_WORK Joplin / Four States                   0 local / 2 total NEED 3
+NEEDS_WORK Kansas City / Western Missouri         2 local / 5 total NEED 1
+NEEDS_WORK Southeast Missouri / Cape Girardeau    0 local / 5 total NEED 3
+NEEDS_WORK Springfield / Southwest Missouri       2 local / 5 total NEED 1
+NEEDS_WORK Billings / South Central Montana       2 local / 3 total NEED 1
+NEEDS_WORK Bozeman / Southwest Montana            1 local / 2 total NEED 2
+NEEDS_WORK Great Falls / North Central Montana    2 local / 4 total NEED 1
+NEEDS_WORK Helena / Southwest Montana             0 local / 4 total NEED 3
+NEEDS_WORK Missoula / Western Montana             1 local / 3 total NEED 2
+NEEDS_WORK Las Vegas, NV                          0 local / 1 total NEED 3
+NEEDS_WORK Reno, NV                               1 local / 1 total NEED 2
+NEEDS_WORK Lebanon / Upper Valley                 0 local / 3 total NEED 3
+NEEDS_WORK Manchester / Merrimack Valley          1 local / 4 total NEED 2
+NEEDS_WORK Burlington County                      2 local / 9 total NEED 1
+NEEDS_WORK Cumberland County / Vineland / Bridgeton 2 local / 8 total NEED 1
+NEEDS_WORK Gloucester / Salem Counties            2 local / 9 total NEED 1
+NEEDS_WORK Passaic County                         2 local / 9 total NEED 1
+NEEDS_WORK Binghamton / Southern Tier East        1 local / 8 total NEED 2
+NEEDS_WORK Bronx                                  2 local / 6 total NEED 1
+NEEDS_WORK Brooklyn — Central / South / Southeast 1 local / 8 total NEED 2
+NEEDS_WORK Buffalo / Niagara / Western New York   2 local / 4 total NEED 1
+NEEDS_WORK Dutchess / Putnam                      2 local / 9 total NEED 1
+NEEDS_WORK Elmira / Corning / Southern Tier West  1 local / 4 total NEED 2
+NEEDS_WORK Ithaca / Cortland / Finger Lakes South 0 local / 7 total NEED 3
+NEEDS_WORK Manhattan — Upper West Side / Harlem / Uptown 1 local / 8 total NEED 2
+NEEDS_WORK Nassau County — West / Central         2 local / 6 total NEED 1
+NEEDS_WORK Orange County                          2 local / 7 total NEED 1
+NEEDS_WORK Plattsburgh / Champlain Valley         2 local / 4 total NEED 1
+NEEDS_WORK Queens — West / Central                0 local / 9 total NEED 3
+NEEDS_WORK Rochester / Monroe County              2 local / 8 total NEED 1
+NEEDS_WORK Rockland County                        2 local / 7 total NEED 1
+NEEDS_WORK Saratoga / Glens Falls                 2 local / 7 total NEED 1
+NEEDS_WORK Staten Island                          1 local / 2 total NEED 2
+NEEDS_WORK Ulster / Sullivan                      2 local / 9 total NEED 1
+NEEDS_WORK Utica / Rome / Mohawk Valley           2 local / 9 total NEED 1
+NEEDS_WORK Watertown / North Country West         1 local / 7 total NEED 2
+NEEDS_WORK Athens / Southeastern Ohio             0 local / 6 total NEED 3
+NEEDS_WORK Cleveland East / Beachwood             1 local / 5 total NEED 2
+NEEDS_WORK Cleveland Inner / West                 2 local / 5 total NEED 1
+NEEDS_WORK Youngstown / Mahoning Valley           1 local / 4 total NEED 2
+NEEDS_WORK Oklahoma City, OK                      0 local / 3 total NEED 3
+NEEDS_WORK Eugene, OR                             3 local / 6 total P1 NEED 2
+NEEDS_WORK Portland, OR                           4 local / 6 total P1 NEED 1
+NEEDS_WORK Altoona / Central Pennsylvania         2 local / 9 total NEED 1
+NEEDS_WORK Lehigh Valley / Allentown / Bethlehem  2 local / 9 total NEED 1
+NEEDS_WORK Reading / Berks County                 2 local / 9 total NEED 1
+NEEDS_WORK Columbia / Midlands                    0 local / 3 total NEED 3
+NEEDS_WORK Clarksville / Northwest Middle Tennessee 0 local / 8 total NEED 3
+NEEDS_WORK Cookeville / Upper Cumberland          0 local / 9 total NEED 3
+NEEDS_WORK Abilene                                0 local / 0 total NEED 3
+NEEDS_WORK Amarillo                               1 local / 1 total NEED 2
+NEEDS_WORK Arlington / Irving / Mid-Cities        1 local / 3 total NEED 2
+NEEDS_WORK Austin — Central / South               1 local / 3 total NEED 2
+NEEDS_WORK Beaumont / Port Arthur / Orange        0 local / 1 total NEED 3
+NEEDS_WORK Bryan / College Station                1 local / 1 total NEED 2
+NEEDS_WORK Corpus Christi                         0 local / 0 total NEED 3
+NEEDS_WORK Dallas — Central / North               2 local / 3 total NEED 1
+NEEDS_WORK Dallas — South / DeSoto / Cedar Hill   0 local / 3 total NEED 3
+NEEDS_WORK Denton / Lewisville / Flower Mound     0 local / 3 total NEED 3
+NEEDS_WORK El Paso                                1 local / 1 total NEED 2
+NEEDS_WORK Fort Worth                             2 local / 4 total NEED 1
+NEEDS_WORK Frisco / McKinney                      2 local / 3 total NEED 1
+NEEDS_WORK Georgetown / Killeen / Temple          0 local / 3 total NEED 3
+NEEDS_WORK Harlingen / Brownsville                2 local / 6 total NEED 1
+NEEDS_WORK Houston — Clear Lake / Southeast       1 local / 3 total NEED 2
+NEEDS_WORK Houston — Fort Bend / Sugar Land       1 local / 3 total NEED 2
+NEEDS_WORK Houston — North / Spring / Humble      2 local / 3 total NEED 1
+NEEDS_WORK Houston — Northwest / Cypress          1 local / 3 total NEED 2
+NEEDS_WORK Houston — South / Pearland             0 local / 3 total NEED 3
+NEEDS_WORK Houston — West / Katy                  1 local / 3 total NEED 2
+NEEDS_WORK Laredo                                 1 local / 1 total NEED 2
+NEEDS_WORK Lubbock                                0 local / 1 total NEED 3
+NEEDS_WORK Midland / Odessa                       0 local / 1 total NEED 3
+NEEDS_WORK Northeast Tarrant                      2 local / 3 total NEED 1
+NEEDS_WORK Plano / Allen                          2 local / 3 total NEED 1
+NEEDS_WORK Richardson / Garland / Mesquite        0 local / 3 total NEED 3
+NEEDS_WORK Rockwall / Forney / East DFW           1 local / 2 total NEED 2
+NEEDS_WORK San Angelo                             0 local / 0 total NEED 3
+NEEDS_WORK San Antonio — Central / Alamo Heights  1 local / 3 total NEED 2
+NEEDS_WORK San Antonio — North / Northeast        0 local / 3 total NEED 3
+NEEDS_WORK San Antonio — Northwest / Medical Center 2 local / 3 total NEED 1
+NEEDS_WORK San Marcos / New Braunfels corridor    1 local / 1 total NEED 2
+NEEDS_WORK Sherman / Denison                      0 local / 2 total NEED 3
+NEEDS_WORK South Tarrant / Mansfield / Burleson   2 local / 3 total NEED 1
+NEEDS_WORK Texarkana                              0 local / 1 total NEED 3
+NEEDS_WORK Tyler / Longview                       1 local / 1 total NEED 2
+NEEDS_WORK Waco                                   0 local / 1 total NEED 3
+NEEDS_WORK Wichita Falls                          0 local / 0 total NEED 3
+NEEDS_WORK Provo / Utah Valley                    1 local / 3 total NEED 2
+NEEDS_WORK Salt Lake City / Wasatch Front         2 local / 3 total NEED 1
+NEEDS_WORK Brattleboro / Southern Vermont         0 local / 2 total NEED 3
+NEEDS_WORK Burlington / Northwestern Vermont      2 local / 2 total NEED 1
+NEEDS_WORK Charlottesville / Central Piedmont     1 local / 9 total NEED 2
+NEEDS_WORK Shenandoah Valley                      2 local / 9 total NEED 1
+NEEDS_WORK Southwest Virginia                     2 local / 4 total NEED 1
+NEEDS_WORK Tacoma, WA                             2 local / 5 total NEED 1
+NEEDS_WORK Charleston / Kanawha Valley            0 local / 2 total NEED 3
+NEEDS_WORK Huntington / Western West Virginia     1 local / 2 total NEED 2
+NEEDS_WORK Morgantown / North Central West Virginia 1 local / 2 total NEED 2
+NEEDS_WORK Appleton / Fox Valley                  1 local / 1 total NEED 2
+NEEDS_WORK Green Bay / Northeast Wisconsin        1 local / 1 total NEED 2
+NEEDS_WORK La Crosse / Western Wisconsin          1 local / 1 total NEED 2
+NEEDS_WORK Madison / South Central Wisconsin      2 local / 2 total NEED 1
+NEEDS_WORK Milwaukee, WI                          2 local / 2 total NEED 1
+NEEDS_WORK Stevens Point / Central Wisconsin      1 local / 1 total NEED 2
+NEEDS_WORK Wausau / North Central Wisconsin       2 local / 2 total NEED 1
+NEEDS_WORK Wautoma / Central Wisconsin            1 local / 1 total NEED 2
+NEEDS_WORK Casper / Central Wyoming               2 local / 6 total NEED 1
+NEEDS_WORK Cheyenne / Southeastern Wyoming        1 local / 3 total NEED 2
+NEEDS_WORK Gillette / Northeastern Wyoming        2 local / 4 total NEED 1
+NEEDS_WORK Laramie / Albany County                0 local / 1 total NEED 3
+NEEDS_WORK Rock Springs / Southwest Wyoming       2 local / 4 total NEED 1
+NEEDS_WORK Worland / North Central Wyoming        1 local / 5 total NEED 2

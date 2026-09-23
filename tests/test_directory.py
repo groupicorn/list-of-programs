@@ -350,6 +350,54 @@ class DirectoryCompilerTests(DirectoryFixtureTestCase):
         self.assertEqual(3, row["local_count"])
         self.assertEqual(3, row["total_count"])
         self.assertFalse(row["needs_work"])
+        self.assertEqual(0, row["need"])
+
+    def test_coverage_reports_deficit(self):
+        manifest = {"overrides": [{
+            "state_file": "indiana",
+            "area_id": "in_indianapolis",
+            "minimum_local": 5,
+        }]}
+        states = {"indiana": {"areas": [{
+            "area_id": "in_indianapolis",
+            "in_area_shortlisted_count": 3,
+            "shortlisted_count": 3,
+        }]}}
+
+        row = directory.coverage_rows(manifest, states)[0]
+
+        self.assertEqual(2, row["need"])
+
+    def test_next_coverage_prioritizes_p1_deficit_then_ordinary_buckets(self):
+        def row(area_id, local_count, minimum_local=3, pass_priority=0):
+            need = max(minimum_local - local_count, 0)
+            return {
+                "area_id": area_id,
+                "display_name": area_id,
+                "state_file": "indiana",
+                "local_count": local_count,
+                "total_count": local_count,
+                "minimum_local": minimum_local,
+                "pass_priority": pass_priority,
+                "needs_work": True,
+                "need": need,
+            }
+
+        rows = directory.next_coverage_rows([
+            row("ordinary-one-local", 1),
+            row("ordinary-zero-local", 0),
+            row("ordinary-two-local", 2),
+            row("p1-needs-two", 3, minimum_local=5, pass_priority=1),
+            row("p1-needs-one", 4, minimum_local=5, pass_priority=1),
+        ])
+
+        self.assertEqual([
+            "p1-needs-one",
+            "p1-needs-two",
+            "ordinary-two-local",
+            "ordinary-zero-local",
+            "ordinary-one-local",
+        ], [item["area_id"] for item in rows])
 
     def test_coverage_enumerates_areas_not_in_overrides(self):
         manifest = {"overrides": [{

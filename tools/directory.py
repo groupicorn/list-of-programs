@@ -778,21 +778,12 @@ def area_coverage_counts(data: dict[str, Any], area: dict[str, Any]) -> tuple[in
 
 
 def coverage() -> int:
-    manifest_path = SOURCE_DIR / "coverage.json"
-    manifest = read_json(manifest_path) if manifest_path.exists() else {"overrides": []}
-    states: dict[str, dict[str, Any]] = {}
-    for path in sorted(PROGRAMS_DIR.glob("*.json")):
-        data = read_json(path)
-        states[path.stem] = data
+    manifest, states = coverage_inputs()
     rows = coverage_rows(manifest, states)
     for stem in sorted({row["state_file"] for row in rows}, key=str.casefold):
         print(state_display_name(stem).upper())
         for row in [item for item in rows if item["state_file"] == stem]:
-            priority = f" P{row['pass_priority']}" if row["pass_priority"] else ""
-            print(
-                f"{row['status']:<10} {row['display_name']:<38} "
-                f"{row['local_count']} local / {row['total_count']} total{priority}"
-            )
+            print(coverage_line(row))
         print()
     needs_work = sum(row["needs_work"] for row in rows)
     print(
@@ -801,6 +792,29 @@ def coverage() -> int:
         "source/coverage.json supplies overrides only."
     )
     return 0
+
+
+def coverage_inputs() -> tuple[dict[str, Any], dict[str, dict[str, Any]]]:
+    """Load the manifest and generated states used by coverage commands."""
+
+    manifest_path = SOURCE_DIR / "coverage.json"
+    manifest = read_json(manifest_path) if manifest_path.exists() else {"overrides": []}
+    states = {
+        path.stem: read_json(path)
+        for path in sorted(PROGRAMS_DIR.glob("*.json"))
+    }
+    return manifest, states
+
+
+def coverage_line(row: dict[str, Any]) -> str:
+    """Format one coverage row consistently for coverage and next."""
+
+    priority = f" P{row['pass_priority']}" if row["pass_priority"] else ""
+    need = f" NEED {row['need']}" if row["needs_work"] else ""
+    return (
+        f"{row['status']:<10} {row['display_name']:<38} "
+        f"{row['local_count']} local / {row['total_count']} total{priority}{need}"
+    )
 
 
 def coverage_rows(
@@ -837,6 +851,7 @@ def coverage_rows(
             )
             pass_priority = int(item.get("pass_priority", 0))
             needs_work = local_count < minimum_local
+            need = max(minimum_local - local_count, 0)
             status = (
                 "GOOD" if local_count >= max(minimum_local, GOOD_LOCAL_THRESHOLD)
                 else "LAUNCH" if not needs_work
@@ -852,6 +867,7 @@ def coverage_rows(
                 "target_total": target_total,
                 "pass_priority": pass_priority,
                 "needs_work": needs_work,
+                "need": need,
                 "status": status,
                 "total_status": "EXCELLENT" if total_count >= target_total else "PARTIAL",
                 # Backward-compatible aliases for scripts that consumed the old queue shape.
@@ -876,6 +892,7 @@ def coverage_rows(
             "target_total": int(item.get("target_total", item.get("target", DEFAULT_TARGET_TOTAL))),
             "pass_priority": int(item.get("pass_priority", 0)),
             "needs_work": True,
+            "need": minimum_local,
             "status": "MISSING_AREA",
             "total_status": "PARTIAL",
             "count": 0,
@@ -889,6 +906,55 @@ def coverage_rows(
         row["area_id"],
     ))
     return rows
+
+
+def next_coverage_sort_key(row: dict[str, Any]) -> tuple[Any, ...]:
+    """Sort unfinished areas into the research order used by ``directory next``.
+
+    Positive pass priorities are the explicit P1-style queue. Within that
+    queue, the smallest deficit wins. Ordinary areas one provider short of
+    their threshold come next, followed by zero-local strategic holes, then
+    the remaining unfinished areas.
+    """
+
+    is_priority = row["pass_priority"] > 0
+    if is_priority:
+        bucket = 0
+    elif row["local_count"] == row["minimum_local"] - 1:
+        bucket = 1
+    elif row["local_count"] == 0:
+        bucket = 2
+    else:
+        bucket = 3
+    return (
+        0 if is_priority else 1,
+        bucket,
+        row["need"],
+        -row["local_count"],
+        -row["total_count"],
+        row["state_file"].casefold(),
+        row["display_name"].casefold(),
+        row["area_id"],
+    )
+
+
+def next_coverage_rows(rows: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Return only unfinished areas in deterministic next-work order."""
+
+    return sorted((row for row in rows if row["needs_work"]), key=next_coverage_sort_key)
+
+
+def next_coverage() -> int:
+    """Print the single highest-priority unfinished area."""
+
+    manifest, states = coverage_inputs()
+    rows = next_coverage_rows(coverage_rows(manifest, states))
+    if not rows:
+        print("No NEEDS_WORK areas.")
+        return 0
+    row = rows[0]
+    print(f"NEXT {row['state_file']}/{row['area_id']}: {coverage_line(row)}")
+    return 0
 
 
 def explanation_reasons(location: dict[str, Any]) -> list[str]:
@@ -1146,6 +1212,7 @@ def main(argv: list[str] | None = None) -> None:
     explain_parser.add_argument("state")
     explain_parser.add_argument("area", nargs="?", help="Optional area ID or name filter")
     subparsers.add_parser("coverage", help="Print coverage for every generated area")
+    subparsers.add_parser("next", help="Print the highest-priority unfinished area")
     subparsers.add_parser("research-queue", help="Alias for coverage")
     args = parser.parse_args(argv)
     if args.command == "seed":
@@ -1163,6 +1230,8 @@ def main(argv: list[str] | None = None) -> None:
         raise SystemExit(1 if compare_state(state_stem(args.state)) else 0)
     elif args.command == "explain":
         raise SystemExit(explain_state(state_stem(args.state), args.area))
+    elif args.command == "next":
+        raise SystemExit(next_coverage())
     else:
         raise SystemExit(coverage())
 
