@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "state_file": "nevada",
+  "state_code": "NV",
+  "metadata": {
+    "snapshot_date": "2026-09-21",
+    "title": "Groupicorn Nevada IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. Nevada is represented by an initial regional catchment pair and a sourced anchor; remaining logo-backed leads stay in the verification queue until exact-site evidence is checked.",
+    "branding_note": "logo_url points to a tracked PNG asset. Existing asset provenance and license clearance require separate review where source URLs are not yet recorded.",
+    "geocoding_note": "Street addresses and ZIP codes are stored where sourced; coordinates are intentionally null pending an audited geocoding pass.",
+    "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use."
+  },
+  "areas": [
+    {
+      "area_id": "nv_las_vegas",
+      "state_code": "NV",
+      "region": "Northern Nevada",
+      "name": "Las Vegas / Southern Nevada",
+      "example_cities": [
+        "Las Vegas",
+        "Henderson",
+        "North Las Vegas"
+      ],
+      "neighbor_area_ids": [
+        "nv_reno"
+      ],
+      "definition": "Editorial Las Vegas / Southern Nevada catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "One sourced anchor is published; additional providers remain in the verification queue.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "nv_reno",
+      "state_code": "NV",
+      "region": "Northern Nevada",
+      "name": "Reno / Northern Nevada",
+      "example_cities": [
+        "Reno",
+        "Sparks",
+        "Carson City"
+      ],
+      "neighbor_area_ids": [
+        "nv_las_vegas"
+      ],
+      "definition": "Editorial Reno / Northern Nevada catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Secondary catchment retained for explicit neighboring discovery.",
+      "target_provider_count": 9
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "nv_las_vegas",
+      "location_id": "",
+      "name": "Bristlecone Recovery Center",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "nv_las_vegas",
+      "location_id": "",
+      "name": "Carson Tahoe Health",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "nv_las_vegas",
+      "location_id": "",
+      "name": "Quest Counseling And Consulting",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "nv_las_vegas",
+      "location_id": "",
+      "name": "Thrive Wellness Of Reno",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "nv_las_vegas",
+      "location_id": "",
+      "name": "Vegas Stronger",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "nv_las_vegas",
+      "location_id": "",
+      "name": "Zephyr Wellness",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "nv_las_vegas",
+      "location_id": "",
+      "name": "Nevada statewide discovery stack",
+      "priority": "high",
+      "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-21"
+    }
+  ]
+}

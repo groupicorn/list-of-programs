@@ -1,0 +1,16 @@
+{
+  "provider_id": "comcare-of-sedgwick-county",
+  "provider_name": "Comcare Of Sedgwick County",
+  "provider_website_url": "",
+  "reference_url": "",
+  "operator_scope": "unknown",
+  "known_parent_name": "",
+  "ownership_verified": "unverified",
+  "dedupe_group_id": "comcare-of-sedgwick-county",
+  "dedupe_group_reason": "Pending identity and ownership verification; do not merge without evidence.",
+  "logo_url": "images/ks/ks-comcare-of-sedgwick-county.png",
+  "logo_source_url": "",
+  "logo_downloaded": true,
+  "logo_license_reviewed": false,
+  "locations": []
+}
