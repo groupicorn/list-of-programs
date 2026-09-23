@@ -4,13 +4,13 @@
 
 This repository contains Groupicorn's canonical research source JSON, generated state-directory JSON, and local PNG logo assets. The generated files and images are published under `https://romeo.groupicorn.com/data/` and consumed there by web and iOS. Keep changes repository-native and data-focused; clients must not require a checkout of this repository at build or deploy time.
 
-The national goal is to bring every state to the breadth and usefulness of the
-current California directory. Treat California as the benchmark for geographic
-coverage, provider diversity, exact physical locations, evidence-backed care
-levels, and official local logo assets. Do not treat nine shortlist entries in
-one area as state completion: research should cover major metros, secondary
-cities, and realistic regional hubs, and should retain additional verified
-providers when the local market supports them.
+The national goal is to bring every state to California-like geographic breadth
+and usefulness. Treat California's area granularity and research breadth as the
+benchmark; during source migration, its current generated publication-ready
+counts may themselves still require improvement. Do not treat nine shortlist
+entries in one area as state completion: research should cover major metros,
+secondary cities, and realistic regional hubs, and should retain additional
+verified providers when the local market supports them.
 
 - Git-tracked canonical source is `source/areas/*.json`, `source/providers/<lowercase-state-code>/*.json`, `source/coverage.json`, and required files under `images/<lowercase-state-code>/`.
 - `programs/<state>.json` is generated and checked into Git for publication and clone usability. Do not hand-edit it; run `./directory build <state>` after changing canonical source.
@@ -26,6 +26,127 @@ providers when the local market supports them.
 Read this file, the root `README.md`, the target state's source fragments and generated JSON, one or two comparable states, and the relevant consumer/schema conventions when available. Check the worktree first and preserve unrelated changes.
 
 For research updates, use current public sources. Treat earlier assistant output, search rankings, review counts, snippets, and remembered provider facts as discovery leads rather than evidence. Verify the exact provider, treatment address, IOP/PHP service, population, modality, and operating status.
+
+## Coverage-driven work selection
+
+The long-term objective is nationwide California-like breadth: practical
+geographic coverage, provider diversity, exact physical treatment locations,
+evidence-backed IOP/PHP claims, and durable local PNG assets. California is the
+model for geographic granularity and research breadth; do not assume every
+current California record is publication-ready during canonical-source
+migration.
+
+`./directory coverage` is the authoritative progress report. `needs.txt` is
+only a checked-in generated snapshot of the `NEEDS_WORK` rows and must never be
+hand-curated or treated as a separate source of truth.
+
+When the user asks to continue coverage work without naming a state or area,
+select work from current coverage rather than choosing a state arbitrarily or
+simply taking the first alphabetical line in `needs.txt`.
+
+Use this priority order:
+
+1. Work higher `pass_priority` areas first. An explicit priority override in
+   `source/coverage.json` outranks ordinary areas.
+2. Within the same priority, prefer the area closest to its configured local
+   launch threshold: smallest positive
+   `minimum_local - local_count`. This normally means a 2-local area needing
+   one additional publication-ready provider before a 1-local or 0-local area.
+3. If additional strategic ordering is important, encode it in
+   `source/coverage.json` rather than relying on agent judgment or alphabetical
+   order.
+4. Do not continue adding providers to an area that has already met its
+   configured threshold while higher-priority `NEEDS_WORK` areas remain,
+   unless the user explicitly asks for that area.
+
+Before searching for new providers in the selected area, run:
+
+```sh
+./directory explain <state> <area>
+```
+
+Prefer completing existing canonical candidates before discovering new ones.
+A candidate that already has the correct physical site may only need current
+program-level evidence, a verified official local PNG, or another publication
+gate resolved.
+
+After each useful batch, regenerate and validate from canonical source:
+
+```sh
+./directory build
+./directory validate
+./directory coverage | grep '^NEEDS_WORK' > needs.txt
+git diff --check
+```
+
+`./directory build` with no state argument rebuilds every canonical state.
+`needs.txt` should be reproducible by the command above; if regenerating it
+without other source changes produces a diff, investigate the generated state
+data rather than manually editing `needs.txt`.
+
+### Coverage maturity stages
+
+Coverage work happens in stages. Do not treat the first passing threshold as
+national completion.
+
+**Stage 1 — Eliminate `NEEDS_WORK`.**
+Bring every practical area to its configured `minimum_local`, normally three
+local publication-ready provider groups. This is the nationwide launch floor.
+
+**Stage 2 — Move `LAUNCH` areas to `GOOD`.**
+After higher-priority `NEEDS_WORK` gaps are exhausted, deepen areas that only
+meet the launch floor. The default `GOOD` threshold is five local
+publication-ready provider groups. Prefer areas closest to becoming `GOOD`
+first unless `source/coverage.json` says otherwise.
+
+**Stage 3 — Build useful depth.**
+After geographic areas have good local coverage, work toward the configured
+total-choice target, normally nine distinct useful provider groups. Neighbor
+results may contribute where appropriate; state-level fallback results are
+display alternatives and do not count as local or neighboring coverage.
+
+**Stage 4 — Audit geography and state maturity.**
+A state is not mature merely because every currently defined area is `GOOD`.
+Review its geography against major metros, secondary population centers, and
+realistic regional hubs. Add missing areas when meaningful population centers
+or geographic regions are absent. Dense markets may also justify retaining
+more than nine verified provider groups in canonical source even though the
+prepared shortlist is capped.
+
+A mature state should therefore have:
+
+* a practical statewide geography skeleton rather than one strong metro;
+* no obvious major metro or regional-hub gaps;
+* at least launch-level local coverage throughout that geography;
+* stronger local depth in markets that support it;
+* diverse provider groups rather than duplicated branches;
+* exact physical locations;
+* current, source-backed IOP/PHP evidence;
+* valid official local PNG assets; and
+* additional verified canonical providers retained when useful beyond the
+  current shortlist limit.
+
+The progression is therefore:
+
+```text
+0–2 local -> launch threshold -> GOOD local depth -> total-choice depth
+-> geography audit -> mature state
+```
+
+Continue using the repository's generated metrics to decide the next
+incremental task until every state approaches the same breadth and usefulness,
+rather than declaring a state complete from a single successful shortlist.
+
+### Migration versus real coverage changes
+
+Canonical-source migration can make reported coverage temporarily decrease.
+This is expected when older records fail stricter publication gates such as
+site-specific IOP/PHP evidence or a valid local PNG.
+
+Do not restore old counts by weakening publication rules, copying legacy
+shortlists, inventing evidence, or counting fallback areas as local coverage.
+Use `./directory explain` to identify why candidates fail publication and
+improve the canonical evidence instead.
 
 ## Data invariants
 
@@ -57,6 +178,9 @@ When web and iOS are available, check that:
 Run checks proportional to the change, at least:
 
 ```sh
+./directory build
+./directory validate
+./directory coverage | grep '^NEEDS_WORK' > needs.txt
 jq empty programs/*.json
 git diff --check
 ```
