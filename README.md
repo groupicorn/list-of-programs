@@ -129,3 +129,6 @@ Research records are public-facing data. Keep claims sourced and scoped, preserv
 
 The asset tree is strict: `images/` may contain only `.png`, `.jpg`, `.jpeg`,
 `.webp`, and `.svg` files. The compiler and validator reject other files.
+Directory provider logos currently have a narrower publication requirement:
+`publication_ready()` accepts only a valid local PNG for a logo, even though
+the asset tree permits the other common image formats.

@@ -159,6 +159,45 @@ class DirectoryCompilerTests(DirectoryFixtureTestCase):
 
         self.assertEqual([], result["research_queue"])
 
+    def test_area_scoped_queue_item_does_not_use_another_location(self):
+        self.write_fixture(
+            area_ids=("in_indianapolis", "in_fort_wayne"),
+            locations=(
+                {
+                    "location_id": "ready-indianapolis",
+                    "provider_id": "multi-location-provider",
+                    "area_id": "in_indianapolis",
+                },
+                {
+                    "location_id": "pending-fort-wayne",
+                    "provider_id": "multi-location-provider",
+                    "area_id": "in_fort_wayne",
+                    "program_status": "program_claim_pending",
+                },
+            ),
+        )
+        area_path = self.areas_dir / "indiana.json"
+        area_source = json.loads(area_path.read_text())
+        area_source["research_queue"] = [
+            {
+                "queue_type": "verify_program_level",
+                "area_id": "in_indianapolis",
+                "provider_id": "multi-location-provider",
+                "location_id": "",
+            },
+            {
+                "queue_type": "verify_program_level",
+                "area_id": "in_fort_wayne",
+                "provider_id": "multi-location-provider",
+                "location_id": "",
+            },
+        ]
+        directory.write_json(area_path, area_source)
+
+        result = directory.build_state("indiana")
+
+        self.assertEqual(["in_fort_wayne"], [item["area_id"] for item in result["research_queue"]])
+
     def test_non_image_files_are_rejected(self):
         self.write_fixture(locations=({"location_id": "local", "provider_id": "local-provider"},))
         (self.images_dir / "in" / "notes.json").write_text("{}", encoding="utf-8")

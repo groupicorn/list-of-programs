@@ -131,6 +131,12 @@ def active_location(location: dict[str, Any]) -> bool:
 
 
 def publication_ready(location: dict[str, Any]) -> bool:
+    """Return whether a location can enter a generated directory shortlist.
+
+    The asset tree accepts several common image formats, but directory
+    provider logos currently require a valid local PNG at publication time.
+    """
+
     if not active_location(location):
         return False
     logo_url = str(location.get("logo_url", ""))
@@ -226,6 +232,13 @@ def completed_research_queue_items(
         if location_id:
             candidate = locations_by_id.get(location_id)
             candidates = [candidate] if candidate and str(candidate.get("provider_id")) == provider_id else []
+        elif item.get("area_id"):
+            area_id = str(item["area_id"]).strip()
+            candidates = [
+                location
+                for location in locations_by_provider.get(provider_id, [])
+                if location.get("primary_area_id") == area_id
+            ]
         else:
             candidates = locations_by_provider.get(provider_id, [])
         if any(publication_ready(location) for location in candidates):
