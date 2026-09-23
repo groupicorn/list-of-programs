@@ -85,16 +85,6 @@
       "queue_type": "verify_program_level",
       "area_id": "nh_nashua",
       "location_id": "",
-      "name": "Greater Nashua Mental Health",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-21"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "nh_nashua",
-      "location_id": "",
       "name": "Live Free Recovery Services",
       "priority": "high",
       "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
@@ -136,16 +126,6 @@
       "area_id": "nh_nashua",
       "location_id": "",
       "name": "The Mental Health Center Of Greater Manchester",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-21"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "nh_nashua",
-      "location_id": "",
-      "name": "Westbridge",
       "priority": "high",
       "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
       "source_url": "",

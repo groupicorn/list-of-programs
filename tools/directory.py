@@ -32,11 +32,13 @@ GENERATED_AREA_FIELDS = {
     "shortlisted_count",
     "in_area_shortlisted_count",
     "neighbor_shortlisted_count",
+    "fallback_shortlisted_count",
     "gap_to_nine",
     "local_gap_to_nine",
     "coverage_status",
     "adult_mental_health_candidates",
 }
+ALLOWED_IMAGE_SUFFIXES = {".png", ".jpg", ".jpeg", ".webp", ".svg"}
 STATE_CODES = {
     "alabama": "AL", "alaska": "AK", "arizona": "AZ", "arkansas": "AR",
     "california": "CA", "colorado": "CO", "connecticut": "CT", "delaware": "DE",
@@ -186,6 +188,70 @@ def source_provider_data(stem: str) -> tuple[list[dict[str, Any]], list[dict[str
     return providers, locations
 
 
+def completed_research_queue_items(
+    queue: list[dict[str, Any]],
+    providers: list[dict[str, Any]],
+    locations: list[dict[str, Any]],
+) -> list[tuple[dict[str, Any], str]]:
+    """Find provider-specific queue tasks whose evidence is now complete.
+
+    New queue entries should use ``provider_id`` and, when applicable,
+    ``location_id``. Exact provider-name matching remains as a migration aid
+    for older source files so stale tasks cannot hide behind the old schema.
+    """
+
+    providers_by_id = {str(provider.get("provider_id")): provider for provider in providers}
+    providers_by_name = {
+        str(provider.get("provider_name", "")).strip().casefold(): provider
+        for provider in providers
+        if provider.get("provider_name")
+    }
+    locations_by_id = {str(location.get("location_id")): location for location in locations}
+    locations_by_provider: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for location in locations:
+        locations_by_provider[str(location.get("provider_id"))].append(location)
+
+    completed: list[tuple[dict[str, Any], str]] = []
+    for item in queue:
+        if not isinstance(item, dict):
+            continue
+        provider_id = str(item.get("provider_id", "")).strip()
+        provider = providers_by_id.get(provider_id) if provider_id else None
+        if provider is None:
+            provider = providers_by_name.get(str(item.get("name", "")).strip().casefold())
+        if provider is None:
+            continue
+        provider_id = str(provider["provider_id"])
+        location_id = str(item.get("location_id", "")).strip()
+        if location_id:
+            candidate = locations_by_id.get(location_id)
+            candidates = [candidate] if candidate and str(candidate.get("provider_id")) == provider_id else []
+        else:
+            candidates = locations_by_provider.get(provider_id, [])
+        if any(publication_ready(location) for location in candidates):
+            completed.append((item, provider_id))
+    return completed
+
+
+def clean_research_queue(
+    queue: Any,
+    providers: list[dict[str, Any]],
+    locations: list[dict[str, Any]],
+    source_path: Path,
+) -> list[dict[str, Any]]:
+    if not isinstance(queue, list):
+        raise SystemExit(f"research_queue must be a list: {source_path}")
+    completed = completed_research_queue_items(queue, providers, locations)
+    completed_ids = {id(item) for item, _ in completed}
+    for item, provider_id in completed:
+        print(
+            f"WARN: {source_path}: research_queue contains completed provider "
+            f"{provider_id}; remove the task from canonical source",
+            file=sys.stderr,
+        )
+    return [item for item in queue if id(item) not in completed_ids]
+
+
 def clean_area(area: dict[str, Any]) -> dict[str, Any]:
     return {key: copy.deepcopy(value) for key, value in area.items() if key not in GENERATED_AREA_FIELDS}
 
@@ -218,11 +284,22 @@ def neighbor_area_ids(area: dict[str, Any]) -> list[str]:
     raise SystemExit(f"Area {area.get('area_id', '<missing>')} has invalid neighbor_area_ids")
 
 
+def fallback_area_ids(area: dict[str, Any]) -> list[str]:
+    """Return optional state-level fallback IDs, never treated as neighbors."""
+
+    raw_fallbacks = area.get("fallback_area_ids", [])
+    if isinstance(raw_fallbacks, str):
+        return [fallback.strip() for fallback in raw_fallbacks.split("|") if fallback.strip()]
+    if isinstance(raw_fallbacks, list):
+        return [str(fallback) for fallback in raw_fallbacks]
+    raise SystemExit(f"Area {area.get('area_id', '<missing>')} has invalid fallback_area_ids")
+
+
 def candidate_for_area(
     area: dict[str, Any],
     locations_by_area: dict[str, list[dict[str, Any]]],
     area_by_id: dict[str, dict[str, Any]],
-) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]]]:
     local = [location for location in locations_by_area.get(area["area_id"], []) if publication_ready(location)]
     neighbor: list[dict[str, Any]] = []
     for neighbor_id in neighbor_area_ids(area):
@@ -231,7 +308,18 @@ def candidate_for_area(
         neighbor.extend(
             location for location in locations_by_area.get(neighbor_id, []) if publication_ready(location)
         )
-    return sorted(local, key=location_sort_key), sorted(neighbor, key=location_sort_key)
+    fallback: list[dict[str, Any]] = []
+    for fallback_id in fallback_area_ids(area):
+        if fallback_id not in area_by_id:
+            continue
+        fallback.extend(
+            location for location in locations_by_area.get(fallback_id, []) if publication_ready(location)
+        )
+    return (
+        sorted(local, key=location_sort_key),
+        sorted(neighbor, key=location_sort_key),
+        sorted(fallback, key=location_sort_key),
+    )
 
 
 def match_record(
@@ -264,6 +352,8 @@ def match_record(
             "Local physical-address match selected before explicitly declared neighbors."
             if match_type == "local"
             else "Explicit one-hop neighbor match selected after local candidates."
+            if match_type == "neighbor"
+            else "State-level fallback match selected after local and neighbor candidates."
         ),
         "program_source_url": location.get("program_source_url", ""),
         "address_source_url": location.get("address_source_url", ""),
@@ -274,6 +364,9 @@ def match_record(
 
 
 def build_state(stem: str) -> dict[str, Any]:
+    image_errors = invalid_image_paths()
+    if image_errors:
+        raise SystemExit("Invalid files under images/:\n" + "\n".join(image_errors))
     area_source = source_area_data(stem)
     providers, locations = source_provider_data(stem)
     state_code = str(area_source.get("state_code") or state_code_for(stem)).upper()
@@ -308,11 +401,17 @@ def build_state(stem: str) -> dict[str, Any]:
         locations_by_area[location["primary_area_id"]].append(location)
         locations_by_provider[location["provider_id"]].append(location)
     for area in areas:
-        for neighbor_id in neighbor_area_ids(area):
-            if neighbor_id not in area_by_id:
-                raise SystemExit(f"Area {area['area_id']} references unknown neighbor {neighbor_id}")
-            if neighbor_id == area["area_id"]:
-                raise SystemExit(f"Area {area['area_id']} cannot neighbor itself")
+        for reference_type, reference_ids in (
+            ("neighbor", neighbor_area_ids(area)),
+            ("fallback", fallback_area_ids(area)),
+        ):
+            for neighbor_id in reference_ids:
+                if neighbor_id not in area_by_id:
+                    raise SystemExit(
+                        f"Area {area['area_id']} references unknown {reference_type} {neighbor_id}"
+                    )
+                if neighbor_id == area["area_id"]:
+                    raise SystemExit(f"Area {area['area_id']} cannot reference itself")
 
     matches: list[dict[str, Any]] = []
     shortlists: list[dict[str, Any]] = []
@@ -323,13 +422,17 @@ def build_state(stem: str) -> dict[str, Any]:
         local_groups = {
             location.get("provider_dedupe_group_id", location["provider_id"]) for location in local_locations
         }
-        candidate_local, candidate_neighbors = candidate_for_area(area, locations_by_area, area_by_id)
-        candidates = candidate_local + candidate_neighbors
+        candidate_local, candidate_neighbors, candidate_fallbacks = candidate_for_area(
+            area, locations_by_area, area_by_id
+        )
+        candidates = candidate_local + candidate_neighbors + candidate_fallbacks
         selected: list[tuple[dict[str, Any], str]] = []
         seen_groups: set[str] = set()
-        for location, match_type in [(item, "local") for item in candidate_local] + [
-            (item, "neighbor") for item in candidate_neighbors
-        ]:
+        for location, match_type in (
+            [(item, "local") for item in candidate_local]
+            + [(item, "neighbor") for item in candidate_neighbors]
+            + [(item, "fallback") for item in candidate_fallbacks]
+        ):
             group = location.get("provider_dedupe_group_id", location["provider_id"])
             if group in seen_groups or len(selected) >= int(area.get("target_provider_count", target_default)):
                 continue
@@ -340,12 +443,13 @@ def build_state(stem: str) -> dict[str, Any]:
             matches.append(row)
             shortlists.append(copy.deepcopy(row))
         local_selected = sum(1 for _, match_type in selected if match_type == "local")
-        neighbor_selected = len(selected) - local_selected
+        neighbor_selected = sum(1 for _, match_type in selected if match_type == "neighbor")
+        fallback_selected = sum(1 for _, match_type in selected if match_type == "fallback")
+        counted_selected = local_selected + neighbor_selected
         target = int(area.get("target_provider_count", target_default))
-        total_selected = len(selected)
         coverage_status = (
             "9_available_locally" if local_selected >= target
-            else "9_available_with_neighbors" if total_selected >= target
+            else "9_available_with_neighbors" if counted_selected >= target
             else "research_gap"
         )
         generated = copy.deepcopy(area)
@@ -355,13 +459,15 @@ def build_state(stem: str) -> dict[str, Any]:
             "candidate_provider_group_count": len({
                 location.get("provider_dedupe_group_id", location["provider_id"]) for location in candidates
             }),
-            "shortlisted_count": total_selected,
+            "shortlisted_count": counted_selected,
             "in_area_shortlisted_count": local_selected,
             "neighbor_shortlisted_count": neighbor_selected,
-            "gap_to_nine": max(target - total_selected, 0),
+            "gap_to_nine": max(target - counted_selected, 0),
             "local_gap_to_nine": max(target - local_selected, 0),
             "coverage_status": coverage_status,
         })
+        if fallback_area_ids(area):
+            generated["fallback_shortlisted_count"] = fallback_selected
         generated_areas.append(generated)
 
     generated_providers = []
@@ -383,6 +489,10 @@ def build_state(stem: str) -> dict[str, Any]:
         "area_matches": matches,
         "shortlists": shortlists,
     }
+    if "research_queue" in area_source:
+        output["research_queue"] = clean_research_queue(
+            area_source["research_queue"], providers, locations, source_area_path(stem)
+        )
     metadata["counts"] = {
         "providers": len(generated_providers),
         "locations": len(locations),
@@ -390,8 +500,6 @@ def build_state(stem: str) -> dict[str, Any]:
         "area_matches": len(matches),
         "shortlists": len(shortlists),
     }
-    if "research_queue" in area_source:
-        output["research_queue"] = copy.deepcopy(area_source["research_queue"])
     return output
 
 
@@ -455,6 +563,18 @@ def png_is_valid(path: Path) -> bool:
     return len(data) >= 24 and data[:8] == b"\x89PNG\r\n\x1a\n" and data[12:16] == b"IHDR"
 
 
+def invalid_image_paths() -> list[str]:
+    """Return non-image files that would violate the published asset tree."""
+
+    if not IMAGES_DIR.exists():
+        return []
+    return sorted(
+        path.relative_to(ROOT).as_posix()
+        for path in IMAGES_DIR.rglob("*")
+        if path.is_file() and path.suffix.casefold() not in ALLOWED_IMAGE_SUFFIXES
+    )
+
+
 def validate_state(path: Path) -> list[str]:
     errors: list[str] = []
     try:
@@ -502,9 +622,11 @@ def validate_state(path: Path) -> list[str]:
     for area in areas:
         area_id = area.get("area_id", "<missing>")
         neighbors = neighbor_area_ids(area)
-        for neighbor in neighbors:
-            if neighbor == area_id or neighbor not in area_by_id:
-                errors.append(f"{path}: invalid neighbor {neighbor!r} on {area_id}")
+        fallbacks = fallback_area_ids(area)
+        for reference_type, references in (("neighbor", neighbors), ("fallback", fallbacks)):
+            for reference in references:
+                if reference == area_id or reference not in area_by_id:
+                    errors.append(f"{path}: invalid {reference_type} {reference!r} on {area_id}")
     for collection_name in ("area_matches", "shortlists"):
         rows_by_area: dict[str, list[dict[str, Any]]] = defaultdict(list)
         for row in data[collection_name]:
@@ -527,11 +649,40 @@ def validate_state(path: Path) -> list[str]:
             for row in rows:
                 if row.get("match_type") == "neighbor" and row.get("actual_area_id") not in neighbor_area_ids(area_by_id[area_id]):
                     errors.append(f"{path}: neighbor row {row.get('location_id')} is not an explicit neighbor of {area_id}")
+                if row.get("match_type") == "fallback" and row.get("actual_area_id") not in fallback_area_ids(area_by_id[area_id]):
+                    errors.append(f"{path}: fallback row {row.get('location_id')} is not an explicit fallback of {area_id}")
     return errors
+
+
+def suspicious_region_warnings(areas: list[dict[str, Any]]) -> list[str]:
+    """Flag repeated region labels that conflict with an area's own geography wording."""
+
+    region_counts: defaultdict[str, int] = defaultdict(int)
+    for area in areas:
+        region_counts[str(area.get("region", "")).casefold()] += 1
+
+    markers = (
+        "north", "south", "east", "west", "central", "metro", "county",
+        "hills", "shore", "coast", "valley", "mountain", "basin", "plains",
+    )
+    warnings: list[str] = []
+    for area in areas:
+        region = str(area.get("region", ""))
+        if region_counts[region.casefold()] < 2:
+            continue
+        name_markers = {marker for marker in markers if marker in str(area.get("name", "")).casefold()}
+        region_markers = {marker for marker in markers if marker in region.casefold()}
+        if name_markers and region_markers and not name_markers.intersection(region_markers):
+            warnings.append(
+                f"{area.get('area_id', '<missing>')}: region {region!r} may be copied from another area; "
+                f"name {area.get('name', '')!r} uses different geographic markers"
+            )
+    return warnings
 
 
 def validate(state: str | None = None) -> int:
     errors: list[str] = []
+    errors.extend(f"{path}: unsupported file under images/" for path in invalid_image_paths())
     paths = list(iter_program_paths(state))
     legacy_count = 0
     for path in paths:
@@ -559,6 +710,19 @@ def validate(state: str | None = None) -> int:
         print("\n".join(errors), file=sys.stderr)
         print(f"Validation failed: {len(errors)} error(s) across {len(paths)} state file(s)", file=sys.stderr)
         return 1
+    warnings: list[str] = []
+    for path in paths:
+        if source_area_path(path.stem).exists():
+            try:
+                source = source_area_data(path.stem)
+                warnings.extend(
+                    f"WARN: {path}: {warning}"
+                    for warning in suspicious_region_warnings(source.get("areas", []))
+                )
+            except SystemExit:
+                pass
+    if warnings:
+        print("\n".join(warnings), file=sys.stderr)
     generated_count = len(paths) - legacy_count
     suffix = f"; {legacy_count} legacy state file(s) pending source migration" if legacy_count else ""
     print(f"Validation passed: {generated_count} generated state file(s){suffix}")

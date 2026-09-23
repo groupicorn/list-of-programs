@@ -124,36 +124,6 @@
       "queue_type": "verify_program_level",
       "area_id": "ia_cedar_rapids",
       "location_id": "",
-      "name": "Seasons Center For Behavioral Health",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-21"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "ia_cedar_rapids",
-      "location_id": "",
-      "name": "Unitypoint Health Iowa Lutheran",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-21"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "ia_cedar_rapids",
-      "location_id": "",
-      "name": "University Of Iowa Health Care",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-21"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "ia_cedar_rapids",
-      "location_id": "",
       "name": "YSS",
       "priority": "high",
       "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",

@@ -3984,16 +3984,6 @@
       "date": "2026-09-22"
     },
     {
-      "queue_type": "published_verified",
-      "area_id": "in_indianapolis",
-      "location_id": "",
-      "name": "Hendricks Behavioral Hospital",
-      "priority": "low",
-      "task": "Published after the official Hendricks Behavioral Hospital page confirmed adult in-person IOP at its outpatient department, 1051 Southfield Drive, Plainfield; adolescent IOP evidence and the Joint Commission locator were used as corroboration. Official logo saved locally.",
-      "source_url": "https://www.hendricksbehavioralhospital.com/adult-intensive-outpatient-program/",
-      "date": "2026-09-22"
-    },
-    {
       "queue_type": "verified_logo_pending",
       "area_id": "in_indianapolis",
       "location_id": "",

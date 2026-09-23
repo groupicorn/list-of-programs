@@ -95,37 +95,7 @@
       "queue_type": "verify_program_level",
       "area_id": "me_portland",
       "location_id": "",
-      "name": "Crossroads",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-21"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "me_portland",
-      "location_id": "",
       "name": "Health Affiliates Maine",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-21"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "me_portland",
-      "location_id": "",
-      "name": "Mainehealth Behavioral Health",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-21"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "me_portland",
-      "location_id": "",
-      "name": "Northern Light Acadia Hospital",
       "priority": "high",
       "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
       "source_url": "",

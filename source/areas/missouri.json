@@ -140,26 +140,6 @@
       "queue_type": "verify_program_level",
       "area_id": "mo_st_louis",
       "location_id": "",
-      "name": "Burrell Behavioral Health",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-21"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "mo_st_louis",
-      "location_id": "",
-      "name": "Compass Health Network",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-21"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "mo_st_louis",
-      "location_id": "",
       "name": "Coxhealth",
       "priority": "high",
       "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
@@ -171,26 +151,6 @@
       "area_id": "mo_st_louis",
       "location_id": "",
       "name": "Ozark Center",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-21"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "mo_st_louis",
-      "location_id": "",
-      "name": "Rediscover",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-21"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "mo_st_louis",
-      "location_id": "",
-      "name": "Sana Lake Recovery",
       "priority": "high",
       "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
       "source_url": "",

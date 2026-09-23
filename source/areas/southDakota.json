@@ -22,9 +22,7 @@
         "Brandon",
         "Yankton"
       ],
-      "neighbor_area_ids": [
-        "sd_rapid_city"
-      ],
+      "neighbor_area_ids": [],
       "definition": "Editorial Sioux Falls / Southeast South Dakota catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
       "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
@@ -34,14 +32,15 @@
     {
       "area_id": "sd_rapid_city",
       "state_code": "SD",
-      "region": "Southeastern South Dakota",
+      "region": "Western South Dakota",
       "name": "Rapid City / Black Hills",
       "example_cities": [
         "Rapid City",
         "Spearfish",
         "Sturgis"
       ],
-      "neighbor_area_ids": [
+      "neighbor_area_ids": [],
+      "fallback_area_ids": [
         "sd_sioux_falls"
       ],
       "definition": "Editorial Rapid City / Black Hills catchment for state-directory discovery; not a municipal boundary or travel-time claim.",

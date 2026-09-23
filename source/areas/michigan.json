@@ -240,67 +240,7 @@
       "queue_type": "verify_program_level",
       "area_id": "mi_detroit",
       "location_id": "",
-      "name": "Henry Ford Health",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-22"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "mi_detroit",
-      "location_id": "",
       "name": "Hope Network",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-22"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "mi_detroit",
-      "location_id": "",
-      "name": "Oakland Family Services",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-22"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "mi_detroit",
-      "location_id": "",
-      "name": "Personalized Nursing Light House",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-22"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "mi_detroit",
-      "location_id": "",
-      "name": "Pine Rest Christian Mental Health Services",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-22"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "mi_detroit",
-      "location_id": "",
-      "name": "Sacred Heart Rehabilitation Center",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-22"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "mi_detroit",
-      "location_id": "",
-      "name": "Sanford Behavioral Health",
       "priority": "high",
       "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance before shortlist inclusion.",
       "source_url": "",

@@ -34,8 +34,9 @@ class DirectoryFixtureTestCase(unittest.TestCase):
         self.patcher.stop()
         self.tempdir.cleanup()
 
-    def write_fixture(self, area_ids=("in_indianapolis",), neighbors=None, locations=()):
+    def write_fixture(self, area_ids=("in_indianapolis",), neighbors=None, fallbacks=None, locations=()):
         neighbors = neighbors or {}
+        fallbacks = fallbacks or {}
         areas = []
         for area_id in area_ids:
             areas.append({
@@ -44,6 +45,7 @@ class DirectoryFixtureTestCase(unittest.TestCase):
                 "region": "Test Indiana",
                 "name": area_id,
                 "neighbor_area_ids": neighbors.get(area_id, []),
+                "fallback_area_ids": fallbacks.get(area_id, []),
                 "target_provider_count": 9,
             })
         directory.write_json(self.areas_dir / "indiana.json", {
@@ -119,6 +121,50 @@ class DirectoryCompilerTests(DirectoryFixtureTestCase):
 
         self.assertEqual(["local", "neighbor"], [row["location_id"] for row in rows])
         self.assertEqual(["local", "neighbor"], [row["match_type"] for row in rows])
+
+    def test_fallback_results_are_labeled_and_excluded_from_coverage_total(self):
+        result = self.build_fixture(
+            area_ids=("in_indianapolis", "in_fort_wayne"),
+            fallbacks={"in_indianapolis": ["in_fort_wayne"]},
+            locations=({
+                "location_id": "fallback",
+                "provider_id": "fallback-provider",
+                "area_id": "in_fort_wayne",
+            },),
+        )
+
+        rows = [row for row in result["shortlists"] if row["area_id"] == "in_indianapolis"]
+        area = next(area for area in result["areas"] if area["area_id"] == "in_indianapolis")
+        self.assertEqual("fallback", rows[0]["match_type"])
+        self.assertEqual(0, area["shortlisted_count"])
+        self.assertEqual(1, area["fallback_shortlisted_count"])
+
+    def test_completed_research_queue_item_is_omitted_from_generated_output(self):
+        self.write_fixture(locations=({
+            "location_id": "completed",
+            "provider_id": "completed-provider",
+        },))
+        area_path = self.areas_dir / "indiana.json"
+        area_source = json.loads(area_path.read_text())
+        area_source["research_queue"] = [{
+            "queue_type": "verify_program_level",
+            "area_id": "in_indianapolis",
+            "provider_id": "completed-provider",
+            "location_id": "completed",
+            "name": "Stale Provider Name",
+        }]
+        directory.write_json(area_path, area_source)
+
+        result = directory.build_state("indiana")
+
+        self.assertEqual([], result["research_queue"])
+
+    def test_non_image_files_are_rejected(self):
+        self.write_fixture(locations=({"location_id": "local", "provider_id": "local-provider"},))
+        (self.images_dir / "in" / "notes.json").write_text("{}", encoding="utf-8")
+
+        with self.assertRaisesRegex(SystemExit, "unsupported file under images|Invalid files under images"):
+            directory.build_state("indiana")
 
     def test_legacy_pipe_delimited_neighbors_are_supported(self):
         result = self.build_fixture(

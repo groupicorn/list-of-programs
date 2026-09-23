@@ -86,27 +86,7 @@
       "queue_type": "verify_program_level",
       "area_id": "ok_tulsa",
       "location_id": "",
-      "name": "Grand Mental Health",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-21"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "ok_tulsa",
-      "location_id": "",
       "name": "Northcare",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-21"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "ok_tulsa",
-      "location_id": "",
-      "name": "Parkside Psychiatric Hospital And Clinic",
       "priority": "high",
       "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
       "source_url": "",

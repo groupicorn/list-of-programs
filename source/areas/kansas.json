@@ -23,7 +23,6 @@
         "Kansas City"
       ],
       "neighbor_area_ids": [
-        "ks_wichita",
         "ks_kansas_city"
       ],
       "definition": "Editorial Lawrence / Northeast Kansas catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
@@ -54,14 +53,15 @@
     {
       "area_id": "ks_wichita",
       "state_code": "KS",
-      "region": "Northeast Kansas",
+      "region": "South Central Kansas",
       "name": "Wichita / South Central Kansas",
       "example_cities": [
         "Wichita",
         "Newton",
         "Derby"
       ],
-      "neighbor_area_ids": [
+      "neighbor_area_ids": [],
+      "fallback_area_ids": [
         "ks_lawrence"
       ],
       "definition": "Editorial Wichita / South Central Kansas catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
@@ -127,16 +127,6 @@
       "area_id": "ks_lawrence",
       "location_id": "",
       "name": "Stormont Vail Behavioral Health",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-21"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "ks_lawrence",
-      "location_id": "",
-      "name": "University Of Kansas Health System Marillac",
       "priority": "high",
       "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
       "source_url": "",

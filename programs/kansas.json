@@ -304,7 +304,6 @@
         "Kansas City"
       ],
       "neighbor_area_ids": [
-        "ks_wichita",
         "ks_kansas_city"
       ],
       "definition": "Editorial Lawrence / Northeast Kansas catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
@@ -353,14 +352,15 @@
     {
       "area_id": "ks_wichita",
       "state_code": "KS",
-      "region": "Northeast Kansas",
+      "region": "South Central Kansas",
       "name": "Wichita / South Central Kansas",
       "example_cities": [
         "Wichita",
         "Newton",
         "Derby"
       ],
-      "neighbor_area_ids": [
+      "neighbor_area_ids": [],
+      "fallback_area_ids": [
         "ks_lawrence"
       ],
       "definition": "Editorial Wichita / South Central Kansas catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
@@ -371,12 +371,13 @@
       "local_location_count": 0,
       "local_provider_group_count": 0,
       "candidate_provider_group_count": 1,
-      "shortlisted_count": 1,
+      "shortlisted_count": 0,
       "in_area_shortlisted_count": 0,
-      "neighbor_shortlisted_count": 1,
-      "gap_to_nine": 8,
+      "neighbor_shortlisted_count": 0,
+      "gap_to_nine": 9,
       "local_gap_to_nine": 9,
-      "coverage_status": "research_gap"
+      "coverage_status": "research_gap",
+      "fallback_shortlisted_count": 1
     }
   ],
   "area_matches": [
@@ -492,7 +493,7 @@
       "state_code": "KS",
       "area_id": "ks_wichita",
       "area_name": "Wichita / South Central Kansas",
-      "region": "Northeast Kansas",
+      "region": "South Central Kansas",
       "location_id": "bert-nash-community-mental-health-center-lawrence",
       "provider_id": "bert-nash-community-mental-health-center",
       "dedupe_group_id": "bert-nash-community-mental-health-center",
@@ -501,7 +502,7 @@
       "street_address": "200 Maine Street, Suite A",
       "city": "Lawrence",
       "postal_code": "66044",
-      "match_type": "neighbor",
+      "match_type": "fallback",
       "actual_area_id": "ks_lawrence",
       "actual_area_name": "Lawrence / Northeast Kansas",
       "care_focus": "mental_health | substance_use",
@@ -509,7 +510,7 @@
       "age_group": "adult | adolescent",
       "selected": true,
       "display_order": 1,
-      "selection_basis": "Explicit one-hop neighbor match selected after local candidates.",
+      "selection_basis": "State-level fallback match selected after local and neighbor candidates.",
       "program_source_url": "https://www.bertnash.org/navigating-care",
       "address_source_url": "https://www.bertnash.org/navigating-care",
       "evidence_status": "official_source_research_only",
@@ -629,7 +630,7 @@
       "state_code": "KS",
       "area_id": "ks_wichita",
       "area_name": "Wichita / South Central Kansas",
-      "region": "Northeast Kansas",
+      "region": "South Central Kansas",
       "location_id": "bert-nash-community-mental-health-center-lawrence",
       "provider_id": "bert-nash-community-mental-health-center",
       "dedupe_group_id": "bert-nash-community-mental-health-center",
@@ -638,7 +639,7 @@
       "street_address": "200 Maine Street, Suite A",
       "city": "Lawrence",
       "postal_code": "66044",
-      "match_type": "neighbor",
+      "match_type": "fallback",
       "actual_area_id": "ks_lawrence",
       "actual_area_name": "Lawrence / Northeast Kansas",
       "care_focus": "mental_health | substance_use",
@@ -646,7 +647,7 @@
       "age_group": "adult | adolescent",
       "selected": true,
       "display_order": 1,
-      "selection_basis": "Explicit one-hop neighbor match selected after local candidates.",
+      "selection_basis": "State-level fallback match selected after local and neighbor candidates.",
       "program_source_url": "https://www.bertnash.org/navigating-care",
       "address_source_url": "https://www.bertnash.org/navigating-care",
       "evidence_status": "official_source_research_only",
@@ -709,16 +710,6 @@
       "area_id": "ks_lawrence",
       "location_id": "",
       "name": "Stormont Vail Behavioral Health",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-21"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "ks_lawrence",
-      "location_id": "",
-      "name": "University Of Kansas Health System Marillac",
       "priority": "high",
       "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
       "source_url": "",

@@ -34,7 +34,7 @@
     {
       "area_id": "ri_newport",
       "state_code": "RI",
-      "region": "Providence Metro",
+      "region": "South County Rhode Island",
       "name": "Newport / South County",
       "example_cities": [
         "Newport",
@@ -97,16 +97,6 @@
       "area_id": "ri_providence",
       "location_id": "",
       "name": "Newport Mental Health",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-21"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "ri_providence",
-      "location_id": "",
-      "name": "South County Psychiatry",
       "priority": "high",
       "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
       "source_url": "",

@@ -68,7 +68,7 @@ JSON file. The established top-level collections are:
 - `area_matches` — candidate matches for each area.
 - `shortlists` — prepared display results, normally up to nine distinct provider groups per area. Additional researched providers should remain in canonical source even when they are not selected for the current display shortlist.
 
-Areas are editorial travel/search buckets, not claims about municipal boundaries, driving time, eligibility, availability, or clinical quality. Local matches come before explicitly declared neighbors. Provider branches are deduplicated with `provider_dedupe_group_id`; the directory is not a ranking.
+Areas are editorial travel/search buckets, not claims about municipal boundaries, driving time, eligibility, availability, or clinical quality. Local matches come before explicitly declared neighbors. Optional `fallback_area_ids` are state-level alternatives, are labeled separately, and do not count toward an area's coverage total. Provider branches are deduplicated with `provider_dedupe_group_id`; the directory is not a ranking.
 
 `featuredPrograms.json` is a separate homepage display list migrated from older web data. The canonical research directories live under `programs/`. Do not update the featured snapshot as part of an ordinary state-directory change unless the task explicitly includes homepage curation.
 
@@ -126,3 +126,6 @@ git diff --check
 Also verify that every changed `logo_url` resolves to a real PNG in `images/`, every referenced provider/location/area ID exists, every location has the correct two-letter `state_code`, and every shortlist contains no duplicate provider group and no more than nine entries. After publishing, verify representative `GET` and `HEAD` requests against the matching `https://romeo.groupicorn.com/data/...` URLs. When web and iOS are available, build/check them and confirm the new state appears in each client's directory index and that both clients resolve the JSON and PNG URLs without sibling-repository links.
 
 Research records are public-facing data. Keep claims sourced and scoped, preserve uncertainty, do not store sensitive patient information, and do not present the directory as clinical advice or a promise of admission.
+
+The asset tree is strict: `images/` may contain only `.png`, `.jpg`, `.jpeg`,
+`.webp`, and `.svg` files. The compiler and validator reject other files.

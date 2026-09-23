@@ -24,9 +24,17 @@ as a ready directory option.
 ## Area files
 
 `source/areas/<state-file>.json` contains the editorial geography, explicit
-one-hop practical neighbors (not merely statewide or same-state adjacency), state metadata, and optional research queue. The compiler
-derives local/neighbor matches, provider-group deduplication, ordering, nine-
-entry caps, counts, gaps, and coverage status.
+one-hop practical neighbors (not merely statewide or same-state adjacency),
+optional state-level `fallback_area_ids`, state metadata, and an optional
+research queue. Fallbacks are labeled separately and do not count toward
+coverage totals. The compiler derives local/neighbor/fallback matches,
+provider-group deduplication, ordering, nine-entry caps, counts, gaps, and
+coverage status.
+
+Provider-specific verification tasks should use `provider_id` and, when
+appropriate, `location_id`. Older name-based tasks are still recognized during
+migration; builds warn and omit a task when its provider now has complete
+program, address, and local-logo evidence.
 
 ## Workflow
 
@@ -47,4 +55,5 @@ including pending program evidence, exclusion statuses, and missing local PNGs.
 
 Commit source JSON, required PNGs, and the regenerated `programs/<state>.json`
 together. CI should run `./directory build` and fail when the generated diff is
-not clean, then run `./directory validate`.
+not clean, then run `./directory validate`. Only image files (`.png`, `.jpg`,
+`.jpeg`, `.webp`, `.svg`) may exist under `images/`.
