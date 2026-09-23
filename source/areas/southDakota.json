@@ -3,10 +3,10 @@
   "state_file": "southDakota",
   "state_code": "SD",
   "metadata": {
-    "snapshot_date": "2026-09-21",
+    "snapshot_date": "2026-09-22",
     "title": "Groupicorn South Dakota IOP/PHP research directory",
     "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
-    "methodology": "Physical-address-first. South Dakota is represented by an initial regional catchment pair and a sourced anchor; remaining logo-backed leads stay in the verification queue until exact-site evidence is checked.",
+    "methodology": "Physical-address-first. Current official provider pages support IOP/PHP location records in Sioux Falls; additional logo-backed leads remain in the verification queue until exact-site evidence is checked.",
     "branding_note": "logo_url points to a tracked PNG asset. Existing asset provenance and license clearance require separate review where source URLs are not yet recorded.",
     "geocoding_note": "Street addresses and ZIP codes are stored where sourced; coordinates are intentionally null pending an audited geocoding pass.",
     "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use."
@@ -28,7 +28,7 @@
       "definition": "Editorial Sioux Falls / Southeast South Dakota catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
       "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
-      "scope_note": "One sourced anchor is published; additional providers remain in the verification queue.",
+      "scope_note": "Current official IOP/PHP sites are published; additional providers remain in the verification queue.",
       "target_provider_count": 9
     },
     {
