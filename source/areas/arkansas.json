@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "state_file": "arkansas",
+  "state_code": "AR",
+  "metadata": {
+    "snapshot_date": "2026-09-23",
+    "title": "Groupicorn Arkansas IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. Local provider groups are considered before named neighboring catchments. Shortlists are editorial discovery candidates, not rankings. Arkansas-local/regional operators are preferred over broad chains when evidence quality is comparable.",
+    "branding_note": "logo_url uses a live favicon proxy when an official website is known. This is a prototype discovery placeholder, not a cleared logo asset.",
+    "geocoding_note": "ZIP codes and street addresses are stored; coordinates intentionally left null in this pass. Geocode later with a chosen provider."
+  },
+  "areas": [
+    {
+      "area_id": "ar-little-rock-central",
+      "state_code": "AR",
+      "region": "Central Arkansas",
+      "name": "Little Rock / North Little Rock / Benton",
+      "example_cities": "Little Rock | North Little Rock | Benton | Bryant",
+      "neighbor_area_ids": "ar-conway-north-metro | ar-hot-springs | ar-pine-bluff-delta",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "ar-conway-north-metro",
+      "state_code": "AR",
+      "region": "Central Arkansas",
+      "name": "Conway / North Metro",
+      "example_cities": "Conway",
+      "neighbor_area_ids": "ar-little-rock-central",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "ar-northwest",
+      "state_code": "AR",
+      "region": "Northwest Arkansas",
+      "name": "Fayetteville / Springdale / Rogers / Bentonville",
+      "example_cities": "Fayetteville | Springdale | Rogers | Bentonville",
+      "neighbor_area_ids": "ar-fort-smith-river-valley",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "ar-fort-smith-river-valley",
+      "state_code": "AR",
+      "region": "Western Arkansas",
+      "name": "Fort Smith / River Valley",
+      "example_cities": "Fort Smith | Barling | Van Buren",
+      "neighbor_area_ids": "ar-northwest",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "ar-hot-springs",
+      "state_code": "AR",
+      "region": "Southwest-Central Arkansas",
+      "name": "Hot Springs / Hot Springs Village",
+      "example_cities": "Hot Springs | Hot Springs Village",
+      "neighbor_area_ids": "ar-little-rock-central",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "ar-jonesboro-northeast",
+      "state_code": "AR",
+      "region": "Northeast Arkansas",
+      "name": "Jonesboro / Northeast Arkansas",
+      "example_cities": "Jonesboro | Paragould",
+      "neighbor_area_ids": "",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "ar-texarkana-southwest",
+      "state_code": "AR",
+      "region": "Southwest Arkansas",
+      "name": "Texarkana / Southwest Arkansas",
+      "example_cities": "Texarkana | Hope",
+      "neighbor_area_ids": "",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "ar-pine-bluff-delta",
+      "state_code": "AR",
+      "region": "Southeast Arkansas",
+      "name": "Pine Bluff / Arkansas Delta",
+      "example_cities": "Pine Bluff | Stuttgart",
+      "neighbor_area_ids": "ar-little-rock-central",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ar-conway-north-metro",
+      "location_id": "",
+      "name": "The Pointe Outpatient Behavioral Health Services - Conway",
+      "priority": "high",
+      "task": "Verify a current site-specific IOP/PHP claim before publication; current state/provider records confirm the Conway outpatient address, but the reviewed sources did not establish an IOP or PHP at that exact site.",
+      "source_url": "https://humanservices.arkansas.gov/wp-content/uploads/710-19-1023_Attachment_III_Behavioral_Health_Agencies.pdf",
+      "date": "2026-09-23"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ar-conway-north-metro",
+      "location_id": "",
+      "name": "Counseling Associates / Arisa Health - Conway",
+      "priority": "normal",
+      "task": "Verify whether the Conway clinic currently delivers IOP or PHP; official pages confirm outpatient mental-health and substance-use services, but not a named IOP/PHP at the Conway site.",
+      "source_url": "https://caiinc.org/substance-abuse-services/",
+      "date": "2026-09-23"
+    }
+  ]
+}

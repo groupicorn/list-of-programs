@@ -3,10 +3,10 @@
   "state_file": "georgia",
   "state_code": "GA",
   "metadata": {
-    "snapshot_date": "2026-09-22",
+    "snapshot_date": "2026-09-23",
     "title": "Groupicorn Georgia IOP/PHP research directory",
     "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
-    "methodology": "Physical-address-first. Local provider groups are considered before named neighboring catchments. Shortlists are editorial discovery candidates, not rankings. September 22, 2026 parallel regional pass added current official or accreditation-backed sites in Athens, Augusta, Columbus, Macon, and Savannah; Metro Atlanta and the remaining regional hubs were not statewide re-verified.",
+    "methodology": "Physical-address-first. Local provider groups are considered before named neighboring catchments. Shortlists are editorial discovery candidates, not rankings. September 22-23, 2026 regional passes added current official or accreditation-backed sites in Athens, Augusta, Columbus, Macon, and Savannah; Metro Atlanta and the remaining regional hubs were not statewide re-verified.",
     "branding_note": "logo_url uses repository-provided provider brand assets where available. Brand assets are discovery references and have not been license-cleared for redistribution.",
     "geocoding_note": "ZIP codes and street addresses are stored; coordinates intentionally left null in this pass. Geocode later with a chosen provider."
   },
@@ -154,8 +154,9 @@
       "location_id": "",
       "name": "Augusta and Central Savannah River Area",
       "priority": "high",
-      "task": "Verify the current public-facing Augusta program page for Georgia Recovery Campus and expand with Lighthouse Care Center, Hope House, and other local providers where current physical-site IOP/PHP evidence is available.",
-      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/698142/748909"
+      "task": "Continue Augusta expansion with Hope House, Serenity Behavioral Health Systems, and other local programs after verifying an exact treatment street address and current IOP/PHP evidence; the current pass added Lighthouse, Bluff, AQCS, Willingway, and New Season.",
+      "source_url": "https://www.hopehouseaugusta.org/programs-overview",
+      "date": "2026-09-23"
     },
     {
       "queue_type": "find_provider",

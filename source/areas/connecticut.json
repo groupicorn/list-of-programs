@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "state_file": "connecticut",
+  "state_code": "CT",
+  "metadata": {
+    "snapshot_date": "2026-09-23",
+    "title": "Groupicorn Connecticut IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. This September 23, 2026 New Haven / Milford / Shoreline pass verifies current official IOP/PHP evidence for local provider sites and adds tracked PNG assets where an official provider-controlled image was available. Shortlists are editorial discovery candidates, not rankings; remaining leads stay queued when an evidence or asset gate is incomplete.",
+    "branding_note": "Newly verified records use tracked PNG assets acquired from official provider-controlled sources. Legacy Connecticut fragments retain their original provenance and require separate asset migration before publication.",
+    "geocoding_note": "ZIP codes and street addresses are stored; coordinates intentionally left null in this pass. Geocode later with a chosen provider."
+  },
+  "areas": [
+    {
+      "area_id": "ct-lower-fairfield",
+      "state_code": "CT",
+      "region": "Fairfield County",
+      "name": "Stamford / Greenwich / Norwalk",
+      "example_cities": "Stamford | Greenwich | Norwalk | Darien | Westport",
+      "neighbor_area_ids": "ct-bridgeport-valley | ct-danbury-western",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "ct-bridgeport-valley",
+      "state_code": "CT",
+      "region": "Fairfield / Lower Naugatuck",
+      "name": "Bridgeport / Fairfield / Stratford / Shelton",
+      "example_cities": "Bridgeport | Fairfield | Stratford | Shelton | Westport",
+      "neighbor_area_ids": "ct-lower-fairfield | ct-new-haven | ct-waterbury",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "ct-danbury-western",
+      "state_code": "CT",
+      "region": "Western Connecticut",
+      "name": "Danbury / New Milford / Western CT",
+      "example_cities": "Danbury | New Milford | Bethel | Ridgefield",
+      "neighbor_area_ids": "ct-lower-fairfield | ct-waterbury",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "ct-new-haven",
+      "state_code": "CT",
+      "region": "South-Central Connecticut",
+      "name": "New Haven / Milford / Shoreline",
+      "example_cities": "New Haven | Milford | Branford | North Branford | West Haven",
+      "neighbor_area_ids": "ct-bridgeport-valley | ct-waterbury | ct-central-hartford | ct-eastern-shoreline",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region. September 23, 2026 research added current official IOP/PHP evidence for New Haven and Shoreline sites; this is not a statewide re-verification."
+    },
+    {
+      "area_id": "ct-waterbury",
+      "state_code": "CT",
+      "region": "Naugatuck Valley",
+      "name": "Waterbury / Naugatuck Valley",
+      "example_cities": "Waterbury | Naugatuck | Cheshire",
+      "neighbor_area_ids": "ct-bridgeport-valley | ct-danbury-western | ct-new-haven | ct-central-hartford",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "ct-central-hartford",
+      "state_code": "CT",
+      "region": "Central Connecticut",
+      "name": "Hartford / New Britain / Meriden / Middletown",
+      "example_cities": "Hartford | West Hartford | New Britain | Meriden | Middletown | Glastonbury",
+      "neighbor_area_ids": "ct-new-haven | ct-waterbury | ct-eastern-shoreline",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "ct-eastern-shoreline",
+      "state_code": "CT",
+      "region": "Eastern Connecticut",
+      "name": "New London / Norwich / Groton / Eastern CT",
+      "example_cities": "New London | Norwich | Groton | Old Saybrook | Mansfield | Danielson",
+      "neighbor_area_ids": "ct-new-haven | ct-central-hartford",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "verify_logo",
+      "area_id": "ct-new-haven",
+      "location_id": "mcca-new-haven",
+      "name": "MCCA New Haven",
+      "priority": "medium",
+      "task": "The official MCCA New Haven outpatient page supports the 215 Whalley Avenue site and adult IOP, but a current official provider-controlled PNG logo was not located during this pass. Add and verify a local PNG before shortlist publication.",
+      "source_url": "https://mccaonline.com/programs/outpatient/new-haven-outpatient/",
+      "date": "2026-09-23"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "ct-new-haven",
+      "location_id": "",
+      "name": "New Haven / Milford / Shoreline discovery follow-up",
+      "priority": "medium",
+      "task": "Continue local discovery for Milford, West Haven, Hamden, Branford, Guilford, Madison, and shoreline communities; verify exact site-level IOP/PHP evidence and official local PNGs before adding further shortlist candidates.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-23"
+    }
+  ]
+}

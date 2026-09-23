@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "state_file": "alabama",
+  "state_code": "AL",
+  "metadata": {
+    "snapshot_date": "2026-09-20",
+    "title": "Groupicorn Alabama IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. Local provider groups are considered before named neighboring catchments. Shortlists are editorial discovery candidates, not rankings. Alabama-local/regional operators are preferred over broad chains when evidence quality is comparable.",
+    "branding_note": "logo_url uses a live favicon proxy when an official website is known. This is a prototype discovery placeholder, not a cleared logo asset.",
+    "geocoding_note": "ZIP codes and street addresses are stored; coordinates intentionally left null in this pass. Geocode later with a chosen provider."
+  },
+  "areas": [
+    {
+      "area_id": "al-birmingham",
+      "state_code": "AL",
+      "region": "Central Alabama",
+      "name": "Birmingham / Hoover / Jefferson County",
+      "example_cities": "Birmingham | Hoover | Vestavia Hills | Homewood | Warrior",
+      "neighbor_area_ids": "al-tuscaloosa | al-cullman | al-gadsden-anniston",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "al-huntsville-madison",
+      "state_code": "AL",
+      "region": "North Alabama",
+      "name": "Huntsville / Madison",
+      "example_cities": "Huntsville | Madison",
+      "neighbor_area_ids": "al-cullman | al-shoals",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "al-shoals",
+      "state_code": "AL",
+      "region": "North Alabama",
+      "name": "Florence / Muscle Shoals / The Shoals",
+      "example_cities": "Florence | Muscle Shoals | Sheffield | Tuscumbia",
+      "neighbor_area_ids": "al-huntsville-madison",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "al-cullman",
+      "state_code": "AL",
+      "region": "North Alabama",
+      "name": "Cullman / North-Central Alabama",
+      "example_cities": "Cullman",
+      "neighbor_area_ids": "al-birmingham | al-huntsville-madison",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "al-gadsden-anniston",
+      "state_code": "AL",
+      "region": "East-Central Alabama",
+      "name": "Gadsden / Anniston",
+      "example_cities": "Gadsden | Anniston | Oxford",
+      "neighbor_area_ids": "al-birmingham",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "al-tuscaloosa",
+      "state_code": "AL",
+      "region": "West-Central Alabama",
+      "name": "Tuscaloosa / West Alabama",
+      "example_cities": "Tuscaloosa | Northport",
+      "neighbor_area_ids": "al-birmingham",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "al-montgomery",
+      "state_code": "AL",
+      "region": "Central Alabama",
+      "name": "Montgomery / River Region",
+      "example_cities": "Montgomery | Prattville | Wetumpka",
+      "neighbor_area_ids": "al-auburn-opelika | al-black-belt",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "al-auburn-opelika",
+      "state_code": "AL",
+      "region": "East Alabama",
+      "name": "Auburn / Opelika",
+      "example_cities": "Auburn | Opelika",
+      "neighbor_area_ids": "al-montgomery",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "al-mobile-baldwin",
+      "state_code": "AL",
+      "region": "Gulf Coast",
+      "name": "Mobile / Eastern Shore / Baldwin County",
+      "example_cities": "Mobile | Daphne | Spanish Fort | Fairhope | Foley",
+      "neighbor_area_ids": "",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "al-wiregrass",
+      "state_code": "AL",
+      "region": "Southeast Alabama",
+      "name": "Dothan / Wiregrass",
+      "example_cities": "Dothan | Enterprise | Ozark",
+      "neighbor_area_ids": "",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "al-black-belt",
+      "state_code": "AL",
+      "region": "Black Belt",
+      "name": "Selma / Black Belt",
+      "example_cities": "Selma | Demopolis",
+      "neighbor_area_ids": "al-montgomery",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "verify_program_and_address",
+      "area_id": "al-gadsden-anniston",
+      "location_id": "",
+      "name": "IOP Behavioral Health",
+      "priority": "medium",
+      "task": "The current official site describes an adult IOP and publishes an Alabama phone number, but does not expose a verifiable physical treatment address; confirm the local site before adding a canonical location.",
+      "source_url": "https://www.iophealth.com/",
+      "date": "2026-09-23"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "state_file": "arizona",
+  "state_code": "AZ",
+  "metadata": {
+    "snapshot_date": "2026-09-23",
+    "title": "Groupicorn Arizona IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. Local provider groups are considered before named neighboring catchments. Shortlists are editorial discovery candidates, not rankings. Arizona-local/regional operators are preferred over broad chains when evidence quality is comparable.",
+    "branding_note": "logo_url uses a live favicon proxy when an official website is known. This is a prototype discovery placeholder, not a cleared logo asset.",
+    "geocoding_note": "ZIP codes and street addresses are stored; coordinates intentionally left null in this pass. Geocode later with a chosen provider."
+  },
+  "areas": [
+    {
+      "area_id": "az-phoenix-central",
+      "state_code": "AZ",
+      "region": "Phoenix Metro",
+      "name": "Phoenix / Central Valley",
+      "example_cities": "Phoenix | Paradise Valley",
+      "neighbor_area_ids": "az-scottsdale-northeast | az-east-valley | az-west-valley",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "az-scottsdale-northeast",
+      "state_code": "AZ",
+      "region": "Phoenix Metro",
+      "name": "Scottsdale / Northeast Valley",
+      "example_cities": "Scottsdale | Fountain Hills",
+      "neighbor_area_ids": "az-phoenix-central | az-east-valley",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "az-east-valley",
+      "state_code": "AZ",
+      "region": "Phoenix Metro",
+      "name": "Mesa / Tempe / Chandler / Gilbert",
+      "example_cities": "Mesa | Tempe | Chandler | Gilbert",
+      "neighbor_area_ids": "az-phoenix-central | az-scottsdale-northeast | az-pinal-casa-grande",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "az-west-valley",
+      "state_code": "AZ",
+      "region": "Phoenix Metro",
+      "name": "Glendale / Peoria / West Valley",
+      "example_cities": "Glendale | Peoria | Surprise | Goodyear",
+      "neighbor_area_ids": "az-phoenix-central",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "az-pinal-casa-grande",
+      "state_code": "AZ",
+      "region": "Central Arizona",
+      "name": "Casa Grande / Pinal County",
+      "example_cities": "Casa Grande | Florence | Oracle | Queen Creek",
+      "neighbor_area_ids": "az-east-valley | az-tucson",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "az-tucson",
+      "state_code": "AZ",
+      "region": "Southern Arizona",
+      "name": "Tucson / Pima County",
+      "example_cities": "Tucson | Oro Valley | Marana",
+      "neighbor_area_ids": "az-pinal-casa-grande",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "az-prescott",
+      "state_code": "AZ",
+      "region": "Northern Arizona",
+      "name": "Prescott / Prescott Valley",
+      "example_cities": "Prescott | Prescott Valley",
+      "neighbor_area_ids": "az-flagstaff-northern",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "az-flagstaff-northern",
+      "state_code": "AZ",
+      "region": "Northern Arizona",
+      "name": "Flagstaff / Northern Arizona",
+      "example_cities": "Flagstaff | Sedona | Cottonwood",
+      "neighbor_area_ids": "az-prescott",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "az-yuma",
+      "state_code": "AZ",
+      "region": "Southwest Arizona",
+      "name": "Yuma / Southwest Arizona",
+      "example_cities": "Yuma | San Luis",
+      "neighbor_area_ids": "",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "az-kingman-havasu",
+      "state_code": "AZ",
+      "region": "Western Arizona",
+      "name": "Kingman / Lake Havasu City",
+      "example_cities": "Kingman | Lake Havasu City | Bullhead City",
+      "neighbor_area_ids": "",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "az-yuma",
+      "location_id": "community-health-associates-01",
+      "name": "Community Health Associates Yuma IOP track",
+      "priority": "high",
+      "task": "The current official Yuma page confirms the physical site and outpatient behavioral-health, group-counseling, and substance-use services, but does not name an IOP/PHP track. Confirm the current site-specific IOP level before publication.",
+      "source_url": "https://chaarizona.com/location/yuma/",
+      "date": "2026-09-23"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "az-yuma",
+      "location_id": "",
+      "name": "Sunset Health Yuma behavioral health",
+      "priority": "normal",
+      "task": "Verify whether the current Yuma or North Yuma clinic operates a physical IOP/PHP track; the official site currently confirms behavioral-health services but not a site-specific IOP/PHP program.",
+      "source_url": "https://mysunsethealth.org/behavioral-health-providers/",
+      "date": "2026-09-23"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "az-yuma",
+      "location_id": "",
+      "name": "Transitional Living Center Recovery Yuma",
+      "priority": "normal",
+      "task": "The current official site confirms the Yuma location; the 2025 SAMHSA directory reports IOP. Reconfirm the current IOP track and exact outpatient treatment site before any future refresh.",
+      "source_url": "https://www.tlcrecoveryaz.com/contact-2/",
+      "date": "2026-09-23"
+    }
+  ]
+}

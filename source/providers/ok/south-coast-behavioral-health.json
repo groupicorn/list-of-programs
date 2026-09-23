@@ -9,7 +9,7 @@
   "dedupe_group_id": "south-coast-behavioral-health",
   "dedupe_group_reason": "Single sourced South Coast Oklahoma City PHP/IOP location.",
   "logo_url": "images/ok/ok-south-coast-behavioral-health.png",
-  "logo_source_url": "https://www.scbh.com/wp-content/uploads/2022/05/SCBH-Stacked-Dark.svg",
+  "logo_source_url": "https://www.scbh.com/wp-content/uploads/2022/05/SCBH-Logo.svg",
   "logo_downloaded": true,
   "logo_license_reviewed": false,
   "locations": [
@@ -39,7 +39,7 @@
       "ownership_verified": "unverified",
       "logo_url": "images/ok/ok-south-coast-behavioral-health.png",
       "logo_status": "official_logo_downloaded",
-      "research_date": "2026-09-22",
+      "research_date": "2026-09-23",
       "program_source_kind": "official_provider_page",
       "provider_website_url": "https://www.scbh.com/",
       "website_kind": "official_provider",
@@ -59,7 +59,7 @@
       "known_parent_name": "Aliya Health Group",
       "area_name": "Oklahoma City Metro",
       "region": "Central Oklahoma",
-      "record_quality_notes": "Official South Coast pages support the exact Oklahoma City location and PHP/IOP levels; verify current intake, eligibility, insurance, and accepting-patient status before use."
+      "record_quality_notes": "Current official South Coast pages support the exact Oklahoma City location and PHP/IOP levels; verify current intake, eligibility, insurance, and accepting-patient status before use."
     }
   ]
 }

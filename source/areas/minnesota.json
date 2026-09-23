@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "state_file": "minnesota",
+  "state_code": "MN",
+  "metadata": {
+    "snapshot_date": "2026-09-23",
+    "title": "Groupicorn Minnesota IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. This Twin Cities Metro update adds current official site evidence for mental-health and substance-use IOP/PHP programs; remaining leads stay in the verification queue until exact-site evidence is checked. This is not a statewide re-verification.",
+    "branding_note": "logo_url points to a tracked PNG asset acquired from an official provider-controlled source. License clearance is not implied.",
+    "geocoding_note": "Street addresses and ZIP codes are stored where sourced; coordinates are intentionally null pending an audited geocoding pass.",
+    "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use."
+  },
+  "areas": [
+    {
+      "area_id": "mn_twin_cities",
+      "state_code": "MN",
+      "region": "Twin Cities",
+      "name": "Twin Cities Metro",
+      "example_cities": [
+        "Minneapolis",
+        "Saint Paul",
+        "St. Louis Park"
+      ],
+      "neighbor_area_ids": [
+        "mn_rochester"
+      ],
+      "definition": "Editorial Twin Cities Metro catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Current official site evidence supports multiple local provider groups; additional candidates remain in the verification queue.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "mn_rochester",
+      "state_code": "MN",
+      "region": "Twin Cities",
+      "name": "Rochester / Southeast Minnesota",
+      "example_cities": [
+        "Rochester",
+        "Mankato",
+        "Winona"
+      ],
+      "neighbor_area_ids": [
+        "mn_twin_cities"
+      ],
+      "definition": "Editorial Rochester / Southeast Minnesota catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Secondary catchment retained for explicit neighboring discovery.",
+      "target_provider_count": 9
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "mn_twin_cities",
+      "location_id": "",
+      "name": "Allina Health",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "mn_twin_cities",
+      "location_id": "",
+      "name": "Fraser",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "mn_twin_cities",
+      "location_id": "",
+      "name": "Roots Recovery",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "mn_twin_cities",
+      "location_id": "",
+      "name": "Vinland National Center",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "mn_twin_cities",
+      "location_id": "",
+      "name": "Wayside Recovery Center",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "mn_twin_cities",
+      "location_id": "",
+      "name": "Minnesota statewide discovery stack",
+      "priority": "high",
+      "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-21"
+    }
+  ]
+}
