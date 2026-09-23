@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "state_file": "hawaii",
+  "state_code": "HI",
+  "metadata": {
+    "snapshot_date": "2026-09-22",
+    "title": "Groupicorn Hawai‘i IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. O‘ahu is subdivided into central, windward, and leeward catchments; Maui, Hawai‘i Island, Kaua‘i, and Moloka‘i are treated as separate island markets. Local provider groups are considered before explicitly named neighboring catchments. Shortlists are editorial discovery candidates, not rankings.",
+    "branding_note": "Existing Hawai‘i PNG assets are referenced for eight providers. Other providers use live favicon proxies where an official website is known; brand assets are discovery references and have not been license-cleared for redistribution.",
+    "geocoding_note": "ZIP codes and street addresses are stored when verified; coordinates intentionally left null in this pass. Geocode later with a chosen provider.",
+    "primary_state_directory_source": "https://health.hawaii.gov/substance-abuse/files/2026/01/2024-2026-TRB-Directory.pdf",
+    "research_notes": "The Jan. 5, 2026 Hawai‘i ADAD directory is the primary statewide source for contracted substance-use IOP/day-treatment locations. Provider pages and CARF/VA sources supplement it. Telehealth-only or city-only addresses remain explicitly flagged."
+  },
+  "areas": [
+    {
+      "area_id": "hi-oahu-honolulu-core",
+      "state_code": "HI",
+      "region": "O‘ahu",
+      "name": "Honolulu core / Kalihi / Hawai‘i Kai",
+      "example_cities": "Honolulu | Kalihi | Hawai‘i Kai | McCully | Sand Island",
+      "neighbor_area_ids": "hi-oahu-windward | hi-oahu-leeward",
+      "geographic_rationale": "Central O‘ahu catchment for Honolulu, Kalihi, and east-central outpatient programs; separated from windward and leeward corridors because island traffic and program clustering make them practical distinct searches.",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal or clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "hi-oahu-windward",
+      "state_code": "HI",
+      "region": "O‘ahu",
+      "name": "Windward O‘ahu / Kailua / Kaneohe / North Shore",
+      "example_cities": "Kailua | Kaneohe | Kahuku | Laie | Kāne‘ohe",
+      "neighbor_area_ids": "hi-oahu-honolulu-core | hi-oahu-leeward",
+      "geographic_rationale": "Windward and North Shore communities have a distinct provider corridor across the Ko‘olau range and should not be treated as Honolulu-local.",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal or clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "hi-oahu-leeward",
+      "state_code": "HI",
+      "region": "O‘ahu",
+      "name": "Leeward O‘ahu / Waipahu / Ewa / Wai‘anae",
+      "example_cities": "Waipahu | Pearl City | Ewa Beach | Wai‘anae | Kapolei",
+      "neighbor_area_ids": "hi-oahu-honolulu-core | hi-oahu-windward",
+      "geographic_rationale": "Leeward O‘ahu is a high-population corridor with separate treatment access patterns from central Honolulu and windward O‘ahu.",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal or clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "hi-maui",
+      "state_code": "HI",
+      "region": "Maui",
+      "name": "Maui / Kahului / Wailuku / Upcountry",
+      "example_cities": "Kahului | Wailuku | Makawao | Kula | Lahaina",
+      "neighbor_area_ids": "",
+      "geographic_rationale": "Maui is treated as an island catchment; travel to other islands is not assumed to be a practical neighboring-area substitution.",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal or clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "hi-hawaii-east",
+      "state_code": "HI",
+      "region": "Hawai‘i Island",
+      "name": "East Hawai‘i / Hilo / Kea‘au",
+      "example_cities": "Hilo | Kea‘au | Pāhoa | Honoka‘a | Waiākea",
+      "neighbor_area_ids": "hi-hawaii-west",
+      "geographic_rationale": "East Hawai‘i is separated from the Kona/South Kohala corridor because the island’s geography makes cross-island travel a material access issue.",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal or clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "hi-hawaii-west",
+      "state_code": "HI",
+      "region": "Hawai‘i Island",
+      "name": "West Hawai‘i / Kona / Kealakekua / Holualoa",
+      "example_cities": "Kailua-Kona | Kealakekua | Holualoa | Keauhou | South Kona",
+      "neighbor_area_ids": "hi-hawaii-east",
+      "geographic_rationale": "West Hawai‘i has its own Kona/South Kona treatment corridor and is not collapsed into Hilo.",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal or clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "hi-kauai",
+      "state_code": "HI",
+      "region": "Kaua‘i",
+      "name": "Kaua‘i / Līhu‘e",
+      "example_cities": "Līhu‘e | Kapa‘a | Po‘ipū | Waimea",
+      "neighbor_area_ids": "",
+      "geographic_rationale": "Kaua‘i is an isolated island market; statewide telehealth is documented separately but is not represented as a local physical location.",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal or clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "hi-molokai",
+      "state_code": "HI",
+      "region": "Moloka‘i",
+      "name": "Moloka‘i / Kaunakakai",
+      "example_cities": "Kaunakakai | Maunaloa | Ho‘olehua",
+      "neighbor_area_ids": "",
+      "geographic_rationale": "Moloka‘i is retained as a separate rural island catchment so a single Maui list does not imply nearby access.",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal or clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "address",
+      "area_id": "hi-maui",
+      "location_id": "nova-luna-center-01",
+      "name": "Nova Luna Center",
+      "priority": "medium",
+      "task": "Confirm the current street address for the Kula physical program; provider currently publishes city only and discloses the address after scheduling.",
+      "source_url": "https://www.novalunacenter.com/"
+    },
+    {
+      "queue_type": "address",
+      "area_id": "hi-maui",
+      "location_id": "ai-pono-hawaii-01",
+      "name": "‘Ai Pono Eating Disorder Program",
+      "priority": "medium",
+      "task": "Confirm whether the published Makawao mailing address is also a client-facing physical IOP location; virtual IOP is statewide.",
+      "source_url": "https://www.aipono.com/philosophy"
+    },
+    {
+      "queue_type": "program_level",
+      "area_id": "hi-oahu-honolulu-core",
+      "location_id": "dynamic-healing-center-01",
+      "name": "Dynamic Healing Center",
+      "priority": "medium",
+      "task": "Verify current adult PHP/IOP schedule and public-facing provider website.",
+      "source_url": "https://health.hawaii.gov/substance-abuse/files/2026/01/2024-2026-TRB-Directory.pdf"
+    },
+    {
+      "queue_type": "program_level",
+      "area_id": "hi-molokai",
+      "location_id": "ka-hale-pomaikai-01",
+      "name": "Ka Hale Pomaika‘i",
+      "priority": "high",
+      "task": "Verify that the listed Moloka‘i IOP is currently operating and confirm a current official website or program page.",
+      "source_url": "https://health.hawaii.gov/substance-abuse/files/2026/01/2024-2026-TRB-Directory.pdf"
+    },
+    {
+      "queue_type": "discovery_lead",
+      "area_id": "hi-kauai",
+      "location_id": "",
+      "name": "Ahu Wai Wai",
+      "priority": "medium",
+      "task": "Verify current in-person Kaua‘i treatment address and official provider page; a local community directory describes an adult IOP in Kalaheo but is not sufficient publication evidence.",
+      "source_url": "https://www.kauaimentalhealthconnection.com/substanceabuse"
+    },
+    {
+      "queue_type": "discovery_lead",
+      "area_id": "hi-kauai",
+      "location_id": "",
+      "name": "HHSC Outpatient Program - Kaua‘i",
+      "priority": "medium",
+      "task": "Verify the current Līhu‘e physical site and adult IOP scope with Hawai‘i Health Systems Corporation; the local directory identifies an IOP at KCCC but does not provide enough current official treatment-site evidence for a location record.",
+      "source_url": "https://www.kauaimentalhealthconnection.com/substanceabuse"
+    },
+    {
+      "queue_type": "discovery_lead",
+      "area_id": "hi-molokai",
+      "location_id": "",
+      "name": "Molokai Community Health Center",
+      "priority": "low",
+      "task": "Recheck after the provider's announced substance-abuse counseling launch; the current official page says that service is coming soon and does not establish IOP/PHP.",
+      "source_url": "https://www.molokaichc.org/getting-care/behavioral-health-services/"
+    },
+    {
+      "queue_type": "logo_pending",
+      "area_id": "hi-hawaii-east",
+      "location_id": "lokahi-treatment-centers-hilo",
+      "name": "Lokahi Treatment Centers",
+      "priority": "medium",
+      "task": "Acquire and validate an official current PNG logo from the provider-controlled site before shortlist publication.",
+      "source_url": "https://www.lokahitreatmentcenters.net/"
+    },
+    {
+      "queue_type": "geocode",
+      "area_id": "statewide",
+      "location_id": "",
+      "name": "Hawai‘i directory",
+      "priority": "low",
+      "task": "Run an audited geocoding pass after provider/location verification; coordinates are intentionally blank in this research pass.",
+      "source_url": "https://health.hawaii.gov/substance-abuse/files/2026/01/2024-2026-TRB-Directory.pdf"
+    }
+  ]
+}

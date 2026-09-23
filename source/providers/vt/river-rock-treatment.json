@@ -8,9 +8,9 @@
   "ownership_verified": "provider_stated",
   "dedupe_group_id": "river-rock-treatment",
   "dedupe_group_reason": "Single Burlington treatment center location.",
-  "logo_url": "",
-  "logo_source_url": "https://www.riverrocktreatment.com/",
-  "logo_downloaded": false,
+  "logo_url": "images/vt/vt-river-rock-treatment.png",
+  "logo_source_url": "https://www.riverrocktreatment.com/wp-content/uploads/2021/06/RiverRockTreatment_Logo_RGB.png",
+  "logo_downloaded": true,
   "logo_license_reviewed": false,
   "locations": [
     {
@@ -29,8 +29,8 @@
       "website_url": "https://www.riverrocktreatment.com/",
       "program_source_url": "https://www.riverrocktreatment.com/intensive-outpatient-program/",
       "address_source_url": "https://www.riverrocktreatment.com/contact/",
-      "evidence_status": "official_source_research_only",
-      "notes": "Official program and contact pages identify Burlington IOP/PHP programming and the 125 College Street site; local logo and current intake details remain pending.",
+      "evidence_status": "provider_web_source",
+      "notes": "Official program and contact pages identify Burlington IOP/PHP programming and the 125 College Street site; verify current intake, eligibility, insurance, and accepting-patient status before use.",
       "research_date": "2026-09-22",
       "program_source_kind": "official_provider_page",
       "provider_website_url": "https://www.riverrocktreatment.com/",
@@ -40,8 +40,8 @@
       "publication_status": "research_only",
       "care_levels_claimed": "IOP | PHP",
       "provider_dedupe_group_id": "river-rock-treatment",
-      "logo_url": "",
-      "logo_status": "logo_pending"
+      "logo_url": "images/vt/vt-river-rock-treatment.png",
+      "logo_status": "official_logo_downloaded"
     }
   ]
 }

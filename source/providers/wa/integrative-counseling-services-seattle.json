@@ -1,0 +1,16 @@
+{
+  "provider_id": "integrative-counseling-services-seattle",
+  "provider_name": "Integrative Counseling Services",
+  "provider_website_url": "https://www.icswa.com/",
+  "reference_url": "https://www.icswa.com/substance-use-disorder",
+  "operator_scope": "independent",
+  "known_parent_name": "",
+  "ownership_verified": "unverified",
+  "dedupe_group_id": "integrative-counseling-services-seattle",
+  "dedupe_group_reason": "Single Seattle substance-use IOP site verified from the Washington provider directory and official site.",
+  "logo_url": "images/wa/wa-integrative-counseling-services.png",
+  "logo_source_url": "https://images.squarespace-cdn.com/content/v1/5ab938ef1aef1d6b7e5fd494/1529605834135-LTY0JFIZMGO3WHTY55W6/ICSWA_Logo_Full_1500.jpg",
+  "logo_downloaded": true,
+  "logo_license_reviewed": false,
+  "locations": []
+}

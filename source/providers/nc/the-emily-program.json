@@ -8,9 +8,9 @@
   "ownership_verified": "unverified",
   "dedupe_group_id": "the-emily-program",
   "dedupe_group_reason": "The Emily Program is the current provider identity for the Durham eating-disorder PHP/IOP site.",
-  "logo_url": "",
-  "logo_source_url": "",
-  "logo_downloaded": false,
+  "logo_url": "images/nc/nc-the-emily-program.png",
+  "logo_source_url": "https://www.emilyprogram.com/wp-content/uploads/VC-AT-A-GLANCE-NC-24.2_for-web.pdf",
+  "logo_downloaded": true,
   "logo_license_reviewed": false,
   "locations": [
     {
@@ -37,8 +37,8 @@
       "coordinate_source_url": "",
       "operator_scope": "regional",
       "ownership_verified": "unverified",
-      "logo_url": "",
-      "logo_status": "official_logo_pending",
+      "logo_url": "images/nc/nc-the-emily-program.png",
+      "logo_status": "official_logo_downloaded",
       "research_date": "2026-09-22",
       "program_source_kind": "provider_web_page",
       "provider_website_url": "https://emilyprogram.com/",
@@ -59,7 +59,7 @@
       "known_parent_name": "Accanto Health",
       "area_name": "Research Triangle",
       "region": "Research Triangle",
-      "record_quality_notes": "Physical site and care-level evidence are strong; obtain and verify an official local PNG before publication."
+      "record_quality_notes": "Current official page identifies the physical Durham site and PHP/IOP levels; the local PNG matches the provider's refreshed wordmark."
     }
   ]
 }

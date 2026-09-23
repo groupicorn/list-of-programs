@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "state_file": "oregon",
+  "state_code": "OR",
+  "metadata": {
+    "snapshot_date": "2026-09-22",
+    "title": "Groupicorn Oregon IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. The September 22, 2026 pass prioritized the P1 Eugene and Portland gaps, adding official PeaceHealth, Insight Northwest Recovery, and Providence St. Vincent program sites; remaining leads stay queued until exact-site evidence is checked.",
+    "branding_note": "logo_url points to a tracked PNG asset. Existing asset provenance and license clearance require separate review where source URLs are not yet recorded.",
+    "geocoding_note": "Street addresses and ZIP codes are stored where sourced; coordinates are intentionally null pending an audited geocoding pass.",
+    "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use."
+  },
+  "areas": [
+    {
+      "area_id": "or_portland",
+      "state_code": "OR",
+      "region": "Northwest Oregon",
+      "name": "Portland / Northwest Oregon",
+      "example_cities": [
+        "Portland",
+        "Beaverton",
+        "Gresham"
+      ],
+      "neighbor_area_ids": [
+        "or_eugene"
+      ],
+      "definition": "Editorial Portland / Northwest Oregon catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Providence St. Vincent, Fora Health, OHSU, and Serenity Lane are published; additional Portland leads remain in the verification queue.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "or_eugene",
+      "state_code": "OR",
+      "region": "Southern Willamette Valley",
+      "name": "Eugene / Southern Willamette Valley",
+      "example_cities": [
+        "Eugene",
+        "Springfield",
+        "Salem"
+      ],
+      "neighbor_area_ids": [
+        "or_portland"
+      ],
+      "definition": "Editorial Eugene / Southern Willamette Valley catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "PeaceHealth, Insight Northwest Recovery, and Serenity Lane are published; additional Eugene-area leads remain in the verification queue.",
+      "target_provider_count": 9
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "or_portland",
+      "location_id": "",
+      "name": "Cascadia Health",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "or_portland",
+      "location_id": "",
+      "name": "Legacy Health Unity Center",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "or_portland",
+      "location_id": "",
+      "name": "Lifeworks Nw",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "or_portland",
+      "location_id": "",
+      "name": "Madrone Mental Health",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "or_portland",
+      "location_id": "",
+      "name": "Portland Dbt Institute",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "or_portland",
+      "location_id": "",
+      "name": "Portland Mental Health & Wellness",
+      "priority": "high",
+      "task": "Verify the exact in-person Portland treatment address, current adult IOP scope, population, operating status, and official local logo before adding a location record.",
+      "source_url": "https://www.portlandmh.com/iop",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "or_eugene",
+      "location_id": "",
+      "name": "Eugene-area behavioral health leads",
+      "priority": "medium",
+      "task": "Continue discovery for additional Eugene/Springfield IOP/PHP sites beyond PeaceHealth, Insight Northwest Recovery, and Serenity Lane; verify exact physical sites before publication.",
+      "source_url": "https://www.oregon.gov/oha/HSD/AMH/Publications/provider-directory.pdf",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "or_portland",
+      "location_id": "",
+      "name": "Oregon statewide discovery stack",
+      "priority": "high",
+      "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-21"
+    }
+  ]
+}

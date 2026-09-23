@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "state_file": "wyoming",
+  "state_code": "WY",
+  "metadata": {
+    "snapshot_date": "2026-09-22",
+    "title": "Groupicorn Wyoming IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Statewide physical-address-first discovery pass. Official provider pages, Wyoming 2-1-1, the Wyoming MHSA provider registry, and accreditor records were used to separate exact-site IOP/PHP evidence from virtual-only and verification-pending leads. Shortlists use local provider groups first and do not rank clinical quality.",
+    "branding_note": "logo_url points to a tracked PNG asset. Existing asset provenance and license clearance require separate review where source URLs are not yet recorded.",
+    "geocoding_note": "Street addresses and ZIP codes are stored where sourced; coordinates are intentionally null pending an audited geocoding pass.",
+    "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use."
+  },
+  "areas": [
+    {
+      "area_id": "wy_cheyenne",
+      "state_code": "WY",
+      "region": "Southeastern Wyoming",
+      "name": "Cheyenne / Southeastern Wyoming",
+      "example_cities": [
+        "Cheyenne",
+        "Laramie",
+        "Wheatland"
+      ],
+      "neighbor_area_ids": [
+        "wy_casper",
+        "wy_laramie"
+      ],
+      "definition": "Editorial Cheyenne / Southeastern Wyoming catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Cheyenne Regional and Jodi Bills have exact-site IOP evidence; High Country remains a program-level verification lead and Jodi Bills remains logo-pending.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "wy_casper",
+      "state_code": "WY",
+      "region": "Central Wyoming",
+      "name": "Casper / Central Wyoming",
+      "example_cities": [
+        "Casper",
+        "Douglas",
+        "Rawlins"
+      ],
+      "neighbor_area_ids": [
+        "wy_cheyenne",
+        "wy_gillette",
+        "wy_worland"
+      ],
+      "definition": "Editorial Casper / Central Wyoming catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Two physical Casper sites and one associated virtual-only adolescent IOP are verified; one additional Casper site is logo-pending.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "wy_gillette",
+      "state_code": "WY",
+      "region": "Northeastern Wyoming",
+      "name": "Gillette / Northeastern Wyoming",
+      "example_cities": [
+        "Gillette",
+        "Wright",
+        "Newcastle"
+      ],
+      "neighbor_area_ids": [
+        "wy_casper"
+      ],
+      "definition": "Editorial Gillette / Northeastern Wyoming catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Campbell County Health, Y.E.S. House, and Personal Frontiers have exact-site IOP/day-treatment claims; Campbell County Health's logo acquisition remains the publication blocker.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "wy_rock_springs",
+      "state_code": "WY",
+      "region": "Southwest Wyoming",
+      "name": "Rock Springs / Southwest Wyoming",
+      "example_cities": [
+        "Rock Springs",
+        "Green River",
+        "Evanston"
+      ],
+      "neighbor_area_ids": [
+        "wy_casper"
+      ],
+      "definition": "Editorial Rock Springs / Southwest Wyoming catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Two exact-site IOP programs are verified: adolescent substance-use IOP and mixed-age IOP/SUD services.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "wy_worland",
+      "state_code": "WY",
+      "region": "North Central Wyoming",
+      "name": "Worland / North Central Wyoming",
+      "example_cities": [
+        "Worland",
+        "Thermopolis",
+        "Cody"
+      ],
+      "neighbor_area_ids": [
+        "wy_casper",
+        "wy_gillette"
+      ],
+      "definition": "Editorial Worland / North Central Wyoming catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Oxbow Center's Worland site has a current substance-use referred IOP claim.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "wy_laramie",
+      "state_code": "WY",
+      "region": "Southeastern Wyoming",
+      "name": "Laramie / Albany County",
+      "example_cities": [
+        "Laramie"
+      ],
+      "neighbor_area_ids": [
+        "wy_cheyenne"
+      ],
+      "definition": "Editorial Laramie / Albany County catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Skye Counseling appears in the state Level 2.1 registry, but the registry address conflicts with the provider's current contact page; no location is published yet.",
+      "target_provider_count": 9
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "verify_identity_and_program",
+      "area_id": "wy_cheyenne",
+      "location_id": "",
+      "name": "Fremont Counseling Service",
+      "priority": "high",
+      "task": "Resolve provider identity and exact Wyoming treatment site, then verify current IOP/PHP level, population, modality, operating status, and official logo provenance. Do not count the existing logo as official until its source is recorded.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "wy_cheyenne",
+      "location_id": "high-country-behavioral-health-cheyenne",
+      "name": "High Country Behavioral Health",
+      "priority": "high",
+      "task": "Confirm exact-site IOP/PHP level, population, modality, operating status, treatment entrance, and current official program page before shortlist inclusion.",
+      "source_url": "https://highcountrybehavioral.com/",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "wy_cheyenne",
+      "location_id": "",
+      "name": "Volunteers Of America Northern Rockies",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "wy_cheyenne",
+      "location_id": "",
+      "name": "Wyoming statewide discovery stack",
+      "priority": "high",
+      "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "logo_pending",
+      "area_id": "wy_casper",
+      "location_id": "central-wyoming-counseling-center-casper",
+      "name": "Central Wyoming Counseling Center",
+      "priority": "high",
+      "task": "Acquire and validate an official current PNG logo from cwcc.us, inspect on light and dark backgrounds, and then reconsider shortlist publication. Keep the verified IOP location in the research set meanwhile.",
+      "source_url": "https://cwcc.us/",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "logo_pending",
+      "area_id": "wy_gillette",
+      "location_id": "campbell-county-health-gillette",
+      "name": "Campbell County Health Behavioral Health Services",
+      "priority": "high",
+      "task": "Acquire and validate an official current PNG logo from cchwyo.org, inspect on light and dark backgrounds, and then reconsider shortlist publication. Keep the verified IOP location in the research set meanwhile.",
+      "source_url": "https://www.cchwyo.org/services/behavioral-health/",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "logo_pending",
+      "area_id": "wy_cheyenne",
+      "location_id": "jodi-bills-cheyenne",
+      "name": "Jodi Bills, LPC, LAT, MAC, NCC, LLC",
+      "priority": "high",
+      "task": "Acquire and validate an official current PNG logo or confirm that no provider mark exists. Also verify direct provider contact, exact IOP program details, current operating status, and intake before shortlist publication.",
+      "source_url": "https://wyoimprov.com/MHSAPublicProviderSearch.aspx",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_address_conflict",
+      "area_id": "wy_laramie",
+      "location_id": "",
+      "name": "Skye Counseling",
+      "priority": "high",
+      "task": "Resolve the Wyoming MHSA registry's 302 South 2nd Street Level 2.1 IOP address against the provider's current official 504 East Lyon Street contact page. The provider's current site confirms the Laramie practice and phone but does not publish IOP details, so do not create a location record until the address and program delivery site are reconciled.",
+      "source_url": "https://wyoimprov.com/MHSAPublicProviderSearch.aspx",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "specialized_program",
+      "area_id": "wy_casper",
+      "location_id": "",
+      "name": "Natrona County Adult Drug Court",
+      "priority": "medium",
+      "task": "Record separately as a justice-involved adult IOT program only if the directory scope includes court-supervised programs; Wyoming 2-1-1 confirms IOT at 500 South Wolcott Street, but it is not a general-admission treatment center.",
+      "source_url": "https://search.wyoming211.org/search/7b371901-fc01-5d80-b3dc-adc805e7d8a4",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "disposition_virtual_only",
+      "area_id": "",
+      "location_id": "",
+      "name": "Charlie Health; Recovery Centers of America; NRT Behavioral Health; Grouport",
+      "priority": "medium",
+      "task": "Discovery leads found through Wyoming IOP/PHP searches. Exclude from Wyoming physical-location shortlists because the cited pages describe statewide virtual services and/or list an out-of-state operating address; retain for a separately scoped virtual directory if requested.",
+      "source_url": "https://www.charliehealth.com/",
+      "date": "2026-09-21"
+    }
+  ]
+}

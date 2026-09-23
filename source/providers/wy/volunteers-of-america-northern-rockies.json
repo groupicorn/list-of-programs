@@ -1,0 +1,16 @@
+{
+  "provider_id": "volunteers-of-america-northern-rockies",
+  "provider_name": "Volunteers Of America Northern Rockies",
+  "provider_website_url": "https://www.voanr.org/",
+  "reference_url": "https://www.voanr.org/services/treatment-faqs/",
+  "operator_scope": "nonprofit",
+  "known_parent_name": "",
+  "ownership_verified": "unverified",
+  "dedupe_group_id": "volunteers-of-america-northern-rockies",
+  "dedupe_group_reason": "Pending exact-site IOP/PHP verification; do not count general outpatient clinics as IOP/PHP locations.",
+  "logo_url": "images/wy/wy-volunteers-of-america-northern-rockies.png",
+  "logo_source_url": "",
+  "logo_downloaded": true,
+  "logo_license_reviewed": false,
+  "locations": []
+}

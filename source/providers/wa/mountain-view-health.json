@@ -1,0 +1,16 @@
+{
+  "provider_id": "mountain-view-health",
+  "provider_name": "Mountain View Health",
+  "provider_website_url": "https://mountainviewtreatment.com/",
+  "reference_url": "https://mountainviewtreatment.com/contact/",
+  "operator_scope": "independent",
+  "known_parent_name": "",
+  "ownership_verified": "unverified",
+  "dedupe_group_id": "mountain-view-health",
+  "dedupe_group_reason": "Single Tukwila physical outpatient site verified from the provider site.",
+  "logo_url": "images/wa/wa-mountain-view-health.png",
+  "logo_source_url": "https://mountainviewtreatment.com/logo-horizontal.png",
+  "logo_downloaded": true,
+  "logo_license_reviewed": false,
+  "locations": []
+}

@@ -79,7 +79,7 @@
       "boundary_geometry": "",
       "adjacency_basis": "named practical neighboring catchments; not legal or clinical service boundaries",
       "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region.",
-      "geographic_rationale": "Savannah is an isolated coastal population center; the package keeps it separate rather than implying an Atlanta-area provider is local."
+      "geographic_rationale": "Savannah is an isolated coastal population center. Coastal Behavioral Health and Samba prepare for display; Memorial Health is retained as a current IOP/PHP source candidate pending a local logo."
     },
     {
       "area_id": "ga-athens",
@@ -121,7 +121,7 @@
       "boundary_geometry": "",
       "adjacency_basis": "named practical neighboring catchments; not legal or clinical service boundaries",
       "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region.",
-      "geographic_rationale": "Macon serves a large central-Georgia region. Georgia Recovery Campus provides one current local group; additional Middle Georgia programs remain to be researched."
+      "geographic_rationale": "Macon serves a large central-Georgia region. Georgia Recovery Campus and River Edge's LifeSPRING IOP provide two current local groups; additional Middle Georgia programs remain to be researched."
     },
     {
       "area_id": "ga-columbus",
@@ -135,7 +135,7 @@
       "boundary_geometry": "",
       "adjacency_basis": "named practical neighboring catchments; not legal or clinical service boundaries",
       "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region.",
-      "geographic_rationale": "Columbus is a standalone west-Georgia hub. Georgia Recovery Campus provides one current local group; cross-border Alabama programs are outside this state-specific package."
+      "geographic_rationale": "Columbus is a standalone west-Georgia hub. Georgia Recovery Campus prepares for display and New Horizons' adolescent IOP is retained as a logo-pending source candidate; cross-border Alabama programs are outside this state-specific package."
     }
   ],
   "research_queue": [
@@ -192,6 +192,56 @@
       "priority": "low",
       "task": "Run an audited geocoding pass and record coordinates plus coordinate sources; this research pass intentionally leaves coordinates null.",
       "source_url": ""
+    },
+    {
+      "queue_type": "verify_logo",
+      "area_id": "ga-savannah-coastal",
+      "location_id": "memorial-health-university-medical-center-savannah",
+      "name": "Memorial Health University Medical Center",
+      "priority": "high",
+      "task": "Obtain and verify an official local PNG logo for the current Savannah IOP/PHP source candidate; preserve the exact Waters Avenue hospital address and official care-level evidence.",
+      "source_url": "https://www.memorialhealth.com/locations/memorial-health-university-medical-center/specialties/mental-health-and-wellness",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "verify_logo",
+      "area_id": "ga-columbus",
+      "location_id": "new-horizons-behavioral-health-columbus",
+      "name": "New Horizons Behavioral Health",
+      "priority": "high",
+      "task": "Obtain and verify an official local PNG logo for the Columbus adolescent IOP source candidate; confirm the physical program entrance and current intake details.",
+      "source_url": "https://www.nhbh.org/child-and-adolescent",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "find_provider",
+      "area_id": "ga-athens",
+      "location_id": "",
+      "name": "Advantage Behavioral Health Systems",
+      "priority": "medium",
+      "task": "Verify an exact Athens physical site and current intensive outpatient level; the official service-area page identifies Athens recovery services but does not yet tie a current IOP claim to a specific address.",
+      "source_url": "https://advantagebhs.org/athens-clarke-county/",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "find_provider",
+      "area_id": "ga-augusta",
+      "location_id": "",
+      "name": "Serenity Behavioral Health Systems",
+      "priority": "medium",
+      "task": "Verify whether the current Augusta campus offers IOP/PHP rather than standard outpatient or crisis services, and record the exact treatment site if so.",
+      "source_url": "https://serenitybhs.com/services/",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "find_provider",
+      "area_id": "ga-south-metro",
+      "location_id": "",
+      "name": "Clayton Center Behavioral Health",
+      "priority": "medium",
+      "task": "Check the current Jonesboro outpatient and day-treatment offerings for an explicit IOP/PHP claim and exact treatment address before adding a source record.",
+      "source_url": "https://dbhdd.georgia.gov/locations",
+      "date": "2026-09-22"
     }
   ]
 }

@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "state_file": "massachusetts",
+  "state_code": "MA",
+  "metadata": {
+    "snapshot_date": "2026-09-22",
+    "title": "Groupicorn Massachusetts IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. September 22, 2026 research strengthened Boston and Worcester with current official provider pages and exact physical sites; this is a focused regional pass, not statewide re-verification. Remaining leads stay queued when exact-site evidence or current operating details are incomplete.",
+    "branding_note": "logo_url points to a tracked PNG asset. Existing asset provenance and license clearance require separate review where source URLs are not yet recorded.",
+    "geocoding_note": "Street addresses and ZIP codes are stored where sourced; coordinates are intentionally null pending an audited geocoding pass.",
+    "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use."
+  },
+  "areas": [
+    {
+      "area_id": "ma_boston",
+      "state_code": "MA",
+      "region": "Greater Boston",
+      "name": "Boston / Eastern Massachusetts",
+      "example_cities": [
+        "Boston",
+        "Cambridge",
+        "Newton"
+      ],
+      "neighbor_area_ids": [
+        "ma_worcester"
+      ],
+      "definition": "Editorial Boston / Eastern Massachusetts catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Current official evidence supports five distinct local provider groups; this remains a focused Boston-area pass rather than a statewide completeness claim.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "ma_worcester",
+      "state_code": "MA",
+      "region": "Central Massachusetts",
+      "name": "Worcester / Central Massachusetts",
+      "example_cities": [
+        "Worcester",
+        "Framingham",
+        "Springfield"
+      ],
+      "neighbor_area_ids": [
+        "ma_boston"
+      ],
+      "definition": "Editorial Worcester / Central Massachusetts catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Secondary catchment retained for explicit neighboring discovery.",
+      "target_provider_count": 9
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ma_boston",
+      "location_id": "",
+      "name": "Baystate Health",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ma_boston",
+      "location_id": "",
+      "name": "Berkshire Health Systems",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ma_boston",
+      "location_id": "",
+      "name": "Cambridge Health Alliance",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ma_worcester",
+      "location_id": "adcare-worcester-outpatient",
+      "name": "AdCare Worcester Outpatient",
+      "priority": "high",
+      "task": "Current AdCare pages describe Worcester IOP and outpatient day treatment, but another current AdCare page says PHP/Day Treatment is not currently offered. Resolve the conflicting official pages and verify the exact outpatient address before creating a canonical location record.",
+      "source_url": "https://adcare.com/locations/worcester/",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ma_worcester",
+      "location_id": "umass-memorial-health-worcester",
+      "name": "UMass Memorial Health",
+      "priority": "high",
+      "task": "UMass Memorial's current behavioral-health page identifies a PHP service and Worcester campuses but does not clearly identify the exact outpatient treatment unit/address. Verify the current PHP/IOP site, modality, population, and official local logo before adding a physical location record.",
+      "source_url": "https://www.ummhealth.org/services-treatments/behavioral-health",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "ma_boston",
+      "location_id": "",
+      "name": "Massachusetts statewide discovery stack",
+      "priority": "high",
+      "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-21"
+    }
+  ]
+}

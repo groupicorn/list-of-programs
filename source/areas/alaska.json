@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "state_file": "alaska",
+  "state_code": "AK",
+  "metadata": {
+    "snapshot_date": "2026-09-22",
+    "title": "Groupicorn Alaska IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. Local provider groups are considered before named neighboring catchments. Shortlists are editorial discovery candidates, not rankings. Alaska-local/regional operators are preferred over broad chains when evidence quality is comparable.",
+    "branding_note": "logo_url uses a live favicon proxy when an official website is known. This is a prototype discovery placeholder, not a cleared logo asset.",
+    "geocoding_note": "ZIP codes and street addresses are stored; coordinates intentionally left null in this pass. Geocode later with a chosen provider."
+  },
+  "areas": [
+    {
+      "area_id": "ak-anchorage",
+      "state_code": "AK",
+      "region": "Southcentral Alaska",
+      "name": "Anchorage",
+      "example_cities": "Anchorage | Eagle River",
+      "neighbor_area_ids": "ak-mat-su",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "ak-mat-su",
+      "state_code": "AK",
+      "region": "Southcentral Alaska",
+      "name": "Mat-Su Valley / Wasilla / Palmer",
+      "example_cities": "Wasilla | Palmer",
+      "neighbor_area_ids": "ak-anchorage",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "ak-fairbanks-interior",
+      "state_code": "AK",
+      "region": "Interior Alaska",
+      "name": "Fairbanks / Interior",
+      "example_cities": "Fairbanks | North Pole",
+      "neighbor_area_ids": "",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "ak-kenai-peninsula",
+      "state_code": "AK",
+      "region": "Kenai Peninsula",
+      "name": "Soldotna / Kenai / Homer",
+      "example_cities": "Soldotna | Kenai | Homer",
+      "neighbor_area_ids": "",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "ak-juneau",
+      "state_code": "AK",
+      "region": "Southeast Alaska",
+      "name": "Juneau",
+      "example_cities": "Juneau",
+      "neighbor_area_ids": "",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "ak-ketchikan-southeast",
+      "state_code": "AK",
+      "region": "Southeast Alaska",
+      "name": "Ketchikan / Southern Southeast",
+      "example_cities": "Ketchikan",
+      "neighbor_area_ids": "",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "ak-bristol-bay",
+      "state_code": "AK",
+      "region": "Southwest Alaska",
+      "name": "Bristol Bay / Dillingham",
+      "example_cities": "Dillingham",
+      "neighbor_area_ids": "",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "verify_program_site",
+      "area_id": "ak-juneau",
+      "location_id": "",
+      "name": "SEARHC Comprehensive Addiction Services - Juneau",
+      "priority": "high",
+      "task": "Confirm whether SEARHC's regional IOP is delivered at a current Juneau physical treatment site; the official service page confirms IOP but lists a specific in-person location only in Sitka and separately describes virtual access.",
+      "source_url": "https://searhc.org/services/comprehensive-addiction-services/",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "verify_program_site",
+      "area_id": "ak-bristol-bay",
+      "location_id": "",
+      "name": "Bristol Bay Counseling Center",
+      "priority": "medium",
+      "task": "Determine whether the Dillingham-based outpatient behavioral-health/SUD service operates a separately identifiable IOP/PHP track beyond Jake's Place; do not create a duplicate location unless the program scope is distinct.",
+      "source_url": "https://bbahc.org/bristolbaycounselingcenter",
+      "date": "2026-09-22"
+    }
+  ]
+}

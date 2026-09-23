@@ -1,0 +1,16 @@
+{
+  "provider_id": "seattle-children-s",
+  "provider_name": "Seattle Children's",
+  "provider_website_url": "https://www.seattlechildrens.org/",
+  "reference_url": "https://www.seattlechildrens.org/clinics/psychiatry-and-behavioral-medicine/services/partial-hospitalization-program/",
+  "operator_scope": "regional_or_health_system",
+  "known_parent_name": "",
+  "ownership_verified": "unverified",
+  "dedupe_group_id": "seattle-children-s",
+  "dedupe_group_reason": "Pending identity and ownership verification; do not merge without evidence.",
+  "logo_url": "images/wa/wa-seattle-children-s.png",
+  "logo_source_url": "https://www.seattlechildrens.org/",
+  "logo_downloaded": true,
+  "logo_license_reviewed": false,
+  "locations": []
+}

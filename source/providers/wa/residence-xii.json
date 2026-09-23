@@ -1,0 +1,16 @@
+{
+  "provider_id": "residence-xii",
+  "provider_name": "Residence XII",
+  "provider_website_url": "https://www.residencexii.org/",
+  "reference_url": "https://www.residencexii.org/programs-and-services/outpatient/",
+  "operator_scope": "independent",
+  "known_parent_name": "",
+  "ownership_verified": "unverified",
+  "dedupe_group_id": "residence-xii",
+  "dedupe_group_reason": "Pending identity and ownership verification; do not merge without evidence.",
+  "logo_url": "images/wa/wa-residence-xii.png",
+  "logo_source_url": "https://www.residencexii.org/",
+  "logo_downloaded": true,
+  "logo_license_reviewed": false,
+  "locations": []
+}

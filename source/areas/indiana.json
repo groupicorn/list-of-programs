@@ -95,7 +95,7 @@
       "definition": "Editorial Bloomington / Monroe County catchment with nearby south-central Indiana communities; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
       "adjacency_basis": "No one-hop shortlist neighbor is declared until local provider research establishes a practical catchment relationship.",
-      "scope_note": "First parallel discovery pass completed September 22, 2026; two distinct groups are publication-ready and additional Bloomington-area discovery remains warranted.",
+      "scope_note": "September 22, 2026 discovery verified four distinct local groups; additional Bloomington-area discovery remains warranted.",
       "target_provider_count": 9
     },
     {
@@ -134,7 +134,7 @@
       "definition": "Editorial Muncie / Delaware County and east-central Indiana catchment; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
       "adjacency_basis": "No one-hop shortlist neighbor is declared until local provider research establishes a practical catchment relationship.",
-      "scope_note": "First parallel discovery pass completed September 22, 2026; two distinct groups are publication-ready and additional Muncie-area discovery remains warranted.",
+      "scope_note": "September 22, 2026 discovery verified four distinct local groups; additional Muncie-area discovery remains warranted.",
       "target_provider_count": 9
     },
     {
@@ -147,7 +147,7 @@
       "definition": "Editorial Clarksville / Louisville-border Southern Indiana catchment; cross-border Kentucky options require explicit later research.",
       "boundary_geometry": "editorial_catchment",
       "adjacency_basis": "No one-hop shortlist neighbor is declared until local provider research establishes a practical catchment relationship.",
-      "scope_note": "Geography skeleton added September 22, 2026; provider discovery has not yet been completed.",
+      "scope_note": "September 22, 2026 discovery verified three local groups, including eating-disorder PHP/IOP and community behavioral-health IOP; additional Southern Indiana discovery remains warranted.",
       "target_provider_count": 9
     }
   ],
@@ -350,6 +350,46 @@
       "priority": "medium",
       "task": "Centerstone's official Muncie location page verified IOP at 1200 S. Tillotson Overpass; Campus BHC's official site and current careers page support adult PHP/IOP at 808 W. White River Blvd. Both are published; additional Delaware County discovery remains warranted.",
       "source_url": "https://centerstone.org/locations/indiana/facilities/centerstone-muncie-south-tillotson-overpass/",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_disposition",
+      "area_id": "in_bloomington",
+      "location_id": "",
+      "name": "Bloomington Amethyst House",
+      "priority": "medium",
+      "task": "Official Amethyst House pages verified the 645 N. Walnut Street outpatient office and an intensive outpatient treatment offering; current intake schedule and population eligibility remain unknown.",
+      "source_url": "https://www.amethysthouse.org/programs.html",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_disposition",
+      "area_id": "in_muncie",
+      "location_id": "",
+      "name": "Muncie IU Health and Meridian",
+      "priority": "medium",
+      "task": "IU Health's current behavioral-health page identifies intensive outpatient centers in Muncie and its location page identifies 1200 W. White River Blvd.; the Joint Commission locator identifies Meridian IOP at 240 N. Tillotson Ave. Keep exact scheduling and intake availability as follow-up checks.",
+      "source_url": "https://iuhealth.org/find-medical-services/behavioral-health",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_disposition",
+      "area_id": "in_clarksville_southern_indiana",
+      "location_id": "",
+      "name": "Southern Indiana Aster Springs and LifeSpring",
+      "priority": "medium",
+      "task": "Aster Springs' official Jeffersonville page verifies eating-disorder PHP/IOP at 4500 Town Center Blvd.; LifeSpring's official locations page and current Joint Commission locator verify IOP at 460 Spring St. Additional Louisville-border and New Albany discovery remains warranted.",
+      "source_url": "https://www.lifespringhealthsystems.org/about-us/locations/",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "logo_pending",
+      "area_id": "in_evansville",
+      "location_id": "",
+      "name": "Brentwood Springs Newburgh outpatient programs",
+      "priority": "high",
+      "task": "The current official Brentwood Springs pages verify PHP and IOP for mental-health and substance-use treatment at 4488 Roslin Road, Newburgh, in the Evansville catchment. Acquire and validate an official local PNG logo before publication; current local shortlist coverage remains below the three-group launch floor.",
+      "source_url": "https://www.brentwoodsprings.com/locations/brentwood-springs",
       "date": "2026-09-22"
     }
   ]

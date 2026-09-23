@@ -1,0 +1,16 @@
+{
+  "provider_id": "matt-talbot-center",
+  "provider_name": "Matt Talbot Center",
+  "provider_website_url": "https://www.mtcseattle.org/",
+  "reference_url": "https://www.mtcseattle.org/services",
+  "operator_scope": "nonprofit",
+  "known_parent_name": "Catholic Community Services of Western Washington",
+  "ownership_verified": "unverified",
+  "dedupe_group_id": "matt-talbot-center",
+  "dedupe_group_reason": "Single Seattle nonprofit IOP site verified from the provider site.",
+  "logo_url": "images/wa/wa-matt-talbot-center.png",
+  "logo_source_url": "https://static.wixstatic.com/media/4eab7b_b2ecd009d35e41e8a8651feea3a618a1~mv2.png",
+  "logo_downloaded": true,
+  "logo_license_reviewed": false,
+  "locations": []
+}

@@ -1,0 +1,16 @@
+{
+  "provider_id": "evidence-based-treatment-centers-of-seattle",
+  "provider_name": "Evidence Based Treatment Centers Of Seattle",
+  "provider_website_url": "https://ebtseattle.com/",
+  "reference_url": "https://ebtseattle.com/hybrid-iop/",
+  "operator_scope": "independent",
+  "known_parent_name": "",
+  "ownership_verified": "unverified",
+  "dedupe_group_id": "evidence-based-treatment-centers-of-seattle",
+  "dedupe_group_reason": "Pending identity and ownership verification; do not merge without evidence.",
+  "logo_url": "images/wa/wa-evidence-based-treatment-centers-of-seattle.png",
+  "logo_source_url": "https://ebtseattle.com/",
+  "logo_downloaded": true,
+  "logo_license_reviewed": false,
+  "locations": []
+}

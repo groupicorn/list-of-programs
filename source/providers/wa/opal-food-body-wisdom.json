@@ -1,0 +1,16 @@
+{
+  "provider_id": "opal-food-body-wisdom",
+  "provider_name": "Opal: Food + Body Wisdom",
+  "provider_website_url": "https://opalfoodandbody.com/",
+  "reference_url": "https://opalfoodandbody.com/eating-disorder-therapy-seattle/",
+  "operator_scope": "independent",
+  "known_parent_name": "",
+  "ownership_verified": "unverified",
+  "dedupe_group_id": "opal-food-body-wisdom",
+  "dedupe_group_reason": "Single Seattle eating-disorder PHP/IOP site verified from the provider site.",
+  "logo_url": "images/wa/wa-opal-food-body-wisdom.png",
+  "logo_source_url": "https://opalfoodandbody.com/wp-content/uploads/2020/08/Horizonal-Logo.jpg",
+  "logo_downloaded": true,
+  "logo_license_reviewed": false,
+  "locations": []
+}

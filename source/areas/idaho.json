@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "state_file": "idaho",
+  "state_code": "ID",
+  "metadata": {
+    "snapshot_date": "2026-09-22",
+    "title": "Groupicorn Idaho IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. This September 22, 2026 pass prioritized the listed Idaho gaps, adding official One Love Agency offices in Twin Falls, Pocatello, and Idaho Falls. Shortlists use distinct provider groups and preserve research gaps rather than padding thin markets.",
+    "branding_note": "logo_url points to a locally stored PNG acquired from an official provider-controlled source. License clearance is not implied.",
+    "geocoding_note": "Street addresses and ZIP codes are stored; coordinates are intentionally null pending an audited geocoding pass.",
+    "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use."
+  },
+  "areas": [
+    {
+      "area_id": "id_boise_treasure_valley",
+      "state_code": "ID",
+      "region": "Southwestern Idaho",
+      "name": "Boise / Treasure Valley",
+      "example_cities": [
+        "Boise",
+        "Meridian",
+        "Nampa",
+        "Caldwell"
+      ],
+      "neighbor_area_ids": [
+        "id_twin_falls_magic_valley",
+        "id_pocatello_southeast_idaho"
+      ],
+      "target_provider_count": 9,
+      "definition": "Boise-centered Treasure Valley catchment including the I-84 corridor through Caldwell and Nampa.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "I-84 corridor and practical south/east Idaho travel connection",
+      "scope_note": "Dense statewide provider concentration; branches count once per operator."
+    },
+    {
+      "area_id": "id_coeur_dalene_north_idaho",
+      "state_code": "ID",
+      "region": "North Idaho",
+      "name": "Coeur d'Alene / North Idaho",
+      "example_cities": [
+        "Coeur d'Alene",
+        "Post Falls",
+        "Sandpoint"
+      ],
+      "neighbor_area_ids": [
+        "id_lewiston_north_central_idaho"
+      ],
+      "target_provider_count": 9,
+      "definition": "Coeur d'Alene and the Spokane-adjacent North Idaho corridor.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "US-95 / I-90 North Idaho corridor",
+      "scope_note": "Cross-border Spokane providers are documented as a future regional expansion, not included in this Idaho-only file."
+    },
+    {
+      "area_id": "id_idaho_falls_eastern_idaho",
+      "state_code": "ID",
+      "region": "Eastern Idaho",
+      "name": "Idaho Falls / Eastern Idaho",
+      "example_cities": [
+        "Idaho Falls",
+        "Rexburg",
+        "Ammon"
+      ],
+      "neighbor_area_ids": [
+        "id_pocatello_southeast_idaho"
+      ],
+      "target_provider_count": 9,
+      "definition": "Idaho Falls-centered eastern corridor including nearby Bonneville and Madison County communities.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "US-20 / I-15 eastern Idaho corridor",
+      "scope_note": "One Love Agency and existing local providers are retained; exact PHP/IOP scope at the One Love office should be reconfirmed."
+    },
+    {
+      "area_id": "id_pocatello_southeast_idaho",
+      "state_code": "ID",
+      "region": "Southeast Idaho",
+      "name": "Pocatello / Southeast Idaho",
+      "example_cities": [
+        "Pocatello",
+        "Chubbuck",
+        "Blackfoot"
+      ],
+      "neighbor_area_ids": [
+        "id_idaho_falls_eastern_idaho",
+        "id_twin_falls_magic_valley"
+      ],
+      "target_provider_count": 9,
+      "definition": "Pocatello-centered Southeast Idaho catchment along I-15.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "I-15 corridor toward Idaho Falls and the Magic Valley",
+      "scope_note": "Moonlight Mountain and One Love Agency are retained; exact track and admission scope should be reconfirmed."
+    },
+    {
+      "area_id": "id_lewiston_north_central_idaho",
+      "state_code": "ID",
+      "region": "North Central Idaho",
+      "name": "Lewiston / North Central Idaho",
+      "example_cities": [
+        "Lewiston",
+        "Moscow",
+        "Orofino"
+      ],
+      "neighbor_area_ids": [
+        "id_coeur_dalene_north_idaho"
+      ],
+      "target_provider_count": 9,
+      "definition": "Lewiston-Clarkston valley and nearby North Central Idaho communities.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "US-12 / US-95 regional corridor",
+      "scope_note": "Riverside Recovery is included with a queued exact-level verification because its current official site does not state IOP/PHP explicitly."
+    },
+    {
+      "area_id": "id_twin_falls_magic_valley",
+      "state_code": "ID",
+      "region": "Magic Valley",
+      "name": "Twin Falls / Magic Valley",
+      "example_cities": [
+        "Twin Falls",
+        "Jerome",
+        "Burley"
+      ],
+      "neighbor_area_ids": [
+        "id_boise_treasure_valley",
+        "id_pocatello_southeast_idaho"
+      ],
+      "target_provider_count": 9,
+      "definition": "Twin Falls-centered Magic Valley catchment along I-84 and US-93.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "I-84 / US-93 regional corridor",
+      "scope_note": "One Love Agency is retained from the provider's current site-wide PHP/IOP service grid and exact Twin Falls office page; additional local discovery remains needed."
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "id_lewiston_north_central_idaho",
+      "location_id": "riverside-recovery-lewiston",
+      "name": "Riverside Recovery",
+      "priority": "high",
+      "task": "Confirm whether the current Lewiston site offers IOP, PHP, or another structured level comparable to IOP/PHP.",
+      "source_url": "https://www.riversiderecovery.net/"
+    },
+    {
+      "queue_type": "find_provider",
+      "area_id": "id_twin_falls_magic_valley",
+      "location_id": "",
+      "name": "Twin Falls / Magic Valley",
+      "priority": "high",
+      "task": "Find and verify local IOP/PHP providers with street addresses and official program pages.",
+      "source_url": "https://yes.idaho.gov/wp-content/uploads/2026/01/ID-PRV-082225_IDHW-54-Annual-Network-Development-Plan_Final_Clean.pdf"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "id_idaho_falls_eastern_idaho",
+      "location_id": "",
+      "name": "Tueller Counseling Services",
+      "priority": "medium",
+      "task": "Determine whether Tueller's southeast Idaho outpatient/substance-use services meet the structured IOP/PHP eligibility threshold before adding the provider.",
+      "source_url": "https://tuellercounseling.com/about/"
+    },
+    {
+      "queue_type": "find_provider",
+      "area_id": "id_coeur_dalene_north_idaho",
+      "location_id": "",
+      "name": "Coeur d'Alene / North Idaho",
+      "priority": "medium",
+      "task": "Identify additional locally located IOP/PHP groups beyond Kootenai Health and Brick House Recovery; assess Spokane cross-border options only in a future combined-region pass.",
+      "source_url": "https://healthandwelfare.idaho.gov/dhw/coeur-dalene-office"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "id_twin_falls_magic_valley",
+      "location_id": "",
+      "name": "Southern Idaho Addiction Medicine & Mental Health",
+      "priority": "high",
+      "task": "Verify whether the Twin Falls outpatient program reaches IOP/PHP intensity, confirm the exact treatment address, population, operating status, and official logo.",
+      "source_url": "https://siammh.com/"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "id_twin_falls_magic_valley",
+      "location_id": "",
+      "name": "Family Health Services Twin Falls Behavioral Health Clinic",
+      "priority": "medium",
+      "task": "Check whether the comprehensive behavioral-health clinic offers a structured IOP/PHP track at 2647 Kimberly Rd, Suite 2, before adding a location.",
+      "source_url": "https://fhsid.org/locations/twin-falls/twin-falls-certified-community-behavioral-health-clinic/"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "id_lewiston_north_central_idaho",
+      "location_id": "",
+      "name": "Progressive Behavior Systems Lewiston",
+      "priority": "medium",
+      "task": "Verify whether the Lewiston office provides IOP/PHP rather than general behavioral or developmental-disability services, and capture an official program source if so.",
+      "source_url": "https://www.pbsofidaho.com/"
+    },
+    {
+      "queue_type": "geocode",
+      "area_id": "",
+      "location_id": "",
+      "name": "All Idaho locations",
+      "priority": "low",
+      "task": "Run an audited geocoding pass and record coordinates plus coordinate sources.",
+      "source_url": ""
+    }
+  ]
+}

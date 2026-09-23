@@ -1,0 +1,16 @@
+{
+  "provider_id": "ryther",
+  "provider_name": "Ryther",
+  "provider_website_url": "https://www.ryther.org/",
+  "reference_url": "https://www.ryther.org/mood-anxiety-intensive-services",
+  "operator_scope": "nonprofit",
+  "known_parent_name": "",
+  "ownership_verified": "unverified",
+  "dedupe_group_id": "ryther",
+  "dedupe_group_reason": "Single Seattle nonprofit Juniper PHP/IOP site verified from the provider site.",
+  "logo_url": "images/wa/wa-ryther.png",
+  "logo_source_url": "https://static.wixstatic.com/media/d5a483_7eb7577aa56a4e4abc188e19f5da99b1~mv2.png/v1/fill/w_676,h_240,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Ryther_Wordmark_wTag_W.png",
+  "logo_downloaded": true,
+  "logo_license_reviewed": false,
+  "locations": []
+}

@@ -1,0 +1,1765 @@
+{
+  "schema_version": 1,
+  "state_file": "california",
+  "state_code": "CA",
+  "metadata": {
+    "title": "Groupicorn California IOP/PHP location research",
+    "version": "2026-09-22-research-v2",
+    "as_of": "2026-09-22",
+    "methodology": "Physical-address-first. Local provider groups are considered before named neighboring catchments. Shortlists are editorial discovery candidates, not rankings. September 22, 2026 California weak-area pass added current official or public-agency evidence in selected zero-local and one-local areas; this was not a statewide re-verification. Research only; not a clinical referral directory.",
+    "status": "INCOMPLETE_RESEARCH_NOT_PUBLICATION_READY",
+    "coverage_target": "Nine distinct provider groups per editorial search area, with in-area and neighboring-area candidates separately labeled.",
+    "selection_policy": "Research shortlist, not clinical ranking or ordered search-engine results. No paid placement. Does not establish eligibility, availability or proximity.",
+    "coordinate_policy": "Null means not collected. Never substitute city or ZIP centroids for a facility pin without a distinct precision value. No distances or drive times have been computed.",
+    "ownership_policy": "Same provider brand deduplicated in each shortlist. Two potentially related brand pairs conservatively grouped pending confirmation. Ultimate ownership audit incomplete.",
+    "care_policy": "Mental-health, substance-use, co-occurring, eating-disorder and age labels are kept separate. Nine mixed candidates is not nine suitable programs for any particular individual.",
+    "summary": {
+      "location_count": 168,
+      "provider_brand_count": 94,
+      "provider_dedupe_group_count": 92,
+      "area_count": 62,
+      "target_per_area": 9,
+      "target_area_slots": 558,
+      "filled_area_slots": 326,
+      "missing_area_slots": 232,
+      "areas_with_nine_candidates": 17,
+      "areas_with_nine_in_area": 2,
+      "areas_with_research_gap": 45,
+      "areas_with_no_in_area_locations": 6,
+      "zip_count": 168,
+      "street_address_count": 165,
+      "geocoded_count": 0,
+      "provider_websites_resolved": 70,
+      "direct_logo_urls": 2,
+      "logos_downloaded": 0,
+      "evidence_status_counts": {
+        "provider_web_source": 124,
+        "search_excerpt_only": 11,
+        "directory_reported": 33
+      }
+    }
+  },
+  "areas": [
+    {
+      "area_id": "la-westside",
+      "state_code": "CA",
+      "region": "Los Angeles and Orange County",
+      "name": "Westside / Santa Monica / Culver City",
+      "example_cities": [
+        "Santa Monica",
+        "West Los Angeles",
+        "Westwood",
+        "Venice",
+        "Culver City"
+      ],
+      "neighbor_area_ids": [
+        "la-central",
+        "la-south-bay"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "la-central",
+      "state_code": "CA",
+      "region": "Los Angeles and Orange County",
+      "name": "Central LA / Hollywood / West Hollywood",
+      "example_cities": [
+        "Hollywood",
+        "West Hollywood",
+        "Mid-Wilshire",
+        "Silver Lake",
+        "Downtown Los Angeles"
+      ],
+      "neighbor_area_ids": [
+        "la-westside",
+        "la-south",
+        "la-east-valley",
+        "la-pasadena"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "la-south",
+      "state_code": "CA",
+      "region": "Los Angeles and Orange County",
+      "name": "South LA / Inglewood / Hawthorne",
+      "example_cities": [
+        "South Los Angeles",
+        "University Park",
+        "Inglewood",
+        "Hawthorne",
+        "Compton"
+      ],
+      "neighbor_area_ids": [
+        "la-south-bay",
+        "la-westside",
+        "la-central",
+        "la-gateway"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "la-south-bay",
+      "state_code": "CA",
+      "region": "Los Angeles and Orange County",
+      "name": "South Bay / Beach Cities / Torrance",
+      "example_cities": [
+        "El Segundo",
+        "Manhattan Beach",
+        "Hermosa Beach",
+        "Redondo Beach",
+        "Torrance",
+        "Lomita",
+        "Palos Verdes"
+      ],
+      "neighbor_area_ids": [
+        "la-south",
+        "la-westside",
+        "la-long-beach"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "la-long-beach",
+      "state_code": "CA",
+      "region": "Los Angeles and Orange County",
+      "name": "Long Beach / San Pedro / Lakewood",
+      "example_cities": [
+        "Long Beach",
+        "San Pedro",
+        "Wilmington",
+        "Lakewood",
+        "Signal Hill",
+        "Los Alamitos"
+      ],
+      "neighbor_area_ids": [
+        "la-south-bay",
+        "la-gateway",
+        "oc-north",
+        "oc-coast"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "la-gateway",
+      "state_code": "CA",
+      "region": "Los Angeles and Orange County",
+      "name": "Gateway Cities / Downey / Whittier",
+      "example_cities": [
+        "Downey",
+        "Whittier",
+        "Norwalk",
+        "Cerritos",
+        "Bellflower",
+        "Paramount",
+        "Pico Rivera"
+      ],
+      "neighbor_area_ids": [
+        "la-long-beach",
+        "la-south",
+        "la-pasadena",
+        "oc-north"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "la-pasadena",
+      "state_code": "CA",
+      "region": "Los Angeles and Orange County",
+      "name": "Pasadena / West San Gabriel Valley",
+      "example_cities": [
+        "Pasadena",
+        "Alhambra",
+        "Arcadia",
+        "Monrovia",
+        "El Monte",
+        "South El Monte",
+        "San Gabriel"
+      ],
+      "neighbor_area_ids": [
+        "la-central",
+        "la-east-valley",
+        "la-east-sgv",
+        "la-gateway"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "la-east-sgv",
+      "state_code": "CA",
+      "region": "Los Angeles and Orange County",
+      "name": "East San Gabriel Valley / Pomona",
+      "example_cities": [
+        "Covina",
+        "West Covina",
+        "Glendora",
+        "Pomona",
+        "Claremont",
+        "San Dimas",
+        "La Verne"
+      ],
+      "neighbor_area_ids": [
+        "la-pasadena",
+        "ie-west"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "la-east-valley",
+      "state_code": "CA",
+      "region": "Los Angeles and Orange County",
+      "name": "East Valley / Burbank / Glendale",
+      "example_cities": [
+        "Burbank",
+        "Glendale",
+        "North Hollywood",
+        "Studio City",
+        "Sherman Oaks"
+      ],
+      "neighbor_area_ids": [
+        "la-west-valley",
+        "la-central",
+        "la-pasadena"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "la-west-valley",
+      "state_code": "CA",
+      "region": "Los Angeles and Orange County",
+      "name": "West Valley / Encino / Woodland Hills",
+      "example_cities": [
+        "Encino",
+        "Tarzana",
+        "Reseda",
+        "Woodland Hills",
+        "Calabasas",
+        "Northridge",
+        "Van Nuys"
+      ],
+      "neighbor_area_ids": [
+        "la-east-valley",
+        "ventura-conejo",
+        "la-santa-clarita"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "la-santa-clarita",
+      "state_code": "CA",
+      "region": "Los Angeles and Orange County",
+      "name": "Santa Clarita Valley",
+      "example_cities": [
+        "Santa Clarita",
+        "Valencia",
+        "Newhall",
+        "Saugus",
+        "Canyon Country",
+        "Castaic"
+      ],
+      "neighbor_area_ids": [
+        "la-west-valley"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "la-antelope",
+      "state_code": "CA",
+      "region": "Los Angeles and Orange County",
+      "name": "Antelope Valley / Lancaster / Palmdale",
+      "example_cities": [
+        "Lancaster",
+        "Palmdale",
+        "Quartz Hill",
+        "Rosamond"
+      ],
+      "neighbor_area_ids": [],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "oc-north",
+      "state_code": "CA",
+      "region": "Los Angeles and Orange County",
+      "name": "North Orange County / Anaheim / Fullerton",
+      "example_cities": [
+        "Anaheim",
+        "Fullerton",
+        "Brea",
+        "Buena Park",
+        "La Habra",
+        "Cypress",
+        "Yorba Linda"
+      ],
+      "neighbor_area_ids": [
+        "la-gateway",
+        "la-long-beach",
+        "oc-central",
+        "oc-coast"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "oc-central",
+      "state_code": "CA",
+      "region": "Los Angeles and Orange County",
+      "name": "Central Orange County / Orange / Santa Ana",
+      "example_cities": [
+        "Orange",
+        "Santa Ana",
+        "Tustin",
+        "Garden Grove",
+        "Westminster"
+      ],
+      "neighbor_area_ids": [
+        "oc-north",
+        "oc-coast",
+        "oc-irvine"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "oc-coast",
+      "state_code": "CA",
+      "region": "Los Angeles and Orange County",
+      "name": "Coastal Orange County / Huntington / Newport",
+      "example_cities": [
+        "Huntington Beach",
+        "Newport Beach",
+        "Costa Mesa",
+        "Fountain Valley",
+        "Seal Beach"
+      ],
+      "neighbor_area_ids": [
+        "oc-central",
+        "oc-irvine",
+        "oc-north",
+        "la-long-beach"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "oc-irvine",
+      "state_code": "CA",
+      "region": "Los Angeles and Orange County",
+      "name": "Irvine / Lake Forest",
+      "example_cities": [
+        "Irvine",
+        "Lake Forest",
+        "Foothill Ranch"
+      ],
+      "neighbor_area_ids": [
+        "oc-central",
+        "oc-coast",
+        "oc-south"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "oc-south",
+      "state_code": "CA",
+      "region": "Los Angeles and Orange County",
+      "name": "South Orange County / Mission Viejo / San Clemente",
+      "example_cities": [
+        "Mission Viejo",
+        "Laguna Hills",
+        "Laguna Niguel",
+        "Laguna Beach",
+        "San Juan Capistrano",
+        "San Clemente",
+        "Rancho Santa Margarita"
+      ],
+      "neighbor_area_ids": [
+        "oc-irvine",
+        "oc-coast"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "ventura-conejo",
+      "state_code": "CA",
+      "region": "Ventura County",
+      "name": "Conejo Valley / Thousand Oaks / Simi Valley",
+      "example_cities": [
+        "Thousand Oaks",
+        "Westlake Village",
+        "Newbury Park",
+        "Simi Valley",
+        "Moorpark"
+      ],
+      "neighbor_area_ids": [
+        "la-west-valley",
+        "ventura-coast"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "ventura-coast",
+      "state_code": "CA",
+      "region": "Ventura County",
+      "name": "Ventura / Oxnard / Camarillo",
+      "example_cities": [
+        "Ventura",
+        "Oxnard",
+        "Camarillo",
+        "Port Hueneme"
+      ],
+      "neighbor_area_ids": [
+        "ventura-conejo"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "sd-central",
+      "state_code": "CA",
+      "region": "San Diego and Imperial",
+      "name": "San Diego / Central and Coastal",
+      "example_cities": [
+        "San Diego",
+        "Mission Valley",
+        "Pacific Beach",
+        "La Jolla",
+        "Kearny Mesa",
+        "Clairemont"
+      ],
+      "neighbor_area_ids": [
+        "sd-east",
+        "sd-south",
+        "sd-north-inland"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "sd-north-coast",
+      "state_code": "CA",
+      "region": "San Diego and Imperial",
+      "name": "North County Coastal / Oceanside / Carlsbad",
+      "example_cities": [
+        "Oceanside",
+        "Carlsbad",
+        "Encinitas",
+        "Vista",
+        "Solana Beach",
+        "Del Mar"
+      ],
+      "neighbor_area_ids": [
+        "sd-north-inland"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "sd-north-inland",
+      "state_code": "CA",
+      "region": "San Diego and Imperial",
+      "name": "North County Inland / Escondido / Poway",
+      "example_cities": [
+        "Escondido",
+        "San Marcos",
+        "Poway",
+        "Rancho Bernardo",
+        "Scripps Ranch"
+      ],
+      "neighbor_area_ids": [
+        "sd-north-coast",
+        "sd-central"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "sd-east",
+      "state_code": "CA",
+      "region": "San Diego and Imperial",
+      "name": "East County / La Mesa / El Cajon",
+      "example_cities": [
+        "La Mesa",
+        "El Cajon",
+        "Santee",
+        "Lakeside",
+        "Spring Valley"
+      ],
+      "neighbor_area_ids": [
+        "sd-central",
+        "sd-south"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "sd-south",
+      "state_code": "CA",
+      "region": "San Diego and Imperial",
+      "name": "South Bay San Diego / Chula Vista",
+      "example_cities": [
+        "Chula Vista",
+        "National City",
+        "Imperial Beach",
+        "San Ysidro"
+      ],
+      "neighbor_area_ids": [
+        "sd-central",
+        "sd-east"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "imperial",
+      "state_code": "CA",
+      "region": "San Diego and Imperial",
+      "name": "Imperial Valley / El Centro / Calexico",
+      "example_cities": [
+        "El Centro",
+        "Calexico",
+        "Brawley",
+        "Imperial"
+      ],
+      "neighbor_area_ids": [],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "ie-west",
+      "state_code": "CA",
+      "region": "Inland Empire and Desert",
+      "name": "West Inland Empire / Ontario / Rancho Cucamonga",
+      "example_cities": [
+        "Ontario",
+        "Rancho Cucamonga",
+        "Upland",
+        "Chino",
+        "Chino Hills",
+        "Fontana"
+      ],
+      "neighbor_area_ids": [
+        "la-east-sgv",
+        "ie-riverside",
+        "ie-san-bernardino"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "ie-riverside",
+      "state_code": "CA",
+      "region": "Inland Empire and Desert",
+      "name": "Riverside / Corona / Moreno Valley",
+      "example_cities": [
+        "Riverside",
+        "Corona",
+        "Norco",
+        "Jurupa Valley",
+        "Moreno Valley"
+      ],
+      "neighbor_area_ids": [
+        "ie-west",
+        "ie-san-bernardino"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "ie-san-bernardino",
+      "state_code": "CA",
+      "region": "Inland Empire and Desert",
+      "name": "San Bernardino / Redlands / Loma Linda",
+      "example_cities": [
+        "San Bernardino",
+        "Redlands",
+        "Loma Linda",
+        "Highland",
+        "Colton",
+        "Rialto"
+      ],
+      "neighbor_area_ids": [
+        "ie-west",
+        "ie-riverside",
+        "ie-hemet"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "ie-temecula",
+      "state_code": "CA",
+      "region": "Inland Empire and Desert",
+      "name": "Temecula / Murrieta / Lake Elsinore",
+      "example_cities": [
+        "Temecula",
+        "Murrieta",
+        "Menifee",
+        "Wildomar",
+        "Lake Elsinore"
+      ],
+      "neighbor_area_ids": [
+        "ie-hemet"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "ie-hemet",
+      "state_code": "CA",
+      "region": "Inland Empire and Desert",
+      "name": "Hemet / San Jacinto / Banning / Beaumont",
+      "example_cities": [
+        "Hemet",
+        "San Jacinto",
+        "Banning",
+        "Beaumont"
+      ],
+      "neighbor_area_ids": [
+        "ie-temecula",
+        "ie-san-bernardino"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "ie-coachella",
+      "state_code": "CA",
+      "region": "Inland Empire and Desert",
+      "name": "Coachella Valley / Palm Springs / Palm Desert",
+      "example_cities": [
+        "Palm Springs",
+        "Palm Desert",
+        "Rancho Mirage",
+        "Indio",
+        "La Quinta",
+        "Cathedral City",
+        "Coachella"
+      ],
+      "neighbor_area_ids": [],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "ie-high-desert",
+      "state_code": "CA",
+      "region": "Inland Empire and Desert",
+      "name": "High Desert / Victorville / Hesperia",
+      "example_cities": [
+        "Victorville",
+        "Hesperia",
+        "Apple Valley",
+        "Adelanto",
+        "Barstow"
+      ],
+      "neighbor_area_ids": [],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "santa-barbara",
+      "state_code": "CA",
+      "region": "Central Coast",
+      "name": "Santa Barbara / Goleta / Carpinteria",
+      "example_cities": [
+        "Santa Barbara",
+        "Goleta",
+        "Carpinteria"
+      ],
+      "neighbor_area_ids": [],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "santa-maria",
+      "state_code": "CA",
+      "region": "Central Coast",
+      "name": "Santa Maria / Lompoc",
+      "example_cities": [
+        "Santa Maria",
+        "Orcutt",
+        "Lompoc"
+      ],
+      "neighbor_area_ids": [
+        "slo"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "slo",
+      "state_code": "CA",
+      "region": "Central Coast",
+      "name": "San Luis Obispo / Five Cities / Paso Robles",
+      "example_cities": [
+        "San Luis Obispo",
+        "Arroyo Grande",
+        "Grover Beach",
+        "Pismo Beach",
+        "Atascadero",
+        "Paso Robles"
+      ],
+      "neighbor_area_ids": [
+        "santa-maria"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "monterey",
+      "state_code": "CA",
+      "region": "Central Coast",
+      "name": "Monterey / Salinas / Hollister",
+      "example_cities": [
+        "Monterey",
+        "Seaside",
+        "Marina",
+        "Salinas",
+        "Carmel",
+        "Hollister"
+      ],
+      "neighbor_area_ids": [],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "santa-cruz",
+      "state_code": "CA",
+      "region": "Central Coast",
+      "name": "Santa Cruz / Watsonville",
+      "example_cities": [
+        "Santa Cruz",
+        "Capitola",
+        "Scotts Valley",
+        "Watsonville"
+      ],
+      "neighbor_area_ids": [],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "sf",
+      "state_code": "CA",
+      "region": "Bay Area",
+      "name": "San Francisco",
+      "example_cities": [
+        "San Francisco"
+      ],
+      "neighbor_area_ids": [
+        "peninsula",
+        "marin",
+        "east-bay"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "peninsula",
+      "state_code": "CA",
+      "region": "Bay Area",
+      "name": "Peninsula / San Mateo / Redwood City / Palo Alto",
+      "example_cities": [
+        "Daly City",
+        "South San Francisco",
+        "San Mateo",
+        "Burlingame",
+        "San Carlos",
+        "Redwood City",
+        "Menlo Park",
+        "Palo Alto"
+      ],
+      "neighbor_area_ids": [
+        "sf",
+        "san-jose"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "san-jose",
+      "state_code": "CA",
+      "region": "Bay Area",
+      "name": "San Jose / Silicon Valley",
+      "example_cities": [
+        "San Jose",
+        "Santa Clara",
+        "Sunnyvale",
+        "Mountain View",
+        "Campbell",
+        "Los Gatos",
+        "Milpitas",
+        "Gilroy"
+      ],
+      "neighbor_area_ids": [
+        "peninsula",
+        "tri-valley"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "east-bay",
+      "state_code": "CA",
+      "region": "Bay Area",
+      "name": "Oakland / Berkeley / Inner East Bay",
+      "example_cities": [
+        "Oakland",
+        "Berkeley",
+        "Emeryville",
+        "Alameda",
+        "San Leandro",
+        "Richmond"
+      ],
+      "neighbor_area_ids": [
+        "contra-costa",
+        "tri-valley",
+        "sf"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "contra-costa",
+      "state_code": "CA",
+      "region": "Bay Area",
+      "name": "Walnut Creek / Concord / Contra Costa",
+      "example_cities": [
+        "Walnut Creek",
+        "Concord",
+        "Pleasant Hill",
+        "Lafayette",
+        "Martinez",
+        "Antioch",
+        "Brentwood"
+      ],
+      "neighbor_area_ids": [
+        "east-bay",
+        "tri-valley",
+        "napa-solano"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "tri-valley",
+      "state_code": "CA",
+      "region": "Bay Area",
+      "name": "Tri-Valley / Fremont / Union City",
+      "example_cities": [
+        "San Ramon",
+        "Dublin",
+        "Pleasanton",
+        "Livermore",
+        "Fremont",
+        "Union City",
+        "Hayward"
+      ],
+      "neighbor_area_ids": [
+        "contra-costa",
+        "east-bay",
+        "san-jose"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "marin",
+      "state_code": "CA",
+      "region": "Bay Area",
+      "name": "Marin County / San Rafael / Novato",
+      "example_cities": [
+        "San Rafael",
+        "Novato",
+        "Corte Madera",
+        "Mill Valley",
+        "Larkspur",
+        "San Anselmo"
+      ],
+      "neighbor_area_ids": [
+        "sf",
+        "sonoma"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "sonoma",
+      "state_code": "CA",
+      "region": "Bay Area",
+      "name": "Sonoma County / Santa Rosa / Petaluma",
+      "example_cities": [
+        "Santa Rosa",
+        "Petaluma",
+        "Rohnert Park",
+        "Sonoma",
+        "Sebastopol",
+        "Windsor"
+      ],
+      "neighbor_area_ids": [
+        "marin",
+        "napa-solano"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "napa-solano",
+      "state_code": "CA",
+      "region": "Bay Area",
+      "name": "Napa / Vallejo / Fairfield / Vacaville",
+      "example_cities": [
+        "Napa",
+        "Vallejo",
+        "Fairfield",
+        "Suisun City",
+        "Vacaville",
+        "Benicia"
+      ],
+      "neighbor_area_ids": [
+        "sonoma",
+        "contra-costa",
+        "davis"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "sacramento",
+      "state_code": "CA",
+      "region": "Sacramento and Central Valley",
+      "name": "Sacramento / Elk Grove",
+      "example_cities": [
+        "Sacramento",
+        "Elk Grove",
+        "Rancho Cordova",
+        "Galt"
+      ],
+      "neighbor_area_ids": [
+        "sac-northeast",
+        "davis"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "sac-northeast",
+      "state_code": "CA",
+      "region": "Sacramento and Central Valley",
+      "name": "Roseville / Folsom / Northeast Sacramento",
+      "example_cities": [
+        "Roseville",
+        "Rocklin",
+        "Folsom",
+        "Citrus Heights",
+        "Fair Oaks",
+        "Orangevale",
+        "El Dorado Hills"
+      ],
+      "neighbor_area_ids": [
+        "sacramento",
+        "sierra-foothills"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "davis",
+      "state_code": "CA",
+      "region": "Sacramento and Central Valley",
+      "name": "Davis / Woodland / West Sacramento",
+      "example_cities": [
+        "Davis",
+        "Woodland",
+        "West Sacramento"
+      ],
+      "neighbor_area_ids": [
+        "sacramento",
+        "napa-solano"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "stockton",
+      "state_code": "CA",
+      "region": "Sacramento and Central Valley",
+      "name": "Stockton / Lodi / Manteca / Tracy",
+      "example_cities": [
+        "Stockton",
+        "Lodi",
+        "Manteca",
+        "Tracy",
+        "Lathrop"
+      ],
+      "neighbor_area_ids": [
+        "modesto"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "modesto",
+      "state_code": "CA",
+      "region": "Sacramento and Central Valley",
+      "name": "Modesto / Turlock",
+      "example_cities": [
+        "Modesto",
+        "Turlock",
+        "Ceres",
+        "Oakdale",
+        "Riverbank"
+      ],
+      "neighbor_area_ids": [
+        "stockton",
+        "merced"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "merced",
+      "state_code": "CA",
+      "region": "Sacramento and Central Valley",
+      "name": "Merced / Atwater / Los Banos",
+      "example_cities": [
+        "Merced",
+        "Atwater",
+        "Los Banos",
+        "Livingston"
+      ],
+      "neighbor_area_ids": [
+        "modesto"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "fresno",
+      "state_code": "CA",
+      "region": "Sacramento and Central Valley",
+      "name": "Fresno / Clovis / Madera",
+      "example_cities": [
+        "Fresno",
+        "Clovis",
+        "Madera"
+      ],
+      "neighbor_area_ids": [
+        "visalia"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "visalia",
+      "state_code": "CA",
+      "region": "Sacramento and Central Valley",
+      "name": "Visalia / Tulare / Hanford / Porterville",
+      "example_cities": [
+        "Visalia",
+        "Tulare",
+        "Hanford",
+        "Porterville",
+        "Dinuba"
+      ],
+      "neighbor_area_ids": [
+        "fresno"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "bakersfield",
+      "state_code": "CA",
+      "region": "Sacramento and Central Valley",
+      "name": "Bakersfield / Kern Urban Area",
+      "example_cities": [
+        "Bakersfield",
+        "Oildale",
+        "Shafter",
+        "Delano",
+        "Arvin"
+      ],
+      "neighbor_area_ids": [],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "chico",
+      "state_code": "CA",
+      "region": "North State and Sierra",
+      "name": "Chico / Oroville / Paradise",
+      "example_cities": [
+        "Chico",
+        "Oroville",
+        "Paradise",
+        "Magalia"
+      ],
+      "neighbor_area_ids": [],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "redding",
+      "state_code": "CA",
+      "region": "North State and Sierra",
+      "name": "Redding / Anderson / Red Bluff",
+      "example_cities": [
+        "Redding",
+        "Anderson",
+        "Shasta Lake",
+        "Red Bluff"
+      ],
+      "neighbor_area_ids": [],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "humboldt",
+      "state_code": "CA",
+      "region": "North State and Sierra",
+      "name": "Humboldt Bay / Eureka / Arcata",
+      "example_cities": [
+        "Eureka",
+        "Arcata",
+        "McKinleyville",
+        "Fortuna"
+      ],
+      "neighbor_area_ids": [],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "yuba-sutter",
+      "state_code": "CA",
+      "region": "North State and Sierra",
+      "name": "Yuba City / Marysville",
+      "example_cities": [
+        "Yuba City",
+        "Marysville",
+        "Olivehurst",
+        "Linda"
+      ],
+      "neighbor_area_ids": [],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "ukiah-lake",
+      "state_code": "CA",
+      "region": "North State and Sierra",
+      "name": "Ukiah / Lakeport / Clearlake",
+      "example_cities": [
+        "Ukiah",
+        "Willits",
+        "Lakeport",
+        "Clearlake"
+      ],
+      "neighbor_area_ids": [],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "tahoe",
+      "state_code": "CA",
+      "region": "North State and Sierra",
+      "name": "Lake Tahoe / Truckee",
+      "example_cities": [
+        "Truckee",
+        "South Lake Tahoe",
+        "Tahoe City",
+        "Kings Beach"
+      ],
+      "neighbor_area_ids": [],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    },
+    {
+      "area_id": "sierra-foothills",
+      "state_code": "CA",
+      "region": "North State and Sierra",
+      "name": "Sierra Foothills / Auburn / Placerville / Grass Valley",
+      "example_cities": [
+        "Auburn",
+        "Placerville",
+        "Grass Valley",
+        "Nevada City",
+        "Sonora"
+      ],
+      "neighbor_area_ids": [
+        "sac-northeast"
+      ],
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": null,
+      "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
+      "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist."
+    }
+  ],
+  "research_queue": [
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "la-antelope",
+    "location_id": "",
+    "name": "Antelope Valley / Lancaster / Palmdale",
+    "priority": "high",
+    "task": "Recheck Antelope Valley / Lancaster / Palmdale for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "bakersfield",
+    "location_id": "",
+    "name": "Bakersfield / Kern Urban Area",
+    "priority": "medium",
+    "task": "Recheck Bakersfield / Kern Urban Area for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "chico",
+    "location_id": "",
+    "name": "Chico / Oroville / Paradise",
+    "priority": "high",
+    "task": "Recheck Chico / Oroville / Paradise for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "oc-coast",
+    "location_id": "",
+    "name": "Coastal Orange County / Huntington / Newport",
+    "priority": "high",
+    "task": "Recheck Coastal Orange County / Huntington / Newport for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "davis",
+    "location_id": "",
+    "name": "Davis / Woodland / West Sacramento",
+    "priority": "high",
+    "task": "Prioritize a fresh official-site search for physical IOP/PHP programs in Davis / Woodland / West Sacramento; promote exact addresses and local PNGs only when the program and site are current, and retain weak or virtual-only leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "sd-east",
+    "location_id": "",
+    "name": "East County / La Mesa / El Cajon",
+    "priority": "high",
+    "task": "Prioritize a fresh official-site search for physical IOP/PHP programs in East County / La Mesa / El Cajon; promote exact addresses and local PNGs only when the program and site are current, and retain weak or virtual-only leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "la-east-sgv",
+    "location_id": "",
+    "name": "East San Gabriel Valley / Pomona",
+    "priority": "high",
+    "task": "Recheck East San Gabriel Valley / Pomona for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "la-gateway",
+    "location_id": "",
+    "name": "Gateway Cities / Downey / Whittier",
+    "priority": "high",
+    "task": "Recheck Gateway Cities / Downey / Whittier for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "ie-hemet",
+    "location_id": "",
+    "name": "Hemet / San Jacinto / Banning / Beaumont",
+    "priority": "high",
+    "task": "Recheck Hemet / San Jacinto / Banning / Beaumont for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "ie-high-desert",
+    "location_id": "",
+    "name": "High Desert / Victorville / Hesperia",
+    "priority": "high",
+    "task": "Recheck High Desert / Victorville / Hesperia for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "humboldt",
+    "location_id": "",
+    "name": "Humboldt Bay / Eureka / Arcata",
+    "priority": "high",
+    "task": "Recheck Humboldt Bay / Eureka / Arcata for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "imperial",
+    "location_id": "",
+    "name": "Imperial Valley / El Centro / Calexico",
+    "priority": "high",
+    "task": "Recheck Imperial Valley / El Centro / Calexico for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "tahoe",
+    "location_id": "",
+    "name": "Lake Tahoe / Truckee",
+    "priority": "high",
+    "task": "Recheck Lake Tahoe / Truckee for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "marin",
+    "location_id": "",
+    "name": "Marin County / San Rafael / Novato",
+    "priority": "medium",
+    "task": "Recheck Marin County / San Rafael / Novato for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "merced",
+    "location_id": "",
+    "name": "Merced / Atwater / Los Banos",
+    "priority": "high",
+    "task": "Recheck Merced / Atwater / Los Banos for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "modesto",
+    "location_id": "",
+    "name": "Modesto / Turlock",
+    "priority": "high",
+    "task": "Recheck Modesto / Turlock for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "monterey",
+    "location_id": "",
+    "name": "Monterey / Salinas / Hollister",
+    "priority": "high",
+    "task": "Recheck Monterey / Salinas / Hollister for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "napa-solano",
+    "location_id": "",
+    "name": "Napa / Vallejo / Fairfield / Vacaville",
+    "priority": "high",
+    "task": "Prioritize a fresh official-site search for physical IOP/PHP programs in Napa / Vallejo / Fairfield / Vacaville; promote exact addresses and local PNGs only when the program and site are current, and retain weak or virtual-only leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "sd-north-inland",
+    "location_id": "",
+    "name": "North County Inland / Escondido / Poway",
+    "priority": "high",
+    "task": "Recheck North County Inland / Escondido / Poway for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "oc-north",
+    "location_id": "",
+    "name": "North Orange County / Anaheim / Fullerton",
+    "priority": "high",
+    "task": "Recheck North Orange County / Anaheim / Fullerton for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "east-bay",
+    "location_id": "",
+    "name": "Oakland / Berkeley / Inner East Bay",
+    "priority": "medium",
+    "task": "Recheck Oakland / Berkeley / Inner East Bay for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "peninsula",
+    "location_id": "",
+    "name": "Peninsula / San Mateo / Redwood City / Palo Alto",
+    "priority": "high",
+    "task": "Recheck Peninsula / San Mateo / Redwood City / Palo Alto for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "redding",
+    "location_id": "",
+    "name": "Redding / Anderson / Red Bluff",
+    "priority": "high",
+    "task": "Recheck Redding / Anderson / Red Bluff for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "ie-riverside",
+    "location_id": "",
+    "name": "Riverside / Corona / Moreno Valley",
+    "priority": "medium",
+    "task": "Recheck Riverside / Corona / Moreno Valley for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "sac-northeast",
+    "location_id": "",
+    "name": "Roseville / Folsom / Northeast Sacramento",
+    "priority": "high",
+    "task": "Prioritize a fresh official-site search for physical IOP/PHP programs in Roseville / Folsom / Northeast Sacramento; promote exact addresses and local PNGs only when the program and site are current, and retain weak or virtual-only leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "ie-san-bernardino",
+    "location_id": "",
+    "name": "San Bernardino / Redlands / Loma Linda",
+    "priority": "medium",
+    "task": "Recheck San Bernardino / Redlands / Loma Linda for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "slo",
+    "location_id": "",
+    "name": "San Luis Obispo / Five Cities / Paso Robles",
+    "priority": "medium",
+    "task": "Recheck San Luis Obispo / Five Cities / Paso Robles for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "santa-barbara",
+    "location_id": "",
+    "name": "Santa Barbara / Goleta / Carpinteria",
+    "priority": "high",
+    "task": "Recheck Santa Barbara / Goleta / Carpinteria for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "santa-cruz",
+    "location_id": "",
+    "name": "Santa Cruz / Watsonville",
+    "priority": "medium",
+    "task": "Recheck Santa Cruz / Watsonville for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "santa-maria",
+    "location_id": "",
+    "name": "Santa Maria / Lompoc",
+    "priority": "medium",
+    "task": "Recheck Santa Maria / Lompoc for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "sierra-foothills",
+    "location_id": "",
+    "name": "Sierra Foothills / Auburn / Placerville / Grass Valley",
+    "priority": "high",
+    "task": "Prioritize a fresh official-site search for physical IOP/PHP programs in Sierra Foothills / Auburn / Placerville / Grass Valley; promote exact addresses and local PNGs only when the program and site are current, and retain weak or virtual-only leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "sonoma",
+    "location_id": "",
+    "name": "Sonoma County / Santa Rosa / Petaluma",
+    "priority": "medium",
+    "task": "Recheck Sonoma County / Santa Rosa / Petaluma for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "sd-south",
+    "location_id": "",
+    "name": "South Bay San Diego / Chula Vista",
+    "priority": "high",
+    "task": "Prioritize a fresh official-site search for physical IOP/PHP programs in South Bay San Diego / Chula Vista; promote exact addresses and local PNGs only when the program and site are current, and retain weak or virtual-only leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "la-south",
+    "location_id": "",
+    "name": "South LA / Inglewood / Hawthorne",
+    "priority": "high",
+    "task": "Recheck South LA / Inglewood / Hawthorne for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "stockton",
+    "location_id": "",
+    "name": "Stockton / Lodi / Manteca / Tracy",
+    "priority": "high",
+    "task": "Recheck Stockton / Lodi / Manteca / Tracy for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "tri-valley",
+    "location_id": "",
+    "name": "Tri-Valley / Fremont / Union City",
+    "priority": "high",
+    "task": "Recheck Tri-Valley / Fremont / Union City for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "ukiah-lake",
+    "location_id": "",
+    "name": "Ukiah / Lakeport / Clearlake",
+    "priority": "high",
+    "task": "Recheck Ukiah / Lakeport / Clearlake for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "contra-costa",
+    "location_id": "",
+    "name": "Walnut Creek / Concord / Contra Costa",
+    "priority": "high",
+    "task": "Recheck Walnut Creek / Concord / Contra Costa for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "ie-west",
+    "location_id": "",
+    "name": "West Inland Empire / Ontario / Rancho Cucamonga",
+    "priority": "high",
+    "task": "Recheck West Inland Empire / Ontario / Rancho Cucamonga for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "la-west-valley",
+    "location_id": "",
+    "name": "West Valley / Encino / Woodland Hills",
+    "priority": "medium",
+    "task": "Recheck West Valley / Encino / Woodland Hills for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  },
+  {
+    "queue_type": "find_or_verify_provider",
+    "area_id": "yuba-sutter",
+    "location_id": "",
+    "name": "Yuba City / Marysville",
+    "priority": "high",
+    "task": "Recheck Yuba City / Marysville for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+    "source_url": ""
+  }
+]
+}

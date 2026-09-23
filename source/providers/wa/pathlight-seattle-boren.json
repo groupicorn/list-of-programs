@@ -1,0 +1,16 @@
+{
+  "provider_id": "pathlight-seattle-boren",
+  "provider_name": "Pathlight Mood & Anxiety Center Seattle",
+  "provider_website_url": "https://www.pathlightbh.com/",
+  "reference_url": "https://www.pathlightbh.com/recovery-centers/seattle/901-boren-ave",
+  "operator_scope": "national_operator",
+  "known_parent_name": "Eating Recovery Center",
+  "ownership_verified": "unverified",
+  "dedupe_group_id": "pathlight-seattle-boren",
+  "dedupe_group_reason": "Single Pathlight Seattle Boren physical site; brand-level virtual care is not duplicated.",
+  "logo_url": "images/wa/wa-pathlight-mood-anxiety-center.png",
+  "logo_source_url": "https://www.pathlightbh.com/sites/default/files/file/2024-02/PAL013.01A_WA_RegionalSheet_020924_Digital.pdf",
+  "logo_downloaded": true,
+  "logo_license_reviewed": false,
+  "locations": []
+}

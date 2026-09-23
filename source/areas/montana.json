@@ -3,7 +3,7 @@
   "state_file": "montana",
   "state_code": "MT",
   "metadata": {
-    "snapshot_date": "2026-09-21",
+    "snapshot_date": "2026-09-22",
     "title": "Groupicorn Montana IOP/PHP research directory",
     "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
     "methodology": "Physical-address-first. Montana is represented by an initial regional catchment pair and a sourced anchor; remaining logo-backed leads stay in the verification queue until exact-site evidence is checked.",
@@ -150,6 +150,46 @@
       "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-21"
+    },
+    {
+      "queue_type": "discovery_lead",
+      "area_id": "mt_bozeman",
+      "location_id": "",
+      "name": "Recovery Centers of Montana / Alpenglow Clinic",
+      "priority": "medium",
+      "task": "Verify current official program page, exact Bozeman treatment entrance, and logo provenance; the May 2026 Montana state-approved list identifies 140 East Main Street and Level 2.1 Intensive Outpatient services.",
+      "source_url": "https://dphhs.mt.gov/assets/BHDD/SubstanceAbuse/SUDProviderlist5-26.pdf",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_lead",
+      "area_id": "mt_helena",
+      "location_id": "",
+      "name": "Montana Counseling Services",
+      "priority": "medium",
+      "task": "Verify the current official site, exact treatment address, and logo provenance; the May 2026 Montana state-approved list identifies 900 North Jackson in Helena and Level 2.1 IOP.",
+      "source_url": "https://prod-dphhs.mt.gov/assets/BHDD/SubstanceAbuse/StateApprovedSubstanceUseTreatmentProviders.pdf",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "discovery_lead",
+      "area_id": "mt_great_falls",
+      "location_id": "",
+      "name": "CMP Power of Healing Counseling and Treatment Center",
+      "priority": "medium",
+      "task": "Verify current operating status, exact Great Falls treatment address, IOP schedule, and official logo provenance; provider materials describe Montana approval for intensive outpatient services but the current public site needs confirmation.",
+      "source_url": "https://www.cmpphctcllc.com/single-post/cmp-the-mediator",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "logo_pending",
+      "area_id": "mt_helena",
+      "location_id": "helena-valley-addiction-services-helena",
+      "name": "Helena Valley Addiction Services",
+      "priority": "medium",
+      "task": "Acquire and validate a current official PNG logo from the provider-controlled site. The IOP program and exact Helena address are verified, but the previously referenced local logo asset is unavailable and has been cleared from the source record.",
+      "source_url": "https://helenavalleyhealthservices.com/services",
+      "date": "2026-09-22"
     }
   ]
 }

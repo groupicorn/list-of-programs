@@ -28,7 +28,7 @@
       "definition": "Editorial Charleston / Lowcountry catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
       "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
-      "scope_note": "One sourced anchor is published; additional providers remain in the verification queue.",
+      "scope_note": "Three local provider groups currently prepare for display; additional Charleston and North Charleston leads remain in the verification queue.",
       "target_provider_count": 9
     },
     {
@@ -47,7 +47,7 @@
       "definition": "Editorial Columbia / Midlands catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
       "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
-      "scope_note": "Secondary catchment retained for explicit neighboring discovery.",
+      "scope_note": "One current source candidate is recorded; additional Columbia-area programs remain in the verification queue.",
       "target_provider_count": 9
     }
   ],
@@ -121,6 +121,26 @@
       "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_logo",
+      "area_id": "sc_columbia",
+      "location_id": "envision-wellness-medical-group-columbia",
+      "name": "Envision Wellness Medical Group",
+      "priority": "high",
+      "task": "Obtain and verify an official local PNG logo for the Columbia IOP source candidate; preserve the current official IOP and address evidence.",
+      "source_url": "https://www.envisionwellnessmedicalgroup.com/iop",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "find_provider",
+      "area_id": "sc_columbia",
+      "location_id": "",
+      "name": "Three Rivers Behavioral Health",
+      "priority": "high",
+      "task": "Verify the current physical West Columbia site, official PHP/psychiatric IOP pages, age scope, and local logo before adding a source record; the city resource catalog is a discovery lead rather than current proof.",
+      "source_url": "https://threeriversbehavioral.org/",
+      "date": "2026-09-22"
     }
   ]
 }

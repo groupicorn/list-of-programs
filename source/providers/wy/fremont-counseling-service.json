@@ -1,0 +1,16 @@
+{
+  "provider_id": "fremont-counseling-service",
+  "provider_name": "Fremont Counseling Service",
+  "provider_website_url": "https://highcountrybehavioral.com/",
+  "reference_url": "https://highcountrybehavioral.com/",
+  "operator_scope": "unknown",
+  "known_parent_name": "",
+  "ownership_verified": "unverified",
+  "dedupe_group_id": "fremont-counseling-service",
+  "dedupe_group_reason": "Additional branch candidate for an existing provider group; no duplicate provider record created.",
+  "logo_url": "images/wy/wy-fremont-counseling-service.png",
+  "logo_source_url": "",
+  "logo_downloaded": true,
+  "logo_license_reviewed": false,
+  "locations": []
+}

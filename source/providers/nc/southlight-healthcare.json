@@ -59,7 +59,7 @@
       "known_parent_name": "",
       "area_name": "Research Triangle",
       "region": "Research Triangle",
-      "record_quality_notes": "Official pages support the address and SAIOP claim; obtain and verify an official local PNG before publication."
+      "record_quality_notes": "Official pages support the exact Raleigh Hub address and substance-use intensive outpatient claim; obtain and verify a provider-controlled local PNG before publication."
     },
     {
       "provider_id": "southlight-healthcare",
@@ -107,7 +107,7 @@
       "known_parent_name": "",
       "area_name": "Research Triangle",
       "region": "Research Triangle",
-      "record_quality_notes": "Official pages support the address and SAIOP claim; obtain and verify an official local PNG before publication."
+      "record_quality_notes": "Official pages support the exact Durham address and substance-use intensive outpatient claim; obtain and verify a provider-controlled local PNG before publication."
     }
   ]
 }

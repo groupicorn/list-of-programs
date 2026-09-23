@@ -31,7 +31,7 @@
       "definition": "Editorial Research Triangle catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
       "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
-      "scope_note": "Ten local source locations were researched; four distinct provider groups currently prepare for display, with additional logo- and evidence-pending candidates retained in source.",
+      "scope_note": "Ten local source locations were researched; five distinct provider groups currently prepare for display, with SouthLight and WakeMed retained as evidence- or asset-pending candidates.",
       "target_provider_count": 9
     },
     {
@@ -189,6 +189,16 @@
       "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_logo",
+      "area_id": "nc_triangle",
+      "location_id": "southlight-healthcare-raleigh-hub",
+      "name": "SouthLight Healthcare",
+      "priority": "high",
+      "task": "Obtain and verify a provider-controlled local PNG logo for the exact Raleigh and Durham SAIOP sites; official program and address evidence is current, but third-party logo mirrors are not treated as canonical assets.",
+      "source_url": "https://southlight.org/locations/",
+      "date": "2026-09-22"
     }
   ]
 }

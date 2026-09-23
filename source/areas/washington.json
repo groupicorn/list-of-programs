@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "state_file": "washington",
+  "state_code": "WA",
+  "metadata": {
+    "snapshot_date": "2026-09-22",
+    "title": "Groupicorn Washington IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. This September 22, 2026 pass prioritized the P1 Tacoma gap and added official Mindset Tacoma and Discovery Mood & Anxiety program sites. Shortlists are prepared directory results, not clinical rankings or admission promises; the remaining Washington queue was not statewide-refreshed.",
+    "branding_note": "logo_url points to a tracked PNG asset. Existing asset provenance and license clearance require separate review where source URLs are not yet recorded.",
+    "geocoding_note": "Street addresses and ZIP codes are stored where sourced; coordinates are intentionally null pending an audited geocoding pass.",
+    "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use."
+  },
+  "areas": [
+    {
+      "area_id": "wa_seattle",
+      "state_code": "WA",
+      "region": "Puget Sound",
+      "name": "Seattle / Eastside",
+      "example_cities": [
+        "Seattle",
+        "Bellevue",
+        "Kirkland"
+      ],
+      "neighbor_area_ids": [
+        "wa_tacoma"
+      ],
+      "definition": "Editorial Seattle / Eastside catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "One sourced anchor is published; additional providers remain in the verification queue.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "wa_tacoma",
+      "state_code": "WA",
+      "region": "Puget Sound",
+      "name": "Tacoma / South Sound",
+      "example_cities": [
+        "Tacoma",
+        "Federal Way",
+        "Olympia"
+      ],
+      "neighbor_area_ids": [
+        "wa_seattle"
+      ],
+      "definition": "Editorial Tacoma / South Sound catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Mindset Tacoma and Discovery Mood & Anxiety are published; additional South Sound leads remain in the verification queue.",
+      "target_provider_count": 9
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "wa_seattle",
+      "location_id": "",
+      "name": "Evidence Based Treatment Centers Of Seattle",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "wa_seattle",
+      "location_id": "",
+      "name": "Lakeside Milam Recovery Centers",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "wa_seattle",
+      "location_id": "",
+      "name": "Residence Xii",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "wa_seattle",
+      "location_id": "",
+      "name": "Seattle Children S",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "wa_seattle",
+      "location_id": "",
+      "name": "Washington statewide discovery stack",
+      "priority": "high",
+      "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "wa_tacoma",
+      "location_id": "",
+      "name": "MultiCare Behavioral Health / Greater Lakes Mental Health Care",
+      "priority": "medium",
+      "task": "Check official Tacoma/Pierce service pages for a current physical IOP or PHP site, exact address, population, and local logo before adding a source location.",
+      "source_url": "https://tpchd.org/professionals/provider-resources/refer-to-treatment/",
+      "date": "2026-09-22"
+    }
+  ]
+}

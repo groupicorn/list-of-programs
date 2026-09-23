@@ -1,0 +1,358 @@
+{
+  "schema_version": 1,
+  "state_file": "ohio",
+  "state_code": "OH",
+  "metadata": {
+    "snapshot_date": "2026-09-21",
+    "title": "Groupicorn Ohio IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. Ohio is divided into Cleveland inner/east, Akron/Canton, Columbus, Cincinnati, Dayton, Toledo, Youngstown, Mansfield/Marion, and Athens/Southeastern Ohio catchments. Shortlists use distinct provider groups and preserve local/neighbor labels.",
+    "branding_note": "logo_url points to a locally stored PNG acquired from an official provider-controlled source. License clearance is not implied.",
+    "geocoding_note": "Street addresses and ZIP codes are stored; coordinates are intentionally null pending an audited geocoding pass.",
+    "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use."
+  },
+  "areas": [
+    {
+      "area_id": "oh_cleveland_inner",
+      "state_code": "OH",
+      "region": "Northeast Ohio",
+      "name": "Cleveland Inner / West",
+      "example_cities": [
+        "Cleveland",
+        "Lakewood",
+        "Euclid"
+      ],
+      "neighbor_area_ids": [
+        "oh_cleveland_east",
+        "oh_akron_canton",
+        "oh_youngstown"
+      ],
+      "definition": "Cleveland city and inner western/eastern neighborhoods where health-system behavioral programs are concentrated.",
+      "scope_note": "Includes central Cleveland and nearby inner suburbs; Beachwood is kept as a separate east-side catchment.",
+      "adjacency_basis": "Direct urban and freeway-connected Northeast Ohio markets.",
+      "target_provider_count": 9,
+      "boundary_geometry": "editorial_catchment"
+    },
+    {
+      "area_id": "oh_cleveland_east",
+      "state_code": "OH",
+      "region": "Northeast Ohio",
+      "name": "Cleveland East / Beachwood",
+      "example_cities": [
+        "Beachwood",
+        "Shaker Heights",
+        "Mayfield Heights"
+      ],
+      "neighbor_area_ids": [
+        "oh_cleveland_inner",
+        "oh_akron_canton",
+        "oh_youngstown"
+      ],
+      "definition": "East-side Cleveland catchment centered on Beachwood and the I-271 corridor.",
+      "scope_note": "Thin local provider set; nearby Cleveland and Akron/Canton programs are explicit neighbors.",
+      "adjacency_basis": "Adjacent east-side suburbs and I-271 corridor.",
+      "target_provider_count": 9,
+      "boundary_geometry": "editorial_catchment"
+    },
+    {
+      "area_id": "oh_akron_canton",
+      "state_code": "OH",
+      "region": "Northeast Ohio",
+      "name": "Akron / Canton",
+      "example_cities": [
+        "Akron",
+        "Canton",
+        "Cuyahoga Falls"
+      ],
+      "neighbor_area_ids": [
+        "oh_cleveland_inner",
+        "oh_cleveland_east",
+        "oh_youngstown",
+        "oh_mansfield_marion"
+      ],
+      "definition": "Summit and Stark county corridor, including Akron and Canton pediatric and adult programs.",
+      "scope_note": "Cleveland Clinic Bath is included because it serves the Akron market.",
+      "adjacency_basis": "Direct I-77 and Route 8 corridor relationships.",
+      "target_provider_count": 9,
+      "boundary_geometry": "editorial_catchment"
+    },
+    {
+      "area_id": "oh_columbus",
+      "state_code": "OH",
+      "region": "Central Ohio",
+      "name": "Columbus Metro",
+      "example_cities": [
+        "Columbus",
+        "Dublin",
+        "Westerville"
+      ],
+      "neighbor_area_ids": [
+        "oh_dayton",
+        "oh_mansfield_marion",
+        "oh_athens_se"
+      ],
+      "definition": "Franklin County and the immediate Columbus suburban treatment market.",
+      "scope_note": "Includes downtown, north, and west Columbus locations; distinct operators are prioritized over branches.",
+      "adjacency_basis": "Central Ohio regional hub with direct I-70/I-71 connections.",
+      "target_provider_count": 9,
+      "boundary_geometry": "editorial_catchment"
+    },
+    {
+      "area_id": "oh_cincinnati",
+      "state_code": "OH",
+      "region": "Southwest Ohio",
+      "name": "Cincinnati Metro",
+      "example_cities": [
+        "Cincinnati",
+        "Mason",
+        "Norwood"
+      ],
+      "neighbor_area_ids": [
+        "oh_dayton"
+      ],
+      "definition": "Greater Cincinnati catchment, including Mason, Norwood, Eastgate, Green Township, and College Hill.",
+      "scope_note": "Pediatric PHP and adult mental-health/addiction IOP/PHP are represented separately by operator and focus.",
+      "adjacency_basis": "Greater Cincinnati urban area and I-75 corridor.",
+      "target_provider_count": 9,
+      "boundary_geometry": "editorial_catchment"
+    },
+    {
+      "area_id": "oh_dayton",
+      "state_code": "OH",
+      "region": "Western Ohio",
+      "name": "Dayton / Miami Valley",
+      "example_cities": [
+        "Dayton",
+        "Moraine",
+        "Miamisburg"
+      ],
+      "neighbor_area_ids": [
+        "oh_cincinnati",
+        "oh_columbus"
+      ],
+      "definition": "Dayton and the Miami Valley, including Kettering Health behavioral programs in Moraine and Centerville.",
+      "scope_note": "Three distinct local groups are publication-ready after the September 22, 2026 pass; independent-provider discovery remains open.",
+      "adjacency_basis": "I-75 corridor and direct Dayton-Cincinnati/Columbus travel patterns.",
+      "target_provider_count": 9,
+      "boundary_geometry": "editorial_catchment"
+    },
+    {
+      "area_id": "oh_toledo",
+      "state_code": "OH",
+      "region": "Northwest Ohio",
+      "name": "Toledo Metro",
+      "example_cities": [
+        "Toledo",
+        "Sylvania",
+        "Maumee"
+      ],
+      "neighbor_area_ids": [
+        "oh_mansfield_marion",
+        "oh_cleveland_inner"
+      ],
+      "definition": "Lucas County and the Toledo treatment market.",
+      "scope_note": "Three distinct local groups are publication-ready after the September 22, 2026 pass; broader mental-health discovery remains open.",
+      "adjacency_basis": "Northwest Ohio regional hub with I-80/I-90 connections.",
+      "target_provider_count": 9,
+      "boundary_geometry": "editorial_catchment"
+    },
+    {
+      "area_id": "oh_youngstown",
+      "state_code": "OH",
+      "region": "Eastern Ohio",
+      "name": "Youngstown / Mahoning Valley",
+      "example_cities": [
+        "Youngstown",
+        "Boardman",
+        "Warren"
+      ],
+      "neighbor_area_ids": [
+        "oh_cleveland_east",
+        "oh_akron_canton"
+      ],
+      "definition": "Mahoning Valley catchment centered on Youngstown and Boardman.",
+      "scope_note": "Akron Children's Boardman is a verified pediatric PHP/IOP anchor; adult-provider research remains open.",
+      "adjacency_basis": "Mahoning Valley and I-76/I-80 corridor.",
+      "target_provider_count": 9,
+      "boundary_geometry": "editorial_catchment"
+    },
+    {
+      "area_id": "oh_mansfield_marion",
+      "state_code": "OH",
+      "region": "North-Central Ohio",
+      "name": "Mansfield / Marion",
+      "example_cities": [
+        "Mansfield",
+        "Marion",
+        "Ontario"
+      ],
+      "neighbor_area_ids": [
+        "oh_columbus",
+        "oh_akron_canton",
+        "oh_toledo"
+      ],
+      "definition": "North-central Ohio regional-hub catchment between Columbus, Akron/Canton, and Toledo.",
+      "scope_note": "Four distinct local groups are publication-ready after the September 22, 2026 pass; coverage is not treated as statewide representation.",
+      "adjacency_basis": "US-30, I-71, and US-23 regional connections.",
+      "target_provider_count": 9,
+      "boundary_geometry": "editorial_catchment"
+    },
+    {
+      "area_id": "oh_athens_se",
+      "state_code": "OH",
+      "region": "Southeastern Ohio",
+      "name": "Athens / Southeastern Ohio",
+      "example_cities": [
+        "Athens",
+        "Marietta",
+        "Zanesville"
+      ],
+      "neighbor_area_ids": [
+        "oh_columbus",
+        "oh_dayton"
+      ],
+      "definition": "Southeastern Ohio regional catchment including Athens and adjacent Appalachian communities.",
+      "scope_note": "No qualifying physical IOP/PHP location was verified in this pass; nearest candidates are shown only as neighbors when useful.",
+      "adjacency_basis": "Regional-hub catchment with long travel distances to Columbus and Dayton.",
+      "target_provider_count": 9,
+      "boundary_geometry": "editorial_catchment"
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "find_provider",
+      "area_id": "oh_cleveland_inner",
+      "location_id": "",
+      "name": "Cleveland adult behavioral-health market",
+      "priority": "high",
+      "task": "Verify additional independent and hospital-based adult IOP/PHP programs beyond University Hospitals and Cleveland Clinic; keep operators deduplicated.",
+      "source_url": "https://my.clevelandclinic.org/departments/neurological/depts/psychiatry-psychology"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "oh_cleveland_inner",
+      "location_id": "cleveland-clinic-main",
+      "name": "Cleveland Clinic Cleveland location",
+      "priority": "high",
+      "task": "Confirm the current physical site and exact IOP/PHP level at the Cleveland main-campus address; current system page confirms IOP but location-level evidence is older.",
+      "source_url": "https://my.clevelandclinic.org/-/scassets/files/org/locations/marymount-hospital/specialties/center-for-behavioral-health-brochure.pdf"
+    },
+    {
+      "queue_type": "find_provider",
+      "area_id": "oh_cleveland_east",
+      "location_id": "",
+      "name": "Cleveland East / Beachwood",
+      "priority": "high",
+      "task": "Find additional local adult mental-health IOP/PHP operators; Attain is currently the only verified local group.",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/704306"
+    },
+    {
+      "queue_type": "find_provider",
+      "area_id": "oh_dayton",
+      "location_id": "",
+      "name": "Dayton / Miami Valley",
+      "priority": "high",
+      "task": "Verify Premier Health, Dayton Children's, hospital, and independent behavioral-health IOP/PHP programs with current physical addresses.",
+      "source_url": "https://ketteringhealth.org/services-treatments/behavioral-mental-health/"
+    },
+    {
+      "queue_type": "find_provider",
+      "area_id": "oh_toledo",
+      "location_id": "",
+      "name": "Toledo adult mental-health market",
+      "priority": "high",
+      "task": "Find additional non-substance-use adult mental-health PHP/IOP programs; current verified local options are recovery-focused.",
+      "source_url": "https://health.utoledo.edu/clinics/detox_unit/partial-hospitalization.html"
+    },
+    {
+      "queue_type": "find_provider",
+      "area_id": "oh_youngstown",
+      "location_id": "",
+      "name": "Youngstown / Mahoning Valley adult programs",
+      "priority": "high",
+      "task": "Verify current adult IOP/PHP at Mercy Health, Valley Counseling, and other Mahoning Valley providers; retain Akron Children's as pediatric-only evidence.",
+      "source_url": "https://www.akronchildrens.org/news/Akron-Children-s-brings-behavioral-health-IOP-program-to-Mahoning-Valley.html"
+    },
+    {
+      "queue_type": "find_provider",
+      "area_id": "oh_mansfield_marion",
+      "location_id": "",
+      "name": "Mansfield / Marion independent programs",
+      "priority": "medium",
+      "task": "Find additional adult IOP/PHP operators beyond OhioHealth and Akron Children's; verify whether current local sites still run both levels.",
+      "source_url": "https://www.ohiohealth.com/siteassets/find-a-location/hospitals/mansfield-hospital/about-us/community-health-needs-assessment/2025-chna-mansfield-hospital.pdf"
+    },
+    {
+      "queue_type": "find_provider",
+      "area_id": "oh_athens_se",
+      "location_id": "",
+      "name": "Athens / Southeastern Ohio",
+      "priority": "high",
+      "task": "Research Ohio University, Appalachian behavioral-health systems, and regional hubs for current qualifying physical IOP/PHP locations.",
+      "source_url": "https://www.ohio.gov/residents/resources/mental-health-and-substance-use"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "oh_mansfield_marion",
+      "location_id": "ohiohealth-marion",
+      "name": "OhioHealth Marion General",
+      "priority": "medium",
+      "task": "Confirm current PHP availability at the Marion address; current official sources clearly document behavioral outpatient services and IOP evidence, while PHP is less specific.",
+      "source_url": "https://www.ohiohealth.com/siteassets/find-a-location/hospitals/marion-general-hospital/about-us/community-health-needs-assessment/2025-chna-marion-general-hospital.pdf"
+    },
+    {
+      "queue_type": "geocode",
+      "area_id": "",
+      "location_id": "",
+      "name": "All Ohio locations",
+      "priority": "low",
+      "task": "Run an audited geocoding pass and record coordinates plus coordinate sources.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "logo_review",
+      "area_id": "",
+      "location_id": "",
+      "name": "All Ohio provider marks",
+      "priority": "low",
+      "task": "Review logo license/brand-use status before any public-facing launch; local PNGs are internal research assets.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "logo_pending",
+      "area_id": "oh_cleveland_east",
+      "location_id": "",
+      "name": "Glenbeigh Outpatient Center of Beachwood",
+      "priority": "medium",
+      "task": "Glenbeigh's current official Beachwood page verifies an in-person IOP at 3789B South Green Road, but a clean official local PNG logo was not resolved during this pass. Acquire and validate the provider mark before publication.",
+      "source_url": "https://glenbeigh.com/beachwood"
+    },
+    {
+      "queue_type": "verify_program_and_logo",
+      "area_id": "oh_youngstown",
+      "location_id": "",
+      "name": "H.O.P.E. Counseling and Addiction Services",
+      "priority": "high",
+      "task": "CARF's current provider record identifies 1319 Florencedale Avenue, Youngstown and adult integrated PHP/IOP, but a current official provider page and official local logo were not resolved. Verify operating status, exact site, and branding before publication.",
+      "source_url": "https://carf.org/provider/h-o-p-e-counseling-and-addiction-services-304051/"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "oh_youngstown",
+      "location_id": "",
+      "name": "Mercy Health Behavioral Health Institute - Youngstown",
+      "priority": "high",
+      "task": "A current Mahoning Valley resource booklet identifies an adult dual IOP at Mercy Health St. Elizabeth Hospital, 1044 Belmont Avenue, but a current official Mercy program page and exact local logo were not resolved. Recheck before publication.",
+      "source_url": "https://www.trumbullmhrb.org/pdfs/ASAP%20Resource%20Booklet.pdf"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "oh_athens_se",
+      "location_id": "",
+      "name": "Athens Treatment Services",
+      "priority": "high",
+      "task": "Current public records identify Pinnacle/Athens Treatment Services at 8978 United Lane, Suite 102, Athens. Operator pages support outpatient care and third-party current program pages describe IOP, but the current exact local IOP level should be reverified before publication; do not infer PHP from general outpatient language.",
+      "source_url": "https://pinnacletreatment.com/location/ohio/athens/athens-treatment-services/"
+    }
+  ]
+}

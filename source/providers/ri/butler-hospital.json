@@ -2,7 +2,7 @@
   "provider_id": "butler-hospital",
   "provider_name": "Butler Hospital",
   "provider_website_url": "https://www.butler.org/",
-  "reference_url": "https://www.butler.org/",
+  "reference_url": "https://www.butler.org/services/partial/cognitive-behavior-therapy",
   "operator_scope": "regional_or_health_system",
   "known_parent_name": "",
   "ownership_verified": "unverified",
@@ -17,7 +17,7 @@
       "provider_id": "butler-hospital",
       "location_id": "butler-hospital-providence",
       "provider_name": "Butler Hospital",
-      "location_name": "Butler Hospital IOP|PHP candidate",
+      "location_name": "Butler Hospital Providence Partial / IOP Programs",
       "street_address": "345 Blackstone Boulevard",
       "city": "Providence",
       "state_code": "RI",
@@ -27,10 +27,10 @@
       "care_focus": "mental_health | co-occurring",
       "age_group": "adult | adolescent",
       "website_url": "https://www.butler.org/",
-      "program_source_url": "https://www.butler.org/",
-      "address_source_url": "https://www.butler.org/",
-      "evidence_status": "official_source_research_only",
-      "notes": "Butler's Providence campus is retained as a research-only anchor; verify the current IOP/PHP program page and exact treatment unit.",
+      "program_source_url": "https://www.butler.org/services/partial/cognitive-behavior-therapy",
+      "address_source_url": "https://www.butler.org/services/partial/cognitive-behavior-therapy",
+      "evidence_status": "provider_web_source",
+      "notes": "Butler's current official partial-program page identifies CBT PHP at 345 Blackstone Boulevard in Providence; Butler's current substance-use pages also identify Providence IOP and partial programs. Verify current intake, eligibility, insurance, and accepting-patient status before use.",
       "latitude": null,
       "longitude": null,
       "coordinate_precision": "",
@@ -39,7 +39,7 @@
       "ownership_verified": "unverified",
       "logo_url": "images/ri/ri-butler-hospital.png",
       "logo_status": "official_logo_downloaded",
-      "research_date": "2026-09-21",
+      "research_date": "2026-09-22",
       "program_source_kind": "official_provider_page",
       "provider_website_url": "https://www.butler.org/",
       "website_kind": "official_provider",
@@ -59,7 +59,7 @@
       "known_parent_name": "",
       "area_name": "Providence / Northern Rhode Island",
       "region": "Providence Metro",
-      "record_quality_notes": "Current directory research date is recorded; verify program status, population, insurance, intake requirements, and accepting-patient status before use."
+      "record_quality_notes": "Current official Butler pages support Providence PHP/IOP programming and the exact campus address; verify current intake, eligibility, insurance, and accepting-patient status before use."
     }
   ]
 }

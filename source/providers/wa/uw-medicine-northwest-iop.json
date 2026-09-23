@@ -1,0 +1,16 @@
+{
+  "provider_id": "uw-medicine-northwest-iop",
+  "provider_name": "UW Medicine Northwest Intensive Outpatient Program",
+  "provider_website_url": "https://psychiatry.uw.edu/",
+  "reference_url": "https://psychiatry.uw.edu/wp-content/uploads/2024/07/IOP-Interested-Patient-Fact-Sheet.pdf",
+  "operator_scope": "regional_or_health_system",
+  "known_parent_name": "University of Washington Medicine",
+  "ownership_verified": "unverified",
+  "dedupe_group_id": "uw-medicine-northwest-iop",
+  "dedupe_group_reason": "Single UW Medical Center-Northwest IOP site; program fact sheet identifies the physical campus.",
+  "logo_url": "images/wa/wa-uw-medicine-northwest.png",
+  "logo_source_url": "https://psychiatry.uw.edu/wp-content/themes/uw-medicine/img/psych_header.png",
+  "logo_downloaded": true,
+  "logo_license_reviewed": false,
+  "locations": []
+}

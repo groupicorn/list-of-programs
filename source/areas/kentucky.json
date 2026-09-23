@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "state_file": "kentucky",
+  "state_code": "KY",
+  "metadata": {
+    "snapshot_date": "2026-09-21",
+    "title": "Groupicorn Kentucky IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. Kentucky is represented by an initial regional catchment pair and a sourced anchor; remaining logo-backed leads stay in the verification queue until exact-site evidence is checked.",
+    "branding_note": "logo_url points to a tracked PNG asset. Existing asset provenance and license clearance require separate review where source URLs are not yet recorded.",
+    "geocoding_note": "Street addresses and ZIP codes are stored where sourced; coordinates are intentionally null pending an audited geocoding pass.",
+    "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use."
+  },
+  "areas": [
+    {
+      "area_id": "ky_lexington",
+      "state_code": "KY",
+      "region": "Central Kentucky",
+      "name": "Lexington / Central Kentucky",
+      "example_cities": [
+        "Lexington",
+        "Nicholasville",
+        "Winchester"
+      ],
+      "neighbor_area_ids": [
+        "ky_louisville"
+      ],
+      "definition": "Editorial Lexington / Central Kentucky catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Two distinct local groups are publication-ready after the September 22, 2026 pass; additional Central Kentucky discovery remains warranted.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "ky_louisville",
+      "state_code": "KY",
+      "region": "Central Kentucky",
+      "name": "Louisville / North Central Kentucky",
+      "example_cities": [
+        "Louisville",
+        "Jeffersontown",
+        "Shelbyville"
+      ],
+      "neighbor_area_ids": [
+        "ky_lexington"
+      ],
+      "definition": "Editorial Louisville / North Central Kentucky catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Six distinct local groups are publication-ready after the September 22, 2026 pass; additional Louisville-area discovery remains warranted.",
+      "target_provider_count": 9
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ky_lexington",
+      "location_id": "",
+      "name": "Caya Collaborative Care Formerly Lifeskills",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ky_lexington",
+      "location_id": "",
+      "name": "Communicare Kentucky",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ky_lexington",
+      "location_id": "",
+      "name": "Kentucky Counseling Center",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ky_lexington",
+      "location_id": "",
+      "name": "Lumera Healthcare",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ky_lexington",
+      "location_id": "",
+      "name": "Northkey Community Care",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ky_lexington",
+      "location_id": "",
+      "name": "Seven Counties Services",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ky_lexington",
+      "location_id": "",
+      "name": "UofL Health Peace Hospital",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "ky_lexington",
+      "location_id": "",
+      "name": "Kentucky statewide discovery stack",
+      "priority": "high",
+      "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_address_and_logo",
+      "area_id": "ky_lexington",
+      "location_id": "",
+      "name": "Shepherd's House Lexington IOP",
+      "priority": "medium",
+      "task": "The current official site confirms a women's IOP with housing and a community-impact intensive outpatient program in Lexington, but the current page gives only the Leestown Center Way campus label while older public records cite conflicting street addresses. Verify the exact treatment entrance and acquire an official local PNG before publication.",
+      "source_url": "https://www.shepherdshouseinc.com/",
+      "date": "2026-09-22"
+    }
+  ]
+}
