@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "state_file": "colorado",
+  "state_code": "CO",
+  "metadata": {
+    "snapshot_date": "2026-09-20",
+    "title": "Groupicorn Colorado IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. Local provider groups are considered before named neighboring catchments. Shortlists are editorial discovery candidates, not rankings. Colorado-local/regional operators are preferred over broad chains when evidence quality is comparable.",
+    "branding_note": "logo_url uses a live favicon proxy when an official website is known. This is a prototype discovery placeholder, not a cleared logo asset.",
+    "geocoding_note": "ZIP codes and street addresses are stored; coordinates intentionally left null in this pass. Geocode later with a chosen provider."
+  },
+  "areas": [
+    {
+      "area_id": "co-denver-core",
+      "state_code": "CO",
+      "region": "Denver Metro",
+      "name": "Denver / Aurora / Englewood / Centennial",
+      "example_cities": "Denver | Aurora | Englewood | Centennial | Littleton",
+      "neighbor_area_ids": "co-north-denver | co-boulder-county | co-colorado-springs",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "co-north-denver",
+      "state_code": "CO",
+      "region": "Denver Metro",
+      "name": "Thornton / Westminster / North Metro",
+      "example_cities": "Thornton | Westminster | Broomfield | Northglenn",
+      "neighbor_area_ids": "co-denver-core | co-boulder-county | co-northern-front-range",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "co-boulder-county",
+      "state_code": "CO",
+      "region": "Boulder County",
+      "name": "Boulder / Louisville / Longmont",
+      "example_cities": "Boulder | Louisville | Longmont | Lafayette",
+      "neighbor_area_ids": "co-denver-core | co-north-denver | co-northern-front-range",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "co-northern-front-range",
+      "state_code": "CO",
+      "region": "Northern Front Range",
+      "name": "Fort Collins / Loveland / Greeley",
+      "example_cities": "Fort Collins | Loveland | Greeley",
+      "neighbor_area_ids": "co-boulder-county | co-north-denver",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "co-colorado-springs",
+      "state_code": "CO",
+      "region": "Pikes Peak",
+      "name": "Colorado Springs / El Paso County",
+      "example_cities": "Colorado Springs | Monument | Manitou Springs",
+      "neighbor_area_ids": "co-denver-core | co-pueblo",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "co-pueblo",
+      "state_code": "CO",
+      "region": "Southern Colorado",
+      "name": "Pueblo / Southern Colorado",
+      "example_cities": "Pueblo | Pueblo West",
+      "neighbor_area_ids": "co-colorado-springs",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "co-western-slope",
+      "state_code": "CO",
+      "region": "Western Slope",
+      "name": "Glenwood Springs / Roaring Fork / I-70 West",
+      "example_cities": "Glenwood Springs | Rifle | Carbondale",
+      "neighbor_area_ids": "co-grand-junction",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    },
+    {
+      "area_id": "co-grand-junction",
+      "state_code": "CO",
+      "region": "Western Slope",
+      "name": "Grand Junction / Mesa County",
+      "example_cities": "Grand Junction | Fruita",
+      "neighbor_area_ids": "co-western-slope",
+      "target_provider_count": 9,
+      "definition": "editorial_search_catchment",
+      "boundary_geometry": "",
+      "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
+      "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
+    }
+  ]
+}
