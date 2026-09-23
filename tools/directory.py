@@ -131,26 +131,16 @@ def active_location(location: dict[str, Any]) -> bool:
 
 
 def publication_ready(location: dict[str, Any]) -> bool:
-    """Return whether a location can enter a generated directory shortlist.
+    """Return whether a source location can enter a prepared shortlist.
 
-    The asset tree accepts several common image formats, but directory
-    provider logos currently require a valid local PNG at publication time.
+    Shortlists are intentionally broad research results. An active physical
+    location with both a program source and an address source is useful even
+    when exact-site verification or a local logo is still pending. Explicitly
+    excluded locations remain out of the directory.
     """
 
     if not active_location(location):
         return False
-    logo_url = str(location.get("logo_url", ""))
-    if not logo_url or not png_is_valid(ROOT / logo_url):
-        return False
-    program_status = str(location.get("program_site_verification_status", "")).lower()
-    verification_status = str(location.get("verification_status", "")).lower()
-    if program_status or verification_status:
-        ready = program_status in READY_PROGRAM_STATUSES or verification_status in READY_PROGRAM_STATUSES
-        explicit = location.get("publication_ready")
-        return ready and (explicit is None or bool(explicit))
-    explicit = location.get("publication_ready")
-    if explicit is not None:
-        return bool(explicit)
     return bool(location.get("program_source_url") and location.get("address_source_url"))
 
 
@@ -273,6 +263,7 @@ def clean_provider(provider: dict[str, Any], locations: list[dict[str, Any]]) ->
     result = copy.deepcopy(provider)
     result.pop("locations", None)
     result.pop("location_count", None)
+    result["logo_url"] = normalized_logo_url(result.get("logo_url"))
     result["location_count"] = len(locations)
     return result
 
@@ -408,7 +399,10 @@ def build_state(stem: str) -> dict[str, Any]:
         provider = provider_by_id[location["provider_id"]]
         location.setdefault("provider_name", provider.get("provider_name", ""))
         location.setdefault("provider_dedupe_group_id", provider.get("dedupe_group_id", location["provider_id"]))
-        location.setdefault("logo_url", provider.get("logo_url", ""))
+        if not location.get("logo_url"):
+            location["logo_url"] = normalized_logo_url(provider.get("logo_url", ""))
+        else:
+            location["logo_url"] = normalized_logo_url(location.get("logo_url"))
         if location.get("primary_area_id") not in area_by_id:
             raise SystemExit(f"Location {location.get('location_id')} references an unknown area")
         locations_by_area[location["primary_area_id"]].append(location)
@@ -576,6 +570,25 @@ def png_is_valid(path: Path) -> bool:
     return len(data) >= 24 and data[:8] == b"\x89PNG\r\n\x1a\n" and data[12:16] == b"IHDR"
 
 
+def local_logo_path(logo: Any) -> Path | None:
+    """Return a repository asset path, leaving legacy remote references alone."""
+
+    value = str(logo or "")
+    if value.startswith("images/"):
+        return ROOT / value
+    return None
+
+
+def normalized_logo_url(logo: Any) -> str:
+    """Keep usable local or legacy remote logos without blocking publication."""
+
+    value = str(logo or "")
+    asset = local_logo_path(value)
+    if asset is not None and (not asset.is_file() or not png_is_valid(asset)):
+        return ""
+    return value
+
+
 def invalid_image_paths() -> list[str]:
     """Return non-image files that would violate the published asset tree."""
 
@@ -622,14 +635,14 @@ def validate_state(path: Path) -> list[str]:
         if location.get("primary_area_id") not in area_by_id:
             errors.append(f"{path}: {location_id} references unknown area")
         logo = location.get("logo_url", "")
-        if logo and location_id in published_location_ids:
-            asset = ROOT / logo
+        asset = local_logo_path(logo) if location_id in published_location_ids else None
+        if asset is not None:
             if not asset.is_file() or not png_is_valid(asset):
                 errors.append(f"{path}: invalid or missing location logo {logo}")
     for provider in providers:
         logo = provider.get("logo_url", "")
-        if logo and provider.get("provider_id") in published_provider_ids:
-            asset = ROOT / logo
+        asset = local_logo_path(logo) if provider.get("provider_id") in published_provider_ids else None
+        if asset is not None:
             if not asset.is_file() or not png_is_valid(asset):
                 errors.append(f"{path}: invalid or missing provider logo {logo}")
     for area in areas:
@@ -985,9 +998,6 @@ def explanation_reasons(location: dict[str, Any]) -> list[str]:
     if location.get("publication_ready") is False:
         reasons.append("publication_ready=false")
 
-    logo_url = str(location.get("logo_url", ""))
-    if not logo_url or not png_is_valid(ROOT / logo_url):
-        reasons.append("missing or invalid local PNG")
     return reasons
 
 

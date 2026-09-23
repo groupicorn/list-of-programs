@@ -96,16 +96,18 @@ come first by smallest deficit, followed by ordinary areas one provider short,
 zero-local strategic holes, and the remaining unfinished areas.
 
 `./directory explain STATE [AREA]` reports each canonical source location's
-publication decision and the gates that prevented publication, including
-program evidence, exclusion status, and missing or invalid local PNG assets.
+inclusion decision and the gates that prevented inclusion, including missing
+source URLs and exclusion status. Pending verification and missing logos are
+record-quality follow-up signals; they do not suppress an otherwise traceable
+physical research candidate.
 
 ## Adding or updating a state
 
 1. Inspect the target state's source fragments, generated JSON, a comparable state, current repository guidance, and the consuming web/iOS paths before editing.
 2. Preserve stable provider, location, and area IDs and unrelated records.
-3. Verify the same provider, treatment site, care level, population, and current operating evidence before publishing a location.
+3. Verify the same provider, treatment site, care level, population, and current operating evidence before treating a location as fully verified. Shortlist inclusion requires traceable program and address sources, while pending records remain clearly scoped research candidates.
 4. Put geography in `source/areas/<state-file>.json`. Use the actual treatment address for `primary_area_id`; the compiler generates `area_matches` and `shortlists` for declared neighboring coverage.
-5. Add genuine official PNG logos under the correct lowercase state-code directory. For bucket-native clients, prefer a JSON `logo_url` such as `images/ak/ak-alaska-behavioral-health.png`; clients resolve that path relative to the data root. A published path must resolve to the exact PNG, including case. Do not rely on a guessed filename or an external favicon proxy as the canonical logo source.
+5. Add genuine official PNG logos under the correct lowercase state-code directory when available. For bucket-native clients, prefer a JSON `logo_url` such as `images/ak/ak-alaska-behavioral-health.png`; clients resolve that path relative to the data root. A supplied path must resolve to the exact PNG, including case. Do not rely on a guessed filename or an external favicon proxy as the canonical logo source.
 6. Run `./directory build <state>` and `./directory validate <state>`; never hand-recalculate generated fields.
 7. Run `./directory compare <state>` before accepting a migration; it exits nonzero when provider, location, area, or prepared-shortlist output changes.
 
@@ -126,12 +128,11 @@ jq empty programs/*.json
 git diff --check
 ```
 
-Also verify that every changed `logo_url` resolves to a real PNG in `images/`, every referenced provider/location/area ID exists, every location has the correct two-letter `state_code`, and every shortlist contains no duplicate provider group and no more than nine entries. After publishing, verify representative `GET` and `HEAD` requests against the matching `https://romeo.groupicorn.com/data/...` URLs. When web and iOS are available, build/check them and confirm the new state appears in each client's directory index and that both clients resolve the JSON and PNG URLs without sibling-repository links.
+Also verify that every changed bucket-native `logo_url` resolves to a real PNG in `images/`, every referenced provider/location/area ID exists, every location has the correct two-letter `state_code`, and every shortlist contains no duplicate provider group and no more than nine entries. Legacy external logo references may remain as provenance/fallback values. After publishing, verify representative `GET` and `HEAD` requests against the matching `https://romeo.groupicorn.com/data/...` URLs. When web and iOS are available, build/check them and confirm the new state appears in each client's directory index and that both clients resolve the JSON and PNG URLs without sibling-repository links.
 
 Research records are public-facing data. Keep claims sourced and scoped, preserve uncertainty, do not store sensitive patient information, and do not present the directory as clinical advice or a promise of admission.
 
 The asset tree is strict: `images/` may contain only `.png`, `.jpg`, `.jpeg`,
 `.webp`, and `.svg` files. The compiler and validator reject other files.
-Directory provider logos currently have a narrower publication requirement:
-`publication_ready()` accepts only a valid local PNG for a logo, even though
-the asset tree permits the other common image formats.
+Local PNG logos are quality metadata and are validated when supplied; they are
+not a prerequisite for shortlist inclusion.

@@ -16,10 +16,11 @@ coverage totals.
 
 The compiler accepts the existing repository vocabulary, including
 `program_site_verification_status`. A location is eligible for a generated
-shortlist only when its exact-site program status is verified (for example
-`program_claim_found` or `verified`) and its local logo exists. Unverified and
-logo-pending research can remain in the source fragment without being presented
-as a ready directory option.
+research shortlist when it is active and has both a program source URL and an
+address source URL. Exact-site verification and local PNG logos remain useful
+quality signals, but they do not suppress otherwise traceable physical
+research candidates. Explicitly closed, rejected, virtual-only, or otherwise
+excluded records remain out of generated results.
 
 ## Area files
 
@@ -34,7 +35,7 @@ coverage status.
 Provider-specific verification tasks should use `provider_id` and, when
 appropriate, `location_id`. Older name-based tasks are still recognized during
 migration; builds warn and omit a task when its provider now has complete
-program, address, and local-logo evidence.
+program and address source evidence.
 
 ## Workflow
 
@@ -50,8 +51,10 @@ program, address, and local-logo evidence.
 `coverage` enumerates every area in every generated state. The optional
 `source/coverage.json` file contains only priority and threshold overrides;
 unlisted areas use a local launch floor of three and a total prepared-choice
-target of nine. Use `explain` to see why a source location is not publishable,
-including pending program evidence, exclusion statuses, and missing local PNGs.
+target of nine. Use `explain` to see why a source location is not included,
+including missing source URLs and exclusion statuses. Pending program evidence
+and missing local PNGs are surfaced as record-quality follow-up work rather
+than removing the physical candidate from coverage.
 
 Commit source JSON, required PNGs, and the regenerated `programs/<state>.json`
 together. CI should run `./directory build` and fail when the generated diff is

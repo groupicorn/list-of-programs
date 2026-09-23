@@ -81,6 +81,9 @@ class DirectoryFixtureTestCase(unittest.TestCase):
             for key in ("publication_status", "research_status", "verification_status", "publication_ready"):
                 if key in spec:
                     location[key] = spec[key]
+            if spec.get("with_sources", True):
+                location["program_source_url"] = "https://example.com/program"
+                location["address_source_url"] = "https://example.com/address"
             provider.setdefault("locations", []).append(location)
 
         for provider_id, provider in providers.items():
@@ -173,6 +176,7 @@ class DirectoryCompilerTests(DirectoryFixtureTestCase):
                     "provider_id": "multi-location-provider",
                     "area_id": "in_fort_wayne",
                     "program_status": "program_claim_pending",
+                    "with_sources": False,
                 },
             ),
         )
@@ -232,14 +236,14 @@ class DirectoryCompilerTests(DirectoryFixtureTestCase):
         self.assertEqual(1, len(rows))
         self.assertEqual("same-provider", rows[0]["dedupe_group_id"])
 
-    def test_pending_program_is_not_published(self):
+    def test_pending_program_with_sources_is_published(self):
         result = self.build_fixture(locations=({
             "location_id": "pending",
             "provider_id": "pending-provider",
             "program_status": "program_claim_pending",
         },))
 
-        self.assertEqual([], result["shortlists"])
+        self.assertEqual(["pending"], [row["location_id"] for row in result["shortlists"]])
 
     def test_closed_program_is_not_published(self):
         result = self.build_fixture(locations=({
@@ -259,14 +263,14 @@ class DirectoryCompilerTests(DirectoryFixtureTestCase):
 
         self.assertEqual([], result["shortlists"])
 
-    def test_missing_logo_is_not_published(self):
+    def test_missing_logo_does_not_block_research_candidate(self):
         result = self.build_fixture(locations=({
             "location_id": "no-logo",
             "provider_id": "no-logo-provider",
             "logo_url": "images/in/missing.png",
         },))
 
-        self.assertEqual([], result["shortlists"])
+        self.assertEqual(["no-logo"], [row["location_id"] for row in result["shortlists"]])
 
     def test_verified_program_is_published(self):
         result = self.build_fixture(locations=({
@@ -418,14 +422,14 @@ class DirectoryCompilerTests(DirectoryFixtureTestCase):
         self.assertEqual("NEEDS_WORK", by_id["in_b"]["status"])
         self.assertEqual(9, by_id["in_b"]["total_count"])
 
-    def test_explanation_reports_program_and_logo_gates(self):
+    def test_explanation_reports_program_evidence_gate(self):
         reasons = directory.explanation_reasons({
             "program_site_verification_status": "needs_provider_web_confirmation",
             "logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=https://example.com/",
         })
 
         self.assertIn("program evidence pending: needs_provider_web_confirmation", reasons)
-        self.assertIn("missing or invalid local PNG", reasons)
+        self.assertNotIn("missing or invalid local PNG", reasons)
 
     def test_coverage_uses_pass_priority(self):
         manifest = {"metros": [
