@@ -1,0 +1,16 @@
+{
+  "provider_id": "cada-northwest-louisiana",
+  "provider_name": "Cada Northwest Louisiana",
+  "provider_website_url": "",
+  "reference_url": "",
+  "operator_scope": "unknown",
+  "known_parent_name": "",
+  "ownership_verified": "unverified",
+  "dedupe_group_id": "cada-northwest-louisiana",
+  "dedupe_group_reason": "Pending identity and ownership verification; do not merge without evidence.",
+  "logo_url": "images/la/la-cada-northwest-louisiana.png",
+  "logo_source_url": "",
+  "logo_downloaded": true,
+  "logo_license_reviewed": false,
+  "locations": []
+}

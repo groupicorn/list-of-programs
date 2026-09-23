@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "state_file": "mississippi",
+  "state_code": "MS",
+  "metadata": {
+    "snapshot_date": "2026-09-21",
+    "title": "Groupicorn Mississippi IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. Mississippi is represented by an initial regional catchment pair and a sourced anchor; remaining logo-backed leads stay in the verification queue until exact-site evidence is checked.",
+    "branding_note": "logo_url points to a tracked PNG asset. Existing asset provenance and license clearance require separate review where source URLs are not yet recorded.",
+    "geocoding_note": "Street addresses and ZIP codes are stored where sourced; coordinates are intentionally null pending an audited geocoding pass.",
+    "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use."
+  },
+  "areas": [
+    {
+      "area_id": "ms_jackson",
+      "state_code": "MS",
+      "region": "Central Mississippi",
+      "name": "Jackson / Central Mississippi",
+      "example_cities": [
+        "Jackson",
+        "Ridgeland",
+        "Flowood"
+      ],
+      "neighbor_area_ids": [
+        "ms_gulf_coast"
+      ],
+      "definition": "Editorial Jackson / Central Mississippi catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "One sourced anchor is published; additional providers remain in the verification queue.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "ms_gulf_coast",
+      "state_code": "MS",
+      "region": "Central Mississippi",
+      "name": "Gulf Coast Mississippi",
+      "example_cities": [
+        "Gulfport",
+        "Biloxi",
+        "Hattiesburg"
+      ],
+      "neighbor_area_ids": [
+        "ms_jackson"
+      ],
+      "definition": "Editorial Gulf Coast Mississippi catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Secondary catchment retained for explicit neighboring discovery.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "ms_hattiesburg",
+      "state_code": "MS",
+      "region": "Pine Belt",
+      "name": "Hattiesburg / Pine Belt",
+      "example_cities": [
+        "Hattiesburg",
+        "Laurel",
+        "Petal"
+      ],
+      "neighbor_area_ids": [
+        "ms_jackson",
+        "ms_gulf_coast"
+      ],
+      "definition": "Editorial Hattiesburg / Pine Belt catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Practical southern Mississippi adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Added for Pine Grove's current official IOP/PHP evidence and further Pine Belt research.",
+      "target_provider_count": 9
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ms_jackson",
+      "location_id": "",
+      "name": "Communicare Mississippi",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ms_jackson",
+      "location_id": "",
+      "name": "Hinds Behavioral Health Services",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ms_jackson",
+      "location_id": "",
+      "name": "Lifecore Health Group",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ms_jackson",
+      "location_id": "",
+      "name": "Region 8 Mental Health Services",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ms_jackson",
+      "location_id": "",
+      "name": "Region Iv Mental Health Services",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ms_jackson",
+      "location_id": "",
+      "name": "Tippah County Hospital Senior Iop",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ms_jackson",
+      "location_id": "",
+      "name": "University Of Mississippi Medical Center",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_program_level",
+      "area_id": "ms_jackson",
+      "location_id": "",
+      "name": "Weems Community Mental Health Center",
+      "priority": "high",
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
+      "source_url": "",
+      "date": "2026-09-21"
+    },
+    {
+      "queue_type": "discovery_stack",
+      "area_id": "ms_jackson",
+      "location_id": "",
+      "name": "Mississippi statewide discovery stack",
+      "priority": "high",
+      "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
+      "source_url": "https://findtreatment.gov/",
+      "date": "2026-09-21"
+    }
+  ]
+}

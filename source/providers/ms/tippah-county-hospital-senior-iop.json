@@ -1,0 +1,16 @@
+{
+  "provider_id": "tippah-county-hospital-senior-iop",
+  "provider_name": "Tippah County Hospital Senior Iop",
+  "provider_website_url": "",
+  "reference_url": "",
+  "operator_scope": "unknown",
+  "known_parent_name": "",
+  "ownership_verified": "unverified",
+  "dedupe_group_id": "tippah-county-hospital-senior-iop",
+  "dedupe_group_reason": "Pending identity and ownership verification; do not merge without evidence.",
+  "logo_url": "images/ms/ms-tippah-county-hospital-senior-iop.png",
+  "logo_source_url": "",
+  "logo_downloaded": true,
+  "logo_license_reviewed": false,
+  "locations": []
+}

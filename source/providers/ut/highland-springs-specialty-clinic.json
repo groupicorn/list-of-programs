@@ -1,0 +1,16 @@
+{
+  "provider_id": "highland-springs-specialty-clinic",
+  "provider_name": "Highland Springs Specialty Clinic",
+  "provider_website_url": "",
+  "reference_url": "",
+  "operator_scope": "unknown",
+  "known_parent_name": "",
+  "ownership_verified": "unverified",
+  "dedupe_group_id": "highland-springs-specialty-clinic",
+  "dedupe_group_reason": "Pending identity and ownership verification; do not merge without evidence.",
+  "logo_url": "images/ut/ut-highland-springs-specialty-clinic.png",
+  "logo_source_url": "",
+  "logo_downloaded": true,
+  "logo_license_reviewed": false,
+  "locations": []
+}

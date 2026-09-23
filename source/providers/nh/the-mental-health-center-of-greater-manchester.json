@@ -1,0 +1,16 @@
+{
+  "provider_id": "the-mental-health-center-of-greater-manchester",
+  "provider_name": "The Mental Health Center Of Greater Manchester",
+  "provider_website_url": "",
+  "reference_url": "",
+  "operator_scope": "unknown",
+  "known_parent_name": "",
+  "ownership_verified": "unverified",
+  "dedupe_group_id": "the-mental-health-center-of-greater-manchester",
+  "dedupe_group_reason": "Pending identity and ownership verification; do not merge without evidence.",
+  "logo_url": "images/nh/nh-the-mental-health-center-of-greater-manchester.png",
+  "logo_source_url": "",
+  "logo_downloaded": true,
+  "logo_license_reviewed": false,
+  "locations": []
+}
