@@ -6,7 +6,7 @@
     "snapshot_date": "2026-09-22",
     "title": "Groupicorn Kansas IOP/PHP research directory",
     "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
-    "methodology": "Physical-address-first. Current official provider pages support IOP/PHP location records in Lawrence and the Kansas City metro; additional logo-backed leads remain in the verification queue until exact-site evidence is checked.",
+    "methodology": "Physical-address-first. Current provider, state, and accreditation sources support IOP/PHP location records in Lawrence, the Kansas City metro, and Wichita; additional leads remain in the verification queue until exact-site evidence and logo provenance are checked.",
     "branding_note": "logo_url points to a tracked PNG asset. Existing asset provenance and license clearance require separate review where source URLs are not yet recorded.",
     "geocoding_note": "Street addresses and ZIP codes are stored where sourced; coordinates are intentionally null pending an audited geocoding pass.",
     "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use."
@@ -28,7 +28,7 @@
       "definition": "Editorial Lawrence / Northeast Kansas catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
       "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
-      "scope_note": "One sourced Lawrence anchor is published; additional providers remain in the verification queue.",
+      "scope_note": "Three local provider groups have current physical-site and IOP evidence; additional Northeast Kansas leads remain in the verification queue.",
       "target_provider_count": 9
     },
     {
@@ -47,7 +47,7 @@
       "definition": "Editorial Kansas City metro / Northeast Kansas catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
       "adjacency_basis": "Direct metro adjacency for discovery; exact travel claims are intentionally omitted.",
-      "scope_note": "One current official teen IOP site is published; additional providers remain in the verification queue.",
+      "scope_note": "Three local provider groups have current physical-site and IOP/PHP evidence; additional metro leads remain in the verification queue.",
       "target_provider_count": 9
     },
     {
@@ -67,30 +67,20 @@
       "definition": "Editorial Wichita / South Central Kansas catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
       "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
-      "scope_note": "Secondary catchment retained for explicit neighboring discovery.",
+      "scope_note": "Three local provider groups have current physical-site and IOP/PHP evidence; additional Wichita leads remain in the verification queue.",
       "target_provider_count": 9
     }
   ],
   "research_queue": [
     {
       "queue_type": "verify_program_level",
-      "area_id": "ks_lawrence",
+      "area_id": "ks_wichita",
       "location_id": "",
       "name": "Comcare Of Sedgwick County",
       "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-21"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "ks_lawrence",
-      "location_id": "",
-      "name": "DCCCA",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-21"
+      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance before shortlist inclusion.",
+      "source_url": "https://www.sedgwick.gov/comcare/contact/",
+      "date": "2026-09-22"
     },
     {
       "queue_type": "verify_program_level",

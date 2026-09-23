@@ -3,10 +3,10 @@
   "state_file": "newMexico",
   "state_code": "NM",
   "metadata": {
-    "snapshot_date": "2026-09-21",
+    "snapshot_date": "2026-09-22",
     "title": "Groupicorn New Mexico IOP/PHP research directory",
     "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
-    "methodology": "Physical-address-first. New Mexico is represented by an initial regional catchment pair and a sourced anchor; remaining logo-backed leads stay in the verification queue until exact-site evidence is checked.",
+    "methodology": "Physical-address-first. New Mexico uses an Albuquerque/Central catchment and a Southern New Mexico catchment spanning Las Cruces, Roswell, and Alamogordo; current official provider pages support the published IOP/PHP locations, while unresolved leads remain queued.",
     "branding_note": "logo_url points to a tracked PNG asset. Existing asset provenance and license clearance require separate review where source URLs are not yet recorded.",
     "geocoding_note": "Street addresses and ZIP codes are stored where sourced; coordinates are intentionally null pending an audited geocoding pass.",
     "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use."
@@ -28,13 +28,13 @@
       "definition": "Editorial Albuquerque / Central New Mexico catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
       "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
-      "scope_note": "One sourced anchor is published; additional providers remain in the verification queue.",
+      "scope_note": "Published records now cover multiple distinct Albuquerque provider groups; additional health-system and local leads remain in the verification queue.",
       "target_provider_count": 9
     },
     {
       "area_id": "nm_southern",
       "state_code": "NM",
-      "region": "Central New Mexico",
+      "region": "Southern New Mexico",
       "name": "Southern New Mexico",
       "example_cities": [
         "Las Cruces",
@@ -47,7 +47,7 @@
       "definition": "Editorial Southern New Mexico catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
       "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
-      "scope_note": "Secondary catchment retained for explicit neighboring discovery.",
+      "scope_note": "Published records now cover Las Cruces, Roswell, and Alamogordo; additional regional leads remain in the verification queue.",
       "target_provider_count": 9
     }
   ],
@@ -86,16 +86,6 @@
       "queue_type": "verify_program_level",
       "area_id": "nm_albuquerque",
       "location_id": "",
-      "name": "Turning Point Recovery Center",
-      "priority": "high",
-      "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
-      "source_url": "",
-      "date": "2026-09-21"
-    },
-    {
-      "queue_type": "verify_program_level",
-      "area_id": "nm_albuquerque",
-      "location_id": "",
       "name": "Vista Taos Renewal Center",
       "priority": "high",
       "task": "Verify exact physical treatment address, current IOP/PHP level, population, modality, operating status, and official logo provenance. Run and record local Maps, Yelp, Reddit, Psychology Today, SAMHSA, health-system, and state/county discovery routes before shortlist inclusion.",
@@ -111,6 +101,26 @@
       "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-21"
+    },
+    {
+      "queue_type": "verify_logo_and_program",
+      "area_id": "nm_southern",
+      "location_id": "",
+      "name": "New Mexico Rehabilitation Center",
+      "priority": "medium",
+      "task": "Verify a current official provider page for the Roswell IOP at 72 Gail Harris Avenue, confirm population and operating status, and obtain an official local PNG before publication.",
+      "source_url": "https://www.jointcommission.org/en/accreditation/behavioral-health-care-and-human-services/provider-locator/9447",
+      "date": "2026-09-22"
+    },
+    {
+      "queue_type": "verify_logo_and_program",
+      "area_id": "nm_albuquerque",
+      "location_id": "",
+      "name": "Albuquerque United Behavioral Health Services",
+      "priority": "medium",
+      "task": "Verify the current official provider site, physical treatment entrance at 3901 Louisiana Blvd NE Ste B-C, adult integrated IOP status, and an official local PNG before publication; current discovery evidence is from SHARE New Mexico.",
+      "source_url": "https://www.sharenm.org/organization/print/albuquerque-united-behavioral-health-services/intensive-outpatient-program",
+      "date": "2026-09-22"
     }
   ]
 }

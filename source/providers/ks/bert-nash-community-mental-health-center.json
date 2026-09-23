@@ -27,10 +27,10 @@
       "care_focus": "mental_health | substance_use",
       "age_group": "adult | adolescent",
       "website_url": "https://www.bertnash.org/",
-      "program_source_url": "https://www.bertnash.org/navigating-care",
+      "program_source_url": "https://www.bertnash.org/therapy",
       "address_source_url": "https://www.bertnash.org/navigating-care",
-      "evidence_status": "official_source_research_only",
-      "notes": "Official access page confirms the Lawrence site and outpatient behavioral-health access; exact IOP track and current schedule require a program-level recheck.",
+      "evidence_status": "provider_web_source",
+      "notes": "Bert Nash's current therapy page lists an adult Intensive Outpatient Program at the Lawrence main location; the current page also lists the physical address and walk-in hours.",
       "latitude": null,
       "longitude": null,
       "coordinate_precision": "",
@@ -59,7 +59,7 @@
       "known_parent_name": "",
       "area_name": "Lawrence / Northeast Kansas",
       "region": "Northeast Kansas",
-      "record_quality_notes": "Current directory research date is recorded; verify program status, population, insurance, intake requirements, and accepting-patient status before use."
+      "record_quality_notes": "Current official provider page supports the adult IOP claim and physical Lawrence site; verify current intake, insurance, and accepting-patient details before use."
     }
   ]
 }
