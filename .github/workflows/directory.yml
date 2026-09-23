@@ -1,0 +1,33 @@
+name: Directory checks
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: read
+
+jobs:
+  test-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Rebuild generated directories
+        run: ./directory build
+
+      - name: Fail if generated output is stale
+        run: git diff --exit-code -- programs/
+
+      - name: Validate generated directories
+        run: ./directory validate
