@@ -18,6 +18,7 @@ from collections import defaultdict
 from datetime import date
 from pathlib import Path
 from typing import Any, Iterable
+from urllib.parse import urlsplit
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -148,6 +149,25 @@ def location_source_url(location: dict[str, Any]) -> str:
     ).strip()
 
 
+def is_valid_program_source_url(value: Any) -> bool:
+    """Return whether a program source URL points to a website, not a file."""
+
+    value = str(value or "").strip()
+    if not value:
+        return False
+    try:
+        parsed = urlsplit(value)
+        hostname = parsed.hostname
+    except ValueError:
+        return False
+    if parsed.scheme not in {"http", "https"} or not parsed.netloc or not hostname:
+        return False
+    path = parsed.path or ""
+    if path.casefold().rstrip("/").endswith(".pdf"):
+        return False
+    return path in {"", "/"} or path.endswith("/")
+
+
 def publication_ready(location: dict[str, Any]) -> bool:
     """Return whether a source location can enter a prepared shortlist.
 
@@ -160,8 +180,11 @@ def publication_ready(location: dict[str, Any]) -> bool:
     if not active_location(location):
         return False
     if is_google_discovery_lead(location):
-        return bool(location_source_url(location))
-    return bool(location.get("program_source_url") and location.get("address_source_url"))
+        return is_valid_program_source_url(location_source_url(location))
+    return bool(
+        is_valid_program_source_url(location.get("program_source_url"))
+        and location.get("address_source_url")
+    )
 
 
 def source_area_data(stem: str) -> dict[str, Any]:
@@ -210,8 +233,11 @@ def add_google_discovery_lead(
     source_url = str(source_url).strip()
     if not name or not source_url:
         raise SystemExit("A discovery lead needs a name and source URL")
-    if not source_url.startswith(("http://", "https://")):
-        raise SystemExit("Discovery lead source URL must start with http:// or https://")
+    if not is_valid_program_source_url(source_url):
+        raise SystemExit(
+            "Discovery lead source URL must be an http(s) website URL ending in / "
+            "or a top-level domain URL without a path"
+        )
 
     queue = data.setdefault("research_queue", [])
     for item in queue:
@@ -318,7 +344,12 @@ def materialize_google_discovery_leads(
         name = str(item.get("name") or item.get("provider_name") or "").strip()
         area_id = str(item.get("area_id") or "").strip()
         source_url = str(item.get("program_source_url") or item.get("source_url") or "").strip()
-        if not name or not area_id or area_id not in area_by_id or not source_url:
+        if (
+            not name
+            or not area_id
+            or area_id not in area_by_id
+            or not is_valid_program_source_url(source_url)
+        ):
             continue
 
         provider = None

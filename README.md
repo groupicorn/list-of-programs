@@ -79,11 +79,13 @@ The directory has three practical stages:
    still needed.
 3. **Publication-ready** — satisfies the current compiler's source gates.
 
-The compiler publishes an active `google_discovery_lead` when it has one
-non-empty source URL. Its address URL and logo may be empty. A queue item with
+The compiler publishes an active `google_discovery_lead` when it has one valid
+website source URL. A site root may be `https://foo.com` or `https://foo.com/`;
+deeper paths must end in `/`, and document URLs such as PDFs are not valid
+program URLs. Its address URL and logo may be empty. A queue item with
 `queue_type: google_discovery_lead` is materialized the same way, so a new lead
 does not need a provider fragment before it appears in the generated directory.
-The queue item remains as follow-up work. Other statuses still require both a
+Invalid leads remain queued for follow-up. Other statuses still require a valid
 program source URL and an address source URL. Do not invent missing URLs or
 hand-edit generated output.
 

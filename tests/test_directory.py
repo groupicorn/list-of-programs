@@ -82,7 +82,7 @@ class DirectoryFixtureTestCase(unittest.TestCase):
                 if key in spec:
                     location[key] = spec[key]
             if spec.get("with_sources", True):
-                location["program_source_url"] = "https://example.com/program"
+                location["program_source_url"] = "https://example.com/program/"
                 location["address_source_url"] = "https://example.com/address"
             provider.setdefault("locations", []).append(location)
 
@@ -283,7 +283,7 @@ class DirectoryCompilerTests(DirectoryFixtureTestCase):
         provider_path = self.providers_dir / "in" / "google-lead-provider.json"
         provider = json.loads(provider_path.read_text())
         location = provider["locations"][0]
-        location["program_source_url"] = "https://example.com/google-result"
+        location["program_source_url"] = "https://example.com/google-result/"
         location.pop("address_source_url", None)
         provider["logo_url"] = ""
         directory.write_json(provider_path, provider)
@@ -291,8 +291,60 @@ class DirectoryCompilerTests(DirectoryFixtureTestCase):
         result = directory.build_state("indiana")
 
         self.assertEqual(["google-lead"], [row["location_id"] for row in result["shortlists"]])
-        self.assertEqual("https://example.com/google-result", result["shortlists"][0]["program_source_url"])
+        self.assertEqual("https://example.com/google-result/", result["shortlists"][0]["program_source_url"])
         self.assertEqual("", result["shortlists"][0]["address_source_url"])
+
+    def test_discovery_source_url_requires_a_site_path_or_top_level_domain(self):
+        valid_urls = (
+            "https://example.com",
+            "https://example.com/",
+            "https://example.com/iop/",
+        )
+        invalid_urls = (
+            "https://example.com/iop",
+            "https://example.com/directory.pdf",
+            "https://example.com/directory.pdf#page=2",
+        )
+
+        for url in valid_urls:
+            with self.subTest(url=url):
+                self.assertTrue(directory.is_valid_program_source_url(url))
+        for url in invalid_urls:
+            with self.subTest(url=url):
+                self.assertFalse(directory.is_valid_program_source_url(url))
+
+    def test_google_discovery_pdf_is_not_materialized(self):
+        self.write_fixture()
+        area_path = self.areas_dir / "indiana.json"
+        area_source = json.loads(area_path.read_text())
+        area_source["research_queue"] = [{
+            "queue_type": "google_discovery_lead",
+            "area_id": "in_indianapolis",
+            "name": "PDF Lead Clinic",
+            "source_url": "https://example.com/directory.pdf#page=2",
+            "date": "2026-09-24",
+        }]
+        directory.write_json(area_path, area_source)
+
+        result = directory.build_state("indiana")
+
+        self.assertEqual([], result["shortlists"])
+        self.assertEqual([], result["locations"])
+        self.assertEqual(1, len(result["research_queue"]))
+
+    def test_pdf_program_source_is_not_published_for_regular_location(self):
+        self.write_fixture(locations=({
+            "location_id": "pdf-program",
+            "provider_id": "pdf-program-provider",
+        },))
+        provider_path = self.providers_dir / "in" / "pdf-program-provider.json"
+        provider = json.loads(provider_path.read_text())
+        provider["locations"][0]["program_source_url"] = "https://example.com/program.pdf"
+        directory.write_json(provider_path, provider)
+
+        result = directory.build_state("indiana")
+
+        self.assertEqual([], result["shortlists"])
 
     def test_google_discovery_queue_lead_materializes_without_provider_fragment(self):
         self.write_fixture()
@@ -302,7 +354,7 @@ class DirectoryCompilerTests(DirectoryFixtureTestCase):
             "queue_type": "google_discovery_lead",
             "area_id": "in_indianapolis",
             "name": "Google Lead Clinic",
-            "source_url": "https://example.com/google-lead",
+            "source_url": "https://example.com/google-lead/",
             "task": "Exact address and current program details remain unresolved.",
             "date": "2026-09-24",
         }]
@@ -315,7 +367,7 @@ class DirectoryCompilerTests(DirectoryFixtureTestCase):
         ])
         location = result["locations"][0]
         self.assertEqual("Google Lead Clinic", location["provider_name"])
-        self.assertEqual("https://example.com/google-lead", location["program_source_url"])
+        self.assertEqual("https://example.com/google-lead/", location["program_source_url"])
         self.assertEqual("", location["address_source_url"])
         self.assertEqual("", location["logo_url"])
         self.assertEqual(1, len(result["providers"]))
@@ -329,7 +381,7 @@ class DirectoryCompilerTests(DirectoryFixtureTestCase):
             "indiana",
             "in_indianapolis",
             "CLI Lead Clinic",
-            "https://example.com/cli-lead",
+            "https://example.com/cli-lead/",
             discovery_query="Indianapolis IOP",
             visible_city="Indianapolis",
         )

@@ -18,12 +18,14 @@ The compiler accepts the existing repository vocabulary, including
 `program_site_verification_status`. An active location with
 `publication_status`, `research_status`, `verification_status`, or `status` set
 to `google_discovery_lead` is eligible for a generated research shortlist when
-it has one non-empty source URL (`program_source_url` or `source_url`). Its
-address URL and logo may be empty. A `research_queue` item with
+it has one valid website source URL (`program_source_url` or `source_url`). A
+site root may be `https://foo.com` or `https://foo.com/`; deeper paths must end
+in `/`, and document URLs such as PDFs are not valid program URLs. Its address
+URL and logo may be empty. A `research_queue` item with
 `queue_type: google_discovery_lead` is materialized into the same minimal
-location shape when it has a name, valid `area_id`, and one non-empty
+location shape when it has a name, valid `area_id`, and one valid website
 `source_url`; it remains in the queue for later address and current-status
-follow-up. Other statuses require both a program source URL and an address
+follow-up. Other statuses require a valid program source URL and an address
 source URL. Explicitly closed, rejected, virtual-only, or otherwise excluded
 records remain out of generated results.
 
