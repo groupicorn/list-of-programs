@@ -123,6 +123,42 @@
       "task": "Continue local discovery for Milford, West Haven, Hamden, Branford, Guilford, Madison, and shoreline communities; verify exact site-level IOP/PHP evidence and official local PNGs before adding further shortlist candidates.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-23"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ct-danbury-western",
+      "location_id": "",
+      "name": "Waterview Behavioral Health",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Connecticut Danbury IOP PHP",
+      "source_url": "https://www.waterviewbh.com/iop-danbury-ct/",
+      "task": "Official page identifies IOP serving Danbury; visible treatment address is outside area, verify local site before publication.",
+      "date": "2026-09-24",
+      "visible_city": "Danbury"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ct-bridgeport-valley",
+      "location_id": "",
+      "name": "Bridgeport Hospital REACH Program",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Connecticut Bridgeport IOP PHP",
+      "source_url": "https://www.bridgeporthospital.org/services/behavioral-health/",
+      "task": "Search results identify hospital IOP; verify current official program page and address.",
+      "date": "2026-09-24",
+      "visible_city": "Bridgeport"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ct-lower-fairfield",
+      "location_id": "",
+      "name": "CT Renaissance",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Connecticut Stamford IOP PHP",
+      "source_url": "https://www.ctrenaissance.com/",
+      "task": "Regional resource guide identifies IOP; verify current official site and exact location.",
+      "date": "2026-09-24",
+      "visible_city": "Stamford"
     }
   ]
 }

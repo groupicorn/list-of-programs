@@ -38,11 +38,11 @@
     "snapshot_date": "",
     "generation_note": "Generated from source/areas and source/providers by tools/directory.py; edit canonical source files rather than this artifact.",
     "counts": {
-      "providers": 99,
-      "locations": 178,
+      "providers": 100,
+      "locations": 179,
       "areas": 62,
-      "area_matches": 241,
-      "shortlists": 241
+      "area_matches": 242,
+      "shortlists": 242
     }
   },
   "providers": [
@@ -1540,6 +1540,13 @@
       "logo_url": "",
       "logo_downloaded": false,
       "logo_license_reviewed": false,
+      "location_count": 1
+    },
+    {
+      "provider_id": "discovery-harmony-place-monterey",
+      "provider_name": "Harmony Place Monterey",
+      "dedupe_group_id": "discovery-harmony-place-monterey",
+      "logo_url": "",
       "location_count": 1
     }
   ],
@@ -10863,6 +10870,30 @@
       "area_name": "San Francisco",
       "region": "Bay Area",
       "record_quality_notes": "Care levels, ages, enrollment, insurance, and exact intake site must be confirmed before publication."
+    },
+    {
+      "location_id": "discovery-harmony-place-monterey-monterey",
+      "provider_id": "discovery-harmony-place-monterey",
+      "provider_name": "Harmony Place Monterey",
+      "provider_dedupe_group_id": "discovery-harmony-place-monterey",
+      "location_name": "Harmony Place Monterey",
+      "street_address": "",
+      "city": "Monterey",
+      "state_code": "CA",
+      "postal_code": "",
+      "country_code": "US",
+      "primary_area_id": "monterey",
+      "care_focus": "",
+      "care_levels_claimed": "",
+      "age_group": "",
+      "website_url": "https://harmonyplacemonterey.com/our-facility/",
+      "program_source_url": "https://harmonyplacemonterey.com/our-facility/",
+      "address_source_url": "",
+      "evidence_status": "google_discovery_lead",
+      "publication_status": "google_discovery_lead",
+      "logo_url": "",
+      "research_date": "2026-09-24",
+      "notes": "Official facility page identifies PHP/IOP; verify exact address and current status."
     }
   ],
   "areas": [
@@ -11983,14 +12014,14 @@
       "boundary_geometry": null,
       "adjacency_basis": "editorial_neighbor_candidate_not_drive_time",
       "scope_note": "Editorial research bucket, not a Census metro or measured commute shed. A match does not establish a practical journey from every city in this area. Missing entries are research gaps, not proof that programs do not exist.",
-      "local_location_count": 1,
-      "local_provider_group_count": 1,
-      "candidate_provider_group_count": 0,
-      "shortlisted_count": 0,
-      "in_area_shortlisted_count": 0,
+      "local_location_count": 2,
+      "local_provider_group_count": 2,
+      "candidate_provider_group_count": 1,
+      "shortlisted_count": 1,
+      "in_area_shortlisted_count": 1,
       "neighbor_shortlisted_count": 0,
-      "gap_to_nine": 9,
-      "local_gap_to_nine": 9,
+      "gap_to_nine": 8,
+      "local_gap_to_nine": 8,
       "coverage_status": "research_gap"
     },
     {
@@ -18205,6 +18236,33 @@
       "address_source_url": "https://caminoacasa.org/contact-us/",
       "evidence_status": "provider_web_source",
       "notes": ""
+    },
+    {
+      "state_code": "CA",
+      "area_id": "monterey",
+      "area_name": "Monterey / Salinas / Hollister",
+      "region": "Central Coast",
+      "location_id": "discovery-harmony-place-monterey-monterey",
+      "provider_id": "discovery-harmony-place-monterey",
+      "dedupe_group_id": "discovery-harmony-place-monterey",
+      "provider_name": "Harmony Place Monterey",
+      "location_name": "Harmony Place Monterey",
+      "street_address": "",
+      "city": "Monterey",
+      "postal_code": "",
+      "match_type": "local",
+      "actual_area_id": "monterey",
+      "actual_area_name": "Monterey / Salinas / Hollister",
+      "care_focus": "",
+      "care_levels_claimed": "",
+      "age_group": "",
+      "selected": true,
+      "display_order": 1,
+      "selection_basis": "Local physical-address match selected before explicitly declared neighbors.",
+      "program_source_url": "https://harmonyplacemonterey.com/our-facility/",
+      "address_source_url": "",
+      "evidence_status": "google_discovery_lead",
+      "notes": "Official facility page identifies PHP/IOP; verify exact address and current status."
     },
     {
       "state_code": "CA",
@@ -25992,6 +26050,33 @@
     },
     {
       "state_code": "CA",
+      "area_id": "monterey",
+      "area_name": "Monterey / Salinas / Hollister",
+      "region": "Central Coast",
+      "location_id": "discovery-harmony-place-monterey-monterey",
+      "provider_id": "discovery-harmony-place-monterey",
+      "dedupe_group_id": "discovery-harmony-place-monterey",
+      "provider_name": "Harmony Place Monterey",
+      "location_name": "Harmony Place Monterey",
+      "street_address": "",
+      "city": "Monterey",
+      "postal_code": "",
+      "match_type": "local",
+      "actual_area_id": "monterey",
+      "actual_area_name": "Monterey / Salinas / Hollister",
+      "care_focus": "",
+      "care_levels_claimed": "",
+      "age_group": "",
+      "selected": true,
+      "display_order": 1,
+      "selection_basis": "Local physical-address match selected before explicitly declared neighbors.",
+      "program_source_url": "https://harmonyplacemonterey.com/our-facility/",
+      "address_source_url": "",
+      "evidence_status": "google_discovery_lead",
+      "notes": "Official facility page identifies PHP/IOP; verify exact address and current status."
+    },
+    {
+      "state_code": "CA",
       "area_id": "santa-cruz",
       "area_name": "Santa Cruz / Watsonville",
       "region": "Central Coast",
@@ -28712,6 +28797,18 @@
       "priority": "high",
       "task": "Recheck Yuba City / Marysville for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
       "source_url": ""
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "monterey",
+      "location_id": "",
+      "name": "Harmony Place Monterey",
+      "priority": "normal",
+      "discovery_query": "Google start=0 California Monterey IOP PHP",
+      "source_url": "https://harmonyplacemonterey.com/our-facility/",
+      "task": "Official facility page identifies PHP/IOP; verify exact address and current status.",
+      "date": "2026-09-24",
+      "visible_city": "Monterey"
     }
   ]
 }

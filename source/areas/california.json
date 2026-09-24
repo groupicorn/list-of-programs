@@ -1392,374 +1392,386 @@
     }
   ],
   "research_queue": [
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "la-antelope",
-    "location_id": "",
-    "name": "Antelope Valley / Lancaster / Palmdale",
-    "priority": "high",
-    "task": "Recheck Antelope Valley / Lancaster / Palmdale for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "bakersfield",
-    "location_id": "",
-    "name": "Bakersfield / Kern Urban Area",
-    "priority": "medium",
-    "task": "Recheck Bakersfield / Kern Urban Area for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "chico",
-    "location_id": "",
-    "name": "Chico / Oroville / Paradise",
-    "priority": "high",
-    "task": "Recheck Chico / Oroville / Paradise for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "oc-coast",
-    "location_id": "",
-    "name": "Coastal Orange County / Huntington / Newport",
-    "priority": "high",
-    "task": "Recheck Coastal Orange County / Huntington / Newport for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "davis",
-    "location_id": "",
-    "name": "Davis / Woodland / West Sacramento",
-    "priority": "high",
-    "task": "Prioritize a fresh official-site search for physical IOP/PHP programs in Davis / Woodland / West Sacramento; promote exact addresses and local PNGs only when the program and site are current, and retain weak or virtual-only leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "sd-east",
-    "location_id": "",
-    "name": "East County / La Mesa / El Cajon",
-    "priority": "high",
-    "task": "Prioritize a fresh official-site search for physical IOP/PHP programs in East County / La Mesa / El Cajon; promote exact addresses and local PNGs only when the program and site are current, and retain weak or virtual-only leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "la-east-sgv",
-    "location_id": "",
-    "name": "East San Gabriel Valley / Pomona",
-    "priority": "high",
-    "task": "Recheck East San Gabriel Valley / Pomona for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "la-gateway",
-    "location_id": "",
-    "name": "Gateway Cities / Downey / Whittier",
-    "priority": "high",
-    "task": "Recheck Gateway Cities / Downey / Whittier for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "ie-hemet",
-    "location_id": "",
-    "name": "Hemet / San Jacinto / Banning / Beaumont",
-    "priority": "high",
-    "task": "Recheck Hemet / San Jacinto / Banning / Beaumont for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "ie-high-desert",
-    "location_id": "",
-    "name": "High Desert / Victorville / Hesperia",
-    "priority": "high",
-    "task": "Recheck High Desert / Victorville / Hesperia for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "humboldt",
-    "location_id": "",
-    "name": "Humboldt Bay / Eureka / Arcata",
-    "priority": "high",
-    "task": "Recheck Humboldt Bay / Eureka / Arcata for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "imperial",
-    "location_id": "",
-    "name": "Imperial Valley / El Centro / Calexico",
-    "priority": "high",
-    "task": "Recheck Imperial Valley / El Centro / Calexico for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "tahoe",
-    "location_id": "",
-    "name": "Lake Tahoe / Truckee",
-    "priority": "high",
-    "task": "Recheck Lake Tahoe / Truckee for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "marin",
-    "location_id": "",
-    "name": "Marin County / San Rafael / Novato",
-    "priority": "medium",
-    "task": "Recheck Marin County / San Rafael / Novato for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "merced",
-    "location_id": "",
-    "name": "Merced / Atwater / Los Banos",
-    "priority": "high",
-    "task": "Recheck Merced / Atwater / Los Banos for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "modesto",
-    "location_id": "",
-    "name": "Modesto / Turlock",
-    "priority": "high",
-    "task": "Recheck Modesto / Turlock for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "monterey",
-    "location_id": "",
-    "name": "Monterey / Salinas / Hollister",
-    "priority": "high",
-    "task": "Recheck Monterey / Salinas / Hollister for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "napa-solano",
-    "location_id": "",
-    "name": "Napa / Vallejo / Fairfield / Vacaville",
-    "priority": "high",
-    "task": "Prioritize a fresh official-site search for physical IOP/PHP programs in Napa / Vallejo / Fairfield / Vacaville; promote exact addresses and local PNGs only when the program and site are current, and retain weak or virtual-only leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "sd-north-inland",
-    "location_id": "",
-    "name": "North County Inland / Escondido / Poway",
-    "priority": "high",
-    "task": "Recheck North County Inland / Escondido / Poway for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "oc-north",
-    "location_id": "",
-    "name": "North Orange County / Anaheim / Fullerton",
-    "priority": "high",
-    "task": "Recheck North Orange County / Anaheim / Fullerton for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "east-bay",
-    "location_id": "",
-    "name": "Oakland / Berkeley / Inner East Bay",
-    "priority": "medium",
-    "task": "Recheck Oakland / Berkeley / Inner East Bay for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "peninsula",
-    "location_id": "",
-    "name": "Peninsula / San Mateo / Redwood City / Palo Alto",
-    "priority": "high",
-    "task": "Recheck Peninsula / San Mateo / Redwood City / Palo Alto for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "redding",
-    "location_id": "",
-    "name": "Redding / Anderson / Red Bluff",
-    "priority": "high",
-    "task": "Recheck Redding / Anderson / Red Bluff for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "ie-riverside",
-    "location_id": "",
-    "name": "Riverside / Corona / Moreno Valley",
-    "priority": "medium",
-    "task": "Recheck Riverside / Corona / Moreno Valley for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "sac-northeast",
-    "location_id": "",
-    "name": "Roseville / Folsom / Northeast Sacramento",
-    "priority": "high",
-    "task": "Prioritize a fresh official-site search for physical IOP/PHP programs in Roseville / Folsom / Northeast Sacramento; promote exact addresses and local PNGs only when the program and site are current, and retain weak or virtual-only leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "ie-san-bernardino",
-    "location_id": "",
-    "name": "San Bernardino / Redlands / Loma Linda",
-    "priority": "medium",
-    "task": "Recheck San Bernardino / Redlands / Loma Linda for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "slo",
-    "location_id": "",
-    "name": "San Luis Obispo / Five Cities / Paso Robles",
-    "priority": "medium",
-    "task": "Recheck San Luis Obispo / Five Cities / Paso Robles for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "santa-barbara",
-    "location_id": "",
-    "name": "Santa Barbara / Goleta / Carpinteria",
-    "priority": "high",
-    "task": "Recheck Santa Barbara / Goleta / Carpinteria for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "santa-cruz",
-    "location_id": "",
-    "name": "Santa Cruz / Watsonville",
-    "priority": "medium",
-    "task": "Recheck Santa Cruz / Watsonville for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "santa-maria",
-    "location_id": "",
-    "name": "Santa Maria / Lompoc",
-    "priority": "medium",
-    "task": "Recheck Santa Maria / Lompoc for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "sierra-foothills",
-    "location_id": "",
-    "name": "Sierra Foothills / Auburn / Placerville / Grass Valley",
-    "priority": "high",
-    "task": "Prioritize a fresh official-site search for physical IOP/PHP programs in Sierra Foothills / Auburn / Placerville / Grass Valley; promote exact addresses and local PNGs only when the program and site are current, and retain weak or virtual-only leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "sonoma",
-    "location_id": "",
-    "name": "Sonoma County / Santa Rosa / Petaluma",
-    "priority": "medium",
-    "task": "Recheck Sonoma County / Santa Rosa / Petaluma for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "sd-south",
-    "location_id": "",
-    "name": "South Bay San Diego / Chula Vista",
-    "priority": "high",
-    "task": "Prioritize a fresh official-site search for physical IOP/PHP programs in South Bay San Diego / Chula Vista; promote exact addresses and local PNGs only when the program and site are current, and retain weak or virtual-only leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "la-south",
-    "location_id": "",
-    "name": "South LA / Inglewood / Hawthorne",
-    "priority": "high",
-    "task": "Recheck South LA / Inglewood / Hawthorne for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "stockton",
-    "location_id": "",
-    "name": "Stockton / Lodi / Manteca / Tracy",
-    "priority": "high",
-    "task": "Recheck Stockton / Lodi / Manteca / Tracy for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "tri-valley",
-    "location_id": "",
-    "name": "Tri-Valley / Fremont / Union City",
-    "priority": "high",
-    "task": "Recheck Tri-Valley / Fremont / Union City for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "ukiah-lake",
-    "location_id": "",
-    "name": "Ukiah / Lakeport / Clearlake",
-    "priority": "high",
-    "task": "Recheck Ukiah / Lakeport / Clearlake for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "contra-costa",
-    "location_id": "",
-    "name": "Walnut Creek / Concord / Contra Costa",
-    "priority": "high",
-    "task": "Recheck Walnut Creek / Concord / Contra Costa for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "ie-west",
-    "location_id": "",
-    "name": "West Inland Empire / Ontario / Rancho Cucamonga",
-    "priority": "high",
-    "task": "Recheck West Inland Empire / Ontario / Rancho Cucamonga for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "la-west-valley",
-    "location_id": "",
-    "name": "West Valley / Encino / Woodland Hills",
-    "priority": "medium",
-    "task": "Recheck West Valley / Encino / Woodland Hills for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  },
-  {
-    "queue_type": "find_or_verify_provider",
-    "area_id": "yuba-sutter",
-    "location_id": "",
-    "name": "Yuba City / Marysville",
-    "priority": "high",
-    "task": "Recheck Yuba City / Marysville for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
-    "source_url": ""
-  }
-]
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "la-antelope",
+      "location_id": "",
+      "name": "Antelope Valley / Lancaster / Palmdale",
+      "priority": "high",
+      "task": "Recheck Antelope Valley / Lancaster / Palmdale for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "bakersfield",
+      "location_id": "",
+      "name": "Bakersfield / Kern Urban Area",
+      "priority": "medium",
+      "task": "Recheck Bakersfield / Kern Urban Area for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "chico",
+      "location_id": "",
+      "name": "Chico / Oroville / Paradise",
+      "priority": "high",
+      "task": "Recheck Chico / Oroville / Paradise for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "oc-coast",
+      "location_id": "",
+      "name": "Coastal Orange County / Huntington / Newport",
+      "priority": "high",
+      "task": "Recheck Coastal Orange County / Huntington / Newport for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "davis",
+      "location_id": "",
+      "name": "Davis / Woodland / West Sacramento",
+      "priority": "high",
+      "task": "Prioritize a fresh official-site search for physical IOP/PHP programs in Davis / Woodland / West Sacramento; promote exact addresses and local PNGs only when the program and site are current, and retain weak or virtual-only leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "sd-east",
+      "location_id": "",
+      "name": "East County / La Mesa / El Cajon",
+      "priority": "high",
+      "task": "Prioritize a fresh official-site search for physical IOP/PHP programs in East County / La Mesa / El Cajon; promote exact addresses and local PNGs only when the program and site are current, and retain weak or virtual-only leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "la-east-sgv",
+      "location_id": "",
+      "name": "East San Gabriel Valley / Pomona",
+      "priority": "high",
+      "task": "Recheck East San Gabriel Valley / Pomona for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "la-gateway",
+      "location_id": "",
+      "name": "Gateway Cities / Downey / Whittier",
+      "priority": "high",
+      "task": "Recheck Gateway Cities / Downey / Whittier for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "ie-hemet",
+      "location_id": "",
+      "name": "Hemet / San Jacinto / Banning / Beaumont",
+      "priority": "high",
+      "task": "Recheck Hemet / San Jacinto / Banning / Beaumont for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "ie-high-desert",
+      "location_id": "",
+      "name": "High Desert / Victorville / Hesperia",
+      "priority": "high",
+      "task": "Recheck High Desert / Victorville / Hesperia for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "humboldt",
+      "location_id": "",
+      "name": "Humboldt Bay / Eureka / Arcata",
+      "priority": "high",
+      "task": "Recheck Humboldt Bay / Eureka / Arcata for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "imperial",
+      "location_id": "",
+      "name": "Imperial Valley / El Centro / Calexico",
+      "priority": "high",
+      "task": "Recheck Imperial Valley / El Centro / Calexico for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "tahoe",
+      "location_id": "",
+      "name": "Lake Tahoe / Truckee",
+      "priority": "high",
+      "task": "Recheck Lake Tahoe / Truckee for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "marin",
+      "location_id": "",
+      "name": "Marin County / San Rafael / Novato",
+      "priority": "medium",
+      "task": "Recheck Marin County / San Rafael / Novato for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "merced",
+      "location_id": "",
+      "name": "Merced / Atwater / Los Banos",
+      "priority": "high",
+      "task": "Recheck Merced / Atwater / Los Banos for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "modesto",
+      "location_id": "",
+      "name": "Modesto / Turlock",
+      "priority": "high",
+      "task": "Recheck Modesto / Turlock for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "monterey",
+      "location_id": "",
+      "name": "Monterey / Salinas / Hollister",
+      "priority": "high",
+      "task": "Recheck Monterey / Salinas / Hollister for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "napa-solano",
+      "location_id": "",
+      "name": "Napa / Vallejo / Fairfield / Vacaville",
+      "priority": "high",
+      "task": "Prioritize a fresh official-site search for physical IOP/PHP programs in Napa / Vallejo / Fairfield / Vacaville; promote exact addresses and local PNGs only when the program and site are current, and retain weak or virtual-only leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "sd-north-inland",
+      "location_id": "",
+      "name": "North County Inland / Escondido / Poway",
+      "priority": "high",
+      "task": "Recheck North County Inland / Escondido / Poway for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "oc-north",
+      "location_id": "",
+      "name": "North Orange County / Anaheim / Fullerton",
+      "priority": "high",
+      "task": "Recheck North Orange County / Anaheim / Fullerton for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "east-bay",
+      "location_id": "",
+      "name": "Oakland / Berkeley / Inner East Bay",
+      "priority": "medium",
+      "task": "Recheck Oakland / Berkeley / Inner East Bay for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "peninsula",
+      "location_id": "",
+      "name": "Peninsula / San Mateo / Redwood City / Palo Alto",
+      "priority": "high",
+      "task": "Recheck Peninsula / San Mateo / Redwood City / Palo Alto for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "redding",
+      "location_id": "",
+      "name": "Redding / Anderson / Red Bluff",
+      "priority": "high",
+      "task": "Recheck Redding / Anderson / Red Bluff for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "ie-riverside",
+      "location_id": "",
+      "name": "Riverside / Corona / Moreno Valley",
+      "priority": "medium",
+      "task": "Recheck Riverside / Corona / Moreno Valley for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "sac-northeast",
+      "location_id": "",
+      "name": "Roseville / Folsom / Northeast Sacramento",
+      "priority": "high",
+      "task": "Prioritize a fresh official-site search for physical IOP/PHP programs in Roseville / Folsom / Northeast Sacramento; promote exact addresses and local PNGs only when the program and site are current, and retain weak or virtual-only leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "ie-san-bernardino",
+      "location_id": "",
+      "name": "San Bernardino / Redlands / Loma Linda",
+      "priority": "medium",
+      "task": "Recheck San Bernardino / Redlands / Loma Linda for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "slo",
+      "location_id": "",
+      "name": "San Luis Obispo / Five Cities / Paso Robles",
+      "priority": "medium",
+      "task": "Recheck San Luis Obispo / Five Cities / Paso Robles for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "santa-barbara",
+      "location_id": "",
+      "name": "Santa Barbara / Goleta / Carpinteria",
+      "priority": "high",
+      "task": "Recheck Santa Barbara / Goleta / Carpinteria for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "santa-cruz",
+      "location_id": "",
+      "name": "Santa Cruz / Watsonville",
+      "priority": "medium",
+      "task": "Recheck Santa Cruz / Watsonville for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "santa-maria",
+      "location_id": "",
+      "name": "Santa Maria / Lompoc",
+      "priority": "medium",
+      "task": "Recheck Santa Maria / Lompoc for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "sierra-foothills",
+      "location_id": "",
+      "name": "Sierra Foothills / Auburn / Placerville / Grass Valley",
+      "priority": "high",
+      "task": "Prioritize a fresh official-site search for physical IOP/PHP programs in Sierra Foothills / Auburn / Placerville / Grass Valley; promote exact addresses and local PNGs only when the program and site are current, and retain weak or virtual-only leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "sonoma",
+      "location_id": "",
+      "name": "Sonoma County / Santa Rosa / Petaluma",
+      "priority": "medium",
+      "task": "Recheck Sonoma County / Santa Rosa / Petaluma for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "sd-south",
+      "location_id": "",
+      "name": "South Bay San Diego / Chula Vista",
+      "priority": "high",
+      "task": "Prioritize a fresh official-site search for physical IOP/PHP programs in South Bay San Diego / Chula Vista; promote exact addresses and local PNGs only when the program and site are current, and retain weak or virtual-only leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "la-south",
+      "location_id": "",
+      "name": "South LA / Inglewood / Hawthorne",
+      "priority": "high",
+      "task": "Recheck South LA / Inglewood / Hawthorne for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "stockton",
+      "location_id": "",
+      "name": "Stockton / Lodi / Manteca / Tracy",
+      "priority": "high",
+      "task": "Recheck Stockton / Lodi / Manteca / Tracy for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "tri-valley",
+      "location_id": "",
+      "name": "Tri-Valley / Fremont / Union City",
+      "priority": "high",
+      "task": "Recheck Tri-Valley / Fremont / Union City for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "ukiah-lake",
+      "location_id": "",
+      "name": "Ukiah / Lakeport / Clearlake",
+      "priority": "high",
+      "task": "Recheck Ukiah / Lakeport / Clearlake for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "contra-costa",
+      "location_id": "",
+      "name": "Walnut Creek / Concord / Contra Costa",
+      "priority": "high",
+      "task": "Recheck Walnut Creek / Concord / Contra Costa for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "ie-west",
+      "location_id": "",
+      "name": "West Inland Empire / Ontario / Rancho Cucamonga",
+      "priority": "high",
+      "task": "Recheck West Inland Empire / Ontario / Rancho Cucamonga for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "la-west-valley",
+      "location_id": "",
+      "name": "West Valley / Encino / Woodland Hills",
+      "priority": "medium",
+      "task": "Recheck West Valley / Encino / Woodland Hills for additional current official local IOP/PHP sites beyond the existing 2 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "find_or_verify_provider",
+      "area_id": "yuba-sutter",
+      "location_id": "",
+      "name": "Yuba City / Marysville",
+      "priority": "high",
+      "task": "Recheck Yuba City / Marysville for additional current official local IOP/PHP sites beyond the existing 1 local provider group(s); promote exact-site evidence and local PNGs only when verified, and retain weak leads as pending.",
+      "source_url": ""
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "monterey",
+      "location_id": "",
+      "name": "Harmony Place Monterey",
+      "priority": "normal",
+      "discovery_query": "Google start=0 California Monterey IOP PHP",
+      "source_url": "https://harmonyplacemonterey.com/our-facility/",
+      "task": "Official facility page identifies PHP/IOP; verify exact address and current status.",
+      "date": "2026-09-24",
+      "visible_city": "Monterey"
+    }
+  ]
 }
