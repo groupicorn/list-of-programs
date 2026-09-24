@@ -30,10 +30,15 @@ because every lead is not yet perfect.
 2. Search Google, Bing, or another major engine using the city/metro/county:
    `[city] IOP`, `[city] PHP`, `[city] intensive outpatient program`,
    `[city] mental health IOP`, `[city] addiction IOP`, and similar variants.
-3. Review the first 10 result pages, or all available pages when an engine
+3. Paginate Google deliberately. For each query, open the normal result page
+   and then request the next pages with `start=0,10,20,...,90` (or use the
+   engine's Next control), recording the query and page offset for every lead.
+   Review up to ten pages per query, or all available pages when an engine
    exposes fewer. If the interface returns a flat result list, review roughly
-   the first 100 distinct results. Record every plausible local provider/program
-   until the area has nine distinct groups or results clearly repeat.
+   the first 100 distinct results. Continue across query variants until the
+   area has nine distinct groups or several consecutive pages only repeat known
+   results. Do not treat a result count as coverage until exact duplicates and
+   obvious mismatches have been removed.
 4. Deduplicate obvious branches and exact repeats. Exclude only obvious
    virtual-only, out-of-state, non-IOP/PHP, and inpatient/residential-only
    results during discovery.

@@ -40,12 +40,17 @@ For each city, metro, county, or other area, search several variants:
 [county] behavioral health day treatment
 ```
 
-Use Google, Bing, or another major search engine. Review the first 10 result
-pages, or all available pages when an engine exposes fewer. If the interface
-returns a flat result list, review about the first 100 distinct results. Record
-plausible local provider/program names until the area has nine distinct groups
-or the results repeat. Do not spend the initial pass on exhaustive source
-comparison, logo cleanup, phone calls, or intake research.
+Use Google, Bing, or another major search engine. In Google, start at the
+normal results URL and walk the result pages with `start=0,10,20,...,90` (or
+the Next control). Keep the query and page offset with each captured result;
+do not assume that one page or one query is representative. Review up to 10
+pages per query, or all available pages when an engine exposes fewer. If the
+interface returns a flat result list, review about the first 100 distinct
+results. Continue across city, county, IOP, PHP, mental-health, and
+substance-use variants until the area has nine distinct groups or several
+consecutive pages only repeat known results. Deduplicate exact URLs, branches,
+and provider groups before counting coverage. Do not spend the initial pass on
+exhaustive source comparison, logo cleanup, phone calls, or intake research.
 
 For each lead, preserve the result URL, query, search engine, date, visible
 city/address, apparent care level, and uncertainty. Put unresolved leads in
