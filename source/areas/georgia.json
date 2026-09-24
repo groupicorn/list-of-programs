@@ -243,6 +243,31 @@
       "task": "Check the current Jonesboro outpatient and day-treatment offerings for an explicit IOP/PHP claim and exact treatment address before adding a source record.",
       "source_url": "https://dbhdd.georgia.gov/locations",
       "date": "2026-09-22"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ga-macon",
+      "location_id": "",
+      "name": "Georgia Recovery Campus Macon",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Georgia Macon IOP PHP",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/698142/",
+      "task": "Joint Commission listing identifies IOP/PHP; verify provider-controlled source and current status.",
+      "date": "2026-09-24",
+      "visible_address": "2370 Vineville Ave, Macon, GA 31204",
+      "visible_city": "Macon"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ga-savannah-coastal",
+      "location_id": "",
+      "name": "Samba Recovery Savannah",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Georgia Savannah IOP PHP",
+      "source_url": "https://sambarecovery.com/",
+      "task": "Official provider page identifies Savannah outpatient PHP/IOP; verify exact address.",
+      "date": "2026-09-24",
+      "visible_city": "Savannah"
     }
   ]
 }

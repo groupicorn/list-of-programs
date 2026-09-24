@@ -207,6 +207,32 @@
       "priority": "low",
       "task": "Run an audited geocoding pass after provider/location verification; coordinates are intentionally blank in this research pass.",
       "source_url": "https://health.hawaii.gov/substance-abuse/files/2026/01/2024-2026-TRB-Directory.pdf"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "hi-hawaii-west",
+      "location_id": "",
+      "name": "Honu House",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Hawaii Kona IOP PHP",
+      "source_url": "https://honuhousehawaii.com/addiction-programs/residential-counseling/extended-care/",
+      "task": "Official page identifies PHP/IOP aftercare; verify current operating status.",
+      "date": "2026-09-24",
+      "visible_address": "73-4592 Hawaii Belt Rd, Kailua-Kona, HI 96740",
+      "visible_city": "Kailua-Kona"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "hi-oahu-honolulu-core",
+      "location_id": "",
+      "name": "Queens Medical Center Day Treatment",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Hawaii Honolulu IOP PHP",
+      "source_url": "https://www.queens.org/services/behavioral-health/locations/",
+      "task": "Official health-system page identifies youth IOP/PHP and dual-diagnosis IOP; verify current program details.",
+      "date": "2026-09-24",
+      "visible_address": "1374 Nuuanu Avenue, Honolulu, HI 96817",
+      "visible_city": "Honolulu"
     }
   ]
 }

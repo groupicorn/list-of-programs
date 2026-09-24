@@ -115,5 +115,32 @@
       "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
       "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
     }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "co-northern-front-range",
+      "location_id": "",
+      "name": "Redpoint Center - Fort Collins",
+      "priority": "normal",
+      "discovery_query": "Google start=10 Colorado Fort Collins IOP PHP",
+      "source_url": "https://www.theredpointcenter.com/",
+      "task": "Official provider page lists Fort Collins location and outpatient levels; verify current status.",
+      "date": "2026-09-24",
+      "visible_address": "2900 S. College Ave, Suite 3D, Fort Collins, CO 80525",
+      "visible_city": "Fort Collins"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "co-grand-junction",
+      "location_id": "",
+      "name": "Ava Health",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Colorado Grand Junction IOP PHP",
+      "source_url": "https://helloavahealth.com/intensive-outpatient/",
+      "task": "Official IOP page; verify physical treatment address and current status.",
+      "date": "2026-09-24",
+      "visible_city": "Grand Junction"
+    }
   ]
 }
