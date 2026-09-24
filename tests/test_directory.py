@@ -272,6 +272,28 @@ class DirectoryCompilerTests(DirectoryFixtureTestCase):
 
         self.assertEqual(["no-logo"], [row["location_id"] for row in result["shortlists"]])
 
+    def test_google_discovery_lead_publishes_with_one_url_and_no_logo(self):
+        self.write_fixture(locations=({
+            "location_id": "google-lead",
+            "provider_id": "google-lead-provider",
+            "with_sources": False,
+            "logo_url": "",
+            "publication_status": "google_discovery_lead",
+        },))
+        provider_path = self.providers_dir / "in" / "google-lead-provider.json"
+        provider = json.loads(provider_path.read_text())
+        location = provider["locations"][0]
+        location["program_source_url"] = "https://example.com/google-result"
+        location.pop("address_source_url", None)
+        provider["logo_url"] = ""
+        directory.write_json(provider_path, provider)
+
+        result = directory.build_state("indiana")
+
+        self.assertEqual(["google-lead"], [row["location_id"] for row in result["shortlists"]])
+        self.assertEqual("https://example.com/google-result", result["shortlists"][0]["program_source_url"])
+        self.assertEqual("", result["shortlists"][0]["address_source_url"])
+
     def test_verified_program_is_published(self):
         result = self.build_fixture(locations=({
             "location_id": "verified",

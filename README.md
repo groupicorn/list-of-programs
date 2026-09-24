@@ -63,11 +63,10 @@ The directory has three practical stages:
    still needed.
 3. **Publication-ready** — satisfies the current compiler's source gates.
 
-The compiler currently requires an active location with both a program source
-URL and an address source URL before it enters a generated shortlist. Do not
-invent missing URLs or hand-edit generated output. If the product should display
-raw discovery leads before verification, add a separate compiler/schema change;
-the source queue already provides a place to preserve them.
+The compiler publishes an active `google_discovery_lead` when it has one
+non-empty source URL. Its address URL and logo may be empty. Other statuses
+still require both a program source URL and an address source URL. Do not invent
+missing URLs or hand-edit generated output.
 
 Keep physical addresses, care levels, populations, and operating status scoped
 to what the source actually says. Do not infer availability, quality, insurance

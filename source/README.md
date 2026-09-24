@@ -15,12 +15,13 @@ population, source URLs, and verification notes. They must not edit shortlist or
 coverage totals.
 
 The compiler accepts the existing repository vocabulary, including
-`program_site_verification_status`. A location is eligible for a generated
-research shortlist when it is active and has both a program source URL and an
-address source URL. Exact-site verification and local PNG logos remain useful
-quality signals, but they do not suppress otherwise traceable physical
-research candidates. Explicitly closed, rejected, virtual-only, or otherwise
-excluded records remain out of generated results.
+`program_site_verification_status`. An active location with
+`publication_status`, `research_status`, `verification_status`, or `status` set
+to `google_discovery_lead` is eligible for a generated research shortlist when
+it has one non-empty source URL (`program_source_url` or `source_url`). Its
+address URL and logo may be empty. Other statuses require both a program source
+URL and an address source URL. Explicitly closed, rejected, virtual-only, or
+otherwise excluded records remain out of generated results.
 
 ## Area files
 

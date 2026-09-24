@@ -61,6 +61,7 @@ READY_PROGRAM_STATUSES = {
     "verified_exact_site",
     "exact_site_verified",
 }
+DISCOVERY_LEAD_STATUS = "google_discovery_lead"
 EXCLUDED_STATUSES = {
     "closed",
     "excluded",
@@ -130,17 +131,34 @@ def active_location(location: dict[str, Any]) -> bool:
     return not status_values.intersection(EXCLUDED_STATUSES)
 
 
+def is_google_discovery_lead(location: dict[str, Any]) -> bool:
+    return any(
+        str(location.get(key, "")).strip().lower() == DISCOVERY_LEAD_STATUS
+        for key in ("publication_status", "research_status", "verification_status", "status")
+    )
+
+
+def location_source_url(location: dict[str, Any]) -> str:
+    return str(
+        location.get("program_source_url")
+        or location.get("source_url")
+        or ""
+    ).strip()
+
+
 def publication_ready(location: dict[str, Any]) -> bool:
     """Return whether a source location can enter a prepared shortlist.
 
-    Shortlists are intentionally broad research results. An active physical
-    location with both a program source and an address source is useful even
-    when exact-site verification or a local logo is still pending. Explicitly
-    excluded locations remain out of the directory.
+    Shortlists are intentionally broad research results. An active
+    ``google_discovery_lead`` needs one source URL; its address URL and logo may
+    still be pending. Other active locations need both a program source and an
+    address source. Explicitly excluded locations remain out of the directory.
     """
 
     if not active_location(location):
         return False
+    if is_google_discovery_lead(location):
+        return bool(location_source_url(location))
     return bool(location.get("program_source_url") and location.get("address_source_url"))
 
 
@@ -359,7 +377,7 @@ def match_record(
             if match_type == "neighbor"
             else "State-level fallback match selected after local and neighbor candidates."
         ),
-        "program_source_url": location.get("program_source_url", ""),
+        "program_source_url": location_source_url(location),
         "address_source_url": location.get("address_source_url", ""),
         "evidence_status": location.get("evidence_status", ""),
         "notes": location.get("notes", ""),
@@ -990,10 +1008,12 @@ def explanation_reasons(location: dict[str, Any]) -> list[str]:
         statuses = [status for status in (program_status, verification_status) if status]
         if not any(status in READY_PROGRAM_STATUSES for status in statuses):
             reasons.append(f"program evidence pending: {', '.join(statuses)}")
-    elif location.get("publication_ready") is not True and not (
-        location.get("program_source_url") and location.get("address_source_url")
-    ):
-        reasons.append("missing program or address evidence")
+    elif location.get("publication_ready") is not True:
+        if is_google_discovery_lead(location):
+            if not location_source_url(location):
+                reasons.append("missing discovery source URL")
+        elif not (location.get("program_source_url") and location.get("address_source_url")):
+            reasons.append("missing program or address evidence")
 
     if location.get("publication_ready") is False:
         reasons.append("publication_ready=false")

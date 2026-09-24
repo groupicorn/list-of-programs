@@ -60,10 +60,10 @@ Keep these states distinct:
 - `source_candidate`: partly captured provider/location needing follow-up;
 - `publication-ready`: satisfies the current compiler's source gates.
 
-The current compiler requires an active location with program and address source
-URLs before it enters a generated shortlist. Do not invent those URLs or hand
-edit generated JSON. If clients need to display raw discovery leads before
-verification, that is a separate compiler/schema task.
+The current compiler publishes an active `google_discovery_lead` when it has
+one non-empty source URL. Its address URL and logo may be empty. Other statuses
+still require both program and address source URLs. Do not invent URLs or hand
+edit generated JSON.
 
 Keep real physical addresses when known and leave unknown values unknown. Use
 the actual treatment address for `primary_area_id`; do not place a provider in
