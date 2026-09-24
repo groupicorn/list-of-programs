@@ -315,6 +315,19 @@
       "date": "2026-09-24",
       "visible_address": "6834 Alabama Highway 69, Suite 200, Tuscaloosa, AL 35405",
       "visible_city": "Tuscaloosa"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "al-black-belt",
+      "location_id": "",
+      "name": "Aletheia House Selma Intensive Outpatient",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Selma Alabama intensive outpatient program IOP PHP behavioral health address",
+      "source_url": "https://mh.alabama.gov/at_biz_dir/aletheia-house-2-2-2-2/",
+      "task": "Confirm current IOP service, provider-controlled source, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "912 J.L. Chestnut Junior Boulevard, Selma, AL 36701",
+      "visible_city": "Selma, AL"
     }
   ]
 }

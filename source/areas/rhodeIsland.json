@@ -28,7 +28,7 @@
       "definition": "Editorial Providence / Northern Rhode Island catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
       "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
-    "scope_note": "Current official IOP/PHP sites are published; Brown University Health's adult PHP is virtual-only and is excluded from local treatment counts.",
+      "scope_note": "Current official IOP/PHP sites are published; Brown University Health's adult PHP is virtual-only and is excluded from local treatment counts.",
       "target_provider_count": 9
     },
     {
@@ -101,6 +101,19 @@
       "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-21"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ri_newport",
+      "location_id": "",
+      "name": "Newport County Community Mental Health Center IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Newport Rhode Island IOP Newport County Community Mental Health Center",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/138453/",
+      "task": "Confirm current IOP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "42 Valley Road, Middletown, RI 02842",
+      "visible_city": "Middletown, RI"
     }
   ]
 }

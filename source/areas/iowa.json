@@ -188,6 +188,32 @@
       "date": "2026-09-24",
       "visible_address": "200 Hawkins Drive, Iowa City, IA 52242",
       "visible_city": "Iowa City"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ia_des_moines",
+      "location_id": "",
+      "name": "Community and Family Resources Des Moines Outpatient",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Des Moines Iowa IOP outpatient Community and Family Resources",
+      "source_url": "https://www.cfrhelps.org/contact-information/",
+      "task": "Confirm current intensive outpatient level of care and operating status at the Des Moines outpatient site.",
+      "date": "2026-09-24",
+      "visible_address": "3451 Easton Boulevard, Des Moines, IA 50317",
+      "visible_city": "Des Moines, IA"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ia_iowa_city",
+      "location_id": "",
+      "name": "University of Iowa Addiction and Recovery Collaborative Iowa City",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Iowa City Iowa PHP IOP University of Iowa Addiction Recovery",
+      "source_url": "https://uiarc.uiowa.edu/",
+      "task": "Confirm current PHP/IOP treatment address and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "200 Hawkins Drive, Iowa City, IA 52242",
+      "visible_city": "Iowa City, IA"
     }
   ]
 }

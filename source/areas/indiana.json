@@ -490,6 +490,45 @@
       "date": "2026-09-24",
       "visible_address": "Evansville, IN 47747",
       "visible_city": "Evansville"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "in_bloomington",
+      "location_id": "",
+      "name": "Haven Health ICR Bloomington",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Bloomington Indiana IOP PHP Haven Health ICR",
+      "source_url": "https://www.jointcommission.org/en/accreditation/behavioral-health-care-and-human-services/provider-locator/578386/",
+      "task": "Confirm current IOP/PHP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "637 Walker Street, Bloomington, IN 47403",
+      "visible_city": "Bloomington, IN"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "in_south_bend_mishawaka",
+      "location_id": "",
+      "name": "ICR South Bend",
+      "priority": "normal",
+      "discovery_query": "Google start=0: South Bend Mishawaka Indiana IOP PHP ICR",
+      "source_url": "https://www.jointcommission.org/en/accreditation/behavioral-health-care-and-human-services/provider-locator/578386/678365/",
+      "task": "Confirm current IOP/PHP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "215 West 4th Street, Mishawaka, IN 46544",
+      "visible_city": "Mishawaka, IN"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "in_clarksville_southern_indiana",
+      "location_id": "",
+      "name": "Avenues Recovery Center Kentuckiana",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Clarksville Indiana IOP PHP Avenues Recovery",
+      "source_url": "https://www.jointcommission.org/en/accreditation/behavioral-health-care-and-human-services/provider-locator/716529/",
+      "task": "Confirm current IOP/PHP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "4601 Medical Plaza Way, Clarksville, IN 47129",
+      "visible_city": "Clarksville, IN"
     }
   ]
 }

@@ -1542,6 +1542,32 @@
       "date": "2026-09-24",
       "visible_address": "400 S Townline Road, Wautoma, WI 54982",
       "visible_city": "Wautoma"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wi_wausau",
+      "location_id": "",
+      "name": "Rogers Behavioral Health Wausau",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Wausau Wisconsin IOP PHP Rogers Behavioral Health",
+      "source_url": "https://rogersbh.org/locations/wausau-wi/",
+      "task": "Confirm current Wausau clinic address and IOP/PHP operating status.",
+      "date": "2026-09-24",
+      "visible_address": "1153 West Bridge Street, Wausau, WI 54401",
+      "visible_city": "Wausau, WI"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wi_wausau",
+      "location_id": "",
+      "name": "North Central Health Care Lakeside Recovery Wausau",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Wausau Wisconsin intensive outpatient North Central Health Care Lakeside Recovery",
+      "source_url": "https://www.norcen.org/",
+      "task": "Wisconsin DHS directory identifies intensive outpatient treatment at this site; confirm current program and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "1150 Lake View Drive, Wausau, WI 54403",
+      "visible_city": "Wausau, WI"
     }
   ]
 }

@@ -111,6 +111,32 @@
       "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-21"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "or_eugene",
+      "location_id": "",
+      "name": "PeaceHealth University District Eugene PHP/IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Eugene Oregon PHP IOP PeaceHealth",
+      "source_url": "https://www.peacehealth.org/locations/eugene/intensive-outpatient-and-partial-hospitalization-behavioral-health-peacehealth/",
+      "task": "Confirm current PHP/IOP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "770 East 11th Avenue, Eugene, OR 97401",
+      "visible_city": "Eugene, OR"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "or_eugene",
+      "location_id": "",
+      "name": "Serenity Lane Eugene Outpatient IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=10: Eugene Oregon IOP Serenity Lane",
+      "source_url": "https://serenitylane.org/about-us/",
+      "task": "Confirm current Level II IOP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "4211 West 11th Avenue, Eugene, OR 97402",
+      "visible_city": "Eugene, OR"
     }
   ]
 }

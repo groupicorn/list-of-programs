@@ -111,6 +111,19 @@
       "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-21"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ok_oklahoma_city",
+      "location_id": "",
+      "name": "Oakwood Springs Oklahoma City",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Oklahoma City IOP PHP Oakwood Springs",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/594866/",
+      "task": "Confirm current IOP/PHP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "13101 Memorial Springs Court, Oklahoma City, OK 73114",
+      "visible_city": "Oklahoma City, OK"
     }
   ]
 }

@@ -111,6 +111,32 @@
       "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-21"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ma_boston",
+      "location_id": "",
+      "name": "Overstory Health Boston",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Boston Massachusetts IOP PHP Overstory Health",
+      "source_url": "https://www.overstoryhealth.com/locations/boston/",
+      "task": "Confirm current intensive behavioral-health IOP/PHP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "443 Albany Street, Boston, MA 02118",
+      "visible_city": "Boston, MA"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ma_boston",
+      "location_id": "",
+      "name": "Boston Medical Center Brighton PHP",
+      "priority": "normal",
+      "discovery_query": "Google start=10: Boston Massachusetts PHP Boston Medical Center Brighton",
+      "source_url": "https://www.bmchealthsystem.org/bmc-brighton/departments/behavioral-health/",
+      "task": "Confirm current PHP service and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "736 Cambridge Street, Brighton, MA 02135",
+      "visible_city": "Brighton, MA"
     }
   ]
 }

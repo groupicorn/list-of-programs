@@ -163,6 +163,19 @@
       "task": "Provider search result describes a Gulfport IOP; verify exact physical address, current program page, and operating status.",
       "date": "2026-09-24",
       "visible_city": "Gulfport"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ms_hattiesburg",
+      "location_id": "",
+      "name": "Pine Grove Behavioral Health and Addiction Services",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Hattiesburg Mississippi IOP PHP Pine Grove",
+      "source_url": "https://www.jointcommission.org/en/accreditation/behavioral-health-care-and-human-services/provider-locator/8055/282721/",
+      "task": "Confirm current IOP/PHP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "2555 Broadway Drive, Hattiesburg, MS 39401",
+      "visible_city": "Hattiesburg, MS"
     }
   ]
 }

@@ -131,6 +131,32 @@
       "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-22"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nd_fargo",
+      "location_id": "",
+      "name": "The Village Family Service Center Fargo IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Fargo North Dakota IOP The Village Family Service Center",
+      "source_url": "https://smtp.thevillagefamily.org/locations/fargo/",
+      "task": "Confirm current mental-health IOP and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "2701 12th Avenue South, Fargo, ND 58103",
+      "visible_city": "Fargo, ND"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nd_fargo",
+      "location_id": "",
+      "name": "Midwest Mental Health Clinic Fargo IOP/PHP",
+      "priority": "normal",
+      "discovery_query": "Google start=10: Fargo North Dakota IOP PHP Midwest Mental Health Clinic",
+      "source_url": "https://www.hhs.nd.gov/behavioral-health/substance-abuse-treatment-programs/",
+      "task": "North Dakota HHS directory lists adult IOP and PHP; confirm current clinic program and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "1122 1st Avenue North, Fargo, ND 58103",
+      "visible_city": "Fargo, ND"
     }
   ]
 }

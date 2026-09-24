@@ -272,6 +272,32 @@
       "task": "Official IOP page; verify exact address and current status.",
       "date": "2026-09-24",
       "visible_city": "Charlotte"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nc_fayetteville",
+      "location_id": "",
+      "name": "Carolina Outreach Fayetteville",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Fayetteville North Carolina IOP Carolina Outreach",
+      "source_url": "https://www.carolinaoutreach.com/",
+      "task": "Confirm current IOP services and operating status at this Fayetteville clinic.",
+      "date": "2026-09-24",
+      "visible_address": "324 Person Street, Fayetteville, NC 28301",
+      "visible_city": "Fayetteville, NC"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nc_triangle",
+      "location_id": "",
+      "name": "GPW Psychiatry Raleigh-Durham IOP/PHP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Raleigh Durham North Carolina IOP PHP GPW Psychiatry",
+      "source_url": "https://www.gpwpsychiatry.com/iop/",
+      "task": "Confirm current IOP/PHP services and exact treatment location.",
+      "date": "2026-09-24",
+      "visible_address": "8304 Creedmoor Road, Raleigh, NC 27613",
+      "visible_city": "Raleigh, NC"
     }
   ]
 }

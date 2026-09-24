@@ -374,6 +374,19 @@
       "date": "2026-09-24",
       "visible_address": "4320 Copper Ridge Drive, Traverse City, MI 49684",
       "visible_city": "Traverse City"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mi_marquette",
+      "location_id": "",
+      "name": "UP Health System Marquette Mental Health IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Marquette Michigan IOP UP Health System",
+      "source_url": "https://www.uphealthsystem.com/news/2025/02/19/up-health-system-marquette-expands-mental-health-services-with-new-intensive-outpatient-program/",
+      "task": "Confirm current adult mental-health IOP and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "1400 West Washington Street, Marquette, MI 49855",
+      "visible_city": "Marquette, MI"
     }
   ]
 }

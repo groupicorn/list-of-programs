@@ -253,6 +253,96 @@
       "date": "2026-09-24",
       "visible_address": "300 2nd Ave. East, Twin Falls, ID 83301",
       "visible_city": "Twin Falls"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "id_twin_falls_magic_valley",
+      "location_id": "",
+      "name": "Positive Connections Plus Twin Falls",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Twin Falls Idaho IOP Positive Connections Plus",
+      "source_url": "https://www.positiveconnectionsplus.com/?page_id=54",
+      "task": "Confirm current IOP level of care and operating status; current page confirms local behavioral-health services but not IOP wording.",
+      "date": "2026-09-24",
+      "visible_address": "1373 Fillmore Street, Twin Falls, ID 83301",
+      "visible_city": "Twin Falls, ID"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "id_pocatello_southeast_idaho",
+      "location_id": "",
+      "name": "Raise the Bottom Pocatello IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Pocatello Idaho intensive outpatient program IOP PHP behavioral health address",
+      "source_url": "https://raisethebottomidaho.com/locations/pocatello/",
+      "task": "Confirm current IOP service and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "2785 Bannock Highway, Pocatello, ID 83204",
+      "visible_city": "Pocatello, ID"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "id_coeur_dalene_north_idaho",
+      "location_id": "",
+      "name": "Integrated Interventions Coeur d'Alene IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Coeur d'Alene Idaho intensive outpatient program IOP PHP behavioral health address",
+      "source_url": "https://www.jointcommission.org/en/accreditation/behavioral-health-care-and-human-services/provider-locator/737338/",
+      "task": "Confirm current IOP service, provider-controlled source, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "1103 East Sherman Avenue, Coeur d'Alene, ID 83814",
+      "visible_city": "Coeur d'Alene, ID"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "id_twin_falls_magic_valley",
+      "location_id": "",
+      "name": "The Walker Center Twin Falls IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Twin Falls Idaho intensive outpatient program IOP PHP behavioral health address",
+      "source_url": "https://carf.org/provider/the-walker-center-twin-falls-249490/",
+      "task": "Confirm current adult IOP service, provider-controlled source, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "1102 Eastglen Way, Twin Falls, ID 83301",
+      "visible_city": "Twin Falls, ID"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "id_lewiston_north_central_idaho",
+      "location_id": "",
+      "name": "CHAS Behavioral Health Center Lewiston IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Lewiston Idaho IOP intensive outpatient substance use treatment provider",
+      "source_url": "https://chas.org/get-care/behavioral-health/sud-treatment/",
+      "task": "Confirm current Level 2.1 IOP delivery at the Lewiston site and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "1534 Idaho Street, Lewiston, ID 83501",
+      "visible_city": "Lewiston, ID"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "id_pocatello_southeast_idaho",
+      "location_id": "",
+      "name": "Freedom Recovery Pocatello IOP/PHP",
+      "priority": "normal",
+      "discovery_query": "Google start=10: Pocatello Idaho intensive outpatient treatment provider address youth adult",
+      "source_url": "https://carf.org/provider/freedom-recovery-379060/",
+      "task": "Confirm current adult IOP/PHP services, exact treatment site, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "1001 North 7th Avenue, Suite 240, Pocatello, ID 83201",
+      "visible_city": "Pocatello, ID"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "id_lewiston_north_central_idaho",
+      "location_id": "",
+      "name": "ChangePoint TurnAround Lewiston IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=10: Lewiston Idaho ASAM 2.1 IOP provider address",
+      "source_url": "https://www.choosehelp.com/rehab/changepoint-turnaround-lewiston-idaho-41930/",
+      "task": "Confirm provider-controlled source, exact physical treatment address, current IOP service, and operating status; exclude if virtual or duplicate.",
+      "date": "2026-09-24",
+      "visible_city": "Lewiston, ID"
     }
   ]
 }

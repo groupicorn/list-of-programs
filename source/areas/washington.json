@@ -111,6 +111,32 @@
       "task": "Check official Tacoma/Pierce service pages for a current physical IOP or PHP site, exact address, population, and local logo before adding a source location.",
       "source_url": "https://tpchd.org/professionals/provider-resources/refer-to-treatment/",
       "date": "2026-09-22"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wa_tacoma",
+      "location_id": "",
+      "name": "Discovery Mood and Anxiety Program Tacoma",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Tacoma Washington IOP PHP Discovery Mood",
+      "source_url": "https://discoverymood.com/locations/tacoma/",
+      "task": "Confirm current Tacoma PHP/IOP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "2202 South Cedar, Suite 175, Tacoma, WA 98405",
+      "visible_city": "Tacoma, WA"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wa_tacoma",
+      "location_id": "",
+      "name": "For The Culture Counseling Services Tacoma IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=10: Tacoma Washington intensive outpatient program For The Culture",
+      "source_url": "https://www.ftccounselingsvcs.org/intensive-outpatient-2-1/",
+      "task": "Confirm current Tacoma IOP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "4301 South Pine Street, Suite 92, Tacoma, WA 98409",
+      "visible_city": "Tacoma, WA"
     }
   ]
 }

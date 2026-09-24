@@ -259,6 +259,32 @@
       "date": "2026-09-24",
       "visible_address": "800 Preston Avenue, Charlottesville, VA 22903",
       "visible_city": "Charlottesville"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "va_roanoke",
+      "location_id": "",
+      "name": "Hemi House Roanoke",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Roanoke Virginia IOP PHP Hemi House",
+      "source_url": "https://www.jointcommission.org/en/accreditation/behavioral-health-care-and-human-services/provider-locator/743271/743399/",
+      "task": "Confirm current IOP/PHP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "1488 Peters Creek Road Northwest, Roanoke, VA 24017",
+      "visible_city": "Roanoke, VA"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "va_charlottesville",
+      "location_id": "",
+      "name": "Region Ten Community Services Charlottesville IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Charlottesville Virginia intensive outpatient Region Ten",
+      "source_url": "https://dbhds.virginia.gov/find-help/",
+      "task": "Virginia DBHDS lists Region Ten outpatient and intensive outpatient services; confirm current exact program and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "500 Old Lynchburg Road, Charlottesville, VA 22903",
+      "visible_city": "Charlottesville, VA"
     }
   ]
 }

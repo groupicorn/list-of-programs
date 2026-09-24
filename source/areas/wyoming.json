@@ -241,6 +241,71 @@
       "task": "CARF listing identifies an integrated mental-health/substance-use IOP provider in Laramie; verify current street address and provider-controlled source.",
       "date": "2026-09-24",
       "visible_city": "Laramie"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wy_worland",
+      "location_id": "",
+      "name": "Oxbow Center / Cloud Peak Counseling Center",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Worland Wyoming IOP PHP intensive outpatient behavioral health current address",
+      "source_url": "https://www.wyosocialresources.info/social_resources/oxbow-center/",
+      "task": "Confirm current IOP schedule, intake, and operating status; current regional resource page identifies the local Oxbow/Cloud Peak outpatient site and intensive services.",
+      "date": "2026-09-24",
+      "visible_address": "401 South 23rd Street, Worland, WY 82401",
+      "visible_city": "Worland"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wy_worland",
+      "location_id": "",
+      "name": "Cloud Peak Counseling Center Worland",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Worland Wyoming intensive outpatient treatment",
+      "source_url": "https://rainierrehab.org/facilities/cloud-peak-counseling-center-1736776/",
+      "task": "Confirm current intensive outpatient services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "401 South 23rd Street, Worland, WY 82401",
+      "visible_city": "Worland, WY"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wy_cheyenne",
+      "location_id": "",
+      "name": "Cheyenne Regional Medical Center Mental Health IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Cheyenne Wyoming mental health IOP Cheyenne Regional",
+      "source_url": "https://www.cheyenneregional.org/service/behavioral-health-services/mental-health-intensive-outpatient-program-mh-iop/",
+      "task": "Confirm current mental-health IOP service location and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "2600 East 18th Street, Cheyenne, WY 82001",
+      "visible_city": "Cheyenne, WY"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wy_gillette",
+      "location_id": "",
+      "name": "Campbell County Health Behavioral Health Gillette",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Gillette Wyoming IOP Campbell County Health behavioral health",
+      "source_url": "https://www.cchwyo.org/services/behavioral-health/",
+      "task": "Confirm current IOP services and exact treatment entrance.",
+      "date": "2026-09-24",
+      "visible_address": "501 South Burma Avenue, Gillette, WY 82716",
+      "visible_city": "Gillette, WY"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wy_rock_springs",
+      "location_id": "",
+      "name": "Memorial Hospital of Sweetwater County Behavioral Health",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Rock Springs Wyoming IOP PHP behavioral health",
+      "source_url": "https://www.rockspringshealth.com/programs/",
+      "task": "Confirm current PHP/IOP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "1200 College Drive, Rock Springs, WY 82901",
+      "visible_city": "Rock Springs, WY"
     }
   ]
 }

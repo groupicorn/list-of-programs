@@ -437,6 +437,58 @@
       "date": "2026-09-24",
       "visible_address": "5940 W Union Hills Dr, Glendale, AZ 85308",
       "visible_city": "Glendale"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "az-east-valley",
+      "location_id": "",
+      "name": "Lifeline PCS Mesa",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Mesa Arizona IOP PHP Lifeline PCS",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/738957/739774/",
+      "task": "Confirm current IOP/PHP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "7565 East Eagle Crest Drive, Suite 101, Mesa, AZ 85207",
+      "visible_city": "Mesa, AZ"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "az-east-valley",
+      "location_id": "",
+      "name": "Summit BHC Mesa",
+      "priority": "normal",
+      "discovery_query": "Google start=10: Mesa Arizona IOP PHP Summit BHC Canyon Vista",
+      "source_url": "https://www.jointcommission.org/en/accreditation/behavioral-health-care-and-human-services/provider-locator/619255/",
+      "task": "Confirm current IOP/PHP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "860 North Center Street, Mesa, AZ 85201",
+      "visible_city": "Mesa, AZ"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "az-prescott",
+      "location_id": "",
+      "name": "Silver Sands Recovery Prescott",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Prescott Arizona IOP PHP Silver Sands Recovery",
+      "source_url": "https://www.jointcommission.org/en/accreditation/behavioral-health-care-and-human-services/provider-locator/607916/",
+      "task": "Confirm current IOP/PHP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "3636 Crossing Drive, Suite C, Prescott, AZ 86305",
+      "visible_city": "Prescott, AZ"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "az-prescott",
+      "location_id": "",
+      "name": "Compass Recovery Center Prescott",
+      "priority": "normal",
+      "discovery_query": "Google start=10: Prescott Arizona IOP PHP Compass Recovery Center",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/582945/586120/",
+      "task": "Confirm current IOP/PHP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "711 South Granite Street, Prescott, AZ 86303",
+      "visible_city": "Prescott, AZ"
     }
   ]
 }

@@ -302,6 +302,71 @@
       "date": "2026-09-24",
       "visible_address": "300 Olive St, Suite 507, Texarkana, AR 71854",
       "visible_city": "Texarkana"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ar-hot-springs",
+      "location_id": "",
+      "name": "Adult and Teen Challenge of Arkansas Hot Springs Village",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Hot Springs Village Arkansas IOP PHP Adult Teen Challenge",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/689296/724329/",
+      "task": "Confirm current IOP/PHP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "852 Fox Pass, Hot Springs Village, AR 71909",
+      "visible_city": "Hot Springs Village, AR"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ar-conway-north-metro",
+      "location_id": "",
+      "name": "Conway Behavioral Health Hospital Adult IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Conway Arkansas intensive outpatient program PHP behavioral health address",
+      "source_url": "https://www.conwaybh.com/programs/iop/",
+      "task": "Confirm current adult IOP service and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "2255 Sturgis Road, Conway, AR 72034",
+      "visible_city": "Conway, AR"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ar-fort-smith-river-valley",
+      "location_id": "",
+      "name": "Valley Behavioral Health System Adult IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Fort Smith Arkansas intensive outpatient program IOP PHP behavioral health address",
+      "source_url": "https://www.valleybehavioral.com/programs/",
+      "task": "Confirm current adult IOP/PHP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "10301 Mayo Drive, Barling, AR 72923",
+      "visible_city": "Barling, AR"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ar-texarkana-southwest",
+      "location_id": "",
+      "name": "Riverview Behavioral Health Texarkana Adult IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Texarkana Arkansas intensive outpatient program IOP PHP behavioral health address",
+      "source_url": "https://www.riverviewbehavioralhealth.com/programs/iop/",
+      "task": "Confirm current adult IOP service and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "701 Arkansas Boulevard, Texarkana, AR 71854",
+      "visible_city": "Texarkana, AR"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ar-little-rock-central",
+      "location_id": "",
+      "name": "Oasis Renewal Center Little Rock PHP/IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Little Rock Arkansas intensive outpatient program PHP IOP provider address official",
+      "source_url": "https://rcofa.org/locations/oasis-renewal-center/",
+      "task": "Confirm current PHP/IOP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "14913 Cooper Orbit Road, Little Rock, AR 72223",
+      "visible_city": "Little Rock, AR"
     }
   ]
 }

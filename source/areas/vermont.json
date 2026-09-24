@@ -144,6 +144,32 @@
       "date": "2026-09-24",
       "visible_address": "209 Austine Drive, Brattleboro, VT 05301",
       "visible_city": "Brattleboro"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "vt_burlington",
+      "location_id": "",
+      "name": "Confluence Burlington Intensive Outpatient",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Burlington Vermont intensive outpatient Confluence",
+      "source_url": "https://www.confluencevt.com/contact/",
+      "task": "Confirm current IOP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "182 Main Street, 2nd Floor, Burlington, VT 05401",
+      "visible_city": "Burlington, VT"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "vt_burlington",
+      "location_id": "",
+      "name": "NFI Vermont Crossroads IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=10: South Burlington Vermont Crossroads intensive outpatient program",
+      "source_url": "https://www.nfivermont.org/about-us/locations/",
+      "task": "Confirm population, current IOP service, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "30 Airport Road, South Burlington, VT 05403",
+      "visible_city": "South Burlington, VT"
     }
   ]
 }

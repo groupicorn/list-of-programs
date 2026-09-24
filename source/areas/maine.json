@@ -251,6 +251,19 @@
       "task": "Confirm current physical address, PHP/IOP schedule, intake, and operating status; current MaineHealth page identifies both structured levels in Biddeford.",
       "date": "2026-09-24",
       "visible_city": "Biddeford"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "me_biddeford_saco",
+      "location_id": "",
+      "name": "MaineHealth Behavioral Health Main Street Biddeford",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Biddeford Maine IOP PHP MaineHealth Behavioral Health",
+      "source_url": "https://www.mainehealth.org/mainehealth-behavioral-health/locations-mainehealth-behavioral-health/",
+      "task": "Confirm current IOP/PHP level of care at the Main Street site and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "235 Main Street, Biddeford, ME 04005",
+      "visible_city": "Biddeford, ME"
     }
   ]
 }

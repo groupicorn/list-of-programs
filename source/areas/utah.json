@@ -147,6 +147,32 @@
       "date": "2026-09-24",
       "visible_address": "1165 East 300 North, Provo, UT 84606",
       "visible_city": "Provo"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ut_provo",
+      "location_id": "",
+      "name": "Imperial Healing Estate Provo",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Provo Utah IOP PHP Imperial Healing Estate",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/653073/653080/",
+      "task": "Confirm current PHP/IOP services and operating status at the Provo site.",
+      "date": "2026-09-24",
+      "visible_address": "4194 North Imperial Way, Provo, UT 84604",
+      "visible_city": "Provo, UT"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ut_salt_lake",
+      "location_id": "",
+      "name": "Papilion Integrated Recovery Center",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Salt Lake City Utah IOP PHP Papilion Integrated Recovery Center",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/608507/643062/",
+      "task": "Confirm current IOP/PHP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "5635 South Waterbury Way, Suite C102, Salt Lake City, UT 84121",
+      "visible_city": "Salt Lake City, UT"
     }
   ]
 }

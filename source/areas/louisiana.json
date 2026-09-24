@@ -171,6 +171,32 @@
       "date": "2026-09-24",
       "visible_address": "1476 Magazine St., New Orleans, LA 70130",
       "visible_city": "New Orleans"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "la_new_orleans",
+      "location_id": "",
+      "name": "New Beginnings Behavioral and Family Services New Orleans",
+      "priority": "normal",
+      "discovery_query": "Google start=0: New Orleans Louisiana IOP New Beginnings Behavioral Family",
+      "source_url": "https://nbbfsnola.com/services/intensive-outpatient-therapy-iop/",
+      "task": "Confirm current in-person IOP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "2601 Tulane Avenue, Suite 320, New Orleans, LA 70119",
+      "visible_city": "New Orleans, LA"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "la_new_orleans",
+      "location_id": "",
+      "name": "Odyssey House Louisiana New Orleans IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=10: New Orleans Louisiana IOP Odyssey House",
+      "source_url": "https://www.ohlinc.org/new-orleans/",
+      "task": "Confirm current IOP/transitions program address and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "1125 North Tonti Street, New Orleans, LA",
+      "visible_city": "New Orleans, LA"
     }
   ]
 }

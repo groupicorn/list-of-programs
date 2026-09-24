@@ -311,6 +311,45 @@
       "date": "2026-09-24",
       "visible_address": "30 Oki Place, Kaunakakai, HI 96748",
       "visible_city": "Kaunakakai"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "hi-hawaii-west",
+      "location_id": "",
+      "name": "Hawaii Island Recovery Kona",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Kailua Kona Hawaii IOP PHP Hawaii Island Recovery",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/602368/603830/",
+      "task": "Confirm current IOP/PHP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "75-170 Hualalai Road, Suite C-311a, Kailua Kona, HI 96740",
+      "visible_city": "Kailua Kona, HI"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "hi-hawaii-west",
+      "location_id": "",
+      "name": "The Ohana Retreat Kona",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Kailua Kona Hawaii PHP Ohana Retreat",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/666464/691800/",
+      "task": "Confirm current PHP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "73-4617 Kaloko Halia Place, Kailua Kona, HI 96740",
+      "visible_city": "Kailua Kona, HI"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "hi-hawaii-east",
+      "location_id": "",
+      "name": "Lokahi Treatment Centers Hilo IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Hilo Hawaii intensive outpatient program IOP PHP behavioral health address",
+      "source_url": "https://carf.org/provider/lokahi-treatment-centers-hilo-75895/",
+      "task": "Confirm current adult and youth IOP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "400 Hualani Street, Building 10, Suite 195B, Hilo, HI 96720",
+      "visible_city": "Hilo, HI"
     }
   ]
 }

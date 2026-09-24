@@ -1638,6 +1638,19 @@
       "date": "2026-09-24",
       "visible_address": "1324 37th Avenue East, Bradenton, FL 34208",
       "visible_city": "Bradenton"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "fl-volusia-flagler",
+      "location_id": "",
+      "name": "Break the Cycle Daytona Beach IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Volusia Flagler Florida intensive outpatient program IOP PHP behavioral health address",
+      "source_url": "https://www.fhcp.com/",
+      "task": "Confirm current IOP service from the Florida Health Care Plans provider referral guide and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "724 South Beach Street, Suite 3, Daytona Beach, FL 32114",
+      "visible_city": "Daytona Beach, FL"
     }
   ]
 }

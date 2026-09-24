@@ -315,6 +315,19 @@
       "date": "2026-09-24",
       "visible_address": "2670 Crain Highway, Suite 105, Waldorf, MD 20601",
       "visible_city": "Waldorf"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "md_southern_maryland",
+      "location_id": "",
+      "name": "MedStar Southern Maryland Behavioral Health Day Program",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Southern Maryland PHP MedStar behavioral health day program",
+      "source_url": "https://www.medstarhealth.org/Locations/Behavioral-Health-Day-Program-at-MedStar-Southern-Maryland-Hospital-Center/",
+      "task": "Confirm current adult PHP/IOP treatment address and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "7503 Surratts Road, Clinton, MD 20735",
+      "visible_city": "Clinton, MD"
     }
   ]
 }

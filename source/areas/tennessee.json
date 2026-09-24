@@ -286,6 +286,31 @@
       "date": "2026-09-24",
       "visible_address": "315 North Washington Avenue, Suite 255, Cookeville, TN 38501",
       "visible_city": "Cookeville"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "tn_jackson",
+      "location_id": "",
+      "name": "BHG Jackson Adult Intensive Outpatient",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Jackson Tennessee adult intensive outpatient BHG",
+      "source_url": "https://www.tn.gov/behavioral-health/substance-abuse-services/treatment/treatmentprovidercontact.html/",
+      "task": "Tennessee treatment-provider directory lists adult intensive outpatient; confirm provider name, current address, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "109 East Lafayette Street, Jackson, TN 38301",
+      "visible_city": "Jackson, TN"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "tn_clarksville",
+      "location_id": "",
+      "name": "Clarksville Rehab Intensive Outpatient Program",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Clarksville Tennessee intensive outpatient program",
+      "source_url": "https://clarksvillerehab.com/treatment/intensive-outpatient/",
+      "task": "Confirm current physical treatment address, IOP/PHP services, and operating status.",
+      "date": "2026-09-24",
+      "visible_city": "Clarksville, TN"
     }
   ]
 }

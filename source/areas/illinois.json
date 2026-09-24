@@ -448,6 +448,58 @@
       "date": "2026-09-24",
       "visible_address": "330 SW Adams Street, Peoria, IL 61602",
       "visible_city": "Peoria"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "il_bloomington_normal",
+      "location_id": "",
+      "name": "Alpharus Health Bloomington",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Bloomington Illinois IOP Alpharus Health",
+      "source_url": "https://www.alpharushealth.org/",
+      "task": "Joint Commission listing identifies IOP at this Bloomington site; confirm current provider page and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "404 North Hershey Road, Suite C, Bloomington, IL 61704",
+      "visible_city": "Bloomington, IL"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "il_peoria",
+      "location_id": "",
+      "name": "Alpharus Health Peoria",
+      "priority": "normal",
+      "discovery_query": "Google start=10: Peoria Illinois IOP Alpharus Health",
+      "source_url": "https://www.alpharushealth.org/locations/",
+      "task": "Joint Commission listing identifies IOP at this Peoria site; confirm current provider page and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "4812 North Sheridan Road, Peoria, IL 61614",
+      "visible_city": "Peoria, IL"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "il_rockford",
+      "location_id": "",
+      "name": "Rosecrance Rockford PHP/IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Rockford Illinois intensive outpatient program IOP PHP behavioral health address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/837/",
+      "task": "Confirm current PHP/IOP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "3815 Harrison Avenue, Rockford, IL 61108",
+      "visible_city": "Rockford, IL"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "il_springfield",
+      "location_id": "",
+      "name": "Hopewell Clinical Springfield IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Springfield Illinois intensive outpatient program IOP PHP behavioral health address",
+      "source_url": "https://everlighthealth.org/hopewell-clinical-springfield-springfield-il/",
+      "task": "Confirm current intensive outpatient service and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "801 East Lawrence Avenue, Springfield, IL 62703",
+      "visible_city": "Springfield, IL"
     }
   ]
 }

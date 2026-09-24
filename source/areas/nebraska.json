@@ -141,6 +141,32 @@
       "task": "Current Nebraska Region 5 materials identify intensive outpatient treatment at the Lincoln office, 3901 Normal Blvd, Suite 201; verify the current site-level IOP schedule and obtain an official local PNG before shortlist inclusion.",
       "source_url": "https://veterans.nebraska.gov/behavioral-health-region-5",
       "date": "2026-09-22"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ne_omaha",
+      "location_id": "",
+      "name": "Nebraska Medicine Addiction IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Omaha Nebraska IOP Nebraska Medicine addiction",
+      "source_url": "https://www.nebraskamed.com/behavioral-health/addiction/intensive-outpatient-program/",
+      "task": "Confirm current physical treatment address and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "42nd and Emile Street, Omaha, NE 68105",
+      "visible_city": "Omaha, NE"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ne_omaha",
+      "location_id": "",
+      "name": "Children's Nebraska Behavioral Health PHP",
+      "priority": "normal",
+      "discovery_query": "Google start=10: Omaha Nebraska PHP Children's Nebraska behavioral health",
+      "source_url": "https://www.childrensnebraska.org/specialties/behavioral-health-partial-hospitalization/",
+      "task": "Confirm current adolescent PHP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "8550 Indian Hills Drive, Omaha, NE 68114",
+      "visible_city": "Omaha, NE"
     }
   ]
 }

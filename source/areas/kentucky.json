@@ -141,6 +141,45 @@
       "task": "The current official site confirms a women's IOP with housing and a community-impact intensive outpatient program in Lexington, but the current page gives only the Leestown Center Way campus label while older public records cite conflicting street addresses. Verify the exact treatment entrance and acquire an official local PNG before publication.",
       "source_url": "https://www.shepherdshouseinc.com/",
       "date": "2026-09-22"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ky_lexington",
+      "location_id": "",
+      "name": "Mountain Comprehensive Care Lexington",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Lexington Kentucky IOP Mountain Comprehensive Care",
+      "source_url": "https://www.mtcomp.org/zandale/",
+      "task": "Confirm current intensive outpatient treatment and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "152 West Zandale Drive, Lexington, KY 40503",
+      "visible_city": "Lexington, KY"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ky_lexington",
+      "location_id": "",
+      "name": "Primary Purpose Behavioral Health Lexington",
+      "priority": "normal",
+      "discovery_query": "Google start=10: Lexington Kentucky IOP Primary Purpose Behavioral Health",
+      "source_url": "https://www.primarypurposebehavioralhealth.com/",
+      "task": "Confirm current IOP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "715 Shaker Drive, Suite 80, Lexington, KY 40504",
+      "visible_city": "Lexington, KY"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ky_louisville",
+      "location_id": "",
+      "name": "ARCH To Freedom Louisville IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Louisville Kentucky IOP ARCH To Freedom",
+      "source_url": "https://archtofreedom.com/",
+      "task": "Kentucky DOC provider directory lists IOP; confirm current provider page and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "1229 Arcade Avenue, Louisville, KY 40215",
+      "visible_city": "Louisville, KY"
     }
   ]
 }

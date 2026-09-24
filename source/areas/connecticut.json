@@ -171,6 +171,84 @@
       "task": "Official provider page describes Stamford PHP/IOP for young adults; verify exact site address and current operating status.",
       "date": "2026-09-24",
       "visible_city": "Stamford"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ct-danbury-western",
+      "location_id": "",
+      "name": "Danbury Hospital Psychiatry and Behavioral Health IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Danbury Connecticut IOP PHP Danbury Hospital",
+      "source_url": "https://portal.ct.gov/dmhas/wcmhn/agency-files/wcmhn-danbury/",
+      "task": "State DMHAS materials identify a Danbury IOP; confirm current hospital program, exact treatment address, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "152 West Street, Danbury, CT 06810",
+      "visible_city": "Danbury, CT"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ct-central-hartford",
+      "location_id": "",
+      "name": "Wheeler Health Hartford IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Hartford Connecticut IOP Wheeler Health",
+      "source_url": "https://www.wheelerhealth.org/get-care/behavioral-health/intensive-outpatient-programs/",
+      "task": "Confirm current substance-use IOP schedule, full ZIP, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "43 Woodland Street, Hartford, CT",
+      "visible_city": "Hartford, CT"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ct-waterbury",
+      "location_id": "",
+      "name": "Waterbury Hospital Behavioral Health and Addiction Services",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Waterbury Connecticut IOP Wellmore Behavioral Health",
+      "source_url": "https://www.waterburyhospital.org/locations/waterbury-health-behavioral-health-and-addiction-services/",
+      "task": "State treatment directory identifies local adult co-occurring IOP; confirm current hospital program, exact address, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "64 Robbins Street, Waterbury, CT 06708",
+      "visible_city": "Waterbury, CT"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ct-eastern-shoreline",
+      "location_id": "",
+      "name": "Natchaug Hospital Care Plus Groton Adult IOP/PHP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: New London Norwich Groton Connecticut intensive outpatient program IOP PHP address",
+      "source_url": "https://www.natchaug.org/",
+      "task": "Confirm current adult IOP/PHP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "1353 Gold Star Highway, Groton, CT 06340",
+      "visible_city": "Groton, CT"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ct-lower-fairfield",
+      "location_id": "",
+      "name": "Greenwich Hospital Stamford IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Stamford Greenwich Norwalk Connecticut intensive outpatient program IOP PHP address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/5666/726151/",
+      "task": "Confirm current IOP service and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "2015 West Main Street, Stamford, CT 06905",
+      "visible_city": "Stamford, CT"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ct-eastern-shoreline",
+      "location_id": "",
+      "name": "SCADD New London Adult IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=10: New London Norwich Groton Connecticut intensive outpatient program IOP PHP address",
+      "source_url": "https://scadd.org/treatment-services/outpatient-services-2/",
+      "task": "Confirm current adult IOP service and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "932 Bank Street, New London, CT 06320",
+      "visible_city": "New London, CT"
     }
   ]
 }

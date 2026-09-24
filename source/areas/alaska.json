@@ -325,6 +325,32 @@
       "date": "2026-09-24",
       "visible_address": "3050 5th Avenue, Suite 100, Ketchikan, AK 99901",
       "visible_city": "Ketchikan"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ak-anchorage",
+      "location_id": "",
+      "name": "Uris Hall Anchorage",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Anchorage Alaska IOP PHP Uris Hall",
+      "source_url": "https://www.jointcommission.org/en/accreditation/behavioral-health-care-and-human-services/provider-locator/661655/739124/",
+      "task": "Confirm current IOP/PHP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "5000 Taku Drive, Anchorage, AK 99508",
+      "visible_city": "Anchorage, AK"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ak-bristol-bay",
+      "location_id": "",
+      "name": "Bristol Bay Area Health Corporation IOP/PHP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Dillingham Alaska Bristol Bay intensive outpatient program behavioral health",
+      "source_url": "https://www.jointcommission.org/en/accreditation/behavioral-health-care-and-human-services/provider-locator/10215/89658/",
+      "task": "Confirm current IOP/PHP service, treatment entrance, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "6000 Kanakanak Road, Dillingham, AK 99576",
+      "visible_city": "Dillingham, AK"
     }
   ]
 }

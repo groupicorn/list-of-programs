@@ -143,6 +143,19 @@
       "date": "2026-09-24",
       "visible_address": "85 Mechanic Street, Suite 3-B1, Lebanon, NH 03766",
       "visible_city": "Lebanon"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nh_manchester",
+      "location_id": "",
+      "name": "The Elliot Manchester PHP IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Manchester New Hampshire PHP IOP Elliot Hospital",
+      "source_url": "https://www.elliothospital.org/services/browse-all-services/substance-use-disorder-services/partial-hospitalization-program-and-intensive-outpatient-program/",
+      "task": "Confirm current PHP/IOP services, exact treatment entrance, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "300 Hanover Street, Manchester, NH 03104",
+      "visible_city": "Manchester, NH"
     }
   ]
 }
