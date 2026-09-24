@@ -42,29 +42,35 @@ For each city, metro, county, or other area, search several variants:
 
 Use Google, Bing, or another major search engine. In Google, start at the
 normal results URL and walk the result pages with `start=0,10,20,...,90` (or
-the Next control). Keep the query and page offset with each captured result;
-do not assume that one page or one query is representative. Review up to 10
+the Next control). Keep the exact query, engine, page offset, and discovery
+date with each captured result; include the offset in `--query` when using the
+CLI. Do not assume that one page or one query is representative. Review up to 10
 pages per query, or all available pages when an engine exposes fewer. If the
 interface returns a flat result list, review about the first 100 distinct
-results. Continue across city, county, IOP, PHP, mental-health, and
-substance-use variants until the area has nine distinct groups or several
-consecutive pages only repeat known results. Deduplicate exact URLs, branches,
-and provider groups before counting coverage. Do not spend the initial pass on
+results and document the page/offset convention used. Continue across city,
+county, IOP, PHP, mental-health, and substance-use variants until the area has
+nine distinct groups or several consecutive pages only repeat known results.
+For a state-wide breadth pass, continue across areas until roughly 100
+plausible distinct leads are captured. Deduplicate exact URLs, branches, and
+provider groups before counting coverage. Do not spend the initial pass on
 exhaustive source comparison, logo cleanup, phone calls, or intake research.
 
-For each lead, preserve the result URL, query, search engine, date, visible
-city/address, apparent care level, and uncertainty. Put unresolved leads in
-`research_queue` or mark them `discovery_lead`/`pending` in source. Deduplicate
-obvious branches and repeats. Exclude only clear mismatches such as virtual-only
-results when local care is required, out-of-state results, ordinary therapy, or
-inpatient/residential-only services.
+For each lead, preserve the result URL, query, search engine, page offset, date,
+visible city/address, apparent care level, and uncertainty. Put unresolved
+leads in `research_queue` or mark them `discovery_lead`/`pending` in source.
+Deduplicate obvious branches and repeats. Assign the lead to the area of its
+actual treatment address when known; otherwise queue the location for follow-up.
+Exclude only clear mismatches such as virtual-only results when local care is
+required, out-of-state results, ordinary therapy, or inpatient/residential-only
+services.
 
 For a fast Google capture, use the queue helper; it writes the source record and
 rebuilds the state automatically:
 
 ```sh
 ./directory add-lead wisconsin wi_madison "Provider Name" "https://example.com/iop" \
-  --query "Madison Wisconsin IOP" --city Madison --address "123 Main Street"
+  --query "Google start=0 | Madison Wisconsin IOP" --city Madison \
+  --address "123 Main Street"
 ```
 
 Only the name, valid area, and result URL are required. Treat the generated row

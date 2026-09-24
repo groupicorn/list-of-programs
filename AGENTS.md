@@ -32,19 +32,26 @@ because every lead is not yet perfect.
    `[city] mental health IOP`, `[city] addiction IOP`, and similar variants.
 3. Paginate Google deliberately. For each query, open the normal result page
    and then request the next pages with `start=0,10,20,...,90` (or use the
-   engine's Next control), recording the query and page offset for every lead.
+   engine's Next control). Record the exact query, engine, page offset, and
+   discovery date with every lead; include the offset in the `--query` value
+   when using `./directory add-lead` (for example, `Google start=20`).
    Review up to ten pages per query, or all available pages when an engine
    exposes fewer. If the interface returns a flat result list, review roughly
-   the first 100 distinct results. Continue across query variants until the
-   area has nine distinct groups or several consecutive pages only repeat known
-   results. Do not treat a result count as coverage until exact duplicates and
-   obvious mismatches have been removed.
+   the first 100 distinct results and record the page/offset convention used.
+   Continue across query variants until the area has nine distinct groups or
+   several consecutive pages only repeat known results. A state-wide breadth
+   pass may continue across areas until roughly 100 plausible distinct leads
+   are captured. Do not treat a result count as coverage until exact duplicates
+   and obvious mismatches have been removed.
 4. Deduplicate obvious branches and exact repeats. Exclude only obvious
    virtual-only, out-of-state, non-IOP/PHP, and inpatient/residential-only
    results during discovery.
 5. Store incomplete results as `discovery_lead` or `pending` records and put
    unresolved follow-up in the area's `research_queue`. Record the result URL,
-   search query, search engine, date, visible city/address, and uncertainty.
+   search query, search engine and page offset, date, visible city/address, and
+   uncertainty. Do not assign an area only because the result mentions that
+   area; use the visible treatment address when one is available and queue
+   the location when it is not.
 6. Rebuild and validate the affected state.
 
 A search result can be counted toward the initial discovery target without being
