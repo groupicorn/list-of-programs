@@ -203,6 +203,56 @@
       "priority": "low",
       "task": "Run an audited geocoding pass and record coordinates plus coordinate sources.",
       "source_url": ""
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "id_idaho_falls_eastern_idaho",
+      "location_id": "",
+      "name": "Cornerstone Wellness & Recovery",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Idaho Falls IOP PHP",
+      "source_url": "https://cornerstonewellnessandrecovery.com/",
+      "task": "Official provider page identifies PHP/IOP; verify exact physical address and current status.",
+      "date": "2026-09-24",
+      "visible_city": "Idaho Falls"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "id_idaho_falls_eastern_idaho",
+      "location_id": "",
+      "name": "Eastern Idaho Regional Medical Center",
+      "priority": "normal",
+      "discovery_query": "Google start=10 Idaho Falls IOP PHP",
+      "source_url": "https://www.eirmc.com/specialties/mental-health-and-wellness/adult-mental-health-and-wellness/",
+      "task": "Official hospital page identifies adult IOP; verify current program details.",
+      "date": "2026-09-24",
+      "visible_address": "3100 Channing Way, Idaho Falls, ID 83404",
+      "visible_city": "Idaho Falls"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "id_pocatello_southeast_idaho",
+      "location_id": "",
+      "name": "TruPaths Pocatello",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Idaho Pocatello IOP PHP",
+      "source_url": "https://www.trupaths.com/programs/idaho/pocatello/pocatello-iop-or-php/",
+      "task": "Official page identifies Pocatello IOP/PHP; verify operating provider and address.",
+      "date": "2026-09-24",
+      "visible_city": "Pocatello"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "id_twin_falls_magic_valley",
+      "location_id": "",
+      "name": "Innovative Health Care Concepts",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Idaho Twin Falls IOP PHP",
+      "source_url": "https://ihccinc.com/locations/",
+      "task": "Official locations page identifies local office; verify IOP/PHP level before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "300 2nd Ave. East, Twin Falls, ID 83301",
+      "visible_city": "Twin Falls"
     }
   ]
 }

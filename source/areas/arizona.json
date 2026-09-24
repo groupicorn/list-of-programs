@@ -232,6 +232,32 @@
       "task": "Official IOP page; verify exact treatment address and current status.",
       "date": "2026-09-24",
       "visible_city": "Phoenix"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "az-flagstaff-northern",
+      "location_id": "",
+      "name": "Southwest Behavioral Health - Flagstaff",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Arizona Flagstaff IOP PHP",
+      "source_url": "https://carf.org/provider/southwest-behavioral-health-services-dba-southwest-behavioral-health-services-27366/",
+      "task": "CARF listing identifies Flagstaff outpatient site; verify current IOP/PHP services.",
+      "date": "2026-09-24",
+      "visible_address": "1515 East Cedar, Flagstaff, AZ 86004",
+      "visible_city": "Flagstaff"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "az-prescott",
+      "location_id": "",
+      "name": "Summit Behavioral Health of Arizona",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Arizona Prescott IOP PHP",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/603845/",
+      "task": "Joint Commission listing identifies outpatient/IOP service; verify current local program.",
+      "date": "2026-09-24",
+      "visible_address": "1989 Willow Lake Road, Prescott, AZ 86301",
+      "visible_city": "Prescott"
     }
   ]
 }
