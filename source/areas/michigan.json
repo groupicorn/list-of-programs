@@ -335,6 +335,45 @@
       "task": "Find and verify physical IOP/PHP sites in Marquette and other realistic Upper Peninsula hubs; distinguish local programs from residential or virtual-only services.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-22"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mi_marquette",
+      "location_id": "",
+      "name": "UP Health System - Marquette Behavioral Health IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Marquette Michigan IOP PHP intensive outpatient behavioral health current address",
+      "source_url": "https://www.uphealthsystem.com/behavioral-health/intensive-outpatient-program/",
+      "task": "Confirm current IOP schedule, intake, and operating status; current provider page identifies the local adult IOP.",
+      "date": "2026-09-24",
+      "visible_address": "1400 W. Washington St., Marquette, MI 49855",
+      "visible_city": "Marquette"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mi_marquette",
+      "location_id": "",
+      "name": "Great Lakes Recovery Centers Marquette Outpatient",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Marquette Michigan second IOP PHP provider current address",
+      "source_url": "https://www.glrc.org/locations/",
+      "task": "Confirm current IOP/PHP level, schedule, intake, and operating status; current provider locations page identifies the Marquette outpatient site.",
+      "date": "2026-09-24",
+      "visible_address": "1009 W. Ridge Street, Suite C, Marquette, MI 49855",
+      "visible_city": "Marquette"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mi_traverse_city",
+      "location_id": "",
+      "name": "Munson Behavioral Health Services",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Traverse City Michigan IOP PHP intensive outpatient behavioral health current address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/7598/391075/",
+      "task": "Confirm current IOP/PHP schedule, intake, and operating status; current Joint Commission listing identifies both levels.",
+      "date": "2026-09-24",
+      "visible_address": "4320 Copper Ridge Drive, Traverse City, MI 49684",
+      "visible_city": "Traverse City"
     }
   ]
 }

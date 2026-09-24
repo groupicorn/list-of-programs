@@ -158,6 +158,19 @@
       "task": "Official provider homepage describes adult mental-health IOP in Baton Rouge; verify exact physical address and current intake status.",
       "date": "2026-09-24",
       "visible_city": "Baton Rouge"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "la_new_orleans",
+      "location_id": "",
+      "name": "Imagine Recovery New Orleans LLC",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | New Orleans Louisiana IOP PHP intensive outpatient behavioral health current address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/688129/",
+      "task": "Confirm current PHP/IOP schedule, intake, and operating status; current Joint Commission listing identifies both levels.",
+      "date": "2026-09-24",
+      "visible_address": "1476 Magazine St., New Orleans, LA 70130",
+      "visible_city": "New Orleans"
     }
   ]
 }

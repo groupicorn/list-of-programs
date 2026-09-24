@@ -213,6 +213,44 @@
       "date": "2026-09-24",
       "visible_address": "98 Cumberland Street, Bangor, ME 04401",
       "visible_city": "Bangor"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "me_bangor",
+      "location_id": "",
+      "name": "Northern Light Adult Behavioral Health",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Bangor Maine intensive outpatient behavioral health provider current",
+      "source_url": "https://northernlighthealth.org/Our-System/Acadia-Hospital/Locations/Adult-Behavioral-Health/",
+      "task": "Confirm current adult IOP schedule, intake, age eligibility, and operating status; current provider page lists adult intensive outpatient care.",
+      "date": "2026-09-24",
+      "visible_address": "268 Stillwater Avenue, Bangor, ME 04401",
+      "visible_city": "Bangor"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "me_biddeford_saco",
+      "location_id": "",
+      "name": "Portland Treatment Biddeford",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Biddeford Saco Maine IOP PHP intensive outpatient behavioral health current address",
+      "source_url": "https://portlandtreatment.com/contact/",
+      "task": "Confirm current PHP/IOP schedule, intake, and operating status; current provider page identifies both levels.",
+      "date": "2026-09-24",
+      "visible_address": "6 Digital Drive, Biddeford, ME 04005",
+      "visible_city": "Biddeford"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "me_biddeford_saco",
+      "location_id": "",
+      "name": "MaineHealth Behavioral Health Outpatient Services Main St Biddeford",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Biddeford Maine second IOP PHP provider current address",
+      "source_url": "https://www.mainehealth.org/care-services/behavioral-health-care/substance-use-disorder-care/outpatient-substance-use-disorder-care-mainehealth-behavioral-health/",
+      "task": "Confirm current physical address, PHP/IOP schedule, intake, and operating status; current MaineHealth page identifies both structured levels in Biddeford.",
+      "date": "2026-09-24",
+      "visible_city": "Biddeford"
     }
   ]
 }

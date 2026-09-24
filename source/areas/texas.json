@@ -642,6 +642,19 @@
       "date": "2026-09-24",
       "visible_address": "1500 8th Street, Wichita Falls, TX 76301",
       "visible_city": "Wichita Falls"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "abilene",
+      "location_id": "",
+      "name": "Oceans Behavioral Hospital of Abilene",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Abilene Texas IOP PHP intensive outpatient behavioral health current address",
+      "source_url": "https://www.jointcommission.org/en/accreditation/behavioral-health-care-and-human-services/provider-locator/543164/544250/",
+      "task": "Confirm current IOP/PHP schedule, intake, and operating status; current Joint Commission listing identifies both levels.",
+      "date": "2026-09-24",
+      "visible_address": "4225 Woods Place, Abilene, TX 79602",
+      "visible_city": "Abilene"
     }
   ]
 }

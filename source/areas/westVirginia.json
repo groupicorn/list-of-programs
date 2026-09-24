@@ -154,6 +154,31 @@
       "date": "2026-09-24",
       "visible_address": "1303 Washington St. W., Charleston, WV 25302",
       "visible_city": "Charleston"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wv_charleston",
+      "location_id": "",
+      "name": "Prestera Health Services",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Charleston WV intensive outpatient services provider 2026",
+      "source_url": "https://prestera.org/locations/kanawha-county/",
+      "task": "Confirm current IOP schedule, intake, and operating status; current provider location page identifies Dynamic Choices intensive outpatient services.",
+      "date": "2026-09-24",
+      "visible_address": "511 Morris Street, Charleston, WV 25301",
+      "visible_city": "Charleston"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wv_charleston",
+      "location_id": "",
+      "name": "Union Mission Behavioral Health Center",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Charleston West Virginia IOP provider current address Prestera Union Mission",
+      "source_url": "https://umbhc.org/",
+      "task": "Confirm current physical treatment address and IOP schedule; current provider site describes adult intensive outpatient services in Charleston.",
+      "date": "2026-09-24",
+      "visible_city": "Charleston"
     }
   ]
 }

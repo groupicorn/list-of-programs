@@ -377,6 +377,19 @@
       "task": "Official provider page lists intensive outpatient treatment at the Youngstown Donofrio Center; verify exact address and current schedule.",
       "date": "2026-09-24",
       "visible_city": "Youngstown"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "oh_columbus",
+      "location_id": "",
+      "name": "Access Ohio Columbus North",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Columbus Ohio IOP PHP intensive outpatient behavioral health current address",
+      "source_url": "https://accessoh.com/locations/columbus-north/",
+      "task": "Confirm current IOP/PHP schedule, intake, and operating status; current provider location page identifies both levels.",
+      "date": "2026-09-24",
+      "visible_address": "8100 Ravines Edge Court, Suite 200, Columbus, OH 43235",
+      "visible_city": "Columbus"
     }
   ]
 }

@@ -312,6 +312,19 @@
       "date": "2026-09-24",
       "visible_address": "201 Deermount Street, Second Floor, Ketchikan, AK 99901",
       "visible_city": "Ketchikan"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ak-ketchikan-southeast",
+      "location_id": "",
+      "name": "SEARHC Comprehensive Addiction Services at Ketchikan RISE Wellness Center",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Ketchikan Alaska RISE Wellness Center intensive outpatient treatment address",
+      "source_url": "https://searhc.org/facilities/comprehensive-addiction-services-ketchikan-rise/",
+      "task": "Confirm current IOP schedule, intake, and operating status; current SEARHC page identifies the local addiction services site and outpatient treatment.",
+      "date": "2026-09-24",
+      "visible_address": "3050 5th Avenue, Suite 100, Ketchikan, AK 99901",
+      "visible_city": "Ketchikan"
     }
   ]
 }

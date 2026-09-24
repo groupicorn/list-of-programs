@@ -435,6 +435,19 @@
       "date": "2026-09-24",
       "visible_address": "505 South 8th Street, East St. Louis, IL 62201",
       "visible_city": "East St. Louis"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "il_peoria",
+      "location_id": "",
+      "name": "OSF HealthCare Saint Francis Medical Center Behavioral Health",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Peoria Illinois IOP PHP behavioral health provider 2026 current",
+      "source_url": "https://www.osfcareers.org/jobs/108222/",
+      "task": "Confirm current PHP/IOP program location, intake, and operating status; current OSF listing references the Saint Francis Medical Center PHP/IOP program.",
+      "date": "2026-09-24",
+      "visible_address": "330 SW Adams Street, Peoria, IL 61602",
+      "visible_city": "Peoria"
     }
   ]
 }

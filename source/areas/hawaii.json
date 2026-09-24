@@ -259,6 +259,58 @@
       "date": "2026-09-24",
       "visible_address": "91-1841 Fort Weaver Road, Ewa Beach, HI 96706",
       "visible_city": "Ewa Beach"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "hi-hawaii-east",
+      "location_id": "",
+      "name": "Big Island Substance Abuse Council",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Big Island Substance Abuse Council Hilo IOP current address",
+      "source_url": "https://www.bisac.org/contact/",
+      "task": "Confirm current IOP schedule, intake, and operating status; current provider contact page identifies Hilo outpatient site; state directory identifies IOP.",
+      "date": "2026-09-24",
+      "visible_address": "297 Waianuenue Avenue, Hilo, HI 96720",
+      "visible_city": "Hilo"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "hi-hawaii-west",
+      "location_id": "",
+      "name": "CARE Hawaii, Inc.",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Kona Hawaii IOP PHP Big Island Substance Abuse Council current address",
+      "source_url": "https://www.carehawaii.com/services/",
+      "task": "Confirm current IOP schedule, intake, and operating status; current Hawaii provider directory identifies Kona intensive outpatient services.",
+      "date": "2026-09-24",
+      "visible_address": "74-5620 Palani Road, Suite 118, Kailua-Kona, HI 96740",
+      "visible_city": "Kailua-Kona"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "hi-molokai",
+      "location_id": "",
+      "name": "Ka Hale Pomaika‘i",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Molokai Kaunakakai Ka Hale Pomaikai intensive outpatient official",
+      "source_url": "https://kahalepomaikai.org/",
+      "task": "Confirm current IOP schedule, exact treatment address, and operating status; current provider site identifies intensive outpatient recovery programming.",
+      "date": "2026-09-24",
+      "visible_address": "225 Makaena Pl., Kaunakakai, HI 96748",
+      "visible_city": "Kaunakakai"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "hi-molokai",
+      "location_id": "",
+      "name": "Molokai Community Health Center",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Molokai Community Health Center intensive outpatient program",
+      "source_url": "https://www.molokaichc.org/getting-care/behavioral-health-services/",
+      "task": "Confirm whether the current behavioral health clinic offers IOP/PHP; current provider page confirms in-person behavioral health at a local physical site.",
+      "date": "2026-09-24",
+      "visible_address": "30 Oki Place, Kaunakakai, HI 96748",
+      "visible_city": "Kaunakakai"
     }
   ]
 }

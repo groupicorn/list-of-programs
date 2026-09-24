@@ -162,6 +162,32 @@
       "date": "2026-09-24",
       "visible_address": "1713 McNaughton Way, Spencer, IA 51301",
       "visible_city": "Spencer"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ia_des_moines",
+      "location_id": "",
+      "name": "Pasadena Villa Outpatient Des Moines",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Des Moines Iowa IOP PHP intensive outpatient behavioral health current address",
+      "source_url": "https://pasadenavillaoutpatient.com/locations/des-moines/",
+      "task": "Confirm current PHP/IOP schedule, intake, and operating status; current provider page identifies both levels.",
+      "date": "2026-09-24",
+      "visible_address": "4500 Westown Pkwy #120, West Des Moines, IA 50266",
+      "visible_city": "West Des Moines"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ia_iowa_city",
+      "location_id": "",
+      "name": "University of Iowa Addiction and Recovery Collaborative",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Iowa City Iowa IOP PHP intensive outpatient behavioral health current address",
+      "source_url": "https://uiarc.uiowa.edu/patient-care-services/",
+      "task": "Confirm current PHP/IOP schedule, intake, and operating status; current university page identifies both levels.",
+      "date": "2026-09-24",
+      "visible_address": "200 Hawkins Drive, Iowa City, IA 52242",
+      "visible_city": "Iowa City"
     }
   ]
 }

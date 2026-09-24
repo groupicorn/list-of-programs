@@ -130,6 +130,19 @@
       "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-21"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nh_lebanon",
+      "location_id": "",
+      "name": "Dartmouth Hitchcock Lebanon Addiction Treatment Program",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Lebanon New Hampshire IOP PHP intensive outpatient behavioral health current address",
+      "source_url": "https://www.dartmouth-hitchcock.org/psychiatry/addiction-psychiatry/",
+      "task": "Confirm current adult IOP schedule, intake, and operating status; current Dartmouth page identifies the Lebanon IOP.",
+      "date": "2026-09-24",
+      "visible_address": "85 Mechanic Street, Suite 3-B1, Lebanon, NH 03766",
+      "visible_city": "Lebanon"
     }
   ]
 }

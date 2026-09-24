@@ -237,6 +237,71 @@
       "date": "2026-09-24",
       "visible_address": "414 South Walnut Street, Pine Bluff, AR 71601",
       "visible_city": "Pine Bluff"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ar-fort-smith-river-valley",
+      "location_id": "",
+      "name": "ACTSS, A Common Thread Supportive Services Inc.",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Fort Smith Arkansas IOP PHP official provider address Joint Commission",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/744869/745190/",
+      "task": "Confirm current IOP/PHP schedule, intake, and operating status; current Joint Commission listing identifies both levels.",
+      "date": "2026-09-24",
+      "visible_address": "821 N 10th St, Fort Smith, AR 72901",
+      "visible_city": "Fort Smith"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ar-hot-springs",
+      "location_id": "",
+      "name": "Adult and Teen Challenge of Arkansas",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Hot Springs Arkansas IOP PHP official provider address Joint Commission",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/689296/",
+      "task": "Confirm current IOP/PHP schedule, intake, and operating status; current Joint Commission listing identifies both levels.",
+      "date": "2026-09-24",
+      "visible_address": "1679 N Hwy 7, Hot Springs Village, AR 71909",
+      "visible_city": "Hot Springs Village"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ar-little-rock-central",
+      "location_id": "",
+      "name": "Freshly Renewed Transitional Treatment",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Little Rock Arkansas IOP PHP official provider address Joint Commission",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/655061/655762/",
+      "task": "Confirm current IOP/PHP schedule, intake, and operating status; current Joint Commission listing identifies both levels.",
+      "date": "2026-09-24",
+      "visible_address": "8404 Baseline Rd, Little Rock, AR 72209",
+      "visible_city": "Little Rock"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ar-northwest",
+      "location_id": "",
+      "name": "Time Wellness AR LLC",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Fayetteville Springdale Arkansas IOP PHP current provider address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/702722/",
+      "task": "Confirm current IOP/PHP schedule, intake, and operating status; current Joint Commission listing identifies both levels.",
+      "date": "2026-09-24",
+      "visible_address": "4220 North Crossover Rd, Suite 102, Fayetteville, AR 72703",
+      "visible_city": "Fayetteville"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ar-texarkana-southwest",
+      "location_id": "",
+      "name": "Vital Steps Recovery",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Texarkana Arkansas IOP PHP current provider address",
+      "source_url": "https://vsrecovery.com/intensive-outpatient-program/",
+      "task": "Confirm current IOP schedule, intake, and operating status; current provider page identifies Texarkana IOP.",
+      "date": "2026-09-24",
+      "visible_address": "300 Olive St, Suite 507, Texarkana, AR 71854",
+      "visible_city": "Texarkana"
     }
   ]
 }

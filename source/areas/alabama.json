@@ -289,6 +289,32 @@
       "task": "Confirm exact current street address and operating status; current treatment directory identifies a Dothan IOP but search result did not expose the street address.",
       "date": "2026-09-24",
       "visible_city": "Dothan"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "al-cullman",
+      "location_id": "",
+      "name": "TTC LLC / Bradford Health Services Cullman",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Cullman Alabama IOP PHP intensive outpatient behavioral health current address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/631697/",
+      "task": "Confirm current IOP schedule, intake, and operating status; current Joint Commission listing identifies Cullman IOP.",
+      "date": "2026-09-24",
+      "visible_address": "1912 Commerce Avenue NW, Cullman, AL 35055",
+      "visible_city": "Cullman"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "al-tuscaloosa",
+      "location_id": "",
+      "name": "Bradford Health Services - Warrior",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Tuscaloosa Alabama IOP PHP current provider address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/3445/726748/",
+      "task": "Confirm current PHP schedule, intake, and operating status; current Joint Commission listing identifies Tuscaloosa PHP.",
+      "date": "2026-09-24",
+      "visible_address": "6834 Alabama Highway 69, Suite 200, Tuscaloosa, AL 35405",
+      "visible_city": "Tuscaloosa"
     }
   ]
 }

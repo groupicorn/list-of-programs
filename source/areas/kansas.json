@@ -131,6 +131,32 @@
       "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-21"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ks_lawrence",
+      "location_id": "",
+      "name": "Lawrence Recovery LLC",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Lawrence Kansas IOP PHP intensive outpatient behavioral health current address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/719123/734351/",
+      "task": "Confirm current PHP/IOP schedule, intake, and operating status; current Joint Commission listing identifies both levels.",
+      "date": "2026-09-24",
+      "visible_address": "801 Iowa, Lawrence, KS 66044",
+      "visible_city": "Lawrence"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ks_lawrence",
+      "location_id": "",
+      "name": "Bert Nash Community Mental Health Center",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Lawrence Kansas second IOP PHP provider current address",
+      "source_url": "https://www.bertnash.org/therapy/",
+      "task": "Confirm current IOP schedule, intake, and operating status; current provider page identifies an intensive outpatient program.",
+      "date": "2026-09-24",
+      "visible_address": "200 Maine Street, Suite A, Lawrence, KS 66044",
+      "visible_city": "Lawrence"
     }
   ]
 }

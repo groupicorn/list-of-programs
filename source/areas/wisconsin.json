@@ -1529,6 +1529,19 @@
       "date": "2026-09-24",
       "visible_address": "482 Oak Street",
       "visible_city": "Berlin"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wi_wautoma",
+      "location_id": "",
+      "name": "Noble Community Clinic Wautoma",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Wautoma Wisconsin IOP PHP intensive outpatient behavioral health current address",
+      "source_url": "https://www.nobleclinics.org/",
+      "task": "Confirm current intensive outpatient treatment schedule, intake, and operating status; current Wisconsin DHS directory identifies certified intensive outpatient treatment at this site.",
+      "date": "2026-09-24",
+      "visible_address": "400 S Townline Road, Wautoma, WI 54982",
+      "visible_city": "Wautoma"
     }
   ]
 }

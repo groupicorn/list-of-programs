@@ -398,6 +398,45 @@
       "date": "2026-09-24",
       "visible_address": "2215 Hualapai Mountain Road, Suite H, Kingman, AZ 86401",
       "visible_city": "Kingman"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "az-pinal-casa-grande",
+      "location_id": "",
+      "name": "Horizon Health and Wellness, Inc.",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Casa Grande Arizona IOP PHP intensive outpatient behavioral health current address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/590831/598038/",
+      "task": "Confirm current IOP schedule, intake, and operating status; current Joint Commission listing identifies Casa Grande IOP.",
+      "date": "2026-09-24",
+      "visible_address": "210 E. Cottonwood Lane, Casa Grande, AZ 85122",
+      "visible_city": "Casa Grande"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "az-prescott",
+      "location_id": "",
+      "name": "Decision Point, LLC",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Prescott Arizona IOP PHP intensive outpatient behavioral health current address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/573915/",
+      "task": "Confirm current IOP/PHP schedule, intake, and operating status; current Joint Commission listing identifies both levels at this address.",
+      "date": "2026-09-24",
+      "visible_address": "505 West Whipple St., Prescott, AZ 86301",
+      "visible_city": "Prescott"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "az-west-valley",
+      "location_id": "",
+      "name": "Horizon Recovery Outpatient Arrowhead",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Glendale Peoria Arizona IOP PHP current provider address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/691357/",
+      "task": "Confirm current IOP/PHP schedule, intake, and operating status; current Joint Commission listing identifies both levels.",
+      "date": "2026-09-24",
+      "visible_address": "5940 W Union Hills Dr, Glendale, AZ 85308",
+      "visible_city": "Glendale"
     }
   ]
 }

@@ -270,6 +270,19 @@
       "task": "Current provider pages announce a Columbia outpatient center with IOP; verify exact street address and current intake/program status.",
       "date": "2026-09-24",
       "visible_city": "Columbia"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mo_southeast_missouri",
+      "location_id": "",
+      "name": "Gibson Center for Behavioral Change",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Cape Girardeau Missouri IOP PHP intensive outpatient behavioral health current address",
+      "source_url": "https://gibson-center.com/services/outpatient/",
+      "task": "Confirm current IOP schedule, intake, exact active site, and operating status; current Missouri certification listing identifies intensive outpatient rehabilitation.",
+      "date": "2026-09-24",
+      "visible_address": "340 S Broadview St, Cape Girardeau, MO 63703",
+      "visible_city": "Cape Girardeau"
     }
   ]
 }

@@ -191,6 +191,45 @@
       "date": "2026-09-24",
       "visible_address": "9025 Grant Street, Thornton, CO 80229",
       "visible_city": "Thornton"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "co-western-slope",
+      "location_id": "",
+      "name": "Redpoint Center LLC",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Glenwood Springs Colorado IOP PHP intensive outpatient behavioral health current address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/638222/690379/",
+      "task": "Confirm current IOP/PHP schedule, intake, and operating status; current Joint Commission listing identifies both levels.",
+      "date": "2026-09-24",
+      "visible_address": "2520 S Grand Ave Ste 212, Glenwood Springs, CO 81601",
+      "visible_city": "Glenwood Springs"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "co-pueblo",
+      "location_id": "",
+      "name": "Crossroads Turning Points, Inc.",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Pueblo Colorado IOP PHP intensive outpatient behavioral health current address",
+      "source_url": "https://www.crossroadstp.org/locations/",
+      "task": "Confirm current IOP schedule, intake, and operating status; current provider location page identifies outpatient IOP services.",
+      "date": "2026-09-24",
+      "visible_address": "1615 Bonforte Blvd., Pueblo, CO 81001",
+      "visible_city": "Pueblo"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "co-western-slope",
+      "location_id": "",
+      "name": "Danco Supportive Services Colorado, Inc. / Momenta Recovery",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Glenwood Springs Colorado IOP PHP provider current address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/618450/",
+      "task": "Confirm current IOP/PHP schedule, intake, and operating status; current Joint Commission listing identifies both levels at the outpatient site.",
+      "date": "2026-09-24",
+      "visible_address": "3304 S. Grand Avenue, Glenwood Springs, CO 81601",
+      "visible_city": "Glenwood Springs"
     }
   ]
 }

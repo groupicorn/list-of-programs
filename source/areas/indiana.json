@@ -438,6 +438,58 @@
       "date": "2026-09-24",
       "visible_address": "4488 Roslin Road, Newburgh, IN 47630",
       "visible_city": "Newburgh"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "in_lafayette_west_lafayette",
+      "location_id": "",
+      "name": "ICR Outpatient Operating Subsidiary, LLC",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Lafayette Indiana intensive outpatient program Joint Commission address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/578386/694700/",
+      "task": "Confirm current IOP schedule, intake, and operating status; current Joint Commission listing identifies Lafayette IOP.",
+      "date": "2026-09-24",
+      "visible_address": "2529 Schuyler Avenue Suite 700, Lafayette, IN 47905",
+      "visible_city": "Lafayette"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "in_evansville",
+      "location_id": "",
+      "name": "Southwestern Behavioral Healthcare, Inc.",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Evansville Indiana intensive outpatient program Joint Commission address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/1288/347445/",
+      "task": "Confirm current IOP schedule, intake, and operating status; current Joint Commission listing identifies Evansville IOP.",
+      "date": "2026-09-24",
+      "visible_address": "4001 John Street, Evansville, IN 47714",
+      "visible_city": "Evansville"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "in_lafayette_west_lafayette",
+      "location_id": "",
+      "name": "Sycamore Springs",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Lafayette West Lafayette Indiana IOP PHP behavioral health provider 2026 current",
+      "source_url": "https://www.sycamorespringshealth.com/locations/",
+      "task": "Confirm current PHP/IOP schedule, intake, and operating status; current provider location page identifies both outpatient levels.",
+      "date": "2026-09-24",
+      "visible_address": "833 Park East Blvd, Lafayette, IN 47905",
+      "visible_city": "Lafayette"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "in_evansville",
+      "location_id": "",
+      "name": "Deaconess Cross Pointe Partial Hospitalization Program",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Evansville Indiana second IOP PHP provider current",
+      "source_url": "https://www.deaconess.com/indiana/deaconess-cross-pointe/partial-hospitalization-program/",
+      "task": "Confirm exact street address and current PHP/IOP schedule and operating status; current provider page describes the Evansville PHP.",
+      "date": "2026-09-24",
+      "visible_address": "Evansville, IN 47747",
+      "visible_city": "Evansville"
     }
   ]
 }

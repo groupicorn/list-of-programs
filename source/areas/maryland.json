@@ -276,6 +276,45 @@
       "date": "2026-09-24",
       "visible_address": "813-1 Chesapeake Drive, Cambridge, MD 21613",
       "visible_city": "Cambridge"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "md_annapolis_anne_arundel",
+      "location_id": "",
+      "name": "Luminis Health Pathways, Inc.",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Annapolis Maryland PHP IOP intensive outpatient behavioral health current address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/1954/211535/",
+      "task": "Confirm current PHP/IOP schedule, intake, and operating status; current Joint Commission listing identifies both levels.",
+      "date": "2026-09-24",
+      "visible_address": "2620 Riva Road, Annapolis, MD 21401",
+      "visible_city": "Annapolis"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "md_annapolis_anne_arundel",
+      "location_id": "",
+      "name": "Pascal Center for Psychiatric Services",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Annapolis Maryland PHP IOP intensive outpatient behavioral health current address",
+      "source_url": "https://pascalcsi.org/intensive-outpatient/",
+      "task": "Confirm current IOP schedule, intake, and operating status; current provider page identifies local IOP.",
+      "date": "2026-09-24",
+      "visible_address": "741 Annapolis Road, Gambrills, MD 21054",
+      "visible_city": "Gambrills"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "md_southern_maryland",
+      "location_id": "",
+      "name": "SUES Southern Maryland SUD Program",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Southern Maryland Waldorf Lexington Park PHP IOP intensive outpatient behavioral health current address",
+      "source_url": "https://www.stepupemp.org/services-1/",
+      "task": "Confirm whether the current SUD program provides IOP/PHP at the Waldorf or Lexington Park site; current provider page identifies local SUD services.",
+      "date": "2026-09-24",
+      "visible_address": "2670 Crain Highway, Suite 105, Waldorf, MD 20601",
+      "visible_city": "Waldorf"
     }
   ]
 }
