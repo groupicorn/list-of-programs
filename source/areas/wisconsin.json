@@ -179,6 +179,8 @@
       "priority": "normal",
       "discovery_query": "Madison Wisconsin IOP intensive outpatient program",
       "source_url": "https://www.edelweissbehavioralhealth.com/intensive-outpatient-for-adults-iop",
+      "visible_address": "725 Heartland Trail, Suite 301",
+      "visible_city": "Madison",
       "task": "Google discovery lead. Official site describes adult/eating-disorder IOP at 725 Heartland Trail, Suite 301, Madison; verify current exact tracks and operating status later.",
       "date": "2026-09-24"
     },
@@ -190,6 +192,8 @@
       "priority": "normal",
       "discovery_query": "Madison Wisconsin IOP intensive outpatient program",
       "source_url": "https://www.shorewoodbehavioral.com/programs/adult-iop/",
+      "visible_address": "5401 Quarry Park Road",
+      "visible_city": "Madison",
       "task": "Google discovery lead. Official site describes an adult IOP; the provider's current Madison address is 5401 Quarry Park Road, Madison, WI 53718. Verify opening/operating status and local asset later.",
       "date": "2026-09-24"
     },
@@ -201,6 +205,8 @@
       "priority": "normal",
       "discovery_query": "Madison Wisconsin IOP intensive outpatient program",
       "source_url": "https://ghcscw.com/get-care/specialty-care/behavioral-health/ghc-foundations-iop/",
+      "visible_address": "8202 Excelsior Drive",
+      "visible_city": "Madison",
       "task": "Google discovery lead. Official page describes adult behavioral-health IOP at 8202 Excelsior Drive, Madison; verify provider identity/deduplication and current intake later.",
       "date": "2026-09-24"
     },
@@ -212,6 +218,8 @@
       "priority": "normal",
       "discovery_query": "Madison Wisconsin IOP intensive outpatient program",
       "source_url": "https://www.mchumanservices.us/substance-abuse-addictive-behaviors/",
+      "visible_address": "313 Price Place, Suite 10",
+      "visible_city": "Madison",
       "task": "Google discovery lead. Official page describes substance-use IOP at 313 Price Place, Suite 10, Madison; verify current program schedule and publication details later.",
       "date": "2026-09-24"
     },
@@ -234,6 +242,8 @@
       "priority": "normal",
       "discovery_query": "Appleton Wisconsin IOP intensive outpatient program",
       "source_url": "https://christianfamilysolutions.org/higher-levels-of-care/intensive-outpatient-program-for-adults/",
+      "visible_address": "4351 W. College Avenue, Suite 410",
+      "visible_city": "Appleton",
       "task": "Google discovery lead. Official page describes an adult DBT-based IOP at 4351 W. College Avenue, Suite 410, Appleton; verify current local schedule and asset later.",
       "date": "2026-09-24"
     },

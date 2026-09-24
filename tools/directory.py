@@ -15,6 +15,7 @@ import re
 import subprocess
 import sys
 from collections import defaultdict
+from datetime import date
 from pathlib import Path
 from typing import Any, Iterable
 
@@ -62,6 +63,7 @@ READY_PROGRAM_STATUSES = {
     "exact_site_verified",
 }
 DISCOVERY_LEAD_STATUS = "google_discovery_lead"
+DISCOVERY_LEAD_QUEUE_TYPE = "google_discovery_lead"
 EXCLUDED_STATUSES = {
     "closed",
     "excluded",
@@ -177,6 +179,72 @@ def source_area_data(stem: str) -> dict[str, Any]:
     return data
 
 
+def add_google_discovery_lead(
+    stem: str,
+    area: str,
+    name: str,
+    source_url: str,
+    discovery_query: str = "",
+    visible_city: str = "",
+    visible_address: str = "",
+    task: str = "",
+) -> None:
+    """Append one low-friction Google lead and rebuild its state artifact."""
+
+    path = source_area_path(stem)
+    data = source_area_data(stem)
+    areas = data["areas"]
+    area_value = str(area).strip().casefold()
+    selected_area = next(
+        (
+            item for item in areas
+            if str(item.get("area_id", "")).casefold() == area_value
+            or str(item.get("name", "")).strip().casefold() == area_value
+        ),
+        None,
+    )
+    if selected_area is None:
+        raise SystemExit(f"Unknown area for {stem}: {area}")
+
+    name = str(name).strip()
+    source_url = str(source_url).strip()
+    if not name or not source_url:
+        raise SystemExit("A discovery lead needs a name and source URL")
+    if not source_url.startswith(("http://", "https://")):
+        raise SystemExit("Discovery lead source URL must start with http:// or https://")
+
+    queue = data.setdefault("research_queue", [])
+    for item in queue:
+        if not isinstance(item, dict):
+            continue
+        if (
+            str(item.get("queue_type", "")).casefold() == DISCOVERY_LEAD_QUEUE_TYPE
+            and str(item.get("source_url") or item.get("program_source_url") or "").strip() == source_url
+        ):
+            print(f"Lead already queued: {item.get('name', name)}")
+            return
+
+    item: dict[str, Any] = {
+        "queue_type": DISCOVERY_LEAD_QUEUE_TYPE,
+        "area_id": selected_area["area_id"],
+        "location_id": "",
+        "name": name,
+        "priority": "normal",
+        "discovery_query": discovery_query.strip(),
+        "source_url": source_url,
+        "task": task.strip() or "Google discovery lead; verify exact address, current program details, and operating status later.",
+        "date": date.today().isoformat(),
+    }
+    if visible_address.strip():
+        item["visible_address"] = visible_address.strip()
+    if visible_city.strip():
+        item["visible_city"] = visible_city.strip()
+    queue.append(item)
+    write_json(path, data)
+    compile_state(stem)
+    print(f"Added Google discovery lead: {name} ({selected_area['area_id']})")
+
+
 def source_provider_data(stem: str) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     directory = PROVIDERS_DIR / state_code_for(stem).lower()
     if not directory.exists():
@@ -199,6 +267,120 @@ def source_provider_data(stem: str) -> tuple[list[dict[str, Any]], list[dict[str
             record = copy.deepcopy(location)
             record.setdefault("provider_id", provider["provider_id"])
             locations.append(record)
+    return providers, locations
+
+
+def discovery_identifier(value: Any) -> str:
+    """Return a stable, readable identifier for a queue-only discovery lead."""
+
+    slug = re.sub(r"[^a-z0-9]+", "-", str(value or "").strip().lower()).strip("-")
+    return slug or "unnamed"
+
+
+def materialize_google_discovery_leads(
+    queue: Any,
+    providers: list[dict[str, Any]],
+    locations: list[dict[str, Any]],
+    state_code: str,
+    area_by_id: dict[str, dict[str, Any]],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """Turn lightweight Google queue leads into publishable source locations.
+
+    Discovery is intentionally allowed to start with less information than a
+    verified provider record. A queue lead needs a name, an editorial area, and
+    one traceable result URL; address, logo, and exact-site follow-up stay
+    empty until a later research pass.
+    """
+
+    if not isinstance(queue, list):
+        return providers, locations
+
+    providers = copy.deepcopy(providers)
+    locations = copy.deepcopy(locations)
+    providers_by_id = {str(provider.get("provider_id")): provider for provider in providers}
+    providers_by_name = {
+        str(provider.get("provider_name", "")).strip().casefold(): provider
+        for provider in providers
+        if provider.get("provider_name")
+    }
+    location_ids = {str(location.get("location_id")) for location in locations}
+    source_pairs = {
+        (str(location.get("provider_id")), str(location.get("program_source_url") or location.get("source_url") or ""))
+        for location in locations
+    }
+
+    for item in queue:
+        if not isinstance(item, dict):
+            continue
+        if str(item.get("queue_type", "")).strip().lower() != DISCOVERY_LEAD_QUEUE_TYPE:
+            continue
+
+        name = str(item.get("name") or item.get("provider_name") or "").strip()
+        area_id = str(item.get("area_id") or "").strip()
+        source_url = str(item.get("program_source_url") or item.get("source_url") or "").strip()
+        if not name or not area_id or area_id not in area_by_id or not source_url:
+            continue
+
+        provider = None
+        explicit_provider_id = str(item.get("provider_id") or "").strip()
+        if explicit_provider_id:
+            provider = providers_by_id.get(explicit_provider_id)
+        if provider is None:
+            provider = providers_by_name.get(name.casefold())
+
+        if provider is None:
+            provider_id = explicit_provider_id or f"discovery-{discovery_identifier(name)}"
+            if provider_id in providers_by_id:
+                provider_id = f"{provider_id}-{discovery_identifier(area_id)}"
+            provider = {
+                "provider_id": provider_id,
+                "provider_name": name,
+                "dedupe_group_id": str(item.get("dedupe_group_id") or provider_id),
+                "logo_url": "",
+            }
+            providers.append(provider)
+            providers_by_id[provider_id] = provider
+            providers_by_name[name.casefold()] = provider
+
+        provider_id = str(provider["provider_id"])
+        pair = (provider_id, source_url)
+        if pair in source_pairs:
+            continue
+
+        location_id = str(item.get("location_id") or "").strip()
+        if not location_id:
+            location_id = f"discovery-{discovery_identifier(name)}-{discovery_identifier(area_id)}"
+        if location_id in location_ids:
+            location_id = f"{location_id}-{discovery_identifier(source_url)}"
+        location_ids.add(location_id)
+        source_pairs.add(pair)
+
+        location = {
+            "location_id": location_id,
+            "provider_id": provider_id,
+            "provider_name": name,
+            "provider_dedupe_group_id": provider.get("dedupe_group_id", provider_id),
+            "location_name": str(item.get("location_name") or name).strip(),
+            "street_address": str(item.get("street_address") or item.get("visible_address") or "").strip(),
+            "city": str(item.get("city") or item.get("visible_city") or "").strip(),
+            "state_code": state_code,
+            "postal_code": str(item.get("postal_code") or "").strip(),
+            "country_code": "US",
+            "primary_area_id": area_id,
+            "care_focus": item.get("care_focus", ""),
+            "care_levels_claimed": item.get("care_levels_claimed", item.get("care_levels", "")),
+            "age_group": item.get("age_group", item.get("age_groups", "")),
+            "website_url": str(item.get("website_url") or source_url).strip(),
+            "program_source_url": source_url,
+            "address_source_url": str(item.get("address_source_url") or "").strip(),
+            "evidence_status": DISCOVERY_LEAD_STATUS,
+            "publication_status": DISCOVERY_LEAD_STATUS,
+            "logo_url": "",
+            "research_date": str(item.get("date") or "").strip(),
+            "notes": str(item.get("task") or "Google discovery lead; exact address and current program details remain unresolved.").strip(),
+        }
+        locations.append(location)
+
     return providers, locations
 
 
@@ -228,6 +410,10 @@ def completed_research_queue_items(
     completed: list[tuple[dict[str, Any], str]] = []
     for item in queue:
         if not isinstance(item, dict):
+            continue
+        if str(item.get("queue_type", "")).strip().lower() == DISCOVERY_LEAD_QUEUE_TYPE:
+            # Discovery leads are deliberately retained as follow-up work even
+            # after they are materialized into the generated directory.
             continue
         provider_id = str(item.get("provider_id", "")).strip()
         provider = providers_by_id.get(provider_id) if provider_id else None
@@ -390,12 +576,19 @@ def build_state(stem: str) -> dict[str, Any]:
     if image_errors:
         raise SystemExit("Invalid files under images/:\n" + "\n".join(image_errors))
     area_source = source_area_data(stem)
-    providers, locations = source_provider_data(stem)
     state_code = str(area_source.get("state_code") or state_code_for(stem)).upper()
     areas = [clean_area(area) for area in area_source["areas"]]
     area_by_id = {area["area_id"]: area for area in areas}
     if len(area_by_id) != len(areas):
         raise SystemExit(f"Duplicate area_id in source/areas/{stem}.json")
+    providers, locations = source_provider_data(stem)
+    providers, locations = materialize_google_discovery_leads(
+        area_source.get("research_queue", []),
+        providers,
+        locations,
+        state_code,
+        area_by_id,
+    )
     provider_by_id = {provider["provider_id"]: provider for provider in providers}
     if len(provider_by_id) != len(providers):
         raise SystemExit(f"Duplicate provider_id in source/providers/{state_code.lower()}")
@@ -1234,6 +1427,18 @@ def main(argv: list[str] | None = None) -> None:
     seed_parser = subparsers.add_parser("seed", help="Migrate an existing generated state into source fragments")
     seed_parser.add_argument("state")
     seed_parser.add_argument("--force", action="store_true")
+    lead_parser = subparsers.add_parser(
+        "add-lead",
+        help="Add a Google discovery lead without creating a provider fragment",
+    )
+    lead_parser.add_argument("state")
+    lead_parser.add_argument("area", help="Area ID or exact area name")
+    lead_parser.add_argument("name")
+    lead_parser.add_argument("source_url")
+    lead_parser.add_argument("--query", default="", help="Google query used to find the result")
+    lead_parser.add_argument("--city", default="", help="Visible city, if the result identifies one")
+    lead_parser.add_argument("--address", default="", help="Visible address, if the result identifies one")
+    lead_parser.add_argument("--task", default="", help="Short follow-up note")
     validate_parser = subparsers.add_parser("validate", help="Validate generated JSON and logo references")
     validate_parser.add_argument("state", nargs="?")
     compare_parser = subparsers.add_parser("compare", help="Compare generated output with the checked-in state JSON")
@@ -1247,6 +1452,17 @@ def main(argv: list[str] | None = None) -> None:
     args = parser.parse_args(argv)
     if args.command == "seed":
         seed_state(state_stem(args.state), force=args.force)
+    elif args.command == "add-lead":
+        add_google_discovery_lead(
+            state_stem(args.state),
+            args.area,
+            args.name,
+            args.source_url,
+            discovery_query=args.query,
+            visible_city=args.city,
+            visible_address=args.address,
+            task=args.task,
+        )
     elif args.command in {"build", "compile"}:
         if args.command == "build" and not args.state:
             raise SystemExit(build_all())

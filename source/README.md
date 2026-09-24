@@ -19,9 +19,13 @@ The compiler accepts the existing repository vocabulary, including
 `publication_status`, `research_status`, `verification_status`, or `status` set
 to `google_discovery_lead` is eligible for a generated research shortlist when
 it has one non-empty source URL (`program_source_url` or `source_url`). Its
-address URL and logo may be empty. Other statuses require both a program source
-URL and an address source URL. Explicitly closed, rejected, virtual-only, or
-otherwise excluded records remain out of generated results.
+address URL and logo may be empty. A `research_queue` item with
+`queue_type: google_discovery_lead` is materialized into the same minimal
+location shape when it has a name, valid `area_id`, and one non-empty
+`source_url`; it remains in the queue for later address and current-status
+follow-up. Other statuses require both a program source URL and an address
+source URL. Explicitly closed, rejected, virtual-only, or otherwise excluded
+records remain out of generated results.
 
 ## Area files
 
@@ -43,6 +47,7 @@ program and address source evidence.
 ```sh
 ./directory seed indiana       # one-time migration of an existing state
 ./directory compare indiana    # must report Unexpected changes: 0 before research edits
+./directory add-lead wisconsin wi_madison "Provider Name" "https://example.com/iop"
 ./directory build indiana      # source -> programs/indiana.json
 ./directory validate indiana
 ./directory coverage

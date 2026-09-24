@@ -294,6 +294,51 @@ class DirectoryCompilerTests(DirectoryFixtureTestCase):
         self.assertEqual("https://example.com/google-result", result["shortlists"][0]["program_source_url"])
         self.assertEqual("", result["shortlists"][0]["address_source_url"])
 
+    def test_google_discovery_queue_lead_materializes_without_provider_fragment(self):
+        self.write_fixture()
+        area_path = self.areas_dir / "indiana.json"
+        area_source = json.loads(area_path.read_text())
+        area_source["research_queue"] = [{
+            "queue_type": "google_discovery_lead",
+            "area_id": "in_indianapolis",
+            "name": "Google Lead Clinic",
+            "source_url": "https://example.com/google-lead",
+            "task": "Exact address and current program details remain unresolved.",
+            "date": "2026-09-24",
+        }]
+        directory.write_json(area_path, area_source)
+
+        result = directory.build_state("indiana")
+
+        self.assertEqual(["discovery-google-lead-clinic-in-indianapolis"], [
+            row["location_id"] for row in result["shortlists"]
+        ])
+        location = result["locations"][0]
+        self.assertEqual("Google Lead Clinic", location["provider_name"])
+        self.assertEqual("https://example.com/google-lead", location["program_source_url"])
+        self.assertEqual("", location["address_source_url"])
+        self.assertEqual("", location["logo_url"])
+        self.assertEqual(1, len(result["providers"]))
+        self.assertEqual(1, len(result["research_queue"]))
+
+    def test_add_google_discovery_lead_writes_queue_and_rebuilds(self):
+        self.write_fixture()
+        directory.write_json(self.programs_dir / "indiana.json", {})
+
+        directory.add_google_discovery_lead(
+            "indiana",
+            "in_indianapolis",
+            "CLI Lead Clinic",
+            "https://example.com/cli-lead",
+            discovery_query="Indianapolis IOP",
+            visible_city="Indianapolis",
+        )
+
+        source = json.loads((self.areas_dir / "indiana.json").read_text())
+        self.assertEqual("CLI Lead Clinic", source["research_queue"][0]["name"])
+        generated = json.loads((self.programs_dir / "indiana.json").read_text())
+        self.assertEqual(["CLI Lead Clinic"], [row["provider_name"] for row in generated["shortlists"]])
+
     def test_verified_program_is_published(self):
         result = self.build_fixture(locations=({
             "location_id": "verified",

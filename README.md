@@ -54,6 +54,17 @@ obvious branches and repeats. Exclude only clear mismatches such as virtual-only
 results when local care is required, out-of-state results, ordinary therapy, or
 inpatient/residential-only services.
 
+For a fast Google capture, use the queue helper; it writes the source record and
+rebuilds the state automatically:
+
+```sh
+./directory add-lead wisconsin wi_madison "Provider Name" "https://example.com/iop" \
+  --query "Madison Wisconsin IOP" --city Madison --address "123 Main Street"
+```
+
+Only the name, valid area, and result URL are required. Treat the generated row
+as a discovery lead, not a verified operating program.
+
 ## Discovery versus publication
 
 The directory has three practical stages:
@@ -64,9 +75,12 @@ The directory has three practical stages:
 3. **Publication-ready** — satisfies the current compiler's source gates.
 
 The compiler publishes an active `google_discovery_lead` when it has one
-non-empty source URL. Its address URL and logo may be empty. Other statuses
-still require both a program source URL and an address source URL. Do not invent
-missing URLs or hand-edit generated output.
+non-empty source URL. Its address URL and logo may be empty. A queue item with
+`queue_type: google_discovery_lead` is materialized the same way, so a new lead
+does not need a provider fragment before it appears in the generated directory.
+The queue item remains as follow-up work. Other statuses still require both a
+program source URL and an address source URL. Do not invent missing URLs or
+hand-edit generated output.
 
 Keep physical addresses, care levels, populations, and operating status scoped
 to what the source actually says. Do not infer availability, quality, insurance
