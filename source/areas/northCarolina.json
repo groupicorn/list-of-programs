@@ -199,6 +199,79 @@
       "task": "Obtain and verify a provider-controlled local PNG logo for the exact Raleigh and Durham SAIOP sites; official program and address evidence is current, but third-party logo mirrors are not treated as canonical assets.",
       "source_url": "https://southlight.org/locations/",
       "date": "2026-09-22"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nc_charlotte",
+      "location_id": "",
+      "name": "Carolina Center for Recovery",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Charlotte NC IOP PHP mental health addiction",
+      "source_url": "https://carolinacenterforrecovery.com/intensive-outpatient-program/",
+      "task": "Official IOP page found in paginated search; verify physical treatment address and current operating status.",
+      "date": "2026-09-24",
+      "visible_city": "Charlotte"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nc_charlotte",
+      "location_id": "",
+      "name": "McLeod Centers",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Charlotte NC IOP PHP mental health addiction",
+      "source_url": "https://www.mcleodcenters.org/services/outpatient-services/",
+      "task": "Official outpatient services page identifies SAIOP; verify local treatment address and current status.",
+      "date": "2026-09-24",
+      "visible_city": "Charlotte"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nc_charlotte",
+      "location_id": "",
+      "name": "Dilworth Center",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Charlotte NC IOP PHP mental health addiction",
+      "source_url": "https://dilworthcenter.org/php/",
+      "task": "Official PHP page; verify address and publication details.",
+      "date": "2026-09-24",
+      "visible_address": "2240 Park Road, Charlotte, NC 28203",
+      "visible_city": "Charlotte"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nc_charlotte",
+      "location_id": "",
+      "name": "Harmony Recovery Center",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Charlotte NC behavioral health IOP PHP program",
+      "source_url": "https://www.harmonyrecoverygroup.com/locations/north-carolina/charlotte/",
+      "task": "Official location page identifies IOP/PHP; verify exact treatment address.",
+      "date": "2026-09-24",
+      "visible_city": "Charlotte"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nc_charlotte",
+      "location_id": "",
+      "name": "Archangel Centers",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Charlotte NC behavioral health IOP PHP program",
+      "source_url": "https://archangelcenters.com/north-carolina/charlotte/php/",
+      "task": "Official Charlotte-area PHP page; verify physical location and area assignment.",
+      "date": "2026-09-24",
+      "visible_city": "Matthews"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nc_charlotte",
+      "location_id": "",
+      "name": "Southeastern Recovery Center",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Charlotte NC intensive outpatient program substance use",
+      "source_url": "https://serecoverycenter.com/addiction-treatment-charlotte-outpatient-rehab/",
+      "task": "Official IOP page; verify exact address and current status.",
+      "date": "2026-09-24",
+      "visible_city": "Charlotte"
     }
   ]
 }

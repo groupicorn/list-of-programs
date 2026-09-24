@@ -172,6 +172,66 @@
       "task": "The current official site confirms the Yuma location; the 2025 SAMHSA directory reports IOP. Reconfirm the current IOP track and exact outpatient treatment site before any future refresh.",
       "source_url": "https://www.tlcrecoveryaz.com/contact-2/",
       "date": "2026-09-23"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "az-phoenix-central",
+      "location_id": "",
+      "name": "Beacon Behavioral Health",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Arizona Phoenix Mesa IOP PHP",
+      "source_url": "https://www.beaconhealthaz.com/psychiatric-care-in-mesa-arizona/intensive-outpatient-program-iop/",
+      "task": "Official IOP page; verify physical address and exact area.",
+      "date": "2026-09-24",
+      "visible_city": "Mesa"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "az-tucson",
+      "location_id": "",
+      "name": "Sonora Behavioral Health",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Arizona Tucson IOP PHP",
+      "source_url": "https://www.sonorabehavioral.com/programs/outpatient/",
+      "task": "Official outpatient page identifies mental health and substance-use PHP/IOP; verify address.",
+      "date": "2026-09-24",
+      "visible_city": "Tucson"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "az-scottsdale-northeast",
+      "location_id": "",
+      "name": "Rising Phoenix",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Arizona Scottsdale IOP PHP",
+      "source_url": "https://risingphoenixaz.com/programs/intensive-outpatient-program-iop/",
+      "task": "Official IOP page; verify physical treatment address and current status.",
+      "date": "2026-09-24",
+      "visible_city": "Scottsdale"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "az-scottsdale-northeast",
+      "location_id": "",
+      "name": "Scottsdale Providence",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Arizona Scottsdale IOP PHP",
+      "source_url": "https://scottsdaleprovidence.com/outpatient/",
+      "task": "Official outpatient page identifies IOP/PHP; verify physical address.",
+      "date": "2026-09-24",
+      "visible_city": "Scottsdale"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "az-phoenix-central",
+      "location_id": "",
+      "name": "Cholla Behavioral Health",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Arizona Phoenix IOP PHP",
+      "source_url": "https://chollabehavioralhealth.com/intensive-outpatient-program-phoenix-az/",
+      "task": "Official IOP page; verify exact treatment address and current status.",
+      "date": "2026-09-24",
+      "visible_city": "Phoenix"
     }
   ]
 }

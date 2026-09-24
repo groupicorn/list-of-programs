@@ -123,6 +123,42 @@
       "task": "Determine whether the Dillingham-based outpatient behavioral-health/SUD service operates a separately identifiable IOP/PHP track beyond Jake's Place; do not create a duplicate location unless the program scope is distinct.",
       "source_url": "https://bbahc.org/bristolbaycounselingcenter",
       "date": "2026-09-22"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ak-anchorage",
+      "location_id": "",
+      "name": "EMEND Alaska",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Alaska Anchorage IOP PHP",
+      "source_url": "https://emendalaska.com/our-programs/intensive-outpatient-program/",
+      "task": "Official IOP page; verify physical treatment address and current status.",
+      "date": "2026-09-24",
+      "visible_city": "Anchorage"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ak-anchorage",
+      "location_id": "",
+      "name": "Set Free Alaska",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Alaska Anchorage IOP PHP",
+      "source_url": "https://setfreealaska.org/outpatient-substance-abuse-treatment-services/",
+      "task": "Official outpatient page identifies ASAM 2.1 IOP; verify local address and current status.",
+      "date": "2026-09-24",
+      "visible_city": "Anchorage"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ak-anchorage",
+      "location_id": "",
+      "name": "Alaska Treatment Center",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Alaska Anchorage IOP PHP",
+      "source_url": "https://www.alaskatreatmentcentre.com/services-1/",
+      "task": "Official IOP page; verify physical address and current operating status.",
+      "date": "2026-09-24",
+      "visible_city": "Anchorage"
     }
   ]
 }
