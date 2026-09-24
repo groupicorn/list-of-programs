@@ -151,6 +151,18 @@
       "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-21"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ms_gulf_coast",
+      "location_id": "",
+      "name": "Gulfport Behavioral Health System",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Mississippi Gulfport intensive outpatient program Gulfport Behavioral Health",
+      "source_url": "https://gulfportbehavioral.com/",
+      "task": "Provider search result describes a Gulfport IOP; verify exact physical address, current program page, and operating status.",
+      "date": "2026-09-24",
+      "visible_city": "Gulfport"
     }
   ]
 }

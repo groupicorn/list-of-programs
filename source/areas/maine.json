@@ -48,47 +48,67 @@
       "boundary_geometry": "editorial_catchment",
       "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
       "scope_note": "Current official evidence supports a Bangor pediatric IOP site; adult IOP evidence found in this pass was virtual and is not represented as local care.",
-    "target_provider_count": 9
-  },
-  {
-    "area_id": "me_augusta",
-    "state_code": "ME",
-    "region": "Central Maine",
-    "name": "Augusta / Central Maine",
-    "example_cities": ["Augusta", "Waterville", "Gardiner"],
-    "neighbor_area_ids": ["me_portland", "me_bangor"],
-    "definition": "Editorial Augusta / Central Maine catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
-    "boundary_geometry": "editorial_catchment",
-    "adjacency_basis": "Regional adjacency for discovery; exact travel claims are intentionally omitted.",
-    "scope_note": "Current official KBH page supports an Augusta adult substance-use IOP; the provider's local logo remains pending.",
-    "target_provider_count": 9
-  },
-  {
-    "area_id": "me_biddeford_saco",
-    "state_code": "ME",
-    "region": "Southern Maine",
-    "name": "Biddeford-Saco / Southern Maine",
-    "example_cities": ["Biddeford", "Saco", "Old Orchard Beach"],
-    "neighbor_area_ids": ["me_portland"],
-    "definition": "Editorial Biddeford-Saco / Southern Maine catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
-    "boundary_geometry": "editorial_catchment",
-    "adjacency_basis": "Regional adjacency for discovery; exact travel claims are intentionally omitted.",
-    "scope_note": "Current official MaineHealth pages support adult PHP/IOP at the 235 Main Street Biddeford site; additional local groups remain to be researched.",
-    "target_provider_count": 9
-  },
-  {
-    "area_id": "me_lewiston_auburn",
-    "state_code": "ME",
-    "region": "Western Maine",
-    "name": "Lewiston-Auburn / Western Maine",
-    "example_cities": ["Lewiston", "Auburn", "Lisbon"],
-    "neighbor_area_ids": ["me_portland", "me_augusta"],
-    "definition": "Editorial Lewiston-Auburn / Western Maine catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
-    "boundary_geometry": "editorial_catchment",
-    "adjacency_basis": "Regional adjacency for discovery; exact travel claims are intentionally omitted.",
-    "scope_note": "Current official St. Mary's pages support adult IOP/PHP at the 91 Campus Avenue Lewiston site; additional local groups remain to be researched.",
-    "target_provider_count": 9
-  }
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "me_augusta",
+      "state_code": "ME",
+      "region": "Central Maine",
+      "name": "Augusta / Central Maine",
+      "example_cities": [
+        "Augusta",
+        "Waterville",
+        "Gardiner"
+      ],
+      "neighbor_area_ids": [
+        "me_portland",
+        "me_bangor"
+      ],
+      "definition": "Editorial Augusta / Central Maine catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Current official KBH page supports an Augusta adult substance-use IOP; the provider's local logo remains pending.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "me_biddeford_saco",
+      "state_code": "ME",
+      "region": "Southern Maine",
+      "name": "Biddeford-Saco / Southern Maine",
+      "example_cities": [
+        "Biddeford",
+        "Saco",
+        "Old Orchard Beach"
+      ],
+      "neighbor_area_ids": [
+        "me_portland"
+      ],
+      "definition": "Editorial Biddeford-Saco / Southern Maine catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Current official MaineHealth pages support adult PHP/IOP at the 235 Main Street Biddeford site; additional local groups remain to be researched.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "me_lewiston_auburn",
+      "state_code": "ME",
+      "region": "Western Maine",
+      "name": "Lewiston-Auburn / Western Maine",
+      "example_cities": [
+        "Lewiston",
+        "Auburn",
+        "Lisbon"
+      ],
+      "neighbor_area_ids": [
+        "me_portland",
+        "me_augusta"
+      ],
+      "definition": "Editorial Lewiston-Auburn / Western Maine catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Current official St. Mary's pages support adult IOP/PHP at the 91 Campus Avenue Lewiston site; additional local groups remain to be researched.",
+      "target_provider_count": 9
+    }
   ],
   "research_queue": [
     {
@@ -180,6 +200,19 @@
       "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-21"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "me_bangor",
+      "location_id": "",
+      "name": "Wellspring Bangor Outpatient Services",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Bangor ME intensive outpatient program official address",
+      "source_url": "https://wellspringmaine.com/why-wellspring/",
+      "task": "Confirm current Bangor outpatient site address and IOP schedule; official provider page describes adult IOP.",
+      "date": "2026-09-24",
+      "visible_address": "98 Cumberland Street, Bangor, ME 04401",
+      "visible_city": "Bangor"
     }
   ]
 }

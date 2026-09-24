@@ -214,6 +214,81 @@
       "task": "Search result identifies IOP/PHP; verify provider-controlled source and address.",
       "date": "2026-09-24",
       "visible_city": "Montgomery"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "al-auburn-opelika",
+      "location_id": "",
+      "name": "Opelika Addiction Center",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Alabama Auburn Opelika IOP PHP",
+      "source_url": "https://mh.alabama.gov/at_biz_dir/opelika-addiction-center-services/",
+      "task": "Official Alabama DMH listing confirms adult IOP; verify current local operating status.",
+      "date": "2026-09-24",
+      "visible_address": "2300 Center Hills Drive, Building I, Opelika, AL 36801",
+      "visible_city": "Opelika"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "al-wiregrass",
+      "location_id": "",
+      "name": "SpectraCare Health Systems",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Alabama Dothan IOP PHP",
+      "source_url": "https://mh.alabama.gov/at_biz_dir/spectracare-health-systems-inc-4-2-2-2-2/",
+      "task": "Official Alabama DMH listing confirms adult IOP; verify current treatment entrance and status.",
+      "date": "2026-09-24",
+      "visible_address": "1672 Columbia Highway, Dothan, AL 36303",
+      "visible_city": "Dothan"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "al-black-belt",
+      "location_id": "",
+      "name": "Selma Helpline",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Alabama Selma IOP PHP",
+      "source_url": "https://123recovery.org/programs.html/",
+      "task": "Official provider page identifies Selma PHP/IOP; verify exact street address and current status.",
+      "date": "2026-09-24",
+      "visible_city": "Selma"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "al-cullman",
+      "location_id": "",
+      "name": "BHG Cullman Treatment Center",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Alabama Cullman IOP BHG Cullman Treatment Center",
+      "source_url": "https://mh.alabama.gov/at_biz_dir-location/cullman/",
+      "task": "Alabama Department of Mental Health directory lists adult Level II.1 IOP at the Cullman site; verify provider-controlled source and current status.",
+      "date": "2026-09-24",
+      "visible_address": "1912 Commerce Avenue NW, Cullman, AL 35055",
+      "visible_city": "Cullman"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "al-auburn-opelika",
+      "location_id": "",
+      "name": "Beautiful Minds Medical - Auburn IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Alabama Auburn IOP Beautiful Minds Medical",
+      "source_url": "https://beautifulmindsmedical.com/blog/beautiful-minds-launches-intensive-outpatient-program/",
+      "task": "Provider announcement describes an Auburn IOP; verify current program and exact physical treatment address.",
+      "date": "2026-09-24",
+      "visible_city": "Auburn"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "al-wiregrass",
+      "location_id": "",
+      "name": "Dothan Houston County Drug",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Dothan Alabama intensive outpatient program behavioral health address",
+      "source_url": "https://www.mentalhealthus.org/facility/dothan-houston-county-drug-dothan-al-2/",
+      "task": "Confirm exact current street address and operating status; current treatment directory identifies a Dothan IOP but search result did not expose the street address.",
+      "date": "2026-09-24",
+      "visible_city": "Dothan"
     }
   ]
 }

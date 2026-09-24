@@ -131,6 +131,19 @@
       "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-21"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "vt_brattleboro",
+      "location_id": "",
+      "name": "Pathfinder Recovery - Brattleboro",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Vermont Brattleboro IOP Pathfinder Recovery",
+      "source_url": "https://pathfinder-recovery.com/",
+      "task": "Joint Commission listing confirms IOP at the Brattleboro site; verify current provider-controlled program and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "209 Austine Drive, Brattleboro, VT 05301",
+      "visible_city": "Brattleboro"
     }
   ]
 }

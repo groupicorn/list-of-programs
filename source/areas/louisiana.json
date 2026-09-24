@@ -121,6 +121,43 @@
       "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-21"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "la_baton_rouge",
+      "location_id": "",
+      "name": "Baton Rouge General Recovery Health",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Louisiana Baton Rouge IOP Baton Rouge General Recovery Health",
+      "source_url": "https://www.brgeneral.org/medical-services/behavioral-health/substance-use-treatment/IOP/",
+      "task": "Official hospital page confirms a local adult substance-use IOP and location; verify intake details and current operation.",
+      "date": "2026-09-24",
+      "visible_address": "933 North Foster Drive, Baton Rouge, LA 70806",
+      "visible_city": "Baton Rouge"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "la_baton_rouge",
+      "location_id": "",
+      "name": "Regions Behavioral Hospital - Baton Rouge",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Louisiana Baton Rouge IOP Regions Behavioral Hospital",
+      "source_url": "https://www.regionsbh.com/outpatient-therapy/",
+      "task": "Official provider page describes mental-health and substance-use IOPs in Baton Rouge; verify exact service address and current status.",
+      "date": "2026-09-24",
+      "visible_city": "Baton Rouge"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "la_baton_rouge",
+      "location_id": "",
+      "name": "Elemental Health Baton Rouge",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Louisiana Baton Rouge mental health IOP Elemental Health",
+      "source_url": "https://elementalhealthbr.com/",
+      "task": "Official provider homepage describes adult mental-health IOP in Baton Rouge; verify exact physical address and current intake status.",
+      "date": "2026-09-24",
+      "visible_city": "Baton Rouge"
     }
   ]
 }

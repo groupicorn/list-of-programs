@@ -141,6 +141,56 @@
       "task": "Official IOP page; verify physical treatment address and current status.",
       "date": "2026-09-24",
       "visible_city": "Grand Junction"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "co-grand-junction",
+      "location_id": "",
+      "name": "Intermountain Health Grand Junction Integrated Addiction Medicine Clinic",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Grand Junction Colorado IOP PHP behavioral health official address",
+      "source_url": "https://intermountainhealthcare.org/locations/grand-junction-integrated-addiction-medicine/",
+      "task": "Confirm current adolescent and adult IOP schedules and operating status; current official clinic page identifies both local intensive outpatient services.",
+      "date": "2026-09-24",
+      "visible_address": "2643 Patterson Road, Suite 603, Grand Junction, CO 81506",
+      "visible_city": "Grand Junction"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "co-north-denver",
+      "location_id": "",
+      "name": "Pasadena Villa Outpatient Westminster",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Thornton Westminster Colorado IOP PHP behavioral health official current address",
+      "source_url": "https://pasadenavillaoutpatient.com/locations/westminster/",
+      "task": "Confirm exact current Westminster street address and operating status; current official location page identifies PHP and IOP but the search result did not expose the street address.",
+      "date": "2026-09-24",
+      "visible_city": "Westminster"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "co-north-denver",
+      "location_id": "",
+      "name": "True Counseling Services",
+      "priority": "normal",
+      "discovery_query": "Google start=10 | Thornton Westminster Colorado IOP PHP behavioral health official current address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/750119/",
+      "task": "Confirm exact current Thornton street address and operating status; current accreditation result identifies both PHP and IOP but search result did not expose the street address.",
+      "date": "2026-09-24",
+      "visible_city": "Thornton"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "co-north-denver",
+      "location_id": "",
+      "name": "Redpoint Center Thornton",
+      "priority": "normal",
+      "discovery_query": "Google start=10 | Thornton Westminster Colorado PHP IOP provider address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/638222/",
+      "task": "Confirm current PHP/IOP schedule and operating status; current Joint Commission listing identifies both levels at the Thornton site.",
+      "date": "2026-09-24",
+      "visible_address": "9025 Grant Street, Thornton, CO 80229",
+      "visible_city": "Thornton"
     }
   ]
 }

@@ -357,6 +357,84 @@
       "priority": "low",
       "task": "Run an audited geocoding pass and record coordinates plus coordinate sources.",
       "source_url": ""
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "il_bloomington_normal",
+      "location_id": "",
+      "name": "The Center for Human Services",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Illinois Bloomington IOP PHP",
+      "source_url": "https://mcchs.org/services/our-services/profile/substance-use-treatment/",
+      "task": "Official provider page identifies adult IOP; verify current physical treatment site.",
+      "date": "2026-09-24",
+      "visible_address": "108 W. Market St., Bloomington, IL 61701",
+      "visible_city": "Bloomington"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "il_southern_illinois",
+      "location_id": "",
+      "name": "Alpharus Health - Carbondale",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Illinois Carbondale IOP PHP",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/1953/",
+      "task": "Joint Commission listing confirms PHP/IOP; verify provider-controlled source and current status.",
+      "date": "2026-09-24",
+      "visible_address": "1080 East Park Street, Carbondale, IL 62901",
+      "visible_city": "Carbondale"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "il_chicago_south",
+      "location_id": "",
+      "name": "UI Health Behavioral Health IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Illinois Chicago IOP PHP",
+      "source_url": "https://www.psych.uic.edu/clinical/adult-services/behavioral-health-intensive-outpatient-program/",
+      "task": "Official university hospital page identifies behavioral-health IOP; verify exact clinic entrance.",
+      "date": "2026-09-24",
+      "visible_address": "1601 W. Taylor Street, Chicago, IL 60612",
+      "visible_city": "Chicago"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "il_peoria",
+      "location_id": "",
+      "name": "Human Service Center - Peoria",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Illinois Peoria IOP PHP",
+      "source_url": "https://www.jointcommission.org/en/accreditation/behavioral-health-care-and-human-services/provider-locator/254984/",
+      "task": "Joint Commission listing confirms adult IOP; verify current provider page and treatment entrance.",
+      "date": "2026-09-24",
+      "visible_address": "1200 N Hamilton Blvd, Peoria, IL 61606",
+      "visible_city": "Peoria"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "il_champaign_urbana",
+      "location_id": "",
+      "name": "Rosecrance Central Illinois - Moreland Campus",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Illinois Champaign IOP PHP",
+      "source_url": "https://www.jointcommission.org/en/accreditation/behavioral-health-care-and-human-services/provider-locator/837/633250/",
+      "task": "Joint Commission listing confirms PHP/IOP; verify current provider-controlled program page.",
+      "date": "2026-09-24",
+      "visible_address": "2302 Moreland Blvd., Champaign, IL 61822",
+      "visible_city": "Champaign"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "il_metro_east",
+      "location_id": "",
+      "name": "Comprehensive Behavioral Health Center of St. Clair County",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Illinois Metro East East St. Louis IOP PHP CBHC",
+      "source_url": "https://cbhc1.org/outpatient-programs/",
+      "task": "Official outpatient-program page confirms local behavioral-health outpatient services; verify current IOP/PHP level and exact site.",
+      "date": "2026-09-24",
+      "visible_address": "505 South 8th Street, East St. Louis, IL 62201",
+      "visible_city": "East St. Louis"
     }
   ]
 }

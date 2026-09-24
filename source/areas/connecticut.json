@@ -159,6 +159,18 @@
       "task": "Regional resource guide identifies IOP; verify current official site and exact location.",
       "date": "2026-09-24",
       "visible_city": "Stamford"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ct-lower-fairfield",
+      "location_id": "",
+      "name": "Newport Institute - Stamford Outpatient",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Connecticut Stamford PHP IOP Newport Institute",
+      "source_url": "https://www.newportinstitute.com/locations/outpatient-stamford-ct/",
+      "task": "Official provider page describes Stamford PHP/IOP for young adults; verify exact site address and current operating status.",
+      "date": "2026-09-24",
+      "visible_city": "Stamford"
     }
   ]
 }

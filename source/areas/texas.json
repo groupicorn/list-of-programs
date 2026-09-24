@@ -566,5 +566,82 @@
       "adjacency_basis": "Named one-hop practical driving catchments; manually curated for prototype search.",
       "scope_note": "Texas-focused package; no inferred distance ranking because coordinates are intentionally not geocoded in this pass."
     }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "central-san-marcos-new-braunfels",
+      "location_id": "",
+      "name": "Starlite Recovery Center - New Braunfels",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Texas New Braunfels IOP Starlite Recovery Center",
+      "source_url": "https://www.starliterecovery.com/about/location/new-braunfels-iop/",
+      "task": "Official provider page describes an in-person New Braunfels IOP; verify exact address and current operating status.",
+      "date": "2026-09-24",
+      "visible_city": "New Braunfels"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "central-san-marcos-new-braunfels",
+      "location_id": "",
+      "name": "Positive Recovery Centers - San Marcos",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Texas San Marcos PHP IOP Positive Recovery Centers",
+      "source_url": "https://positiverecovery.com/locations/san-marcos/",
+      "task": "Official provider page describes local PHP/IOP; verify exact street address and current admissions details.",
+      "date": "2026-09-24",
+      "visible_city": "San Marcos"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "lubbock",
+      "location_id": "",
+      "name": "Texas Tech Physicians Psychiatry - Lubbock",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Texas Lubbock PHP IOP Texas Tech Psychiatry",
+      "source_url": "https://www.texastechphysicians.com/clinics/lubbock/psychiatry/default.aspx/",
+      "task": "Official health-system page lists child/adolescent PHP and IOP at the Lubbock center; verify exact service address and current track availability.",
+      "date": "2026-09-24",
+      "visible_city": "Lubbock"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "dfw-fort-worth",
+      "location_id": "",
+      "name": "Texas Health Behavioral Health Center Alliance",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Texas Fort Worth PHP IOP Texas Health Alliance",
+      "source_url": "https://www.texashealth.org/Locations/texas-health-alliance/THBHCAL/",
+      "task": "Official hospital page lists adult mental-health IOP/PHP at the Alliance site; verify current intake and catchment.",
+      "date": "2026-09-24",
+      "visible_address": "9423 North Beach Street, Fort Worth, TX 76244",
+      "visible_city": "Fort Worth"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "midland-odessa",
+      "location_id": "",
+      "name": "Permian Basin Behavioral Health Center",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Texas Midland Odessa PHP IOP Permian Basin Behavioral Health Center",
+      "source_url": "https://permianbehavioral.org/",
+      "task": "Official center page describes PHP/IOP capacity at the new Midland campus; verify current program opening and intake status.",
+      "date": "2026-09-24",
+      "visible_address": "900 Don Evans Way, Midland, TX 79707",
+      "visible_city": "Midland"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wichita-falls",
+      "location_id": "",
+      "name": "Red River Hospital Outpatient Programs",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Texas Wichita Falls PHP IOP Red River Hospital",
+      "source_url": "https://www.redriverhospital.com/programs/outpatient/",
+      "task": "Official hospital page describes local adult and adolescent PHP/IOP; Joint Commission lists the Wichita Falls site; reconcile 1500/1505 8th Street addresses before publication.",
+      "date": "2026-09-24",
+      "visible_address": "1500 8th Street, Wichita Falls, TX 76301",
+      "visible_city": "Wichita Falls"
+    }
   ]
 }

@@ -268,6 +268,56 @@
       "task": "Official provider page identifies Savannah outpatient PHP/IOP; verify exact address.",
       "date": "2026-09-24",
       "visible_city": "Savannah"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ga-columbus",
+      "location_id": "",
+      "name": "Georgia Recovery Campus Columbus",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Georgia Columbus IOP PHP",
+      "source_url": "https://www.garecovery.com/columbus-outpatient-rehab/",
+      "task": "Official provider page identifies Columbus PHP/IOP; verify exact street address and current status.",
+      "date": "2026-09-24",
+      "visible_city": "Columbus"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ga-south-metro",
+      "location_id": "",
+      "name": "Berman Center",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Georgia South Metro Atlanta IOP PHP",
+      "source_url": "https://bermancenteratl.com/treatment/",
+      "task": "Official provider page identifies Georgia PHP/IOP; verify exact local address and area assignment.",
+      "date": "2026-09-24",
+      "visible_city": "Atlanta"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ga-savannah-coastal",
+      "location_id": "",
+      "name": "New Day Counseling Services",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Georgia Savannah IOP New Day Counseling 1805 Abercorn",
+      "source_url": "http://newdaysav.com/",
+      "task": "Official site and public resource guides identify this Savannah location; verify current IOP operations and provider-controlled program details.",
+      "date": "2026-09-24",
+      "visible_address": "1805 Abercorn Street, Savannah, GA 31401",
+      "visible_city": "Savannah"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ga-athens",
+      "location_id": "",
+      "name": "Stillwell Athens",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Georgia Athens adult IOP Stillwell Athens",
+      "source_url": "https://stillwellathens.com/",
+      "task": "Official provider page confirms an in-person Athens IOP for adults 18-30 and lists the site address; verify current intake and capacity.",
+      "date": "2026-09-24",
+      "visible_address": "1021 Baxter Street, Suite A, Athens, GA 30606",
+      "visible_city": "Athens"
     }
   ]
 }

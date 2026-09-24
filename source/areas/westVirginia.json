@@ -141,6 +141,19 @@
       "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-21"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wv_charleston",
+      "location_id": "",
+      "name": "WV Family Support & Rehabilitation Services",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Charleston WV intensive outpatient program address substance use official",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/737943/738706/",
+      "task": "Confirm current IOP schedule, intake, and operating status; current Joint Commission listing identifies Charleston IOP.",
+      "date": "2026-09-24",
+      "visible_address": "1303 Washington St. W., Charleston, WV 25302",
+      "visible_city": "Charleston"
     }
   ]
 }

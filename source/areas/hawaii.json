@@ -233,6 +233,32 @@
       "date": "2026-09-24",
       "visible_address": "1374 Nuuanu Avenue, Honolulu, HI 96817",
       "visible_city": "Honolulu"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "hi-kauai",
+      "location_id": "",
+      "name": "CARE Hawaii - Kauai",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Hawaii Kauai Lihue IOP PHP",
+      "source_url": "https://www.carehawaii.com/",
+      "task": "Hawaii DOH provider listing identifies Kauai IOP services; verify current provider-controlled program page.",
+      "date": "2026-09-24",
+      "visible_address": "3501 Rice Street, Lihue, HI 96766",
+      "visible_city": "Lihue"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "hi-oahu-leeward",
+      "location_id": "",
+      "name": "Child and Family Service - Ewa",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Hawaii Waipahu Ewa IOP PHP",
+      "source_url": "https://www.cfs-hawaii.org/",
+      "task": "Hawaii DOH provider listing identifies Oahu intensive outpatient services; verify current program and address.",
+      "date": "2026-09-24",
+      "visible_address": "91-1841 Fort Weaver Road, Ewa Beach, HI 96706",
+      "visible_city": "Ewa Beach"
     }
   ]
 }

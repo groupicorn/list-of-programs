@@ -245,6 +245,31 @@
       "task": "Verify Community Counseling Center, Southeast Missouri Behavioral Health, Bootheel providers, Cape Girardeau hospitals, and Poplar Bluff/Sikeston regional hubs for current IOP/PHP sites.",
       "source_url": "https://dmh.mo.gov/contacts",
       "date": "2026-09-22"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mo_joplin",
+      "location_id": "",
+      "name": "Grand Falls Center for Recovery",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Missouri Joplin IOP PHP Grand Falls Center for Recovery",
+      "source_url": "https://www.evolveindy.com/",
+      "task": "Joint Commission listing identifies IOP/PHP at this Joplin site; verify current provider-controlled source and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "5615 West 32nd Street, Joplin, MO 64804",
+      "visible_city": "Joplin"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mo_columbia",
+      "location_id": "",
+      "name": "Valley Hope Outpatient Treatment - Columbia",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Missouri Columbia IOP Valley Hope outpatient",
+      "source_url": "https://valleyhope.org/locations/missouri/",
+      "task": "Current provider pages announce a Columbia outpatient center with IOP; verify exact street address and current intake/program status.",
+      "date": "2026-09-24",
+      "visible_city": "Columbia"
     }
   ]
 }

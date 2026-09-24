@@ -229,6 +229,18 @@
       "task": "Discovery leads found through Wyoming IOP/PHP searches. Exclude from Wyoming physical-location shortlists because the cited pages describe statewide virtual services and/or list an out-of-state operating address; retain for a separately scoped virtual directory if requested.",
       "source_url": "https://www.charliehealth.com/",
       "date": "2026-09-21"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wy_laramie",
+      "location_id": "",
+      "name": "VOA Laramie",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Wyoming Laramie IOP VOA Laramie",
+      "source_url": "https://carf.org/provider/voa-laramie-39621/",
+      "task": "CARF listing identifies an integrated mental-health/substance-use IOP provider in Laramie; verify current street address and provider-controlled source.",
+      "date": "2026-09-24",
+      "visible_city": "Laramie"
     }
   ]
 }

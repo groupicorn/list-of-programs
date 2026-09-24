@@ -121,6 +121,32 @@
       "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-21"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ut_salt_lake",
+      "location_id": "",
+      "name": "Salt Lake Behavioral Health",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Utah Salt Lake City IOP PHP Salt Lake Behavioral Health",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/503615/503972/",
+      "task": "Joint Commission listing confirms local IOP/PHP levels; verify current provider-controlled program and admissions status.",
+      "date": "2026-09-24",
+      "visible_address": "3802 South 700 East, Salt Lake City, UT 84106",
+      "visible_city": "Salt Lake City"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ut_provo",
+      "location_id": "",
+      "name": "Wasatch Behavioral Health Attachment IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Utah Provo youth IOP Wasatch Behavioral Health Attachment",
+      "source_url": "https://www.wasatch.org/attachment-iop/",
+      "task": "Official provider page confirms an eight-week youth IOP; reconcile the page address with the annual report before publication.",
+      "date": "2026-09-24",
+      "visible_address": "1165 East 300 North, Provo, UT 84606",
+      "visible_city": "Provo"
     }
   ]
 }

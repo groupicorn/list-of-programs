@@ -48,47 +48,69 @@
       "boundary_geometry": "editorial_catchment",
       "adjacency_basis": "Statewide regional adjacency for discovery; exact travel claims are intentionally omitted.",
       "scope_note": "Secondary catchment retained for explicit neighboring discovery.",
-    "target_provider_count": 9
-  },
-  {
-    "area_id": "mt_bozeman",
-    "state_code": "MT",
-    "region": "Southwest Montana",
-    "name": "Bozeman / Southwest Montana",
-    "example_cities": ["Bozeman", "Belgrade", "Livingston"],
-    "neighbor_area_ids": ["mt_helena", "mt_billings"],
-    "definition": "Editorial Bozeman / Southwest Montana catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
-    "boundary_geometry": "editorial_catchment",
-    "adjacency_basis": "Regional adjacency for discovery; exact travel claims are intentionally omitted.",
-    "scope_note": "Added for a verified Bozeman treatment location.",
-    "target_provider_count": 9
-  },
-  {
-    "area_id": "mt_great_falls",
-    "state_code": "MT",
-    "region": "North Central Montana",
-    "name": "Great Falls / North Central Montana",
-    "example_cities": ["Great Falls", "Black Eagle", "Malmstrom"],
-    "neighbor_area_ids": ["mt_helena", "mt_billings"],
-    "definition": "Editorial Great Falls / North Central Montana catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
-    "boundary_geometry": "editorial_catchment",
-    "adjacency_basis": "Regional adjacency for discovery; exact travel claims are intentionally omitted.",
-    "scope_note": "Added for verified Great Falls treatment locations.",
-    "target_provider_count": 9
-  },
-  {
-    "area_id": "mt_helena",
-    "state_code": "MT",
-    "region": "Southwest Montana",
-    "name": "Helena / Southwest Montana",
-    "example_cities": ["Helena", "East Helena", "Clancy"],
-    "neighbor_area_ids": ["mt_bozeman", "mt_great_falls", "mt_billings"],
-    "definition": "Editorial Helena / Southwest Montana catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
-    "boundary_geometry": "editorial_catchment",
-    "adjacency_basis": "Regional adjacency for discovery; exact travel claims are intentionally omitted.",
-    "scope_note": "Added for a verified Helena treatment location.",
-    "target_provider_count": 9
-  }
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "mt_bozeman",
+      "state_code": "MT",
+      "region": "Southwest Montana",
+      "name": "Bozeman / Southwest Montana",
+      "example_cities": [
+        "Bozeman",
+        "Belgrade",
+        "Livingston"
+      ],
+      "neighbor_area_ids": [
+        "mt_helena",
+        "mt_billings"
+      ],
+      "definition": "Editorial Bozeman / Southwest Montana catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Added for a verified Bozeman treatment location.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "mt_great_falls",
+      "state_code": "MT",
+      "region": "North Central Montana",
+      "name": "Great Falls / North Central Montana",
+      "example_cities": [
+        "Great Falls",
+        "Black Eagle",
+        "Malmstrom"
+      ],
+      "neighbor_area_ids": [
+        "mt_helena",
+        "mt_billings"
+      ],
+      "definition": "Editorial Great Falls / North Central Montana catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Added for verified Great Falls treatment locations.",
+      "target_provider_count": 9
+    },
+    {
+      "area_id": "mt_helena",
+      "state_code": "MT",
+      "region": "Southwest Montana",
+      "name": "Helena / Southwest Montana",
+      "example_cities": [
+        "Helena",
+        "East Helena",
+        "Clancy"
+      ],
+      "neighbor_area_ids": [
+        "mt_bozeman",
+        "mt_great_falls",
+        "mt_billings"
+      ],
+      "definition": "Editorial Helena / Southwest Montana catchment for state-directory discovery; not a municipal boundary or travel-time claim.",
+      "boundary_geometry": "editorial_catchment",
+      "adjacency_basis": "Regional adjacency for discovery; exact travel claims are intentionally omitted.",
+      "scope_note": "Added for a verified Helena treatment location.",
+      "target_provider_count": 9
+    }
   ],
   "research_queue": [
     {
@@ -190,6 +212,18 @@
       "task": "Acquire and validate a current official PNG logo from the provider-controlled site. The IOP program and exact Helena address are verified, but the previously referenced local logo asset is unavailable and has been cleared from the source record.",
       "source_url": "https://helenavalleyhealthservices.com/services",
       "date": "2026-09-22"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mt_missoula",
+      "location_id": "",
+      "name": "The Reserve at Bear Creek Wellness",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Montana Missoula IOP Bear Creek Wellness",
+      "source_url": "https://bearcreekwellness.com/programs/intensive-outpatient-program-iop-in-missoula-montana/",
+      "task": "Official provider page describes a Missoula IOP; verify exact treatment address and current availability.",
+      "date": "2026-09-24",
+      "visible_city": "Missoula"
     }
   ]
 }

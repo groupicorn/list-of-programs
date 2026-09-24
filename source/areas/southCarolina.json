@@ -141,6 +141,19 @@
       "task": "Verify the current physical West Columbia site, official PHP/psychiatric IOP pages, age scope, and local logo before adding a source record; the city resource catalog is a discovery lead rather than current proof.",
       "source_url": "https://threeriversbehavioral.org/",
       "date": "2026-09-22"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "sc_columbia",
+      "location_id": "",
+      "name": "Three Rivers Behavioral Health",
+      "priority": "normal",
+      "discovery_query": "Google start=0 South Carolina Columbia PHP IOP Three Rivers Behavioral Health",
+      "source_url": "https://threeriversbehavioral.org/",
+      "task": "Public Columbia-area resource guide identifies PHP and psychiatric/chemical-dependency IOP; verify current provider page and site status.",
+      "date": "2026-09-24",
+      "visible_address": "2900 Sunset Boulevard, West Columbia, SC 29169",
+      "visible_city": "West Columbia"
     }
   ]
 }

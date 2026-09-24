@@ -263,6 +263,19 @@
       "task": "Search official hospital and community-provider pages for local PHP/IOP sites and verify whether Frederick should be split into a separate catchment after discovery.",
       "source_url": "https://health.maryland.gov/bha/Pages/BHA-Licensed-and-Certified-Providers-and-Programs.aspx",
       "date": "2026-09-22"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "md_eastern_shore",
+      "location_id": "",
+      "name": "Marshy Hope Family Services",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Maryland Eastern Shore IOP Marshy Hope Family Services",
+      "source_url": "https://www.marshyhope.com/",
+      "task": "Official provider site confirms a CARF-accredited Eastern Shore outpatient clinic; verify current IOP/PHP level and program schedule.",
+      "date": "2026-09-24",
+      "visible_address": "813-1 Chesapeake Drive, Cambridge, MD 21613",
+      "visible_city": "Cambridge"
     }
   ]
 }

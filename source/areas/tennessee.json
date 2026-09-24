@@ -260,6 +260,32 @@
       "task": "Research official provider pages plus local Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and health-system/county sources for physical IOP/PHP sites; record exact address, care-level evidence, and logo provenance.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-22"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "tn_clarksville",
+      "location_id": "",
+      "name": "Encompass Health and Recovery Center",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Tennessee Clarksville IOP Encompass Health Recovery Center",
+      "source_url": "https://www.encompassrecoverycenter.com/",
+      "task": "Joint Commission listing confirms a Clarksville IOP; verify current provider-controlled program page and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "104 Center Pointe Drive, Clarksville, TN 37040",
+      "visible_city": "Clarksville"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "tn_cookeville",
+      "location_id": "",
+      "name": "Cumberland Heights Outpatient Services - Cookeville",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Tennessee Cookeville IOP Cumberland Heights outpatient",
+      "source_url": "https://www.cumberlandheights.org/",
+      "task": "Joint Commission listing confirms a Cookeville IOP; verify current provider-controlled location page and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "315 North Washington Avenue, Suite 255, Cookeville, TN 38501",
+      "visible_city": "Cookeville"
     }
   ]
 }

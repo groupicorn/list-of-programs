@@ -161,6 +161,82 @@
       "task": "Directory result identifies local PHP/IOP; verify provider-controlled source and address.",
       "date": "2026-09-24",
       "visible_city": "Fayetteville"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ar-jonesboro-northeast",
+      "location_id": "",
+      "name": "Longbranch Recovery and Wellness - Jonesboro",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Arkansas Jonesboro IOP Longbranch Recovery",
+      "source_url": "https://www.longbranchrecovery.com/location-jonesboro/",
+      "task": "Official provider location page describes Jonesboro IOP for mental health and addiction; verify exact street address and current operations.",
+      "date": "2026-09-24",
+      "visible_city": "Jonesboro"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ar-pine-bluff-delta",
+      "location_id": "",
+      "name": "Jefferson Comprehensive Counseling Associates",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Arkansas Pine Bluff IOP Jefferson Comprehensive Counseling",
+      "source_url": "https://www.jcca-inc.org/outpatient-treatment/",
+      "task": "Official provider page lists Pine Bluff IOP and address; verify current program schedule and eligibility.",
+      "date": "2026-09-24",
+      "visible_address": "2720 West 28th Avenue, Pine Bluff, AR 71603",
+      "visible_city": "Pine Bluff"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ar-hot-springs",
+      "location_id": "",
+      "name": "Adult and Teen Challenge of Arkansas",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Hot Springs Arkansas IOP PHP behavioral health official address",
+      "source_url": "https://atcar.org/programs/outpatient/",
+      "task": "Confirm current IOP/PHP schedule and local operating status; official program page identifies both outpatient levels at the Hot Springs Village site.",
+      "date": "2026-09-24",
+      "visible_address": "1679 North Highway 7, Hot Springs Village, AR 71909",
+      "visible_city": "Hot Springs Village"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ar-jonesboro-northeast",
+      "location_id": "",
+      "name": "Families Inc.",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Jonesboro Arkansas IOP PHP behavioral health official address",
+      "source_url": "https://www.familiesinc.net/about-us/",
+      "task": "Confirm exact Jonesboro treatment address and current intensive outpatient schedule; official provider page identifies intensive outpatient therapy and a Jonesboro service area.",
+      "date": "2026-09-24",
+      "visible_city": "Jonesboro"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ar-pine-bluff-delta",
+      "location_id": "",
+      "name": "Restaura Arkansas / Crosshope Treatment",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Pine Bluff Arkansas IOP PHP behavioral health official address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/752816/753253/",
+      "task": "Confirm current PHP/IOP schedule and operating status; current Joint Commission listing identifies both levels at the Pine Bluff site.",
+      "date": "2026-09-24",
+      "visible_address": "1301 Ridgway Road, Suite 1C, Pine Bluff, AR 71603",
+      "visible_city": "Pine Bluff"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ar-pine-bluff-delta",
+      "location_id": "",
+      "name": "Buckhanan Recovery Center",
+      "priority": "normal",
+      "discovery_query": "Google start=10 | Pine Bluff Arkansas IOP PHP behavioral health official address",
+      "source_url": "https://www.jointcommission.org/en/accreditation/behavioral-health-care-and-human-services/provider-locator/697559/",
+      "task": "Confirm current PHP/IOP schedule and operating status; current Joint Commission listing identifies both levels at the Pine Bluff site.",
+      "date": "2026-09-24",
+      "visible_address": "414 South Walnut Street, Pine Bluff, AR 71601",
+      "visible_city": "Pine Bluff"
     }
   ]
 }

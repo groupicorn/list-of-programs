@@ -51,7 +51,12 @@
       "state_code": "IN",
       "region": "Northwest Indiana",
       "name": "Northwest Indiana",
-      "example_cities": ["Gary", "Hammond", "Merrillville", "Valparaiso"],
+      "example_cities": [
+        "Gary",
+        "Hammond",
+        "Merrillville",
+        "Valparaiso"
+      ],
       "neighbor_area_ids": [],
       "definition": "Editorial Northwest Indiana catchment spanning the Lake Michigan and U.S. 30 corridors; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
@@ -64,7 +69,12 @@
       "state_code": "IN",
       "region": "North Central Indiana",
       "name": "South Bend / Mishawaka",
-      "example_cities": ["South Bend", "Mishawaka", "Elkhart", "Goshen"],
+      "example_cities": [
+        "South Bend",
+        "Mishawaka",
+        "Elkhart",
+        "Goshen"
+      ],
       "neighbor_area_ids": [],
       "definition": "Editorial South Bend / Mishawaka catchment for the St. Joseph and Elkhart county corridor; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
@@ -77,7 +87,11 @@
       "state_code": "IN",
       "region": "West Central Indiana",
       "name": "Lafayette / West Lafayette",
-      "example_cities": ["Lafayette", "West Lafayette", "Frankfort"],
+      "example_cities": [
+        "Lafayette",
+        "West Lafayette",
+        "Frankfort"
+      ],
       "neighbor_area_ids": [],
       "definition": "Editorial Lafayette / West Lafayette catchment around Tippecanoe County and Purdue's regional service market; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
@@ -90,7 +104,11 @@
       "state_code": "IN",
       "region": "South Central Indiana",
       "name": "Bloomington",
-      "example_cities": ["Bloomington", "Bedford", "Martinsville"],
+      "example_cities": [
+        "Bloomington",
+        "Bedford",
+        "Martinsville"
+      ],
       "neighbor_area_ids": [],
       "definition": "Editorial Bloomington / Monroe County catchment with nearby south-central Indiana communities; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
@@ -103,7 +121,11 @@
       "state_code": "IN",
       "region": "Southwest Indiana",
       "name": "Evansville",
-      "example_cities": ["Evansville", "Newburgh", "Henderson"],
+      "example_cities": [
+        "Evansville",
+        "Newburgh",
+        "Henderson"
+      ],
       "neighbor_area_ids": [],
       "definition": "Editorial Evansville / lower Ohio River catchment; Kentucky locations remain out of state unless explicitly researched as neighbors.",
       "boundary_geometry": "editorial_catchment",
@@ -116,7 +138,11 @@
       "state_code": "IN",
       "region": "West Central Indiana",
       "name": "Terre Haute",
-      "example_cities": ["Terre Haute", "Brazil", "Clinton"],
+      "example_cities": [
+        "Terre Haute",
+        "Brazil",
+        "Clinton"
+      ],
       "neighbor_area_ids": [],
       "definition": "Editorial Terre Haute / Wabash Valley catchment; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
@@ -129,7 +155,11 @@
       "state_code": "IN",
       "region": "East Central Indiana",
       "name": "Muncie",
-      "example_cities": ["Muncie", "Anderson", "Marion"],
+      "example_cities": [
+        "Muncie",
+        "Anderson",
+        "Marion"
+      ],
       "neighbor_area_ids": [],
       "definition": "Editorial Muncie / Delaware County and east-central Indiana catchment; not a municipal boundary or travel-time claim.",
       "boundary_geometry": "editorial_catchment",
@@ -142,7 +172,11 @@
       "state_code": "IN",
       "region": "Southern Indiana",
       "name": "Clarksville / Southern Indiana",
-      "example_cities": ["Clarksville", "Jeffersonville", "New Albany"],
+      "example_cities": [
+        "Clarksville",
+        "Jeffersonville",
+        "New Albany"
+      ],
       "neighbor_area_ids": [],
       "definition": "Editorial Clarksville / Louisville-border Southern Indiana catchment; cross-border Kentucky options require explicit later research.",
       "boundary_geometry": "editorial_catchment",
@@ -391,6 +425,19 @@
       "task": "The current official Brentwood Springs pages verify PHP and IOP for mental-health and substance-use treatment at 4488 Roslin Road, Newburgh, in the Evansville catchment. Acquire and validate an official local PNG logo before publication; current local shortlist coverage remains below the three-group launch floor.",
       "source_url": "https://www.brentwoodsprings.com/locations/brentwood-springs",
       "date": "2026-09-22"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "in_evansville",
+      "location_id": "",
+      "name": "Brentwood Springs",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Evansville Indiana IOP PHP behavioral health official address",
+      "source_url": "https://www.brentwoodsprings.com/locations/brentwood-springs/",
+      "task": "Confirm area assignment for the Evansville metro and current PHP/IOP operating status; official provider page identifies both outpatient levels at this local facility.",
+      "date": "2026-09-24",
+      "visible_address": "4488 Roslin Road, Newburgh, IN 47630",
+      "visible_city": "Newburgh"
     }
   ]
 }

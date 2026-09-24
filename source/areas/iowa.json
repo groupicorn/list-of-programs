@@ -149,6 +149,19 @@
       "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-21"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ia_northwest_iowa",
+      "location_id": "",
+      "name": "Rosecrance Jackson - Spencer Outpatient Center",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Iowa Spencer IOP Rosecrance Jackson outpatient",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/837/656155/",
+      "task": "Joint Commission listing confirms an IOP at the Spencer outpatient center; verify current provider-controlled source and intake status.",
+      "date": "2026-09-24",
+      "visible_address": "1713 McNaughton Way, Spencer, IA 51301",
+      "visible_city": "Spencer"
     }
   ]
 }

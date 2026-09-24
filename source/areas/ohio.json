@@ -353,6 +353,30 @@
       "priority": "high",
       "task": "Current public records identify Pinnacle/Athens Treatment Services at 8978 United Lane, Suite 102, Athens. Operator pages support outpatient care and third-party current program pages describe IOP, but the current exact local IOP level should be reverified before publication; do not infer PHP from general outpatient language.",
       "source_url": "https://pinnacletreatment.com/location/ohio/athens/athens-treatment-services/"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "oh_toledo",
+      "location_id": "",
+      "name": "Midwest Recovery Center - Toledo",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Ohio Toledo PHP IOP Midwest Recovery Center",
+      "source_url": "https://www.midwestrecoverycenter.com/locations/midwest-recovery/",
+      "task": "Official provider location page describes Toledo PHP and IOP; verify complete street address and current operating status.",
+      "date": "2026-09-24",
+      "visible_city": "Toledo"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "oh_youngstown",
+      "location_id": "",
+      "name": "Meridian HealthCare Donofrio Center",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Ohio Youngstown IOP Meridian HealthCare Donofrio Center",
+      "source_url": "https://meridianhealthcare.net/the-donofrio-center/",
+      "task": "Official provider page lists intensive outpatient treatment at the Youngstown Donofrio Center; verify exact address and current schedule.",
+      "date": "2026-09-24",
+      "visible_city": "Youngstown"
     }
   ]
 }

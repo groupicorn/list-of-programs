@@ -9,11 +9,11 @@
     "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use.",
     "generation_note": "Generated from source/areas and source/providers by tools/directory.py; edit canonical source files rather than this artifact.",
     "counts": {
-      "providers": 40,
-      "locations": 42,
+      "providers": 41,
+      "locations": 43,
       "areas": 10,
-      "area_matches": 22,
-      "shortlists": 22
+      "area_matches": 23,
+      "shortlists": 23
     }
   },
   "providers": [
@@ -655,6 +655,13 @@
       "logo_source_url": "https://vallevistahospital.com/wp-content/uploads/2022/08/valle-vista-logo.png",
       "logo_downloaded": true,
       "logo_license_reviewed": false,
+      "location_count": 1
+    },
+    {
+      "provider_id": "discovery-brentwood-springs",
+      "provider_name": "Brentwood Springs",
+      "dedupe_group_id": "discovery-brentwood-springs",
+      "logo_url": "",
       "location_count": 1
     }
   ],
@@ -2674,6 +2681,30 @@
       "area_name": "Indianapolis Metro",
       "region": "Central Indiana",
       "record_quality_notes": "The official site supports the exact postal address and adult PHP/IOP claims; current intake details remain outside this directory record."
+    },
+    {
+      "location_id": "discovery-brentwood-springs-in-evansville",
+      "provider_id": "discovery-brentwood-springs",
+      "provider_name": "Brentwood Springs",
+      "provider_dedupe_group_id": "discovery-brentwood-springs",
+      "location_name": "Brentwood Springs",
+      "street_address": "4488 Roslin Road, Newburgh, IN 47630",
+      "city": "Newburgh",
+      "state_code": "IN",
+      "postal_code": "",
+      "country_code": "US",
+      "primary_area_id": "in_evansville",
+      "care_focus": "",
+      "care_levels_claimed": "",
+      "age_group": "",
+      "website_url": "https://www.brentwoodsprings.com/locations/brentwood-springs/",
+      "program_source_url": "https://www.brentwoodsprings.com/locations/brentwood-springs/",
+      "address_source_url": "",
+      "evidence_status": "google_discovery_lead",
+      "publication_status": "google_discovery_lead",
+      "logo_url": "",
+      "research_date": "2026-09-24",
+      "notes": "Confirm area assignment for the Evansville metro and current PHP/IOP operating status; official provider page identifies both outpatient levels at this local facility."
     }
   ],
   "areas": [
@@ -2851,14 +2882,14 @@
       "adjacency_basis": "No one-hop shortlist neighbor is declared until local provider research establishes a practical catchment relationship.",
       "scope_note": "Geography skeleton added September 22, 2026; provider discovery has not yet been completed.",
       "target_provider_count": 9,
-      "local_location_count": 3,
-      "local_provider_group_count": 3,
-      "candidate_provider_group_count": 0,
-      "shortlisted_count": 0,
-      "in_area_shortlisted_count": 0,
+      "local_location_count": 4,
+      "local_provider_group_count": 4,
+      "candidate_provider_group_count": 1,
+      "shortlisted_count": 1,
+      "in_area_shortlisted_count": 1,
       "neighbor_shortlisted_count": 0,
-      "gap_to_nine": 9,
-      "local_gap_to_nine": 9,
+      "gap_to_nine": 8,
+      "local_gap_to_nine": 8,
       "coverage_status": "research_gap"
     },
     {
@@ -3399,6 +3430,33 @@
       "address_source_url": "https://www.in.gov/health/reports/QAMIS/hosdir/city_bloomington.htm",
       "evidence_status": "provider_web_source",
       "notes": "The current official Bloomington Meadows site lists Intensive Outpatient Programs and adult, child, and adolescent outpatient services; the Indiana Department of Health hospital directory identifies the physical hospital address at 3600 N. Prow Road, Bloomington, IN 47404."
+    },
+    {
+      "state_code": "IN",
+      "area_id": "in_evansville",
+      "area_name": "Evansville",
+      "region": "Southwest Indiana",
+      "location_id": "discovery-brentwood-springs-in-evansville",
+      "provider_id": "discovery-brentwood-springs",
+      "dedupe_group_id": "discovery-brentwood-springs",
+      "provider_name": "Brentwood Springs",
+      "location_name": "Brentwood Springs",
+      "street_address": "4488 Roslin Road, Newburgh, IN 47630",
+      "city": "Newburgh",
+      "postal_code": "",
+      "match_type": "local",
+      "actual_area_id": "in_evansville",
+      "actual_area_name": "Evansville",
+      "care_focus": "",
+      "care_levels_claimed": "",
+      "age_group": "",
+      "selected": true,
+      "display_order": 1,
+      "selection_basis": "Local physical-address match selected before explicitly declared neighbors.",
+      "program_source_url": "https://www.brentwoodsprings.com/locations/brentwood-springs/",
+      "address_source_url": "",
+      "evidence_status": "google_discovery_lead",
+      "notes": "Confirm area assignment for the Evansville metro and current PHP/IOP operating status; official provider page identifies both outpatient levels at this local facility."
     },
     {
       "state_code": "IN",
@@ -3998,6 +4056,33 @@
     },
     {
       "state_code": "IN",
+      "area_id": "in_evansville",
+      "area_name": "Evansville",
+      "region": "Southwest Indiana",
+      "location_id": "discovery-brentwood-springs-in-evansville",
+      "provider_id": "discovery-brentwood-springs",
+      "dedupe_group_id": "discovery-brentwood-springs",
+      "provider_name": "Brentwood Springs",
+      "location_name": "Brentwood Springs",
+      "street_address": "4488 Roslin Road, Newburgh, IN 47630",
+      "city": "Newburgh",
+      "postal_code": "",
+      "match_type": "local",
+      "actual_area_id": "in_evansville",
+      "actual_area_name": "Evansville",
+      "care_focus": "",
+      "care_levels_claimed": "",
+      "age_group": "",
+      "selected": true,
+      "display_order": 1,
+      "selection_basis": "Local physical-address match selected before explicitly declared neighbors.",
+      "program_source_url": "https://www.brentwoodsprings.com/locations/brentwood-springs/",
+      "address_source_url": "",
+      "evidence_status": "google_discovery_lead",
+      "notes": "Confirm area assignment for the Evansville metro and current PHP/IOP operating status; official provider page identifies both outpatient levels at this local facility."
+    },
+    {
+      "state_code": "IN",
       "area_id": "in_terre_haute",
       "area_name": "Terre Haute",
       "region": "West Central Indiana",
@@ -4352,6 +4437,19 @@
       "task": "The current official Brentwood Springs pages verify PHP and IOP for mental-health and substance-use treatment at 4488 Roslin Road, Newburgh, in the Evansville catchment. Acquire and validate an official local PNG logo before publication; current local shortlist coverage remains below the three-group launch floor.",
       "source_url": "https://www.brentwoodsprings.com/locations/brentwood-springs",
       "date": "2026-09-22"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "in_evansville",
+      "location_id": "",
+      "name": "Brentwood Springs",
+      "priority": "normal",
+      "discovery_query": "Google start=0 | Evansville Indiana IOP PHP behavioral health official address",
+      "source_url": "https://www.brentwoodsprings.com/locations/brentwood-springs/",
+      "task": "Confirm area assignment for the Evansville metro and current PHP/IOP operating status; official provider page identifies both outpatient levels at this local facility.",
+      "date": "2026-09-24",
+      "visible_address": "4488 Roslin Road, Newburgh, IN 47630",
+      "visible_city": "Newburgh"
     }
   ]
 }

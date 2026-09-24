@@ -246,6 +246,19 @@
       "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-21"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "va_charlottesville",
+      "location_id": "",
+      "name": "Region Ten Community Services - Charlottesville",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Virginia Charlottesville IOP Region Ten Community Services",
+      "source_url": "https://www.co.augusta.va.us/home/showpublisheddocument/20475/639113252923300000/",
+      "task": "Public regional resource guide identifies Region Ten outpatient/IOP services and address; verify current provider-controlled program page and status.",
+      "date": "2026-09-24",
+      "visible_address": "800 Preston Avenue, Charlottesville, VA 22903",
+      "visible_city": "Charlottesville"
     }
   ]
 }

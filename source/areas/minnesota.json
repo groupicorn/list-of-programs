@@ -111,6 +111,19 @@
       "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-21"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mn_rochester",
+      "location_id": "",
+      "name": "Partners Behavioral Healthcare - Rochester",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Minnesota Rochester IOP Partners Behavioral Healthcare",
+      "source_url": "https://www.pbhmn.com/locations/rochester/",
+      "task": "Official provider page describes an adult IOP and local address; verify current program availability and catchment.",
+      "date": "2026-09-24",
+      "visible_address": "821 3rd Avenue SE, Suite 15, Rochester, MN 55904",
+      "visible_city": "Rochester"
     }
   ]
 }
