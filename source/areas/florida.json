@@ -375,5 +375,51 @@
       "adjacency_basis": "named practical neighboring catchments; not legal/clinical service boundaries",
       "scope_note": "Research/display catchment for Groupicorn proximity browsing; not a clinical referral region."
     }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "fl-treasure-coast",
+      "location_id": "",
+      "name": "Cove Health Group",
+      "priority": "normal",
+      "discovery_query": "iop programs florida; Hobe Sound Florida IOP",
+      "source_url": "https://covehealthgroup.com/programs/iop/",
+      "task": "Google discovery lead. Treat the official Hobe Sound IOP/PHP page and 8130 SE Federal Highway address as a candidate record; verify exact local operating status and asset later.",
+      "date": "2026-09-24"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "fl-pensacola",
+      "location_id": "",
+      "name": "HCA Florida West Hospital",
+      "priority": "normal",
+      "discovery_query": "Pensacola Florida IOP intensive outpatient program",
+      "source_url": "https://www.hcafloridahealthcare.com/es-US/locations/west-hospital/specialties/mental-health-and-wellness/outpatient-mental-health-care",
+      "task": "Google discovery lead. Official hospital page describes adult PHP/IOP at 8383 N Davis Hwy, Pensacola; verify current English program page and local publication details later.",
+      "date": "2026-09-24"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "fl-tallahassee",
+      "location_id": "",
+      "name": "WellStead Mental Health",
+      "priority": "normal",
+      "discovery_query": "Tallahassee Florida IOP intensive outpatient program",
+      "source_url": "https://wellsteadmentalhealth.com/services/outpatient-mental-health/",
+      "task": "Google discovery lead. Search result describes IOP/PHP participation at the Tallahassee clinic; verify the exact current program page and address before publication.",
+      "date": "2026-09-24"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "fl-broward-central",
+      "location_id": "",
+      "name": "Henderson Behavioral Health",
+      "priority": "normal",
+      "discovery_query": "iop programs florida",
+      "source_url": "https://floridaiop.com/",
+      "task": "Google discovery lead from a Florida IOP results page. Confirm the exact Broward IOP/PHP site and current provider-controlled program evidence before adding a location.",
+      "date": "2026-09-24"
+    }
   ]
 }

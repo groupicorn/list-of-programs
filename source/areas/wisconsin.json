@@ -172,6 +172,84 @@
   ],
   "research_queue": [
     {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wi_madison",
+      "location_id": "",
+      "name": "Edelweiss Behavioral Health",
+      "priority": "normal",
+      "discovery_query": "Madison Wisconsin IOP intensive outpatient program",
+      "source_url": "https://www.edelweissbehavioralhealth.com/intensive-outpatient-for-adults-iop",
+      "task": "Google discovery lead. Official site describes adult/eating-disorder IOP at 725 Heartland Trail, Suite 301, Madison; verify current exact tracks and operating status later.",
+      "date": "2026-09-24"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wi_madison",
+      "location_id": "",
+      "name": "Shorewood Behavioral Health",
+      "priority": "normal",
+      "discovery_query": "Madison Wisconsin IOP intensive outpatient program",
+      "source_url": "https://www.shorewoodbehavioral.com/programs/adult-iop/",
+      "task": "Google discovery lead. Official site describes an adult IOP; the provider's current Madison address is 5401 Quarry Park Road, Madison, WI 53718. Verify opening/operating status and local asset later.",
+      "date": "2026-09-24"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wi_madison",
+      "location_id": "",
+      "name": "GHC-SCW Foundations IOP",
+      "priority": "normal",
+      "discovery_query": "Madison Wisconsin IOP intensive outpatient program",
+      "source_url": "https://ghcscw.com/get-care/specialty-care/behavioral-health/ghc-foundations-iop/",
+      "task": "Google discovery lead. Official page describes adult behavioral-health IOP at 8202 Excelsior Drive, Madison; verify provider identity/deduplication and current intake later.",
+      "date": "2026-09-24"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wi_madison",
+      "location_id": "",
+      "name": "Midwest Center for Human Services",
+      "priority": "normal",
+      "discovery_query": "Madison Wisconsin IOP intensive outpatient program",
+      "source_url": "https://www.mchumanservices.us/substance-abuse-addictive-behaviors/",
+      "task": "Google discovery lead. Official page describes substance-use IOP at 313 Price Place, Suite 10, Madison; verify current program schedule and publication details later.",
+      "date": "2026-09-24"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wi_madison",
+      "location_id": "",
+      "name": "Madison Recovery Center",
+      "priority": "normal",
+      "discovery_query": "Madison Wisconsin IOP intensive outpatient program",
+      "source_url": "https://madisonrecoverycenters.com/",
+      "task": "Google discovery lead. Official site describes Madison PHP/IOP and virtual options; verify the exact physical treatment address and current local operation later.",
+      "date": "2026-09-24"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wi_appleton",
+      "location_id": "",
+      "name": "Christian Family Solutions",
+      "priority": "normal",
+      "discovery_query": "Appleton Wisconsin IOP intensive outpatient program",
+      "source_url": "https://christianfamilysolutions.org/higher-levels-of-care/intensive-outpatient-program-for-adults/",
+      "task": "Google discovery lead. Official page describes an adult DBT-based IOP at 4351 W. College Avenue, Suite 410, Appleton; verify current local schedule and asset later.",
+      "date": "2026-09-24"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wi_green_bay",
+      "location_id": "",
+      "name": "Brown County Community Treatment Center",
+      "priority": "normal",
+      "discovery_query": "Green Bay Wisconsin IOP intensive outpatient program",
+      "source_url": "https://adrcofbrowncounty.org/getting-help-aoda-treatment-providers-of-brown-county/",
+      "task": "Google discovery lead. Brown County's current treatment-provider directory lists intensive outpatient treatment; verify the exact provider/site, address, and current program details later.",
+      "date": "2026-09-24"
+    },
+
+    {
       "queue_type": "verify_program_level",
       "area_id": "wi_madison",
       "location_id": "",

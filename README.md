@@ -1,138 +1,99 @@
 # Groupicorn program directory data
 
-This repository is the source of truth for Groupicorn's state-level IOP/PHP research data and local provider-logo assets. Human-edited source JSON and PNGs are authoritative in Git. `programs/*.json` is a deterministic generated artifact, also checked into Git for immediate clone usability and publication to `https://romeo.groupicorn.com/data/`; web and iOS clients read the published URLs directly instead of linking, copying, or bundling this repository at build time.
+This repository is the source of truth for Groupicorn's U.S. IOP/PHP discovery
+catalog. It contains human-edited source JSON, generated state JSON, and local
+provider images. The first goal is nationwide breadth: up to nine plausible
+search-discovered results for every defined area.
+
+Discovery coverage is intentionally broader than verification. A result found
+on Google, Bing, Maps, a directory, Reddit, or a sponsored page may be recorded
+as a discovery lead when it clearly names an IOP/PHP program in the requested
+state or area. A discovery lead is not a ranking, clinical recommendation,
+admission promise, or confirmation of current availability.
 
 ## Repository layout
 
 ```text
-source/areas/<state>.json       Canonical editorial geography and metadata
+source/areas/<state>.json       Areas, neighbors, metadata, research queues
 source/providers/<state-code>/*.json
-                                Canonical provider/location research fragments
-source/coverage.json            Optional local-coverage threshold overrides
-images/<state-code>/*.png       Canonical local provider-logo assets
-programs/<state>.json           Generated, checked-in runtime data
-tools/directory.py              Python compiler, validator, and coverage CLI
+                                Provider/location candidates
+source/coverage.json            Optional area priorities and thresholds
+images/<state-code>/*.png       Local provider assets for promoted records
+programs/<state>.json           Generated runtime data
+tools/directory.py              Compiler, validator, and coverage CLI
 featuredPrograms.json           Separate curated homepage snapshot
 ```
 
-Git remains the database. There is no shared SQL service to clone or keep in
-sync. A provider researcher can add one fragment without touching another
-researcher's fragment; the compiler merges them into the generated state file.
+Edit `source/` and `images/`, then run the compiler. Never hand-edit
+`programs/*.json`.
 
-## National quality goal
+## Search-first workflow
 
-The goal is to bring every state to the breadth and usefulness of the current
-California directory. California is the repository's benchmark for geographic
-coverage, provider diversity, exact physical locations, evidence-backed care
-levels, and durable local logo assets—not a reason to copy its records or
-inflate counts.
-
-The target is a genuinely researched state, not merely one metro with nine
-cards. Each state should have a practical geography skeleton, coverage across
-major metros and regional hubs, multiple distinct provider groups per area,
-and a wider verified source set when the market supports it. The current nine
-entry limit is a prepared per-area display contract; it is not a cap on
-research, canonical provider records, locations, or future consumer views.
-
-The source/generated boundary is strict:
-
-```sh
-./directory build indiana
-./directory validate indiana
-./directory coverage
-./directory explain texas el-paso
-```
-
-Edit `source/` and `images/`, then regenerate `programs/`. Never hand-edit a
-generated state file. Commit the canonical source, required PNGs, and the
-regenerated artifact together. CI should run `./directory build` and fail if
-that command changes tracked generated output.
-
-The published layout mirrors the repository layout:
+For each city, metro, county, or other area, search several variants:
 
 ```text
-https://romeo.groupicorn.com/data/programs/<state-file>.json
-https://romeo.groupicorn.com/data/images/<lowercase-state-code>/<png-file>
-https://romeo.groupicorn.com/data/featuredPrograms.json
+[city] IOP
+[city] PHP
+[city] intensive outpatient program
+[city] mental health IOP
+[city] addiction IOP
+[county] behavioral health day treatment
 ```
 
-The state JSON files are the required runtime data. `featuredPrograms.json` is required by the current Groupicorn web homepage's curated-logo section; publish it whenever that section is in use. The bucket must allow CORS `GET` and `HEAD` from each Groupicorn client origin, return JSON with `Content-Type: application/json`, and return PNGs with `Content-Type: image/png`. Keep stable filenames and URLs when refreshing data so clients and caches do not break.
+Use Google, Bing, or another major search engine. Review the first 10 result
+pages, or all available pages when an engine exposes fewer. If the interface
+returns a flat result list, review about the first 100 distinct results. Record
+plausible local provider/program names until the area has nine distinct groups
+or the results repeat. Do not spend the initial pass on exhaustive source
+comparison, logo cleanup, phone calls, or intake research.
 
-Each generated state directory keeps its geography and prepared results in one
-JSON file. The established top-level collections are:
+For each lead, preserve the result URL, query, search engine, date, visible
+city/address, apparent care level, and uncertainty. Put unresolved leads in
+`research_queue` or mark them `discovery_lead`/`pending` in source. Deduplicate
+obvious branches and repeats. Exclude only clear mismatches such as virtual-only
+results when local care is required, out-of-state results, ordinary therapy, or
+inpatient/residential-only services.
 
-- `metadata` — research date, scope, policies, and summaries.
-- `providers` — provider identity and deduplication information.
-- `locations` — exact treatment locations and evidence.
-- `areas` — editorial search catchments and explicit neighbors.
-- `area_matches` — candidate matches for each area.
-- `shortlists` — prepared display results, normally up to nine distinct provider groups per area. Additional researched providers should remain in canonical source even when they are not selected for the current display shortlist.
+## Discovery versus publication
 
-Areas are editorial travel/search buckets, not claims about municipal boundaries, driving time, eligibility, availability, or clinical quality. Local matches come before explicitly declared neighbors. Optional `fallback_area_ids` are state-level alternatives, are labeled separately, and do not count toward an area's coverage total. Provider branches are deduplicated with `provider_dedupe_group_id`; the directory is not a ranking.
+The directory has three practical stages:
 
-`featuredPrograms.json` is a separate homepage display list migrated from older web data. The canonical research directories live under `programs/`. Do not update the featured snapshot as part of an ordinary state-directory change unless the task explicitly includes homepage curation.
+1. **Discovery lead** — plausible result found by search.
+2. **Source candidate** — provider/location details captured, with follow-up
+   still needed.
+3. **Publication-ready** — satisfies the current compiler's source gates.
 
-## Migration gate
+The compiler currently requires an active location with both a program source
+URL and an address source URL before it enters a generated shortlist. Do not
+invent missing URLs or hand-edit generated output. If the product should display
+raw discovery leads before verification, add a separate compiler/schema change;
+the source queue already provides a place to preserve them.
 
-For a completely unmigrated legacy state, prove the source round-trip before
-research workers change geography or provider records:
+Keep physical addresses, care levels, populations, and operating status scoped
+to what the source actually says. Do not infer availability, quality, insurance
+acceptance, or clinical outcomes. Do not store patient information or copied
+reviews.
 
-```sh
-./directory seed STATE
-./directory compare STATE
-```
-
-The compare report must end with `Unexpected changes: 0`. After that gate,
-research workers may edit disjoint provider fragments and the integrating agent
-may intentionally update areas or generated output.
-
-`./directory coverage` enumerates every area in every generated state. It uses
-`minimum_local` (default `3`) as the launch floor and reports local prepared
-groups separately from total prepared choices (default target `9`). Entries in
-`source/coverage.json` are overrides for priority or thresholds, not the
-national area list. Each unfinished row includes its calculated `NEED` deficit.
-Use `./directory next` to select the first unfinished area: explicit P1 areas
-come first by smallest deficit, followed by ordinary areas one provider short,
-zero-local strategic holes, and the remaining unfinished areas.
-
-`./directory explain STATE [AREA]` reports each canonical source location's
-inclusion decision and the gates that prevented inclusion, including missing
-source URLs and exclusion status. Pending verification and missing logos are
-record-quality follow-up signals; they do not suppress an otherwise traceable
-physical research candidate.
-
-## Adding or updating a state
-
-1. Inspect the target state's source fragments, generated JSON, a comparable state, current repository guidance, and the consuming web/iOS paths before editing.
-2. Preserve stable provider, location, and area IDs and unrelated records.
-3. Verify the same provider, treatment site, care level, population, and current operating evidence before treating a location as fully verified. Shortlist inclusion requires traceable program and address sources, while pending records remain clearly scoped research candidates.
-4. Put geography in `source/areas/<state-file>.json`. Use the actual treatment address for `primary_area_id`; the compiler generates `area_matches` and `shortlists` for declared neighboring coverage.
-5. Add genuine official PNG logos under the correct lowercase state-code directory when available. For bucket-native clients, prefer a JSON `logo_url` such as `images/ak/ak-alaska-behavioral-health.png`; clients resolve that path relative to the data root. A supplied path must resolve to the exact PNG, including case. Do not rely on a guessed filename or an external favicon proxy as the canonical logo source.
-6. Run `./directory build <state>` and `./directory validate <state>`; never hand-recalculate generated fields.
-7. Run `./directory compare <state>` before accepting a migration; it exits nonzero when provider, location, area, or prepared-shortlist output changes.
-
-Prefer metadata titles in the form `Groupicorn <State> IOP/PHP research directory`. Existing files may use older titles or represent incomplete research; do not rewrite unrelated records merely to normalize them.
-
-## Consumer integration
-
-The generic consumers are expected to enumerate `programs/*.json` in the source/publishing workflow and consume the matching public bucket URL at runtime. They derive state pages, filters, and metadata from those files. Cities and areas are filters within a state page; they do not automatically become city-specific routes or SEO pages.
-
-Web and iOS must present the same prepared area results. Prefer consuming `shortlists` directly. If a client derives results from `area_matches`, it must preserve local-first ordering, neighbor labels, provider-group deduplication, stable `display_order`, and the nine-entry limit. A client that only filters `locations` by `primary_area_id` is incompatible with the directory semantics and should be fixed or reported; the data should not be weakened to hide the mismatch.
-
-## Validation
-
-At minimum, before handing off a change:
+## Generated data and validation
 
 ```sh
+./directory build <state>
+./directory validate <state>
+./directory coverage
 jq empty programs/*.json
 git diff --check
 ```
 
-Also verify that every changed bucket-native `logo_url` resolves to a real PNG in `images/`, every referenced provider/location/area ID exists, every location has the correct two-letter `state_code`, and every shortlist contains no duplicate provider group and no more than nine entries. Legacy external logo references may remain as provenance/fallback values. After publishing, verify representative `GET` and `HEAD` requests against the matching `https://romeo.groupicorn.com/data/...` URLs. When web and iOS are available, build/check them and confirm the new state appears in each client's directory index and that both clients resolve the JSON and PNG URLs without sibling-repository links.
+For compiler or shared-schema changes:
 
-Research records are public-facing data. Keep claims sourced and scoped, preserve uncertainty, do not store sensitive patient information, and do not present the directory as clinical advice or a promise of admission.
+```sh
+./directory build
+python3 -m unittest discover -s tests -v
+```
 
-The asset tree is strict: `images/` may contain only `.png`, `.jpg`, `.jpeg`,
-`.webp`, and `.svg` files. The compiler and validator reject other files.
-Local PNG logos are quality metadata and are validated when supplied; they are
-not a prerequisite for shortlist inclusion.
+Generated shortlists remain local-first, neighbor-aware, deduplicated by
+provider group, and limited to nine entries. The nine-result discovery target
+is a breadth metric; it does not mean the area has nine verified operating
+programs. Preserve stable IDs, use the actual physical address for
+`primary_area_id`, and leave logos and deep verification for later cleanup
+passes. Do not commit or push unless explicitly requested.
