@@ -699,6 +699,19 @@
       "date": "2026-09-24",
       "visible_address": "5760 Patriot Boulevard, Suite C, Austintown, OH 44515",
       "visible_city": "Austintown, OH"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "oh_athens_se",
+      "location_id": "",
+      "name": "Outreach and Crisis Counseling Services Athens IOP candidate",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Athens Ohio IOP PHP intensive outpatient behavioral health current address",
+      "source_url": "https://outreachandcrisis.life/",
+      "task": "Official Outreach and Crisis Counseling pages describe IOP services and identify the Athens OCCS address, while the Joint Commission listing confirms the local site; verify that the IOP is delivered at this exact Athens location rather than another company facility.",
+      "date": "2026-09-24",
+      "visible_address": "319 West Union Street, Athens, OH 45701",
+      "visible_city": "Athens"
     }
   ]
 }

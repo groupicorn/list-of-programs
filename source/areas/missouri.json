@@ -412,6 +412,45 @@
       "date": "2026-09-24",
       "visible_address": "3100 Oak Grove Road, Poplar Bluff, MO 63901",
       "visible_city": "Poplar Bluff, MO"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mo_joplin",
+      "location_id": "",
+      "name": "BHG Recovery Joplin IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Joplin Missouri Four States intensive outpatient program IOP PHP behavioral health outpatient address",
+      "source_url": "https://www.bhgrecovery.com/",
+      "task": "Joint Commission listing identifies intensive outpatient services at the Joplin BHG Recovery site; verify current program schedule, intake, and operating status before publication.",
+      "date": "2026-09-24",
+      "visible_address": "2919 East 4th Street, Joplin, MO 64801",
+      "visible_city": "Joplin"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mo_columbia",
+      "location_id": "",
+      "name": "CenterPointe Hospital of Columbia IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Columbia Missouri new intensive outpatient program IOP PHP behavioral health address",
+      "source_url": "https://centerpointehospitalcolumbia.com/",
+      "task": "Official provider pages describe in-person IOP for adolescents 11-17 and adults 18+ at this Columbia site; verify current intake, schedule, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "1201 International Drive, Columbia, MO 65202",
+      "visible_city": "Columbia"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mo_columbia",
+      "location_id": "",
+      "name": "The Intensive Columbia IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Columbia Missouri new intensive outpatient program IOP PHP behavioral health address",
+      "source_url": "https://www.psychologytoday.com/",
+      "task": "Current in-person listing describes a 9-hour/week IOP for mental-health and substance-use challenges; verify provider-controlled source, current intake, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "601 West Nifong, Building 1, Suite D, Columbia, MO 65203",
+      "visible_city": "Columbia"
     }
   ]
 }

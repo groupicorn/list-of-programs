@@ -426,6 +426,84 @@
       "date": "2026-09-24",
       "visible_address": "1044 Gilbert Street, Flint, MI 48532",
       "visible_city": "Flint"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mi_grand_rapids",
+      "location_id": "",
+      "name": "Zion Healing Center Grand Rapids PHP/IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Grand Rapids Michigan intensive outpatient program IOP PHP behavioral health official address",
+      "source_url": "https://zionhealing.com/grand-rapids/",
+      "task": "Joint Commission provider locator identifies Zion Healing Center's Grand Rapids site with high-intensity outpatient/PHP and intensive outpatient services; verify provider-controlled program page, current intake, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "3501 Lake Eastbrook Boulevard Southeast, Grand Rapids, MI 49546",
+      "visible_city": "Grand Rapids"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mi_lansing",
+      "location_id": "",
+      "name": "Community Mental Health Authority CEI ITRS Lansing IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=20 Lansing Michigan PHP IOP intensive outpatient behavioral health official",
+      "source_url": "https://www.ceicmh.org/ceo/doc_view/1684-itrs-outpatient-brochure/",
+      "task": "Current CEI ITRS brochure describes Lansing intensive outpatient services for substance-use and co-occurring disorders requiring 9+ hours weekly at 405 W. Greenlawn Avenue; verify current intake, schedule, population, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "405 West Greenlawn Avenue, Suite 305, Lansing, MI 48910",
+      "visible_city": "Lansing"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mi_flint",
+      "location_id": "",
+      "name": "New Paths Flint IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Flint Michigan PHP IOP intensive outpatient behavioral health official",
+      "source_url": "https://www.newpaths.org/",
+      "task": "Current Region 10 PIHP provider directory identifies New Paths' Flint site at 931 Martin Luther King Avenue as offering intensive outpatient treatment, while the provider site is the current operator source; verify the exact IOP track, population, intake, schedule, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "931 Martin Luther King Avenue, Flint, MI 48503",
+      "visible_city": "Flint"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mi_muskegon",
+      "location_id": "",
+      "name": "Eastside Outpatient Services Harbortown IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Muskegon Michigan PHP IOP intensive outpatient behavioral health official",
+      "source_url": "https://eastsidesac.com/services/",
+      "task": "Current Eastside Outpatient Services official page explicitly describes a structured 9-hours-per-week IOP with three group sessions and individual counseling at its Harbortown treatment center; verify the current exact street address, intake, population, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "445 East Sherman Boulevard, Muskegon Heights, MI 49444",
+      "visible_city": "Muskegon Heights"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mi_great_lakes_bay",
+      "location_id": "",
+      "name": "DOT Caring Centers Saginaw IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Saginaw Bay City Midland Michigan PHP IOP intensive outpatient behavioral health official",
+      "source_url": "https://dotcaring.com/about-us/",
+      "task": "Current DOT Caring Centers official history page describes its substance-use day-treatment program as the modern IOP model; the current Mid-State Health Network provider directory identifies the Saginaw site at 3190 Hallmark Court. Verify current IOP schedule, population, intake, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "3190 Hallmark Court, Suite 1, Saginaw, MI 48603",
+      "visible_city": "Saginaw"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mi_kalamazoo",
+      "location_id": "",
+      "name": "Kalamazoo Child and Family Counseling Adolescent IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Kalamazoo Michigan PHP IOP intensive outpatient behavioral health official",
+      "source_url": "https://www.kzoofamilycounseling.com/therapy-services/adolescent-intensive-outpatient-program-iop-in-kalamazoo-mi/",
+      "task": "Current Kalamazoo Child and Family Counseling page explicitly describes an adolescent IOP for ages 13-17 with group, individual, family, and medication-management components, meeting three days per week at the Kalamazoo clinic; verify intake, schedule, age range, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "4341 South Westnedge Avenue, Suite 1112, Kalamazoo, MI 49008",
+      "visible_city": "Kalamazoo"
     }
   ]
 }

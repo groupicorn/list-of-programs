@@ -324,6 +324,32 @@
       "date": "2026-09-24",
       "visible_address": "800 West Williams Street, Suite 203, Apex, NC 27502",
       "visible_city": "Apex, NC"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nc_fayetteville",
+      "location_id": "",
+      "name": "SouthLight Healthcare Fayetteville SAIOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Fayetteville North Carolina Sandhills intensive outpatient program IOP PHP behavioral health outpatient address",
+      "source_url": "https://southlight.org/",
+      "task": "Current provider page identifies in-person substance-use intensive outpatient services at the Fayetteville site, including morning and evening groups; verify current intake and operating status before publication.",
+      "date": "2026-09-24",
+      "visible_address": "439 Ramsey Street, Fayetteville, NC 28301",
+      "visible_city": "Fayetteville"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nc_fayetteville",
+      "location_id": "",
+      "name": "Life Net Services Fayetteville SAIOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Fayetteville North Carolina Sandhills intensive outpatient program IOP PHP behavioral health outpatient address",
+      "source_url": "https://info.ncdhhs.gov/",
+      "task": "North Carolina facility record lists a Substance Abuse Intensive Outpatient Program; verify current operating status and qualifying program details before publication.",
+      "date": "2026-09-24",
+      "visible_address": "1014 Hay Street, Fayetteville, NC 28305",
+      "visible_city": "Fayetteville"
     }
   ]
 }

@@ -349,6 +349,58 @@
       "date": "2026-09-24",
       "visible_address": "1200 S Willow Avenue, Cookeville, TN 38506",
       "visible_city": "Cookeville, TN"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "tn_clarksville",
+      "location_id": "",
+      "name": "Family Care Center Clarksville Adult Mental Health IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Clarksville Tennessee new intensive outpatient program IOP PHP behavioral health physical address",
+      "source_url": "https://fccwellbeing.com/",
+      "task": "Official provider page describes adult in-person/telehealth mental-health IOP at this Clarksville site; verify current intake, schedule, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "105 Otis Smith Drive, Clarksville, TN 37043",
+      "visible_city": "Clarksville"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "tn_jackson",
+      "location_id": "",
+      "name": "DePriest Center Jackson IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Jackson Tennessee new intensive outpatient program IOP PHP behavioral health physical address",
+      "source_url": "https://www.depriestcenter.com/",
+      "task": "Official provider program page lists an IOP and a Jackson satellite at this physical address; verify current IOP schedule, intake, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "387 Lawrence Switch Road, Jackson, TN 38305",
+      "visible_city": "Jackson"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "tn_tri_cities",
+      "location_id": "",
+      "name": "Creekside Behavioral Health Kingsport IOP/PHP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Johnson City Kingsport Bristol Tennessee new intensive outpatient program IOP PHP behavioral health address",
+      "source_url": "https://creeksidebh.com/",
+      "task": "Joint Commission listing identifies IOP and PHP at Kingsport sites associated with Creekside Behavioral Health; verify the active treatment address and current provider-controlled program page before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "1025 Executive Park Boulevard, Kingsport, TN 37660",
+      "visible_city": "Kingsport"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "tn_cookeville",
+      "location_id": "",
+      "name": "Bradford Health Cookeville IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Cookeville Upper Cumberland Tennessee IOP PHP intensive outpatient behavioral health official",
+      "source_url": "https://bradfordhealth.com/",
+      "task": "Current Bradford Health official Cookeville page describes an IOP with individual and group addiction therapy, MAT, education, and family support; the current Tennessee provider listing places Cookeville services at 1200 South Willow Avenue. Verify exact current site, intake, schedule, population, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "1200 South Willow Avenue, Cookeville, TN 38506",
+      "visible_city": "Cookeville"
     }
   ]
 }

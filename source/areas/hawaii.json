@@ -350,6 +350,56 @@
       "date": "2026-09-24",
       "visible_address": "400 Hualani Street, Building 10, Suite 195B, Hilo, HI 96720",
       "visible_city": "Hilo, HI"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "hi-kauai",
+      "location_id": "",
+      "name": "Kauai Mental Health Connection / Ahu Waiwai IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=20 Kauai Lihue Hawaii intensive outpatient program behavioral health",
+      "source_url": "https://www.kauaimentalhealthconnection.com/substanceabuse/",
+      "task": "Current Kauai Mental Health Connection substance-abuse directory identifies Ahu Waiwai and other Lihue-area providers offering assessment and intensive outpatient programming; verify the distinct operating provider, exact treatment address, current schedule, and whether the listed organizations are separate from existing CARE Hawaii records before promotion.",
+      "date": "2026-09-24",
+      "visible_city": "Lihue"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "hi-oahu-leeward",
+      "location_id": "",
+      "name": "Waianae Coast Comprehensive Health Center Malama Recovery Services IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Leeward Oahu Waipahu Ewa Waianae Hawaii intensive outpatient program official provider",
+      "source_url": "https://wcchc.com/",
+      "task": "Current Waianae Coast Comprehensive Health Center official Malama Recovery Services page explicitly describes intensive outpatient treatment for men and women with addiction issues and lists the Waianae site at 86-260 Farrington Highway. Verify current intake, schedule, population, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "86-260 Farrington Highway, Waianae, HI 96792",
+      "visible_city": "Waianae"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "hi-oahu-honolulu-core",
+      "location_id": "",
+      "name": "Wellness Partners Mental Health Hawaii Kai PHP/IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Honolulu Hawaii Kai Hawaii PHP IOP intensive outpatient behavioral health official provider",
+      "source_url": "https://www.wellnesspartnershawaii.com/",
+      "task": "Current Wellness Partners Mental Health official PHP/IOP page describes an in-person adult PHP in Hawaii Kai and a structured adult IOP for mental-health, substance-use, and co-occurring needs; the official office address is 6700 Kalanianaole Highway, Suite 201. Verify current intake, schedule, population, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "6700 Kalanianaole Highway, Suite 201, Honolulu, HI 96825",
+      "visible_city": "Honolulu"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "hi-kauai",
+      "location_id": "",
+      "name": "Kaulu I Ka Pono Academy Adolescent IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=20 Kauai Lihue Hawaii intensive outpatient program behavioral health official",
+      "source_url": "https://www.kauaimentalhealthconnection.com/",
+      "task": "Current Kauai Mental Health Connection and Kauai Community College resource pages identify Kaulu I Ka Pono Academy as offering adolescent substance-abuse assessment and intensive outpatient programming in Lihue; verify the provider-controlled source, exact treatment address, schedule, population, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_city": "Lihue"
     }
   ]
 }

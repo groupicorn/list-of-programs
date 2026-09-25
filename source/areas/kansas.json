@@ -170,6 +170,32 @@
       "date": "2026-09-24",
       "visible_address": "801 Iowa Street, Lawrence, KS 66049",
       "visible_city": "Lawrence, KS"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ks_kansas_city",
+      "location_id": "",
+      "name": "Center for Discovery Shawnee Adult PHP/IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Kansas City Kansas Northeast Kansas IOP PHP provider official site address",
+      "source_url": "https://centerfordiscovery.com/",
+      "task": "Official provider page describes an in-person adult eating-disorder PHP/IOP at this Shawnee site; verify current intake, operating status, and whether the location belongs in this editorial Kansas City catchment before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "6850 Hilltop Drive, Shawnee, KS 66226",
+      "visible_city": "Shawnee"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ks_kansas_city",
+      "location_id": "",
+      "name": "Arista Recovery Overland Park PHP/IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Kansas City Kansas Northeast Kansas IOP PHP provider official site address",
+      "source_url": "https://www.aristarecovery.com/",
+      "task": "Current Arista Recovery official Overland Park page explicitly lists PHP, IOP, standard outpatient, and MAT at 9401 Reeds Road, Suite 101; verify current intake, adult population, schedule, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "9401 Reeds Road, Suite 101, Overland Park, KS 66207",
+      "visible_city": "Overland Park"
     }
   ]
 }

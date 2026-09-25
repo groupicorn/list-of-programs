@@ -124,6 +124,45 @@
       "date": "2026-09-24",
       "visible_address": "821 3rd Avenue SE, Suite 15, Rochester, MN 55904",
       "visible_city": "Rochester"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mn_rochester",
+      "location_id": "",
+      "name": "PrairieCare Rochester PHP/IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Rochester Minnesota intensive outpatient program IOP PHP behavioral health official address",
+      "source_url": "https://prairie-care.com/locations/rochester/",
+      "task": "Official PrairieCare location page identifies youth IOP and youth/adult PHP at this Rochester site; verify current schedules, intake, and whether the IOP population remains youth-focused before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "5255 Members Parkway NW, Rochester, MN 55901",
+      "visible_city": "Rochester"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mn_rochester",
+      "location_id": "",
+      "name": "Partners Behavioral Healthcare Rochester IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Rochester Minnesota Southeast Minnesota IOP PHP intensive outpatient behavioral health official",
+      "source_url": "https://www.pbhmn.com/",
+      "task": "Current Partners Behavioral Healthcare official Rochester page explicitly lists an IOP 2.1 program at 821 3rd Avenue SE, Suite 15, serving substance-use and mental-health needs; verify current intake, schedule, population, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "821 3rd Avenue SE, Suite 15, Rochester, MN 55904",
+      "visible_city": "Rochester"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mn_rochester",
+      "location_id": "",
+      "name": "PrairieCare Rochester PHP/IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Rochester Minnesota Southeast Minnesota IOP PHP intensive outpatient behavioral health official",
+      "source_url": "https://prairie-care.com/",
+      "task": "Current PrairieCare official Rochester page identifies youth IOP and youth/adult PHP at 5255 Members Parkway NW; verify current schedules, intake, population, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "5255 Members Parkway NW, Rochester, MN 55901",
+      "visible_city": "Rochester"
     }
   ]
 }

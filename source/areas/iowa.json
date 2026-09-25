@@ -227,6 +227,58 @@
       "date": "2026-09-24",
       "visible_address": "4500 Westown Parkway, Suite 120, West Des Moines, IA 50266",
       "visible_city": "West Des Moines, IA"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ia_northwest_iowa",
+      "location_id": "",
+      "name": "Rosecrance Jackson Centers Spencer Outpatient",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Spencer Northwest Iowa IOP PHP behavioral health substance use provider official address",
+      "source_url": "https://www.rosecrance.org/locations/rosecrance-spencer/",
+      "task": "Official Rosecrance location page confirms an in-person and virtual outpatient substance-use and mental-health treatment site at this Spencer address; an existing discovery citation identifies IOP-level care, so verify the current IOP schedule and intake before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "1713 McNaughton Way, Spencer, IA 51301",
+      "visible_city": "Spencer"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ia_iowa_city",
+      "location_id": "",
+      "name": "Iowa City VA Health Care System SUD IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=20 Iowa City Johnson County Iowa PHP IOP intensive outpatient behavioral health official",
+      "source_url": "https://www.va.gov/iowa-city-health-care/",
+      "task": "Current VA SUD program locator identifies Iowa City VA Health Care System's SUD Intensive Outpatient program at 601 Highway 6 West; verify current program scope, veteran eligibility, intake pathway, schedule, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "601 Highway 6 West, Iowa City, IA 52246",
+      "visible_city": "Iowa City"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ia_cedar_rapids",
+      "location_id": "",
+      "name": "UnityPoint Health St. Luke's Children's Behavioral Health IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Cedar Rapids Iowa intensive outpatient program behavioral health official",
+      "source_url": "https://www.unitypoint.org/locations/unitypoint-health---st-lukes-childrens-specialty-services/",
+      "task": "Current UnityPoint Health St. Luke's Children's Specialty Services page explicitly lists a Behavioral Health Intensive Outpatient Program for children ages 6 to 18 at the Cedar Rapids site; verify current intake, schedule, age range, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "4050 River Ridge Drive NE, Cedar Rapids, IA 52402",
+      "visible_city": "Cedar Rapids"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ia_northwest_iowa",
+      "location_id": "",
+      "name": "Rosecrance Jackson Centers Spencer Outpatient IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Spencer Northwest Iowa IOP PHP behavioral health substance use provider official address",
+      "source_url": "https://www.rosecrance.org/",
+      "task": "Current Rosecrance official Spencer location materials identify an in-person and virtual outpatient substance-use and mental-health treatment site at 1713 McNaughton Way; Joint Commission evidence identifies IOP-level care. Verify current IOP schedule, intake, population, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "1713 McNaughton Way, Spencer, IA 51301",
+      "visible_city": "Spencer"
     }
   ]
 }

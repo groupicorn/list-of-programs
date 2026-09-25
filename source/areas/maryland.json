@@ -419,6 +419,45 @@
       "date": "2026-09-24",
       "visible_address": "2012 South Tollgate Road, Suite 205, Bel Air, MD 21015",
       "visible_city": "Bel Air"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "md_eastern_shore",
+      "location_id": "",
+      "name": "PUSH Health and Wellness Salisbury IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Eastern Shore Maryland intensive outpatient program IOP PHP behavioral health official address Salisbury Ocean City",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/687555/",
+      "task": "Joint Commission provider locator identifies PUSH Health and Wellness's Salisbury site with accredited intensive outpatient services; verify provider-controlled program page, current admissions, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "1321 Mount Hermon Road, Unit C-1, Salisbury, MD 21804",
+      "visible_city": "Salisbury"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "md_southern_maryland",
+      "location_id": "",
+      "name": "Pyramid Healthcare California MD Outpatient IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Southern Maryland Waldorf Lexington Park Maryland IOP PHP behavioral health provider official address",
+      "source_url": "https://www.pyramid-healthcare.com/location/md/california-outpatient/",
+      "task": "Official Pyramid Healthcare location page identifies an adult IOP for substance use and co-occurring disorders at the California, Maryland campus; verify current intake, schedule, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "44871 St. Andrew's Church Road, California, MD 20619",
+      "visible_city": "California"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "md_western_maryland",
+      "location_id": "",
+      "name": "UPMC Western Maryland Cumberland IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=20 Western Maryland Hagerstown Cumberland PHP IOP intensive outpatient behavioral health official",
+      "source_url": "https://www.upmc.com/locations/hospitals/western-maryland/services/behavioral-health/",
+      "task": "Current UPMC Western Maryland behavioral-health page explicitly describes a multidisciplinary IOP with group, individual, and psychiatric services at the Cumberland Medical Arts Center; verify current intake, population, schedule, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "12502 Willowbrook Road, Suite 380, Cumberland, MD 21502",
+      "visible_city": "Cumberland"
     }
   ]
 }

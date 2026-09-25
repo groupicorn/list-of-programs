@@ -227,6 +227,32 @@
       "date": "2026-09-24",
       "visible_address": "180 Debuys Road, Biloxi, MS 39531",
       "visible_city": "Biloxi, MS"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ms_hattiesburg",
+      "location_id": "",
+      "name": "HamiltonDavis Mental Health Hattiesburg IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Hattiesburg Mississippi IOP PHP provider official site address adult substance use 2026",
+      "source_url": "https://www.samhsa.gov/",
+      "task": "Current national treatment-facility directory identifies adult substance-use and mental-health outpatient services at this Hattiesburg site; verify a provider-controlled IOP page, current schedule, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "5000 4th Street, 2nd Floor, Hattiesburg, MS 39402",
+      "visible_city": "Hattiesburg"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ms_hattiesburg",
+      "location_id": "",
+      "name": "Oak Arbor Hattiesburg IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=20 Hattiesburg Mississippi Pine Belt PHP IOP intensive outpatient behavioral health official",
+      "source_url": "https://www.oakarborms.com/services/",
+      "task": "Current Oak Arbor official services page describes an intensive outpatient program for adults with chemical dependency at its Hattiesburg site; verify current intake, schedule, population, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "4507 Highway 49 South, Hattiesburg, MS 39401",
+      "visible_city": "Hattiesburg"
     }
   ]
 }

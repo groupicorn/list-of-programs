@@ -208,6 +208,19 @@
       "date": "2026-09-24",
       "visible_address": "10 Alice Peck Day Drive, Lebanon, NH 03766",
       "visible_city": "Lebanon, NH"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nh_lebanon",
+      "location_id": "",
+      "name": "Headrest Lebanon Intensive Outpatient Counseling",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Lebanon Upper Valley New Hampshire PHP IOP intensive outpatient behavioral health official",
+      "source_url": "https://headrest.org/contact-headrest/",
+      "task": "Current Headrest official mission/contact pages identify intensive outpatient counseling and the Lebanon office at 14 Church Street; verify the current IOP track, intake pathway, schedule, population, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "14 Church Street, Lebanon, NH 03766",
+      "visible_city": "Lebanon"
     }
   ]
 }

@@ -262,6 +262,19 @@
       "date": "2026-09-24",
       "visible_address": "1558 Barnum Avenue, Bridgeport, CT",
       "visible_city": "Bridgeport, CT"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ct-waterbury",
+      "location_id": "",
+      "name": "Wellmore Behavioral Health Waterbury Adult IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=40 Waterbury Naugatuck Valley Connecticut PHP IOP intensive outpatient behavioral health official",
+      "source_url": "https://www.wellmore.org/adult-outpatient-services/",
+      "task": "Current Wellmore Behavioral Health adult-services page explicitly describes 9-16 hours per week of intensive outpatient programming, including mental-health/co-occurring and substance-use tracks, at the Waterbury outpatient site; verify current intake, exact program address, schedule, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "402 East Main Street, Waterbury, CT 06702",
+      "visible_city": "Waterbury"
     }
   ]
 }

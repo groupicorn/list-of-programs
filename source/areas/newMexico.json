@@ -121,6 +121,32 @@
       "task": "Verify the current official provider site, physical treatment entrance at 3901 Louisiana Blvd NE Ste B-C, adult integrated IOP status, and an official local PNG before publication; current discovery evidence is from SHARE New Mexico.",
       "source_url": "https://www.sharenm.org/organization/print/albuquerque-united-behavioral-health-services/intensive-outpatient-program",
       "date": "2026-09-22"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nm_southern",
+      "location_id": "",
+      "name": "Anchor Behavioral Health Las Cruces IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Southern New Mexico Las Cruces intensive outpatient program IOP PHP behavioral health outpatient address",
+      "source_url": "https://anchornm.com/",
+      "task": "Current provider page identifies an adult IOP at the Las Cruces physical site; verify current PHP/IOP offerings, intake, and operating status before publication.",
+      "date": "2026-09-24",
+      "visible_address": "414 North Main Street, Suite 1, Las Cruces, NM 88001",
+      "visible_city": "Las Cruces"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nm_southern",
+      "location_id": "",
+      "name": "4Directions Integrative Mental Health Las Cruces IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=20 Las Cruces New Mexico adult IOP PHP substance use treatment official provider",
+      "source_url": "https://www.4directionsimh.org/services/",
+      "task": "Official provider pages and referral form describe an adult intensive outpatient program for substance abuse and mental health at the Las Cruces office; verify current schedule, intake, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "125 West Boutz Road, Las Cruces, NM 88005",
+      "visible_city": "Las Cruces"
     }
   ]
 }

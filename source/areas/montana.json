@@ -315,6 +315,58 @@
       "date": "2026-09-24",
       "visible_address": "1201 Grand Avenue, Suite 2, Billings, MT 59102",
       "visible_city": "Billings, MT"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mt_bozeman",
+      "location_id": "",
+      "name": "Trailhead Counseling and Recovery Center Bozeman IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=2170 Montana Bozeman intensive outpatient program PHP behavioral health current provider address",
+      "source_url": "https://www.trailheadmt.com/",
+      "task": "Current provider page describes an in-person Bozeman IOP; verify program scope, intake, and operating status before publication.",
+      "date": "2026-09-24",
+      "visible_address": "205 Haggerty Lane, Suite 155, Bozeman, MT 59715",
+      "visible_city": "Bozeman"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mt_helena",
+      "location_id": "",
+      "name": "Community Counseling Solutions Helena IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Helena Montana new intensive outpatient program IOP PHP behavioral health physical address",
+      "source_url": "https://addictioncounselorhelena.com/",
+      "task": "Official provider page describes an ASAM-style IOP for substance-use and co-occurring mental-health needs with a current weekly schedule at this Helena office; verify provider identity, current intake, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "25 South Ewing Street, Suite 514, Helena, MT 59601",
+      "visible_city": "Helena"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mt_helena",
+      "location_id": "",
+      "name": "Boyd Andrew Community Services Helena IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=80 Helena Montana intensive outpatient program IOP PHP behavioral health provider official address",
+      "source_url": "https://boydandrew.com/",
+      "task": "Montana's current approved-provider listing and Boyd Andrew's official program materials identify adult 2.1 intensive outpatient services at the Helena site; verify current schedule, intake, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "60 South Last Chance Gulch, Helena, MT 59601",
+      "visible_city": "Helena"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mt_missoula",
+      "location_id": "",
+      "name": "Healing Homes Counseling Services Missoula IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Missoula Montana PHP IOP intensive outpatient behavioral health official",
+      "source_url": "https://www.healinghomescs.com/",
+      "task": "Current Montana DPHHS state-approved provider listing identifies Healing Homes at 3425 Sgt. Sanders Street as offering ASAM 2.1 intensive outpatient treatment; the provider site confirms the physical Missoula office and substance-use counseling but does not spell out the IOP track. Verify current schedule, population, intake, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "3425 Sgt. Sanders Street, Missoula, MT 59804",
+      "visible_city": "Missoula"
     }
   ]
 }

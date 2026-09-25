@@ -328,6 +328,19 @@
       "date": "2026-09-24",
       "visible_address": "103 Park Street, Lewiston, ME 04240",
       "visible_city": "Lewiston"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "me_lewiston_auburn",
+      "location_id": "",
+      "name": "An Angel's Wing Lewiston IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Lewiston Auburn Maine intensive outpatient program IOP PHP behavioral health outpatient address",
+      "source_url": "https://anangelswing.org/",
+      "task": "Current provider page identifies an adult substance-use IOP at the Lewiston site; verify current admissions and operating status before publication.",
+      "date": "2026-09-24",
+      "visible_address": "465 Main Street, Suite 201, Lewiston, ME 04240",
+      "visible_city": "Lewiston"
     }
   ]
 }

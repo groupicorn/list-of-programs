@@ -52,14 +52,14 @@
       "accepting_patients": null,
       "distance_miles": null,
       "drive_minutes": null,
-      "publication_status": "research_only",
+      "publication_status": "google_discovery_lead",
       "care_levels_claimed": "PHP",
       "provider_dedupe_group_id": "trinity-health-michigan",
       "dedupe_group_reason": "Single Ann Arbor campus PHP site for Trinity Health Michigan.",
       "known_parent_name": "Trinity Health",
       "area_name": "Ann Arbor / Ypsilanti",
       "region": "Southeast Michigan",
-      "record_quality_notes": "Current official system and location pages support the site and PHP; current referral availability remains unknown."
+      "record_quality_notes": "Google start=0 Ann Arbor Michigan PHP/IOP search and current official system/location pages support the site and PHP; current referral availability remains unknown."
     },
     {
       "provider_id": "trinity-health-michigan",

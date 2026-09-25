@@ -27,9 +27,9 @@
       "care_focus": "substance_use | co-occurring",
       "age_group": "adolescent | adult",
       "website_url": "https://www.abcrswy.com/",
-      "program_source_url": "https://search.wyoming211.org/search/2c47e769-e20d-579d-a579-9cce2d71220f",
+      "program_source_url": "https://www.abcrswy.com/",
       "address_source_url": "https://wyoimprov.com/MHSAPublicProviderSearch.aspx",
-      "evidence_status": "state_directory",
+      "evidence_status": "google_discovery_lead",
       "notes": "Wyoming 2-1-1 identifies IOP at this Rock Springs address for teens and adults; the Wyoming MHSA registry lists adolescent and adult Level 2.1 IOP certification for the same provider. Confirm current schedule and treatment entrance.",
       "latitude": null,
       "longitude": null,
@@ -52,14 +52,14 @@
       "accepting_patients": null,
       "distance_miles": null,
       "drive_minutes": null,
-      "publication_status": "research_only",
+      "publication_status": "google_discovery_lead",
       "care_levels_claimed": "IOP",
       "provider_dedupe_group_id": "access-balance-and-change",
       "dedupe_group_reason": "Independent Rock Springs provider; state registry and Wyoming 2-1-1 identify IOP at the same site.",
       "known_parent_name": "",
       "area_name": "Rock Springs / Southwest Wyoming",
       "region": "Southwest Wyoming",
-      "record_quality_notes": "Current 2-1-1 record was assured 2026-06-02; state certification is through 2026-10-31. Availability remains unknown."
+      "record_quality_notes": "Google start=0 Rock Springs Wyoming IOP/PHP search, current Wyoming 2-1-1 record, and state registry reviewed 2026-09-24; availability and current schedule remain unknown."
     }
   ]
 }

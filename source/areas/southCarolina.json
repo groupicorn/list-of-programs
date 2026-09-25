@@ -154,6 +154,45 @@
       "date": "2026-09-24",
       "visible_address": "2900 Sunset Boulevard, West Columbia, SC 29169",
       "visible_city": "West Columbia"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "sc_charleston",
+      "location_id": "",
+      "name": "The Middle Path at Barrier Island Charleston IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Charleston South Carolina new intensive outpatient program IOP PHP behavioral health physical address",
+      "source_url": "https://www.psychologytoday.com/",
+      "task": "Current in-person listing describes adult addiction/co-occurring IOP groups meeting three days weekly at this Charleston site; verify provider-controlled source, current intake, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "1620 Ashley River Road, Charleston, SC 29407",
+      "visible_city": "Charleston"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "sc_columbia",
+      "location_id": "",
+      "name": "The Wave of Columbia IOP/PHP",
+      "priority": "normal",
+      "discovery_query": "Google start=40 Columbia Midlands South Carolina Winnsboro IOP PHP addiction mental health provider official address",
+      "source_url": "https://thewavecolumbia.com/contact/",
+      "task": "Official provider contact page identifies current IOP and PHP programs for substance use and mental health at the Winnsboro site; verify intake, population, schedule, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "1403 Greenbrier Mossydale Road, Winnsboro, SC 29180",
+      "visible_city": "Winnsboro"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "sc_columbia",
+      "location_id": "",
+      "name": "The Wave of Columbia IOP/PHP",
+      "priority": "normal",
+      "discovery_query": "Google start=40 Columbia Midlands South Carolina Winnsboro IOP PHP addiction mental health provider official address",
+      "source_url": "https://thewavecolumbia.com/",
+      "task": "Current official provider pages describe The Wave of Columbia's IOP for addiction and mental-health treatment and PHP/IOP continuum at the Winnsboro site; verify current intake, population, schedule, and operating status before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "1403 Greenbrier Mossydale Road, Winnsboro, SC 29180",
+      "visible_city": "Winnsboro"
     }
   ]
 }
