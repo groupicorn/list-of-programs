@@ -283,6 +283,71 @@
       "date": "2026-09-24",
       "visible_address": "340 S Broadview St, Cape Girardeau, MO 63703",
       "visible_city": "Cape Girardeau"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mo_springfield",
+      "location_id": "",
+      "name": "Missouri Behavioral Health Springfield PHP/IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=20: Springfield Missouri IOP PHP behavioral health provider address official",
+      "source_url": "https://missouribehavioralhealth.com/contact/",
+      "task": "Confirm current in-person PHP/IOP operations and intake.",
+      "date": "2026-09-24",
+      "visible_address": "2942 East Battlefield Road, Springfield, MO 65804",
+      "visible_city": "Springfield, MO"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mo_kansas_city",
+      "location_id": "",
+      "name": "Betty Lou Wallace Recovery Kansas City PHP / IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Kansas City Missouri PHP IOP behavioral health provider official address",
+      "source_url": "https://www.jointcommission.org/en/accreditation/behavioral-health-care-and-human-services/provider-locator/605350/",
+      "task": "Confirm current PHP/IOP schedule, exact active site, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "13340 Holmes Road, Kansas City, MO 64145",
+      "visible_city": "Kansas City, MO"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mo_kansas_city",
+      "location_id": "",
+      "name": "Healing House KC Intensive Outpatient",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Kansas City Missouri PHP IOP behavioral health provider official address",
+      "source_url": "https://healinghouse.org/find-help/treatment/",
+      "task": "Confirm current intensive outpatient schedule, population served, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "4505 St. John Avenue, Kansas City, MO 64123",
+      "visible_city": "Kansas City, MO"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mo_kansas_city",
+      "location_id": "",
+      "name": "Swope Health Imani House IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=10: Kansas City Kansas City Metro intensive outpatient addiction program official address",
+      "source_url": "https://swopehealth.org/substance-use-disorder-and-mat/",
+      "task": "Confirm current IOP schedule, eligibility, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "3950 E. 51st Street, Kansas City, MO 64130",
+      "visible_city": "Kansas City, MO"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mo_kansas_city",
+      "location_id": "",
+      "name": "Empowered Recovery Kansas City",
+      "priority": "normal",
+      "discovery_query": "Google start=50: Kansas City Kansas IOP PHP addiction behavioral health exact address",
+      "source_url": "https://empoweredrecoverykansascity.com/rehab-programs/iop/",
+      "task": "Confirm current physical site, PHP availability, intake, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "4177 Broadway Boulevard, Kansas City, MO 64111",
+      "visible_city": "Kansas City"
     }
   ]
 }

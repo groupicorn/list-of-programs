@@ -214,6 +214,19 @@
       "date": "2026-09-24",
       "visible_address": "200 Hawkins Drive, Iowa City, IA 52242",
       "visible_city": "Iowa City, IA"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ia_des_moines",
+      "location_id": "",
+      "name": "Pasadena Villa Outpatient West Des Moines PHP/IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Iowa City Des Moines Cedar Rapids intensive outpatient program IOP PHP address official",
+      "source_url": "https://pasadenavillaoutpatient.com/location/iowa/",
+      "task": "Confirm current PHP/IOP operations and site-specific intake.",
+      "date": "2026-09-24",
+      "visible_address": "4500 Westown Parkway, Suite 120, West Des Moines, IA 50266",
+      "visible_city": "West Des Moines, IA"
     }
   ]
 }

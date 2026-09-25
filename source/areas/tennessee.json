@@ -311,6 +311,44 @@
       "task": "Confirm current physical treatment address, IOP/PHP services, and operating status.",
       "date": "2026-09-24",
       "visible_city": "Clarksville, TN"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "tn_nashville",
+      "location_id": "",
+      "name": "Integrative Life Centers Nashville PHP/IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=10: Tennessee Nashville Memphis Knoxville PHP IOP behavioral health provider official address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/689840/690600/",
+      "task": "Confirm current PHP/IOP operations and exact Nashville treatment address.",
+      "date": "2026-09-24",
+      "visible_city": "Nashville, TN"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "tn_knoxville",
+      "location_id": "",
+      "name": "Pasadena Villa Outpatient Knoxville PHP/IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=10: Tennessee Nashville Memphis Knoxville PHP IOP behavioral health provider official address",
+      "source_url": "https://pasadenavillaoutpatient.com/location/tennessee/",
+      "task": "Confirm current PHP/IOP operations and site-specific intake.",
+      "date": "2026-09-24",
+      "visible_address": "8351 East Walker Springs Lane, Suite 304, Knoxville, TN 37923",
+      "visible_city": "Knoxville, TN"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "tn_cookeville",
+      "location_id": "",
+      "name": "Volunteer Behavioral Health Cookeville IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=1130: Cookeville Tennessee PHP IOP behavioral health provider official address",
+      "source_url": "https://volunteerbehavioralhealth.org/locations/cookeville-tn/",
+      "task": "Confirm current IOP schedule, population served, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "1200 S Willow Avenue, Cookeville, TN 38506",
+      "visible_city": "Cookeville, TN"
     }
   ]
 }

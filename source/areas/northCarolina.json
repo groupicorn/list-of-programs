@@ -298,6 +298,32 @@
       "date": "2026-09-24",
       "visible_address": "8304 Creedmoor Road, Raleigh, NC 27613",
       "visible_city": "Raleigh, NC"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nc_triangle",
+      "location_id": "",
+      "name": "Green Hill Recovery Raleigh PHP/IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=520: Raleigh Durham North Carolina PHP IOP behavioral health provider official address",
+      "source_url": "https://www.greenhillrecovery.com/",
+      "task": "Confirm current PHP/IOP operations and physical-site intake.",
+      "date": "2026-09-24",
+      "visible_address": "6112 St Giles Street, Raleigh, NC 27612",
+      "visible_city": "Raleigh, NC"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nc_triangle",
+      "location_id": "",
+      "name": "Joshua Tree Health Apex Teen PHP/IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=550: Chapel Hill Cary North Carolina PHP IOP behavioral health provider official address",
+      "source_url": "https://www.jtreehealth.com/",
+      "task": "Confirm current adolescent PHP/IOP operations and physical-site intake.",
+      "date": "2026-09-24",
+      "visible_address": "800 West Williams Street, Suite 203, Apex, NC 27502",
+      "visible_city": "Apex, NC"
     }
   ]
 }

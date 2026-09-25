@@ -176,6 +176,19 @@
       "date": "2026-09-24",
       "visible_address": "2555 Broadway Drive, Hattiesburg, MS 39401",
       "visible_city": "Hattiesburg, MS"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ms_jackson",
+      "location_id": "",
+      "name": "Pathway Healthcare Jackson / Flowood IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=1290: Jackson Mississippi adult IOP PHP behavioral health provider official address",
+      "source_url": "https://pathwayhealthcare.com/jackson-ms/",
+      "task": "Confirm current IOP schedule, population served, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "2655 Lakeland Drive, Flowood, MS 39232",
+      "visible_city": "Flowood, MS"
     }
   ]
 }

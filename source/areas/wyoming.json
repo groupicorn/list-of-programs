@@ -306,6 +306,18 @@
       "date": "2026-09-24",
       "visible_address": "1200 College Drive, Rock Springs, WY 82901",
       "visible_city": "Rock Springs, WY"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wy_laramie",
+      "location_id": "",
+      "name": "The Clinic for Mental Health & Wellness",
+      "priority": "normal",
+      "discovery_query": "Google start=70: Laramie Wyoming intensive outpatient behavioral health exact address",
+      "source_url": "https://treatmentseekers.com/providers/the-clinic-for-mental-health-wellness/",
+      "task": "Third-party result supports an IOP claim in Laramie; verify provider-controlled website, exact in-person address, current schedule, and operating status before publication.",
+      "date": "2026-09-24",
+      "visible_city": "Laramie"
     }
   ]
 }

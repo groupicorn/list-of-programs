@@ -170,6 +170,19 @@
       "date": "2026-09-24",
       "visible_address": "30 Airport Road, South Burlington, VT 05403",
       "visible_city": "South Burlington, VT"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "vt_brattleboro",
+      "location_id": "",
+      "name": "Pathfinder Recovery Brattleboro IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Vermont Brattleboro Southern Vermont PHP IOP behavioral health provider official address",
+      "source_url": "https://pathfinder-recovery.com/contact/",
+      "task": "Confirm current day/evening IOP operations and physical-site intake.",
+      "date": "2026-09-24",
+      "visible_address": "209 Austine Drive, Thomas Hall, Brattleboro, VT 05301",
+      "visible_city": "Brattleboro, VT"
     }
   ]
 }

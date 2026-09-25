@@ -500,6 +500,19 @@
       "date": "2026-09-24",
       "visible_address": "801 East Lawrence Avenue, Springfield, IL 62703",
       "visible_city": "Springfield, IL"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "il_chicago_south",
+      "location_id": "",
+      "name": "Chicago Behavioral Hospital Evergreen Park Adult IOP/PHP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Chicago South Side Illinois behavioral health IOP PHP hospital address",
+      "source_url": "https://chicagobehavioralhospital.com/outpatient/intensive-outpatient-program/",
+      "task": "Confirm current adult IOP/PHP services and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "2850 West 95th Street, Suite 403, Evergreen Park, IL 60805",
+      "visible_city": "Evergreen Park, IL"
     }
   ]
 }

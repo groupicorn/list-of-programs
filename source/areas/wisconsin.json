@@ -1568,6 +1568,45 @@
       "date": "2026-09-24",
       "visible_address": "1150 Lake View Drive, Wausau, WI 54403",
       "visible_city": "Wausau, WI"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wi_stevens_point",
+      "location_id": "",
+      "name": "Aspirus Stevens Point Behavioral Health",
+      "priority": "normal",
+      "discovery_query": "Google start=10: Wisconsin Stevens Point Wautoma PHP IOP behavioral health provider official address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/7706/419982/",
+      "task": "Confirm current IOP/PHP services and exact active treatment site.",
+      "date": "2026-09-24",
+      "visible_address": "3398 East Maria Drive, Stevens Point, WI 54481",
+      "visible_city": "Stevens Point, WI"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wi_wautoma",
+      "location_id": "",
+      "name": "Noble Community Clinics Wautoma IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=870: Wautoma Wisconsin PHP IOP behavioral health provider official address; Wisconsin DHS Mental Health Program Directory",
+      "source_url": "https://www.dhs.wisconsin.gov/",
+      "task": "Confirm current Wisconsin DHS 75.51 intensive outpatient treatment operations and physical-site intake; provider identified in the state mental-health directory.",
+      "date": "2026-09-24",
+      "visible_address": "400 S Townline Road, Wautoma, WI 54982",
+      "visible_city": "Wautoma, WI"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wi_wautoma",
+      "location_id": "",
+      "name": "Options Treatment Programs - Wautoma",
+      "priority": "normal",
+      "discovery_query": "Google start=160: Wautoma Wisconsin PHP IOP behavioral health official provider address",
+      "source_url": "https://www.forwardhealth.wi.gov/WIPortal/Subsystem/Public/DirectorySearch.aspx/",
+      "task": "State provider directory identifies this substance-use treatment site; verify whether current in-person IOP/PHP is offered and capture a provider-controlled program page.",
+      "date": "2026-09-24",
+      "visible_address": "719 West Main Street, Wautoma, WI 54982",
+      "visible_city": "Wautoma"
     }
   ]
 }

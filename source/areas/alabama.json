@@ -328,6 +328,18 @@
       "date": "2026-09-24",
       "visible_address": "912 J.L. Chestnut Junior Boulevard, Selma, AL 36701",
       "visible_city": "Selma, AL"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "al-black-belt",
+      "location_id": "",
+      "name": "Selma Helpline PHP/IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Selma Alabama intensive outpatient program IOP PHP behavioral health address",
+      "source_url": "https://123recovery.org/",
+      "task": "Confirm current Selma physical treatment address and PHP/IOP operations.",
+      "date": "2026-09-24",
+      "visible_city": "Selma, AL"
     }
   ]
 }

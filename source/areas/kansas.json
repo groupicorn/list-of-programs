@@ -157,6 +157,19 @@
       "date": "2026-09-24",
       "visible_address": "200 Maine Street, Suite A, Lawrence, KS 66044",
       "visible_city": "Lawrence"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ks_lawrence",
+      "location_id": "",
+      "name": "Lawrence Recovery LLC PHP/IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=30: Kansas City Lawrence Kansas IOP PHP behavioral health provider address official",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/719123/",
+      "task": "Confirm current PHP/IOP operations, provider branding, and intake.",
+      "date": "2026-09-24",
+      "visible_address": "801 Iowa Street, Lawrence, KS 66049",
+      "visible_city": "Lawrence, KS"
     }
   ]
 }

@@ -387,6 +387,32 @@
       "date": "2026-09-24",
       "visible_address": "1400 West Washington Street, Marquette, MI 49855",
       "visible_city": "Marquette, MI"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mi_ann_arbor",
+      "location_id": "",
+      "name": "University of Michigan Health Teen IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=10: Ann Arbor Michigan PHP IOP behavioral health provider official address",
+      "source_url": "https://www.uofmhealth.org/our-care/specialties-services/teen-intensive-outpatient-program-teen-iop/",
+      "task": "Confirm current teen IOP operations, referral requirements, and age range.",
+      "date": "2026-09-24",
+      "visible_address": "4250 Plymouth Road, Ann Arbor, MI 48109",
+      "visible_city": "Ann Arbor, MI"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mi_lansing",
+      "location_id": "",
+      "name": "Pasadena Villa Outpatient Lansing PHP / IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=1340: Lansing Michigan PHP IOP behavioral health provider official address",
+      "source_url": "https://pasadenavillaoutpatient.com/locations/lansing/",
+      "task": "Confirm current PHP/IOP schedule, eligibility, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "6607 West St Joseph Highway, Suite 200, Lansing, MI 48917",
+      "visible_city": "Lansing, MI"
     }
   ]
 }

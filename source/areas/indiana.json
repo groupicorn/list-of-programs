@@ -529,6 +529,84 @@
       "date": "2026-09-24",
       "visible_address": "4601 Medical Plaza Way, Clarksville, IN 47129",
       "visible_city": "Clarksville, IN"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "in_bloomington",
+      "location_id": "",
+      "name": "IU Health Psychiatry Bloomington IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Indiana Bloomington intensive outpatient program IOP PHP behavioral health address official",
+      "source_url": "https://iuhealth.org/find-locations/iu-health-psychiatry-727-w-2nd-st-bloomington/",
+      "task": "Confirm current psychiatric IOP operations and intake status.",
+      "date": "2026-09-24",
+      "visible_address": "727 West 2nd Street, Bloomington, IN 47403",
+      "visible_city": "Bloomington, IN"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "in_clarksville_southern_indiana",
+      "location_id": "",
+      "name": "GetWell Jeffersonville Behavioral Health IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=650: New Albany Indiana PHP IOP intensive outpatient behavioral health provider official address",
+      "source_url": "https://www.getwellhealthsystem.com/locations/jeffersonville/behavioral-health/",
+      "task": "Confirm current IOP operations and physical-site intake.",
+      "date": "2026-09-24",
+      "visible_address": "1802 East 10th Street, Jeffersonville, IN 47130",
+      "visible_city": "Jeffersonville, IN"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "in_clarksville_southern_indiana",
+      "location_id": "",
+      "name": "Aster Springs Jeffersonville PHP/IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=660: Jeffersonville Indiana PHP IOP behavioral health provider official address",
+      "source_url": "https://astersprings.com/locations/outpatient-jeffersonville-louisville/",
+      "task": "Confirm current eating-disorder PHP/IOP operations and physical-site intake.",
+      "date": "2026-09-24",
+      "visible_address": "4500 Town Center Boulevard, Suite 103, Jeffersonville, IN 47130",
+      "visible_city": "Jeffersonville, IN"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "in_clarksville_southern_indiana",
+      "location_id": "",
+      "name": "Sunrise Recovery Jeffersonville PHP/IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=670: Clarksville Louisville metro addiction IOP PHP provider official address",
+      "source_url": "https://www.sunriserecoverycare.com/allison-lane-in-center/",
+      "task": "Confirm current addiction PHP/IOP operations and physical-site intake.",
+      "date": "2026-09-24",
+      "visible_address": "1505 Allison Lane, Jeffersonville, IN 47130",
+      "visible_city": "Jeffersonville, IN"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "in_lafayette_west_lafayette",
+      "location_id": "",
+      "name": "Indiana Center for Recovery Lafayette IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=700: Lafayette Indiana addiction IOP PHP treatment provider official address",
+      "source_url": "https://www.treatmentindiana.com/locations/lafayette/",
+      "task": "Confirm current IOP operations and whether PHP is offered at this Lafayette site.",
+      "date": "2026-09-24",
+      "visible_address": "2529 Schuyler Avenue, Suite 700, Lafayette, IN 47905",
+      "visible_city": "Lafayette, IN"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "in_terre_haute",
+      "location_id": "",
+      "name": "Forward Recovery Terre Haute PHP / IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=1420: Terre Haute Indiana PHP IOP behavioral health provider official address",
+      "source_url": "https://forward-recovery.com/partial-hospitalization-programming/",
+      "task": "Confirm current PHP/IOP schedule, population served, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "1634 North 3rd Street, Terre Haute, IN 47804",
+      "visible_city": "Terre Haute, IN"
     }
   ]
 }

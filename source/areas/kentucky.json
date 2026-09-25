@@ -180,6 +180,19 @@
       "date": "2026-09-24",
       "visible_address": "1229 Arcade Avenue, Louisville, KY 40215",
       "visible_city": "Louisville, KY"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ky_louisville",
+      "location_id": "",
+      "name": "Renewal Pathway Louisville IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=630: Louisville Kentucky substance use IOP PHP provider official address",
+      "source_url": "https://renewalpathway.net/",
+      "task": "Confirm current IOP operations, physical-site intake, and whether PHP is offered.",
+      "date": "2026-09-24",
+      "visible_address": "3800 W Market Street, Louisville, KY 40212",
+      "visible_city": "Louisville, KY"
     }
   ]
 }

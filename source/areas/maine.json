@@ -264,6 +264,44 @@
       "date": "2026-09-24",
       "visible_address": "235 Main Street, Biddeford, ME 04005",
       "visible_city": "Biddeford, ME"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "me_augusta",
+      "location_id": "",
+      "name": "Kennebec Behavioral Health Augusta IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Maine Portland Bangor Augusta intensive outpatient program IOP PHP address official",
+      "source_url": "https://www.kbhmaine.org/services/clinic-based-services/",
+      "task": "Confirm current Augusta IOP operations and exact active clinic address.",
+      "date": "2026-09-24",
+      "visible_address": "10-11 Caldwell Road, Augusta, ME",
+      "visible_city": "Augusta, ME"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "me_portland",
+      "location_id": "",
+      "name": "Bishop Health South Portland PHP/IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Portland Maine PHP IOP behavioral health provider official address",
+      "source_url": "https://bishophealth.com/programs/",
+      "task": "Confirm current South Portland physical address and PHP/IOP operations.",
+      "date": "2026-09-24",
+      "visible_city": "South Portland, ME"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "me_augusta",
+      "location_id": "",
+      "name": "Enso Recovery Augusta IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=1450: Augusta Maine PHP IOP behavioral health provider official address",
+      "source_url": "https://ensorecovery.com/locations-augusta/",
+      "task": "Confirm current IOP schedule, eligibility, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "90 Western Avenue, Augusta, ME 04330",
+      "visible_city": "Augusta, ME"
     }
   ]
 }

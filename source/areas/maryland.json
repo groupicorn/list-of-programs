@@ -328,6 +328,32 @@
       "date": "2026-09-24",
       "visible_address": "7503 Surratts Road, Clinton, MD 20735",
       "visible_city": "Clinton, MD"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "md_annapolis_anne_arundel",
+      "location_id": "",
+      "name": "Luminis Health Annapolis Behavioral Health PHP/IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Maryland Annapolis Eastern Shore Western Maryland intensive outpatient program IOP PHP address official",
+      "source_url": "https://www.luminishealth.org/en/services/outpatient-therapy-mental-health/",
+      "task": "Confirm current adult/adolescent PHP/IOP operations and intake.",
+      "date": "2026-09-24",
+      "visible_address": "175 Harry S. Truman Parkway, Annapolis, MD 21401",
+      "visible_city": "Annapolis, MD"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "md_eastern_shore",
+      "location_id": "",
+      "name": "Community Behavioral Health Salisbury IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=1280: Eastern Shore Maryland PHP IOP behavioral health provider official address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/550548/592248/",
+      "task": "Confirm current addiction and mental-health IOP schedule and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "809 Eastern Shore Drive, Salisbury, MD 21804",
+      "visible_city": "Salisbury, MD"
     }
   ]
 }

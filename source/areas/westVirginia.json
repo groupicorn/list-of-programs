@@ -179,6 +179,58 @@
       "task": "Confirm current physical treatment address and IOP schedule; current provider site describes adult intensive outpatient services in Charleston.",
       "date": "2026-09-24",
       "visible_city": "Charleston"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wv_huntington",
+      "location_id": "",
+      "name": "Contemplations Behavioral Health Huntington IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=20: West Virginia Huntington Morgantown PHP IOP behavioral health provider official address",
+      "source_url": "https://sites.google.com/contemplationsbhs.com/home/home/",
+      "task": "Confirm current IOP operations, provider site, and intake.",
+      "date": "2026-09-24",
+      "visible_address": "2429 8th Avenue, Huntington, WV 25703",
+      "visible_city": "Huntington, WV"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wv_morgantown",
+      "location_id": "",
+      "name": "Cheat Road Project Associates Morgantown PHP / IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=1560: Morgantown West Virginia PHP IOP behavioral health provider official address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/688801/695205/",
+      "task": "Confirm current PHP/IOP schedule, provider brand, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "2195 Cheat Road, Suite 100, Morgantown, WV 26508",
+      "visible_city": "Morgantown, WV"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wv_huntington",
+      "location_id": "",
+      "name": "Marshall Health Mind Wellness Center Huntington PHP / IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=1580: Huntington West Virginia partial hospitalization behavioral health official provider address",
+      "source_url": "https://www.marshallhealth.org/psychiatry/",
+      "task": "Confirm current Mind Wellness Center PHP/IOP site address, schedule, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "1115 20th Street, Suite 205, Huntington, WV 25703",
+      "visible_city": "Huntington, WV"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wv_huntington",
+      "location_id": "",
+      "name": "Mountain State Recovery Center Huntington IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=1570: Huntington West Virginia intensive outpatient program addiction official provider address",
+      "source_url": "https://msrcwv.com/",
+      "task": "Confirm current IOP treatment site and operating status; reconcile current address with provider page.",
+      "date": "2026-09-24",
+      "visible_address": "135 4th Avenue, Huntington, WV 25701",
+      "visible_city": "Huntington, WV"
     }
   ]
 }

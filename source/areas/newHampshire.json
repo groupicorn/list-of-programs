@@ -156,6 +156,32 @@
       "date": "2026-09-24",
       "visible_address": "300 Hanover Street, Manchester, NH 03104",
       "visible_city": "Manchester, NH"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nh_nashua",
+      "location_id": "",
+      "name": "Direction Behavioral Health Nashua PHP / IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=1180: Nashua New Hampshire PHP IOP behavioral health provider official address",
+      "source_url": "https://www.directionbehavioralhealth.com/about/",
+      "task": "Confirm current adolescent PHP/IOP schedule and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "25 Technology Way, Suite 3W1, Nashua, NH 03060",
+      "visible_city": "Nashua, NH"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nh_nashua",
+      "location_id": "",
+      "name": "Discover Health Group Nashua PHP / IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=1180: Nashua New Hampshire PHP IOP behavioral health provider official address",
+      "source_url": "https://discoverhealthgroup.com/program/partial-hospitalization-program-php/",
+      "task": "Confirm current adult PHP/IOP schedule, eligibility, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "74 Northeastern Boulevard, Suite 21 A-B, Nashua, NH 03062",
+      "visible_city": "Nashua, NH"
     }
   ]
 }

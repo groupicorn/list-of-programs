@@ -249,6 +249,19 @@
       "date": "2026-09-24",
       "visible_address": "932 Bank Street, New London, CT 06320",
       "visible_city": "New London, CT"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ct-bridgeport-valley",
+      "location_id": "",
+      "name": "Bridgeport Hospital REACH IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=0: Bridgeport Connecticut PHP IOP behavioral health provider official address",
+      "source_url": "https://www.bridgeporthospital.org/services/mental-health/",
+      "task": "Confirm current REACH IOP operations, age range, and exact street address.",
+      "date": "2026-09-24",
+      "visible_address": "1558 Barnum Avenue, Bridgeport, CT",
+      "visible_city": "Bridgeport, CT"
     }
   ]
 }
