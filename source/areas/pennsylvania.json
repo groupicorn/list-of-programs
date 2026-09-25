@@ -494,6 +494,84 @@
       "date": "2026-09-24",
       "visible_address": "201 Wellness Way, Reading, PA 19605",
       "visible_city": "Reading"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "pa_lehigh_valley",
+      "location_id": "",
+      "name": "St. Lukes Sacred Heart Adult IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=10 Lehigh Valley Allentown Bethlehem IOP PHP outpatient behavioral health provider",
+      "source_url": "https://www.slhn.org/locations/stlukes-penn-foundation-mental-health-intensive-outpatient-program-sacred-heart-campus/",
+      "task": "Official St. Lukes page explicitly describes an adult IOP at this Allentown address; verify current program availability and intake.",
+      "date": "2026-09-24",
+      "visible_address": "451 West Chew Street, Allentown, PA 18102",
+      "visible_city": "Allentown"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "pa_pittsburgh",
+      "location_id": "",
+      "name": "UPMC Center for Eating Disorders Care and Treatment",
+      "priority": "normal",
+      "discovery_query": "Google start=10 Pittsburgh Allegheny County IOP PHP outpatient behavioral health provider",
+      "source_url": "https://dam.upmc.com/services/behavioral-health/programs/eating-disorders/treatment/",
+      "task": "Official UPMC page explicitly lists PHP and IOP outpatient levels at this Pittsburgh eating-disorders center; verify current eligibility and intake.",
+      "date": "2026-09-24",
+      "visible_address": "3811 OHara Street, Eighth Floor, Pittsburgh, PA 15213",
+      "visible_city": "Pittsburgh"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "pa_erie_northwest",
+      "location_id": "",
+      "name": "White Deer Run Cove Forge Erie Outpatient",
+      "priority": "normal",
+      "discovery_query": "Google start=10 Erie Northwestern Pennsylvania IOP PHP outpatient behavioral health provider",
+      "source_url": "https://www.whitedeerrun.com/",
+      "task": "Current Erie County resource guide identifies outpatient and intensive outpatient drug-and-alcohol services at this Cove Forge address; verify current operator page, IOP track, and intake.",
+      "date": "2026-09-24",
+      "visible_address": "1940 West 8th Street, Erie, PA 16505",
+      "visible_city": "Erie"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "pa_poconos",
+      "location_id": "",
+      "name": "Carbon-Monroe-Pike D&A Commission Outpatient / IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=10 Poconos Carbon County Pennsylvania IOP PHP outpatient treatment provider",
+      "source_url": "https://www.cmpda.cog.pa.us/",
+      "task": "Official commission page states its Carbon County unit provides outpatient and intensive outpatient treatment; verify the current treatment-site address and program intake.",
+      "date": "2026-09-24",
+      "visible_address": "430 South 7th Street, Lehighton, PA 18235",
+      "visible_city": "Lehighton"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "pa_central",
+      "location_id": "",
+      "name": "PA Treatment and Healing Altoona IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=20 Altoona Central Pennsylvania IOP PHP outpatient behavioral health provider",
+      "source_url": "https://pathtochange.org/locations/",
+      "task": "Current PATH locations page explicitly lists adult intensive outpatient drug-and-alcohol treatment at this Altoona site; verify current intake and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "3618 5th Avenue, Altoona, PA 16602",
+      "visible_city": "Altoona"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "pa_erie_northwest",
+      "location_id": "",
+      "name": "Glenbeigh Outpatient Center of Erie",
+      "priority": "normal",
+      "discovery_query": "Google start=20 Erie Northwestern Pennsylvania IOP PHP outpatient behavioral health provider",
+      "source_url": "https://glenbeigh.com/erie/",
+      "task": "Official Glenbeigh Erie page explicitly lists an intensive outpatient program at this physical site; verify current schedule and intake.",
+      "date": "2026-09-24",
+      "visible_address": "3526 Peach Street, Erie, PA 16508",
+      "visible_city": "Erie"
     }
   ]
 }
