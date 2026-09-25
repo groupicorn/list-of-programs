@@ -413,6 +413,19 @@
       "date": "2026-09-24",
       "visible_address": "6607 West St Joseph Highway, Suite 200, Lansing, MI 48917",
       "visible_city": "Lansing, MI"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mi_flint",
+      "location_id": "",
+      "name": "Biomed Behavioral Healthcare - Flint",
+      "priority": "normal",
+      "discovery_query": "Google start=560: Flint Michigan PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://www.biomedbehavioralhealthcare.org/",
+      "task": "Regional provider directory identifies adult intensive outpatient services at the Flint site; verify current provider-controlled program page, exact address, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "1044 Gilbert Street, Flint, MI 48532",
+      "visible_city": "Flint"
     }
   ]
 }

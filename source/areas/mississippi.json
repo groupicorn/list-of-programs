@@ -189,6 +189,44 @@
       "date": "2026-09-24",
       "visible_address": "2655 Lakeland Drive, Flowood, MS 39232",
       "visible_city": "Flowood, MS"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ms_jackson",
+      "location_id": "",
+      "name": "Imagine Behavioral Health Jackson",
+      "priority": "normal",
+      "discovery_query": "Google start=990: Jackson Mississippi PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://imaginebh.com/",
+      "task": "Joint Commission lists current substance-use IOP; verify the provider's current program page, exact address discrepancy with directory listings, and intake/operating status.",
+      "date": "2026-09-24",
+      "visible_address": "1920 Dunbarton Drive, Jackson, MS 39216",
+      "visible_city": "Jackson, MS"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ms_gulf_coast",
+      "location_id": "",
+      "name": "Psycamore Biloxi Intensive Outpatient and Partial Hospitalization",
+      "priority": "normal",
+      "discovery_query": "Google start=1070 Gulfport Biloxi Ocean Springs Mississippi IOP PHP behavioral health outpatient official provider address",
+      "source_url": "https://www.psycamore.com/mississippi/psychiatric-therapy-biloxi-ms/",
+      "task": "Provider page explicitly describes Biloxi IOP/PHP serving the Gulf Coast; verify exact street address and current in-person schedule before promotion.",
+      "date": "2026-09-24",
+      "visible_city": "Biloxi, MS"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ms_gulf_coast",
+      "location_id": "",
+      "name": "Oceans Behavioral Hospital of Biloxi Outpatient",
+      "priority": "normal",
+      "discovery_query": "Google start=1280 Gulfport Biloxi Mississippi IOP PHP outpatient behavioral health provider official site address",
+      "source_url": "https://oceanshealthcare.com/",
+      "task": "Current official outpatient page documents PHP and IOP; verify exact street address for the outpatient site, current schedule, and intake before promotion.",
+      "date": "2026-09-24",
+      "visible_address": "180 Debuys Road, Biloxi, MS 39531",
+      "visible_city": "Biloxi, MS"
     }
   ]
 }

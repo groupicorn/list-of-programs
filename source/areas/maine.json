@@ -302,6 +302,32 @@
       "date": "2026-09-24",
       "visible_address": "90 Western Avenue, Augusta, ME 04330",
       "visible_city": "Augusta, ME"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "me_bangor",
+      "location_id": "",
+      "name": "Northern Light Addiction Care - Bangor",
+      "priority": "normal",
+      "discovery_query": "Google start=200: Bangor Maine intensive outpatient program PHP behavioral health exact address provider",
+      "source_url": "https://mainesober.com/facility/iop/17/northern-light-addiction-care/",
+      "task": "Third-party result identifies a Bangor IOP lead at Northern Light Acadia; verify current provider-controlled program page, in-person status, and whether it is distinct from the existing Acadia pediatric IOP record.",
+      "date": "2026-09-24",
+      "visible_address": "268 Stillwater Avenue, Bangor, ME 04401",
+      "visible_city": "Bangor"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "me_lewiston_auburn",
+      "location_id": "",
+      "name": "Recovery Connections of Maine / Connextions Behavioral Health",
+      "priority": "normal",
+      "discovery_query": "Google start=380: Lewiston Auburn Maine PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://recoveryconnectionsme.com/contact-us/",
+      "task": "Official page lists PHP and IOP at the Lewiston site; verify current physical treatment address, schedule, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "103 Park Street, Lewiston, ME 04240",
+      "visible_city": "Lewiston"
     }
   ]
 }

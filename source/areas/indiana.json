@@ -607,6 +607,19 @@
       "date": "2026-09-24",
       "visible_address": "1634 North 3rd Street, Terre Haute, IN 47804",
       "visible_city": "Terre Haute, IN"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "in_muncie",
+      "location_id": "",
+      "name": "CleanSlate Centers - Muncie",
+      "priority": "normal",
+      "discovery_query": "Google start=340: Muncie Indiana PHP IOP behavioral health outpatient provider exact address",
+      "source_url": "https://secure.in.gov/fssa/dmha/quality-assurance-quality-improvement/mental-health-and-addiction-providers/",
+      "task": "Indiana active-provider listing identifies the Muncie addiction-services site; verify current in-person IOP/PHP level and provider-controlled program page.",
+      "date": "2026-09-24",
+      "visible_address": "124 East Main Street, Muncie, IN 47305",
+      "visible_city": "Muncie"
     }
   ]
 }

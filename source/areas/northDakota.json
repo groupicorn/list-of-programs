@@ -157,6 +157,31 @@
       "date": "2026-09-24",
       "visible_address": "1122 1st Avenue North, Fargo, ND 58103",
       "visible_city": "Fargo, ND"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nd_minot",
+      "location_id": "",
+      "name": "Providence House Minot",
+      "priority": "normal",
+      "discovery_query": "Google start=630: Minot North Dakota PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://www.hhs.nd.gov/behavioral-health/sudvoucher/sud-voucher-adult-service-providers/",
+      "task": "North Dakota state provider directory supports adult ASAM 2.1 IOP and 2.5 day treatment; verify provider-controlled site, current schedule, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "415 South Main Street, Minot, ND 58701",
+      "visible_city": "Minot"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nd_minot",
+      "location_id": "",
+      "name": "Trinity Health Riverside Behavioral Health",
+      "priority": "normal",
+      "discovery_query": "Google start=630: Minot North Dakota PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://www.trinityhealth.org/locations/trinity-health-riverside/",
+      "task": "Official health-system page confirms local outpatient mental-health services; verify whether current in-person IOP/PHP is offered and capture the exact program address.",
+      "date": "2026-09-24",
+      "visible_city": "Minot"
     }
   ]
 }

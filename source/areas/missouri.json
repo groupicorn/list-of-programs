@@ -348,6 +348,70 @@
       "date": "2026-09-24",
       "visible_address": "4177 Broadway Boulevard, Kansas City, MO 64111",
       "visible_city": "Kansas City"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mo_joplin",
+      "location_id": "",
+      "name": "Starting Point Outpatient Inc",
+      "priority": "normal",
+      "discovery_query": "Google start=250: Joplin Missouri PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://www.startingpointoutpatientinc.org/",
+      "task": "Official site confirms an active Joplin outpatient recovery organization; verify current IOP/PHP level and program schedule before publication.",
+      "date": "2026-09-24",
+      "visible_address": "501 South Pennsylvania Avenue, Joplin, MO 64801",
+      "visible_city": "Joplin"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mo_columbia",
+      "location_id": "",
+      "name": "One Behavioral Missouri - Columbia",
+      "priority": "normal",
+      "discovery_query": "Google start=550: Columbia Missouri PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://onebehavioralmo.com/locations/columbia/",
+      "task": "Official location page supports a Columbia behavioral-health provider; verify the current physical address and whether in-person IOP/PHP levels are offered.",
+      "date": "2026-09-24",
+      "visible_city": "Columbia"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mo_kansas_city",
+      "location_id": "",
+      "name": "ReDiscover Intensive Outpatient and Partial Hospital Program",
+      "priority": "normal",
+      "discovery_query": "Google start=950: Kansas City Kansas Missouri PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://rediscovermh.org/outpatient-treatment/",
+      "task": "Official page describes mental-health and substance-use IOP plus a Partial Hospital Program; verify which Kansas City-area site currently delivers each level and whether 5904 E Bannister Road is also active.",
+      "date": "2026-09-24",
+      "visible_address": "7001 Blue Ridge Boulevard, Raytown, MO 64133",
+      "visible_city": "Raytown, MO"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mo_southeast_missouri",
+      "location_id": "",
+      "name": "Southeast Behavioral Hospital Cape Girardeau",
+      "priority": "normal",
+      "discovery_query": "Google start=1130 Cape Girardeau Southeast Missouri PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://southeastbehavioral.com/",
+      "task": "Discovery evidence describes a full continuum including partial hospitalization and intensive outpatient services; verify the provider-controlled program page, current in-person levels, and intake.",
+      "date": "2026-09-24",
+      "visible_address": "639 South Silver Springs Road, Cape Girardeau, MO 63703",
+      "visible_city": "Cape Girardeau, MO"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mo_southeast_missouri",
+      "location_id": "",
+      "name": "Poplar Bluff Regional Medical Center Adult Intensive Outpatient Program",
+      "priority": "normal",
+      "discovery_query": "Google start=1180 Poplar Bluff Cape Girardeau Missouri PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://www.pbrmc.com/",
+      "task": "Official hospital page describes an adult mental-health/addiction IOP with structured group treatment; verify current schedule, intake, and whether the program is distinct from existing Southeast Missouri provider groups. Evidence page: https://www.pbrmc.com/intensive-outpatient-program-iop",
+      "date": "2026-09-24",
+      "visible_address": "3100 Oak Grove Road, Poplar Bluff, MO 63901",
+      "visible_city": "Poplar Bluff, MO"
     }
   ]
 }

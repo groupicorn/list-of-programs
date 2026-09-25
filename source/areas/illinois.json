@@ -513,6 +513,31 @@
       "date": "2026-09-24",
       "visible_address": "2850 West 95th Street, Suite 403, Evergreen Park, IL 60805",
       "visible_city": "Evergreen Park, IL"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "il_springfield",
+      "location_id": "",
+      "name": "Mental Health Centers of Central Illinois",
+      "priority": "normal",
+      "discovery_query": "Google start=240: Springfield Illinois PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://hfs.illinois.gov/medicalclients/maternalandchildhealth/outpatient/sangamoncounty.html/",
+      "task": "State resource page identifies an outpatient partial-hospital program lead; verify exact street address, current IOP/PHP levels, and provider-controlled source.",
+      "date": "2026-09-24",
+      "visible_city": "Springfield"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "il_southern_illinois",
+      "location_id": "",
+      "name": "SIH Outpatient Behavioral Health Marion",
+      "priority": "normal",
+      "discovery_query": "Google start=520: Carbondale Marion Illinois PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://www.sih.net/locations/sih-outpatient-behavioral-health-marion/",
+      "task": "Official health-system page confirms a local outpatient behavioral-health site; verify current IOP/PHP level and program schedule.",
+      "date": "2026-09-24",
+      "visible_address": "3123 Williamson County Parkway, Marion, IL 62959",
+      "visible_city": "Marion"
     }
   ]
 }

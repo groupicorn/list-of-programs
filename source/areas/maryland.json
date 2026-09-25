@@ -354,6 +354,71 @@
       "date": "2026-09-24",
       "visible_address": "809 Eastern Shore Drive, Salisbury, MD 21804",
       "visible_city": "Salisbury, MD"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "md_baltimore",
+      "location_id": "",
+      "name": "Maryland IOP Partners - Bel Air",
+      "priority": "normal",
+      "discovery_query": "Google start=240: Southern Maryland PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/546157/549254/",
+      "task": "Joint Commission supports current local IOP/PHP levels; verify provider-controlled page, exact intake location, and area catchment before publication.",
+      "date": "2026-09-24",
+      "visible_address": "21 West Courtland Street, Bel Air, MD 21014",
+      "visible_city": "Bel Air"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "md_dc_metro",
+      "location_id": "",
+      "name": "Compass Health Center Silver Spring",
+      "priority": "normal",
+      "discovery_query": "Google start=1220 DC Metro Maryland Bethesda Silver Spring PHP IOP behavioral health outpatient official address",
+      "source_url": "https://compasshealthcenter.net/",
+      "task": "Official Silver Spring location page documents in-person PHP and IOP for teen, young-adult, and adult programs; verify current intake and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "11941 Bournefield Way, Suite 100, Silver Spring, MD 20904",
+      "visible_city": "Silver Spring, MD"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "md_dc_metro",
+      "location_id": "",
+      "name": "MedStar Montgomery Medical Center Behavioral Health",
+      "priority": "normal",
+      "discovery_query": "Google start=1220 DC Metro Maryland Bethesda Silver Spring PHP IOP behavioral health outpatient official address",
+      "source_url": "https://www.medstarhealth.org/",
+      "task": "Current MedStar page lists Partial Hospitalization and Adult Intensive Outpatient Programs; verify the current outpatient entrance, schedule, intake, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "18101 Prince Philip Drive, 6th Floor, Olney, MD 20832",
+      "visible_city": "Olney, MD"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "md_dc_metro",
+      "location_id": "",
+      "name": "Positive Recovery Services Silver Spring IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=1220 DC Metro Maryland Bethesda Silver Spring PHP IOP behavioral health outpatient official address",
+      "source_url": "https://www.positiverecoveryservices.com/",
+      "task": "Maryland 211 listing identifies current intensive outpatient substance-use treatment at this address; verify provider-controlled program page, in-person status, and intake.",
+      "date": "2026-09-24",
+      "visible_address": "10301 Georgia Avenue, Suite 103, Silver Spring, MD 20902",
+      "visible_city": "Silver Spring, MD"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "md_baltimore",
+      "location_id": "",
+      "name": "Achieve Behavioral Health Services Bel Air",
+      "priority": "normal",
+      "discovery_query": "Google start=1690 Maryland Southern Maryland IOP PHP behavioral health outpatient official provider address",
+      "source_url": "https://www.achievebhs.org/",
+      "task": "Official provider page at /maryland-location lists current PHP and IOP at the Bel Air site; verify intake, operating status, and exact area assignment before publication.",
+      "date": "2026-09-24",
+      "visible_address": "2012 South Tollgate Road, Suite 205, Bel Air, MD 21015",
+      "visible_city": "Bel Air"
     }
   ]
 }

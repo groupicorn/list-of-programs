@@ -318,6 +318,30 @@
       "task": "Third-party result supports an IOP claim in Laramie; verify provider-controlled website, exact in-person address, current schedule, and operating status before publication.",
       "date": "2026-09-24",
       "visible_city": "Laramie"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wy_laramie",
+      "location_id": "",
+      "name": "Foundations Counseling and Consulting of Wyoming",
+      "priority": "normal",
+      "discovery_query": "Google start=350: Laramie Wyoming IOP PHP behavioral health outpatient provider exact address",
+      "source_url": "https://rehabplaces.org/listings/foundations-counseling-and-consulting-of-wy-laramie-wy/",
+      "task": "Third-party result supports an IOP substance-use lead; verify provider-controlled website, exact physical address, current schedule, and operating status.",
+      "date": "2026-09-24",
+      "visible_city": "Laramie"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wy_worland",
+      "location_id": "",
+      "name": "Lighthouse Adult Crisis Center / Outpatient Services",
+      "priority": "normal",
+      "discovery_query": "Google start=680: Worland Wyoming PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://carf.org/provider/lighthouse-241765/",
+      "task": "CARF identifies integrated mental-health/SUD outpatient treatment in Worland; verify current IOP/PHP level, exact physical address, and provider-controlled source.",
+      "date": "2026-09-24",
+      "visible_city": "Worland"
     }
   ]
 }

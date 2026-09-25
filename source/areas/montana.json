@@ -263,6 +263,58 @@
       "date": "2026-09-24",
       "visible_address": "600 Central Avenue, Suite 408, Great Falls, MT 59401",
       "visible_city": "Great Falls, MT"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mt_missoula",
+      "location_id": "",
+      "name": "Crosswinds Recovery - Missoula",
+      "priority": "normal",
+      "discovery_query": "Google start=580: Missoula Montana PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://www.dphhs.mt.gov/",
+      "task": "Montana state-approved provider list identifies Level 2.1 intensive outpatient substance-use treatment; locate the provider-controlled site and verify current program status.",
+      "date": "2026-09-24",
+      "visible_address": "1501 North Avenue, Missoula, MT 59801",
+      "visible_city": "Missoula"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mt_billings",
+      "location_id": "",
+      "name": "New Day Ranch Billings",
+      "priority": "normal",
+      "discovery_query": "Google start=880: Montana Billings Great Falls PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://newdayranchmt.org/",
+      "task": "Verify current in-person Level 2.1/2.5 scope and reconcile the official site address (1726 Lampman Drive) with the state-approved directory address (1724 Lampman Drive).",
+      "date": "2026-09-24",
+      "visible_address": "1724 Lampman Drive, Billings, MT 59102",
+      "visible_city": "Billings, MT"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mt_billings",
+      "location_id": "",
+      "name": "Bridgemont Health & Wellness Billings",
+      "priority": "normal",
+      "discovery_query": "Google start=880: Montana Billings Great Falls PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://bridgemontmt.com/billings/",
+      "task": "Verify current in-person Level 2.1 IOP scope and intake; the state-approved directory identifies 2.1 IOP and the provider page confirms the Billings site.",
+      "date": "2026-09-24",
+      "visible_address": "1245 North 29th Street, Billings, MT 59101",
+      "visible_city": "Billings, MT"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "mt_billings",
+      "location_id": "",
+      "name": "Stepping Stones Counseling and Recovery Billings",
+      "priority": "normal",
+      "discovery_query": "Google start=880: Montana Billings Great Falls PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://steppingstonescr.com/",
+      "task": "Verify current in-person intensive outpatient treatment scope and intake; official site identifies Intensive Outpatient Treatment and the Billings address.",
+      "date": "2026-09-24",
+      "visible_address": "1201 Grand Avenue, Suite 2, Billings, MT 59102",
+      "visible_city": "Billings, MT"
     }
   ]
 }

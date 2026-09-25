@@ -2630,6 +2630,71 @@
       "date": "2026-09-24",
       "visible_address": "70 College Way, Auburn, CA 95603",
       "visible_city": "Auburn, CA"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ukiah-lake",
+      "location_id": "",
+      "name": "New Life Clinic - Ukiah Recovery Center",
+      "priority": "normal",
+      "discovery_query": "Google start=500: California Ukiah Lakeport Clearlake intensive outpatient addiction program official address",
+      "source_url": "https://www.lakecountyca.gov/",
+      "task": "County provider directory identifies intensive outpatient substance-use services at this Ukiah site; verify provider-controlled source, current program status, and exact treatment entrance.",
+      "date": "2026-09-24",
+      "visible_address": "280 East Standley Street, Ukiah, CA 95482",
+      "visible_city": "Ukiah"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "humboldt",
+      "location_id": "",
+      "name": "Humboldt County Programs for Recovery",
+      "priority": "normal",
+      "discovery_query": "Google start=1060 Eureka Arcata Humboldt California IOP PHP behavioral health outpatient official provider address",
+      "source_url": "https://humboldtgov.org/",
+      "task": "County Behavioral Health page and SAMHSA directory identify intensive outpatient treatment (IOT/IOP) for Humboldt County Programs for Recovery; verify current program page, exact intake site, and operating status. Evidence page: https://humboldtgov.org/329/Behavioral-Health",
+      "date": "2026-09-24",
+      "visible_address": "231 2nd Street, Eureka, CA 95501",
+      "visible_city": "Eureka, CA"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "sd-north-inland",
+      "location_id": "",
+      "name": "Brilliant Start Wellness Poway",
+      "priority": "normal",
+      "discovery_query": "Google start=1340 Escondido Poway North County Inland California PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://brilliantstartwellness.com/",
+      "task": "Official provider site documents PHP and IOP; verify current license, in-person schedule, intake, and whether the provider is distinct from existing North County groups.",
+      "date": "2026-09-24",
+      "visible_address": "15644 Pomerado Road, Suite 200, Poway, CA 92064",
+      "visible_city": "Poway, CA"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "oc-north",
+      "location_id": "",
+      "name": "Lift Off Recovery Anaheim PHP IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=1370 Anaheim Fullerton California PHP IOP mental health substance use official provider address",
+      "source_url": "https://liftoffrecovery.com/",
+      "task": "Official provider pages document current PHP and IOP programs and California license 300439AP; verify operating status, exact outpatient entrance, and intake.",
+      "date": "2026-09-24",
+      "visible_address": "1567 West Embassy Street, Anaheim, CA 92802",
+      "visible_city": "Anaheim, CA"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "stockton",
+      "location_id": "",
+      "name": "St. Joseph's Behavioral Health Outpatient Stockton",
+      "priority": "normal",
+      "discovery_query": "Google start=1780 California Stockton Lodi Manteca Tracy IOP PHP behavioral health outpatient official provider address",
+      "source_url": "https://www.stjosephscanhelp.org/",
+      "task": "Joint Commission result identifies current IOP and PHP at the Stockton outpatient site; verify provider-controlled program page, intake, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "510 E. Magnolia Street, Suite 100, Stockton, CA 95202",
+      "visible_city": "Stockton"
     }
   ]
 }

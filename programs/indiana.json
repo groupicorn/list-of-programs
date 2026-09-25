@@ -9,11 +9,11 @@
     "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use.",
     "generation_note": "Generated from source/areas and source/providers by tools/directory.py; edit canonical source files rather than this artifact.",
     "counts": {
-      "providers": 53,
-      "locations": 56,
+      "providers": 54,
+      "locations": 57,
       "areas": 10,
-      "area_matches": 36,
-      "shortlists": 36
+      "area_matches": 37,
+      "shortlists": 37
     }
   },
   "providers": [
@@ -745,6 +745,13 @@
       "provider_id": "discovery-forward-recovery-terre-haute-php-iop",
       "provider_name": "Forward Recovery Terre Haute PHP / IOP",
       "dedupe_group_id": "discovery-forward-recovery-terre-haute-php-iop",
+      "logo_url": "",
+      "location_count": 1
+    },
+    {
+      "provider_id": "discovery-cleanslate-centers-muncie",
+      "provider_name": "CleanSlate Centers - Muncie",
+      "dedupe_group_id": "discovery-cleanslate-centers-muncie",
       "logo_url": "",
       "location_count": 1
     }
@@ -3101,6 +3108,30 @@
       "logo_url": "",
       "research_date": "2026-09-24",
       "notes": "Confirm current PHP/IOP schedule, population served, and operating status."
+    },
+    {
+      "location_id": "discovery-cleanslate-centers-muncie-in-muncie",
+      "provider_id": "discovery-cleanslate-centers-muncie",
+      "provider_name": "CleanSlate Centers - Muncie",
+      "provider_dedupe_group_id": "discovery-cleanslate-centers-muncie",
+      "location_name": "CleanSlate Centers - Muncie",
+      "street_address": "124 East Main Street, Muncie, IN 47305",
+      "city": "Muncie",
+      "state_code": "IN",
+      "postal_code": "",
+      "country_code": "US",
+      "primary_area_id": "in_muncie",
+      "care_focus": "",
+      "care_levels_claimed": "",
+      "age_group": "",
+      "website_url": "https://secure.in.gov/fssa/dmha/quality-assurance-quality-improvement/mental-health-and-addiction-providers/",
+      "program_source_url": "https://secure.in.gov/fssa/dmha/quality-assurance-quality-improvement/mental-health-and-addiction-providers/",
+      "address_source_url": "",
+      "evidence_status": "google_discovery_lead",
+      "publication_status": "google_discovery_lead",
+      "logo_url": "",
+      "research_date": "2026-09-24",
+      "notes": "Indiana active-provider listing identifies the Muncie addiction-services site; verify current in-person IOP/PHP level and provider-controlled program page."
     }
   ],
   "areas": [
@@ -3330,14 +3361,14 @@
       "adjacency_basis": "No one-hop shortlist neighbor is declared until local provider research establishes a practical catchment relationship.",
       "scope_note": "September 22, 2026 discovery verified four distinct local groups; additional Muncie-area discovery remains warranted.",
       "target_provider_count": 9,
-      "local_location_count": 4,
-      "local_provider_group_count": 4,
-      "candidate_provider_group_count": 2,
-      "shortlisted_count": 2,
-      "in_area_shortlisted_count": 2,
+      "local_location_count": 5,
+      "local_provider_group_count": 5,
+      "candidate_provider_group_count": 3,
+      "shortlisted_count": 3,
+      "in_area_shortlisted_count": 3,
       "neighbor_shortlisted_count": 0,
-      "gap_to_nine": 7,
-      "local_gap_to_nine": 7,
+      "gap_to_nine": 6,
+      "local_gap_to_nine": 6,
       "coverage_status": "research_gap"
     },
     {
@@ -4204,6 +4235,33 @@
       "address_source_url": "https://centerstone.org/locations/indiana/facilities/centerstone-muncie-south-tillotson-overpass/",
       "evidence_status": "provider_web_source",
       "notes": "The official Centerstone location page identifies 1200 S. Tillotson Overpass, Suite 8 and lists Intensive Outpatient among the services at this Muncie outpatient site."
+    },
+    {
+      "state_code": "IN",
+      "area_id": "in_muncie",
+      "area_name": "Muncie",
+      "region": "East Central Indiana",
+      "location_id": "discovery-cleanslate-centers-muncie-in-muncie",
+      "provider_id": "discovery-cleanslate-centers-muncie",
+      "dedupe_group_id": "discovery-cleanslate-centers-muncie",
+      "provider_name": "CleanSlate Centers - Muncie",
+      "location_name": "CleanSlate Centers - Muncie",
+      "street_address": "124 East Main Street, Muncie, IN 47305",
+      "city": "Muncie",
+      "postal_code": "",
+      "match_type": "local",
+      "actual_area_id": "in_muncie",
+      "actual_area_name": "Muncie",
+      "care_focus": "",
+      "care_levels_claimed": "",
+      "age_group": "",
+      "selected": true,
+      "display_order": 3,
+      "selection_basis": "Local physical-address match selected before explicitly declared neighbors.",
+      "program_source_url": "https://secure.in.gov/fssa/dmha/quality-assurance-quality-improvement/mental-health-and-addiction-providers/",
+      "address_source_url": "",
+      "evidence_status": "google_discovery_lead",
+      "notes": "Indiana active-provider listing identifies the Muncie addiction-services site; verify current in-person IOP/PHP level and provider-controlled program page."
     },
     {
       "state_code": "IN",
@@ -5181,6 +5239,33 @@
     },
     {
       "state_code": "IN",
+      "area_id": "in_muncie",
+      "area_name": "Muncie",
+      "region": "East Central Indiana",
+      "location_id": "discovery-cleanslate-centers-muncie-in-muncie",
+      "provider_id": "discovery-cleanslate-centers-muncie",
+      "dedupe_group_id": "discovery-cleanslate-centers-muncie",
+      "provider_name": "CleanSlate Centers - Muncie",
+      "location_name": "CleanSlate Centers - Muncie",
+      "street_address": "124 East Main Street, Muncie, IN 47305",
+      "city": "Muncie",
+      "postal_code": "",
+      "match_type": "local",
+      "actual_area_id": "in_muncie",
+      "actual_area_name": "Muncie",
+      "care_focus": "",
+      "care_levels_claimed": "",
+      "age_group": "",
+      "selected": true,
+      "display_order": 3,
+      "selection_basis": "Local physical-address match selected before explicitly declared neighbors.",
+      "program_source_url": "https://secure.in.gov/fssa/dmha/quality-assurance-quality-improvement/mental-health-and-addiction-providers/",
+      "address_source_url": "",
+      "evidence_status": "google_discovery_lead",
+      "notes": "Indiana active-provider listing identifies the Muncie addiction-services site; verify current in-person IOP/PHP level and provider-controlled program page."
+    },
+    {
+      "state_code": "IN",
       "area_id": "in_clarksville_southern_indiana",
       "area_name": "Clarksville / Southern Indiana",
       "region": "Southern Indiana",
@@ -5717,6 +5802,19 @@
       "date": "2026-09-24",
       "visible_address": "1634 North 3rd Street, Terre Haute, IN 47804",
       "visible_city": "Terre Haute, IN"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "in_muncie",
+      "location_id": "",
+      "name": "CleanSlate Centers - Muncie",
+      "priority": "normal",
+      "discovery_query": "Google start=340: Muncie Indiana PHP IOP behavioral health outpatient provider exact address",
+      "source_url": "https://secure.in.gov/fssa/dmha/quality-assurance-quality-improvement/mental-health-and-addiction-providers/",
+      "task": "Indiana active-provider listing identifies the Muncie addiction-services site; verify current in-person IOP/PHP level and provider-controlled program page.",
+      "date": "2026-09-24",
+      "visible_address": "124 East Main Street, Muncie, IN 47305",
+      "visible_city": "Muncie"
     }
   ]
 }

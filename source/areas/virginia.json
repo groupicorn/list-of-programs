@@ -440,6 +440,19 @@
       "date": "2026-09-24",
       "visible_address": "31 South Braddock Street, Winchester, VA 22601",
       "visible_city": "Winchester, VA"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "va_southwest",
+      "location_id": "",
+      "name": "Poplar Springs Hospital Outpatient Programs",
+      "priority": "normal",
+      "discovery_query": "Google start=270: Southwest Virginia PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://poplarsprings.com/",
+      "task": "Virginia resource guide supports adult/adolescent IOP and PHP; verify current outpatient entrance, schedule, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "350 Poplar Drive, Petersburg, VA 23805",
+      "visible_city": "Petersburg"
     }
   ]
 }

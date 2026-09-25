@@ -674,6 +674,31 @@
       "date": "2026-09-24",
       "visible_address": "2203 Fulton Avenue, Cincinnati, OH 45206",
       "visible_city": "Cincinnati, OH"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "oh_columbus",
+      "location_id": "",
+      "name": "OhioHealth Outpatient Behavioral Health Columbus",
+      "priority": "normal",
+      "discovery_query": "Google start=640: Athens Ohio intensive outpatient PHP behavioral health provider exact address",
+      "source_url": "https://www.ohiohealth.com/locations/behavioral-health/outpatient-behavioral-health/",
+      "task": "Official OhioHealth page supports local adult PHP and IOP, but the result did not expose the street address; verify the exact outpatient site, schedule, and operating status.",
+      "date": "2026-09-24",
+      "visible_city": "Columbus"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "oh_youngstown",
+      "location_id": "",
+      "name": "On Demand Counseling Youngstown Area",
+      "priority": "normal",
+      "discovery_query": "Google start=980: Youngstown Ohio PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://ondemandcounseling.com/",
+      "task": "Verify which Youngstown-area office currently delivers IOP/PHP; provider contact page confirms the Austintown address, while discovery evidence identifies IOP and PHP.",
+      "date": "2026-09-24",
+      "visible_address": "5760 Patriot Boulevard, Suite C, Austintown, OH 44515",
+      "visible_city": "Austintown, OH"
     }
   ]
 }

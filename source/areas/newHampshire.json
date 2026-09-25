@@ -182,6 +182,32 @@
       "date": "2026-09-24",
       "visible_address": "74 Northeastern Boulevard, Suite 21 A-B, Nashua, NH 03062",
       "visible_city": "Nashua, NH"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nh_manchester",
+      "location_id": "",
+      "name": "Pathfinder Recovery NH - Manchester",
+      "priority": "normal",
+      "discovery_query": "Google start=710: Manchester New Hampshire PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://pathfinder-recovery.com/contact/",
+      "task": "Joint Commission identifies current IOP at the Manchester site; verify provider-controlled schedule, intake, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "1087 Elm Street, Manchester, NH 03101",
+      "visible_city": "Manchester"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nh_lebanon",
+      "location_id": "",
+      "name": "Alice Peck Day Memorial Hospital Behavioral Health IOP",
+      "priority": "normal",
+      "discovery_query": "Google start=1410 Lebanon New Hampshire Alice Peck Day West Central IOP PHP official address",
+      "source_url": "https://www.alicepeckday.org/",
+      "task": "Older Upper Valley treatment directory identifies adult IOP at Alice Peck Day; official hospital page confirms the Lebanon campus. Verify current outpatient IOP/PHP availability, schedule, and intake.",
+      "date": "2026-09-24",
+      "visible_address": "10 Alice Peck Day Drive, Lebanon, NH 03766",
+      "visible_city": "Lebanon, NH"
     }
   ]
 }

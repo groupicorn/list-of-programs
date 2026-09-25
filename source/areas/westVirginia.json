@@ -231,6 +231,19 @@
       "date": "2026-09-24",
       "visible_address": "135 4th Avenue, Huntington, WV 25701",
       "visible_city": "Huntington, WV"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "wv_morgantown",
+      "location_id": "",
+      "name": "Valley Health Care Systems - Morgantown",
+      "priority": "normal",
+      "discovery_query": "Google start=790: Morgantown West Virginia IOP PHP substance use behavioral health provider exact address",
+      "source_url": "https://www.valleyhealthcare.org/substance-use-treatment/",
+      "task": "Official provider page confirms local substance-use treatment services; verify a current in-person IOP/PHP level, schedule, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "301 Scott Avenue, Morgantown, WV 26508",
+      "visible_city": "Morgantown"
     }
   ]
 }

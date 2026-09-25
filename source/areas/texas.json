@@ -1040,6 +1040,18 @@
       "task": "Official page supports local PHP/IOP but the street address was not visible in search results; verify exact physical address and current status.",
       "date": "2026-09-24",
       "visible_city": "Amarillo"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "san-angelo",
+      "location_id": "",
+      "name": "Shannon River Crest Hospital",
+      "priority": "normal",
+      "discovery_query": "Google start=390: San Angelo Texas PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://www.rivercresthospital.com/",
+      "task": "Official hospital page supports a San Angelo IOP lead; reconcile the current outpatient address and PHP availability before publication.",
+      "date": "2026-09-24",
+      "visible_city": "San Angelo"
     }
   ]
 }

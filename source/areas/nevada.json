@@ -121,6 +121,32 @@
       "task": "Complete normal web, local-business/Maps, Yelp, Reddit, Psychology Today, SAMHSA FindTreatment.gov, and major health-system/state/county directory searches; record dispositions for every meaningful lead.",
       "source_url": "https://findtreatment.gov/",
       "date": "2026-09-21"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nv_reno",
+      "location_id": "",
+      "name": "Pacific Behavioral Health Reno",
+      "priority": "normal",
+      "discovery_query": "Google start=300: Reno Nevada PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://pbehavioralhealth.com/",
+      "task": "Official provider page supports an in-office transitional-age-youth/adult IOP; verify current age eligibility, exact intake, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "601 West Moana Lane, Suite 9, Reno, NV 89509",
+      "visible_city": "Reno"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "nv_reno",
+      "location_id": "",
+      "name": "Reno Behavioral Healthcare Hospital",
+      "priority": "normal",
+      "discovery_query": "Google start=300: Reno Nevada PHP IOP behavioral health outpatient official provider address",
+      "source_url": "https://renobehavioral.com/",
+      "task": "Joint Commission supports current IOP/PHP levels at the Reno site; verify provider-controlled outpatient page, schedule, and operating status.",
+      "date": "2026-09-24",
+      "visible_address": "6940 Sierra Center Parkway, Reno, NV 89511",
+      "visible_city": "Reno"
     }
   ]
 }

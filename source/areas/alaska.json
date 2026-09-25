@@ -351,6 +351,18 @@
       "date": "2026-09-24",
       "visible_address": "6000 Kanakanak Road, Dillingham, AK 99576",
       "visible_city": "Dillingham, AK"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "ak-ketchikan-southeast",
+      "location_id": "",
+      "name": "PeaceHealth Ketchikan Medical Center Behavioral Health",
+      "priority": "normal",
+      "discovery_query": "Google start=320: Ketchikan Alaska IOP PHP behavioral health outpatient provider exact address",
+      "source_url": "https://www.peacehealth.org/locations/ketchikan/behavioral-health-peacehealth-ketchikan-medical-center/",
+      "task": "Official page confirms local outpatient behavioral health; verify whether an in-person IOP/PHP level is offered and capture the current street address.",
+      "date": "2026-09-24",
+      "visible_city": "Ketchikan"
     }
   ]
 }
