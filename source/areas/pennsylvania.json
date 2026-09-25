@@ -1,0 +1,499 @@
+{
+  "schema_version": 1,
+  "state_file": "pennsylvania",
+  "state_code": "PA",
+  "metadata": {
+    "snapshot_date": "2026-09-21",
+    "title": "Groupicorn Pennsylvania IOP/PHP research directory",
+    "purpose": "Internal discovery/proximity dataset for Groupicorn. Research only; not a clinical referral directory.",
+    "methodology": "Physical-address-first. This Pennsylvania refresh performs a second discovery pass for every area previously below seven shortlisted provider groups, using official provider pages plus Maps/local-business, Yelp, Reddit, Psychology Today, SAMHSA/state or county directories, and major health-system searches. Shortlists use distinct provider groups, local-first ordering, and explicit neighbor labels; they are not clinical rankings.",
+    "branding_note": "logo_url points to a locally stored PNG acquired from an official provider-controlled source. License clearance is not implied.",
+    "geocoding_note": "Street addresses and ZIP codes are stored; coordinates are intentionally null pending an audited geocoding pass.",
+    "publication_warning": "Verify current program availability, age/track eligibility, insurance, intake requirements, and accepting-patient status before public display or referral use. Telehealth offerings are not counted as physical locations."
+  },
+  "areas": [
+    {
+      "area_id": "pa_philadelphia",
+      "state_code": "PA",
+      "region": "Southeastern Pennsylvania",
+      "name": "Philadelphia / Center City",
+      "example_cities": [
+        "Philadelphia",
+        "Center City",
+        "Northeast Philadelphia"
+      ],
+      "neighbor_area_ids": [
+        "pa_delaware_valley",
+        "pa_reading",
+        "pa_lehigh_valley"
+      ],
+      "definition": "Philadelphia city and central urban neighborhoods where behavioral-health programs are concentrated.",
+      "scope_note": "Includes Philadelphia physical locations; suburban programs remain explicitly labeled as neighbors.",
+      "adjacency_basis": "Direct urban and regional transit connections; not a legal service boundary or travel-time claim.",
+      "target_provider_count": 9,
+      "boundary_geometry": "editorial_catchment"
+    },
+    {
+      "area_id": "pa_delaware_valley",
+      "state_code": "PA",
+      "region": "Southeastern Pennsylvania",
+      "name": "Delaware Valley / Main Line / Chester County",
+      "example_cities": [
+        "Broomall",
+        "Exton",
+        "Phoenixville",
+        "Pottstown"
+      ],
+      "neighbor_area_ids": [
+        "pa_philadelphia",
+        "pa_reading",
+        "pa_lehigh_valley",
+        "pa_harrisburg_lancaster"
+      ],
+      "definition": "Suburban Philadelphia catchment spanning the Main Line, western Delaware County, Chester County, and Pottstown.",
+      "scope_note": "Physical locations are assigned by treatment address; broader Philadelphia service claims do not move a site into the city area.",
+      "adjacency_basis": "Contiguous suburban corridors around Philadelphia; not a commute or eligibility claim.",
+      "target_provider_count": 9,
+      "boundary_geometry": "editorial_catchment"
+    },
+    {
+      "area_id": "pa_reading",
+      "state_code": "PA",
+      "region": "Southeastern Pennsylvania",
+      "name": "Reading / Berks County",
+      "example_cities": [
+        "Reading",
+        "Wyomissing",
+        "West Reading"
+      ],
+      "neighbor_area_ids": [
+        "pa_delaware_valley",
+        "pa_harrisburg_lancaster"
+      ],
+      "definition": "Reading and the Berks County population corridor.",
+      "scope_note": "One verified local physical location was found in this initial pass; nearby candidates remain labeled as neighbors.",
+      "adjacency_basis": "Regional road connections to the Delaware Valley and Lancaster/Harrisburg.",
+      "target_provider_count": 9,
+      "boundary_geometry": "editorial_catchment"
+    },
+    {
+      "area_id": "pa_lehigh_valley",
+      "state_code": "PA",
+      "region": "Eastern Pennsylvania",
+      "name": "Lehigh Valley / Allentown / Bethlehem",
+      "example_cities": [
+        "Allentown",
+        "Bethlehem",
+        "Easton"
+      ],
+      "neighbor_area_ids": [
+        "pa_delaware_valley",
+        "pa_poconos",
+        "pa_reading"
+      ],
+      "definition": "Lehigh Valley urban corridor centered on Allentown, Bethlehem, and Easton.",
+      "scope_note": "The initial verified set is sparse and includes one St. Luke's physical site; provider-group deduplication prevents counting its branches as separate options.",
+      "adjacency_basis": "Regional Lehigh Valley and Poconos connections; not a driving-time claim.",
+      "target_provider_count": 9,
+      "boundary_geometry": "editorial_catchment"
+    },
+    {
+      "area_id": "pa_poconos",
+      "state_code": "PA",
+      "region": "Eastern Pennsylvania",
+      "name": "Poconos / Carbon County",
+      "example_cities": [
+        "Lehighton",
+        "Jim Thorpe",
+        "Stroudsburg"
+      ],
+      "neighbor_area_ids": [
+        "pa_lehigh_valley",
+        "pa_reading"
+      ],
+      "definition": "Carbon County and adjacent Poconos population corridor.",
+      "scope_note": "Initial pass contains one verified local physical program and explicitly labeled neighboring options.",
+      "adjacency_basis": "Named regional catchments; not a legal service area or commute claim.",
+      "target_provider_count": 9,
+      "boundary_geometry": "editorial_catchment"
+    },
+    {
+      "area_id": "pa_harrisburg_lancaster",
+      "state_code": "PA",
+      "region": "South Central Pennsylvania",
+      "name": "Harrisburg / Lancaster / York",
+      "example_cities": [
+        "Harrisburg",
+        "Lancaster",
+        "York"
+      ],
+      "neighbor_area_ids": [
+        "pa_delaware_valley",
+        "pa_reading",
+        "pa_central"
+      ],
+      "definition": "South-central Pennsylvania corridor centered on the Harrisburg, Lancaster, and York markets.",
+      "scope_note": "Includes one Harrisburg adult PHP and one Lancaster youth day-hospital/IOP candidate; age and program details remain distinct.",
+      "adjacency_basis": "Regional south-central Pennsylvania corridors; not a driving-time claim.",
+      "target_provider_count": 9,
+      "boundary_geometry": "editorial_catchment"
+    },
+    {
+      "area_id": "pa_pittsburgh",
+      "state_code": "PA",
+      "region": "Western Pennsylvania",
+      "name": "Pittsburgh / Allegheny County",
+      "example_cities": [
+        "Pittsburgh",
+        "Oakland",
+        "Wexford",
+        "Fox Chapel"
+      ],
+      "neighbor_area_ids": [
+        "pa_central",
+        "pa_erie_northwest"
+      ],
+      "definition": "Pittsburgh and major Allegheny County behavioral-health corridors.",
+      "scope_note": "UPMC branches are separate physical locations but one provider group for shortlist diversity.",
+      "adjacency_basis": "Direct regional connections to central and northwestern Pennsylvania; not a commute claim.",
+      "target_provider_count": 9,
+      "boundary_geometry": "editorial_catchment"
+    },
+    {
+      "area_id": "pa_central",
+      "state_code": "PA",
+      "region": "Central Pennsylvania",
+      "name": "Altoona / Central Pennsylvania",
+      "example_cities": [
+        "Altoona",
+        "State College",
+        "Johnstown"
+      ],
+      "neighbor_area_ids": [
+        "pa_pittsburgh",
+        "pa_harrisburg_lancaster"
+      ],
+      "definition": "Central Pennsylvania regional hub catchment centered on Altoona and nearby population corridors.",
+      "scope_note": "One verified local UPMC site was found in this pass; neighboring central and south-central options are explicitly labeled.",
+      "adjacency_basis": "Named regional hubs; not a driving-time or service-boundary claim.",
+      "target_provider_count": 9,
+      "boundary_geometry": "editorial_catchment"
+    },
+    {
+      "area_id": "pa_northeast",
+      "state_code": "PA",
+      "region": "Northeastern Pennsylvania",
+      "name": "Scranton / Wilkes-Barre / Northeastern Pennsylvania",
+      "example_cities": [
+        "Scranton",
+        "Wilkes-Barre",
+        "Hazleton"
+      ],
+      "neighbor_area_ids": [
+        "pa_reading",
+        "pa_harrisburg_lancaster",
+        "pa_poconos"
+      ],
+      "definition": "Northeastern Pennsylvania population corridor centered on Scranton and Wilkes-Barre.",
+      "scope_note": "No physical location was publication-ready in this initial pass; Geisinger Marworth remains queued for logo and broader verification work.",
+      "adjacency_basis": "Named northeastern Pennsylvania catchments; not a driving-time or service-boundary claim.",
+      "target_provider_count": 9,
+      "boundary_geometry": "editorial_catchment"
+    },
+    {
+      "area_id": "pa_erie_northwest",
+      "state_code": "PA",
+      "region": "Northwestern Pennsylvania",
+      "name": "Erie / Northwestern Pennsylvania",
+      "example_cities": [
+        "Erie",
+        "Meadville",
+        "Edinboro"
+      ],
+      "neighbor_area_ids": [
+        "pa_pittsburgh",
+        "pa_central"
+      ],
+      "definition": "Northwestern Pennsylvania catchment centered on Erie.",
+      "scope_note": "The initial pass found a Stairways PHP/IOP lead but no publication-ready local logo, so the candidate remains queued.",
+      "adjacency_basis": "Named northwestern Pennsylvania catchments; not a driving-time or service-boundary claim.",
+      "target_provider_count": 9,
+      "boundary_geometry": "editorial_catchment"
+    }
+  ],
+  "research_queue": [
+    {
+      "queue_type": "discovery_pass",
+      "area_id": "pa_philadelphia",
+      "location_id": "",
+      "name": "Philadelphia / Center City second discovery pass",
+      "priority": "medium",
+      "search_date": "2026-09-21",
+      "task": "Normal web, Maps/local-business, Yelp, Reddit, Psychology Today, SAMHSA/state or county sources, and major local health-system pages were searched. Leads were published only when exact-site address and current IOP/PHP evidence aligned; directory-only, virtual-only, and unresolved leads remain excluded or queued.",
+      "source_url": "https://www.psychologytoday.com/us/treatment-rehab/pa/philadelphia",
+      "sources": [
+        "Google Maps/local-business searches",
+        "Yelp search route was inaccessible to direct crawl; no direct rating used",
+        "Reddit local searches",
+        "Psychology Today treatment-center search",
+        "SAMHSA/state or county sources",
+        "Major local health-system and provider pages"
+      ],
+      "dispositions": [
+        "Published Rogers Behavioral Health and Kolmac after official pages aligned physical Philadelphia addresses with PHP/IOP evidence.",
+        "Belmont Behavioral Health remained a follow-up because current physical outpatient address and program linkage were not fully reconciled.",
+        "High Focus Philadelphia was excluded from this refresh because an official local PNG could not be acquired and tracked."
+      ]
+    },
+    {
+      "queue_type": "discovery_pass",
+      "area_id": "pa_delaware_valley",
+      "location_id": "",
+      "name": "Delaware Valley / Main Line / Chester County second discovery pass",
+      "priority": "medium",
+      "search_date": "2026-09-21",
+      "task": "Normal web, Maps/local-business, Yelp, Reddit, Psychology Today, SAMHSA/state or county sources, and major local health-system pages were searched. Leads were published only when exact-site address and current IOP/PHP evidence aligned; directory-only, virtual-only, and unresolved leads remain excluded or queued.",
+      "source_url": "https://www.psychologytoday.com/us/treatment-rehab/pa/broomall",
+      "sources": [
+        "Google Maps/local-business searches",
+        "Yelp search route was inaccessible to direct crawl; no direct rating used",
+        "Reddit local searches",
+        "Psychology Today treatment-center search",
+        "SAMHSA/state or county sources",
+        "Major local health-system and provider pages"
+      ],
+      "dispositions": [
+        "Published Provive Wellness in Wayne after its official Pennsylvania page aligned the physical address with PHP/IOP evidence.",
+        "Virtual-only or directory-only leads were excluded; High Focus Lansdale and other suburban leads remain follow-up research."
+      ]
+    },
+    {
+      "queue_type": "discovery_pass",
+      "area_id": "pa_reading",
+      "location_id": "",
+      "name": "Reading / Berks County second discovery pass",
+      "priority": "medium",
+      "search_date": "2026-09-21",
+      "task": "Normal web, Maps/local-business, Yelp, Reddit, Psychology Today, SAMHSA/state or county sources, and major local health-system pages were searched. Leads were published only when exact-site address and current IOP/PHP evidence aligned; directory-only, virtual-only, and unresolved leads remain excluded or queued.",
+      "source_url": "https://www.psychologytoday.com/us/treatment-rehab/pa/reading",
+      "sources": [
+        "Google Maps/local-business searches",
+        "Yelp search route was inaccessible to direct crawl; no direct rating used",
+        "Reddit local searches",
+        "Psychology Today treatment-center search",
+        "SAMHSA/state or county sources",
+        "Major local health-system and provider pages"
+      ],
+      "dispositions": [
+        "Published Tower Behavioral Health after official Tower pages aligned the Reading campus with adult PHP evidence.",
+        "Berkshire Psychiatric and other directory leads remain follow-up until the exact current program/site relationship is clearer."
+      ]
+    },
+    {
+      "queue_type": "discovery_pass",
+      "area_id": "pa_lehigh_valley",
+      "location_id": "",
+      "name": "Lehigh Valley / Allentown / Bethlehem second discovery pass",
+      "priority": "medium",
+      "search_date": "2026-09-21",
+      "task": "Normal web, Maps/local-business, Yelp, Reddit, Psychology Today, SAMHSA/state or county sources, and major local health-system pages were searched. Leads were published only when exact-site address and current IOP/PHP evidence aligned; directory-only, virtual-only, and unresolved leads remain excluded or queued.",
+      "source_url": "https://www.psychologytoday.com/us/treatment-rehab/pa/allentown",
+      "sources": [
+        "Google Maps/local-business searches",
+        "Yelp search route was inaccessible to direct crawl; no direct rating used",
+        "Reddit local searches",
+        "Psychology Today treatment-center search",
+        "SAMHSA/state or county sources",
+        "Major local health-system and provider pages"
+      ],
+      "dispositions": [
+        "Published STR Lehigh Valley in Bethlehem after its official location page aligned the physical address with adult PHP/IOP evidence.",
+        "Pyramid Allentown was excluded because its current official page describes a fully virtual offering; White Deer Run remained a follow-up lead."
+      ]
+    },
+    {
+      "queue_type": "discovery_pass",
+      "area_id": "pa_poconos",
+      "location_id": "",
+      "name": "Poconos / Carbon County second discovery pass",
+      "priority": "high",
+      "search_date": "2026-09-21",
+      "task": "Normal web, Maps/local-business, Yelp, Reddit, Psychology Today, SAMHSA/state or county sources, and major local health-system pages were searched. Leads were published only when exact-site address and current IOP/PHP evidence aligned; directory-only, virtual-only, and unresolved leads remain excluded or queued.",
+      "source_url": "https://www.psychologytoday.com/us/treatment-rehab/pa/lehighton",
+      "sources": [
+        "Google Maps/local-business searches",
+        "Yelp search route was inaccessible to direct crawl; no direct rating used",
+        "Reddit local searches",
+        "Psychology Today treatment-center search",
+        "SAMHSA/state or county sources",
+        "Major local health-system and provider pages"
+      ],
+      "dispositions": [
+        "Published Water Gap Wellness in East Stroudsburg and Pyramid Stroudsburg after official pages aligned physical addresses with PHP/IOP evidence.",
+        "PATH and other local leads remain follow-up; the area remains below nine distinct provider groups."
+      ]
+    },
+    {
+      "queue_type": "discovery_pass",
+      "area_id": "pa_harrisburg_lancaster",
+      "location_id": "",
+      "name": "Harrisburg / Lancaster / York second discovery pass",
+      "priority": "medium",
+      "search_date": "2026-09-21",
+      "task": "Normal web, Maps/local-business, Yelp, Reddit, Psychology Today, SAMHSA/state or county sources, and major local health-system pages were searched. Leads were published only when exact-site address and current IOP/PHP evidence aligned; directory-only, virtual-only, and unresolved leads remain excluded or queued.",
+      "source_url": "https://www.psychologytoday.com/us/treatment-rehab/pa/harrisburg",
+      "sources": [
+        "Google Maps/local-business searches",
+        "Yelp search route was inaccessible to direct crawl; no direct rating used",
+        "Reddit local searches",
+        "Psychology Today treatment-center search",
+        "SAMHSA/state or county sources",
+        "Major local health-system and provider pages"
+      ],
+      "dispositions": [
+        "Published Pyramid Harrisburg, STR Harrisburg, and Community Services Group Harrisburg/Lancaster after official pages aligned physical sites with PHP/IOP evidence.",
+        "Directory and health-system leads without exact current PHP/IOP evidence remain excluded."
+      ]
+    },
+    {
+      "queue_type": "discovery_pass",
+      "area_id": "pa_pittsburgh",
+      "location_id": "",
+      "name": "Pittsburgh / Allegheny County second discovery pass",
+      "priority": "high",
+      "search_date": "2026-09-21",
+      "task": "Normal web, Maps/local-business, Yelp, Reddit, Psychology Today, SAMHSA/state or county sources, and major local health-system pages were searched. Leads were published only when exact-site address and current IOP/PHP evidence aligned; directory-only, virtual-only, and unresolved leads remain excluded or queued.",
+      "source_url": "https://www.psychologytoday.com/us/treatment-rehab/pa/pittsburgh",
+      "sources": [
+        "Google Maps/local-business searches",
+        "Yelp search route was inaccessible to direct crawl; no direct rating used",
+        "Reddit local searches",
+        "Psychology Today treatment-center search",
+        "SAMHSA/state or county sources",
+        "Major local health-system and provider pages"
+      ],
+      "dispositions": [
+        "Published Pyramid Pittsburgh, Pasadena Villa Outpatient, and Gateway after official/accreditation sources aligned physical sites with PHP/IOP evidence.",
+        "The area remains below nine distinct groups; additional health-system leads require exact current outpatient-program confirmation."
+      ]
+    },
+    {
+      "queue_type": "discovery_pass",
+      "area_id": "pa_central",
+      "location_id": "",
+      "name": "Altoona / Central Pennsylvania second discovery pass",
+      "priority": "medium",
+      "search_date": "2026-09-21",
+      "task": "Normal web, Maps/local-business, Yelp, Reddit, Psychology Today, SAMHSA/state or county sources, and major local health-system pages were searched. Leads were published only when exact-site address and current IOP/PHP evidence aligned; directory-only, virtual-only, and unresolved leads remain excluded or queued.",
+      "source_url": "https://www.psychologytoday.com/us/treatment-rehab/pa/altoona",
+      "sources": [
+        "Google Maps/local-business searches",
+        "Yelp search route was inaccessible to direct crawl; no direct rating used",
+        "Reddit local searches",
+        "Psychology Today treatment-center search",
+        "SAMHSA/state or county sources",
+        "Major local health-system and provider pages"
+      ],
+      "dispositions": [
+        "Published Pyramid Altoona after its official page aligned the physical address with adult/adolescent PHP/IOP evidence.",
+        "UPMC Altoona remains represented by the existing provider record; other Central Pennsylvania leads require exact-site evidence."
+      ]
+    },
+    {
+      "queue_type": "discovery_pass",
+      "area_id": "pa_northeast",
+      "location_id": "",
+      "name": "Scranton / Wilkes-Barre / Northeastern Pennsylvania second discovery pass",
+      "priority": "medium",
+      "search_date": "2026-09-21",
+      "task": "Normal web, Maps/local-business, Yelp, Reddit, Psychology Today, SAMHSA/state or county sources, and major local health-system pages were searched. Leads were published only when exact-site address and current IOP/PHP evidence aligned; directory-only, virtual-only, and unresolved leads remain excluded or queued.",
+      "source_url": "https://www.psychologytoday.com/us/treatment-rehab/pa/scranton",
+      "sources": [
+        "Google Maps/local-business searches",
+        "Yelp search route was inaccessible to direct crawl; no direct rating used",
+        "Reddit local searches",
+        "Psychology Today treatment-center search",
+        "SAMHSA/state or county sources",
+        "Major local health-system and provider pages"
+      ],
+      "dispositions": [
+        "Published Geisinger Moosic, Lakeside NEPA, Fellowship House, and Provive Scranton after official pages aligned physical sites with PHP/IOP evidence.",
+        "Wilkes-Barre Treatment/Clearbrook remains queued because current local service descriptions conflict with older PHP/IOP accreditation evidence."
+      ]
+    },
+    {
+      "queue_type": "discovery_pass",
+      "area_id": "pa_erie_northwest",
+      "location_id": "",
+      "name": "Erie / Northwestern Pennsylvania second discovery pass",
+      "priority": "high",
+      "search_date": "2026-09-21",
+      "task": "Normal web, Maps/local-business, Yelp, Reddit, Psychology Today, SAMHSA/state or county sources, and major local health-system pages were searched. Leads were published only when exact-site address and current IOP/PHP evidence aligned; directory-only, virtual-only, and unresolved leads remain excluded or queued.",
+      "source_url": "https://www.psychologytoday.com/us/treatment-rehab/pa/erie",
+      "sources": [
+        "Google Maps/local-business searches",
+        "Yelp search route was inaccessible to direct crawl; no direct rating used",
+        "Reddit local searches",
+        "Psychology Today treatment-center search",
+        "SAMHSA/state or county sources",
+        "Major local health-system and provider pages"
+      ],
+      "dispositions": [
+        "Published Pyramid Erie, UPMC Safe Harbor Erie, and Stairways Erie after official pages aligned physical sites with PHP/IOP or outpatient evidence.",
+        "LECOM and other local leads remain follow-up; the area remains below nine distinct provider groups."
+      ]
+    },
+    {
+      "queue_type": "provider_site_recheck",
+      "area_id": "pa_northeast",
+      "location_id": "",
+      "name": "Wilkes-Barre Treatment / Clearbrook local outpatient status",
+      "priority": "high",
+      "task": "Resolve the conflict between Joint Commission PHP/IOP listings at 1100 East Northampton Street and current provider descriptions emphasizing residential/detox before any publication.",
+      "source_url": "https://www.jointcommission.org/en-us/accreditation/behavioral-health-care-and-human-services/provider-locator/3392",
+      "dispositions": [
+        "Published Geisinger Moosic, Lakeside NEPA, Fellowship House, and Provive Scranton after official pages aligned physical sites with PHP/IOP evidence.",
+        "Wilkes-Barre Treatment/Clearbrook remains queued because current local service descriptions conflict with older PHP/IOP accreditation evidence."
+      ]
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "pa_central",
+      "location_id": "",
+      "name": "Pyramid Healthcare Altoona Outpatient Treatment Center",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Altoona Central Pennsylvania IOP PHP outpatient behavioral health provider",
+      "source_url": "https://www.pyramid-healthcare.com/location/pa/altoona-outpatient/",
+      "task": "Official Pyramid location page explicitly lists PHP and IOP at this Altoona outpatient site; verify current program availability and intake.",
+      "date": "2026-09-24",
+      "visible_address": "2 Sellers Drive, Altoona, PA 16601",
+      "visible_city": "Altoona"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "pa_lehigh_valley",
+      "location_id": "",
+      "name": "STR Lehigh Valley",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Lehigh Valley Allentown Bethlehem IOP PHP outpatient behavioral health provider",
+      "source_url": "https://strbehavioralhealth.com/location-type/lehigh-valley/",
+      "task": "Official STR location page explicitly lists adult PHP and IOP at this Bethlehem outpatient site; verify current program availability and intake.",
+      "date": "2026-09-24",
+      "visible_address": "1655 Valley Center Pkwy, Suite 150, Bethlehem, PA 18017",
+      "visible_city": "Bethlehem"
+    },
+    {
+      "queue_type": "google_discovery_lead",
+      "area_id": "pa_reading",
+      "location_id": "",
+      "name": "Tower Behavioral Health Reading PHP",
+      "priority": "normal",
+      "discovery_query": "Google start=0 Reading Berks County IOP PHP outpatient behavioral health provider",
+      "source_url": "https://www.towerbehavioralhealth.com/programs/php/",
+      "task": "Official Tower Behavioral page explicitly lists PHP in Reading; verify current IOP/PHP availability and exact treatment-site intake.",
+      "date": "2026-09-24",
+      "visible_address": "201 Wellness Way, Reading, PA 19605",
+      "visible_city": "Reading"
+    }
+  ]
+}
